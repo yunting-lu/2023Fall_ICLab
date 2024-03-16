@@ -1,0 +1,3 @@
+setenv OA_HOME /RAID2/cad/cadence/INNOVUS/INNOVUS_20.15.000/share/oa
+echo -e "\033[44mRuning innovus\033[0m"
+innovus

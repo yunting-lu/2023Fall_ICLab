@@ -1,0 +1,63 @@
+source initial.cmd innovus.cmd25
+source floorplan.cmd innovus.cmd28
+source powerplan.cmd
+
+###############################################
+# verify drc                                  #
+# verify lvs (special only / GND VDD)(shift+t)#
+###############################################
+
+source placement.cmd
+
+###############################################
+# report timing preCTS setup                  #
+# ECO                                         #
+###############################################
+
+source cts.cmd
+
+###############################################
+# report timing postCTS setup                 #
+# ECO                                         #
+# report timing postCTS hold                  #
+# ECO                                         #
+###############################################
+
+source add_pad_filler.cmd
+source nanoroute.cmd
+
+###############################################
+# verify lvs                                  #
+# verify drc                                  #
+###############################################
+
+source postroute.cmd
+
+###############################################
+# report timing postroute setup               #
+# ECO                                         #
+# report timing postroute hold                #
+# ECO                                         #
+###############################################
+
+source signoff.cmd
+
+###############################################
+# report timing signoff setup                 #
+# report timing signoff hold                  #
+# report timing postroute setup               #
+# report timing postroute hold                #
+###############################################
+
+source add_core_filler.cmd
+
+###############################################
+# verify lvs                                  #
+# verify drc                                  #
+###############################################
+
+source write_netlist.cmd
+
+###############################################
+# 06_POST 01_run                              #
+###############################################

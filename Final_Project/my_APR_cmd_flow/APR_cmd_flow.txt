@@ -1,0 +1,37 @@
+APR
+
+//all files prepared (CHIP.sdc, CHIP_cts.sdc, CHIP_SYN.v)
+//[05_APR] cp CPU_SYN.sdc CHIP.sdc
+// cp CHIP.sdc CHIP_cts.sdc //#clock uncertainty
+// cp CPU_SYN.v CHIP_SYN.v //module CPU -> CHIP
+make apr_init
+//floorplan utilization, place sram, add Halo
+//save CHIP_floorplan.inn
+source cmd/powerRing.cmd
+source cmd/powerStripe.cmd (./DBS/CHIP_powerplan.inn)
+//check DRC, LVS
+//save CHIP_powerplan.inn
+source 011_placement.tcl (CHIP_placement.inn)
+//preCTS setup timing report
+//ECO if necessary
+//save CHIP_preCTS.inn
+source ./cmd/ccopt.cmd
+//postCTS setup & hold timing report
+//ECO if necessary
+//save CHIP_postCTS.inn
+//Add PAD Fillier (skip for final project)
+source 016_nanoroute.tcl (CHIP_nanoRoute.inn)
+//check DRC, LVS
+source 017_inplace_setmode.tcl
+//postRoute setup & hold timing report
+//ECO if necessary
+//save CHIP_postRoute.inn
+//optional: signoff timing report
+source 019_fillerandsave.tcl (CHIP.inn, CHIP.sdf, CHIP.v)
+summaryReport -noHtml -outfile summaryReport.rpt (check total area)
+
+cd StreamOut
+cp ../CHIP.sdf CHIP.sdf
+cp ../CHIP.v CHIP.v
+
+//go to 06_POST

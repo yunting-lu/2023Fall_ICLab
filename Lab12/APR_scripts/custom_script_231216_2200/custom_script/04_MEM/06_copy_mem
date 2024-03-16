@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+cp ~Lab05/Memory/ftclib_200901.2.1/EXE/*.v ./
+cp ~Lab05/Memory/ftclib_200901.2.1/EXE/*_WC.db ./
+cp ~Lab05/Memory/ftclib_200901.2.1/EXE/*_BC.db ./
+cp ~Lab05/Memory/ftclib_200901.2.1/EXE/*.lef ./
+cp ~Lab05/Memory/ftclib_200901.2.1/EXE/*.lib ./
+ 

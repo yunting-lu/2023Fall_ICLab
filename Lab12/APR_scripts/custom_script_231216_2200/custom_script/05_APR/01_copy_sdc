@@ -1,0 +1,4 @@
+cp ../02_SYN/Netlist/CAD_SYN.sdc CHIP.sdc
+sed -i "s/set_clock_uncertainty/#set_clock_uncertainty/g" CHIP.sdc
+sed -i "s/set_clock_transition/#set_clock_transition/g" CHIP.sdc
+echo -e "\033[44mCopy 02_SYN/Netlist/CAD_SYN.sdc to CHIP.sdc and comment out set_clock_uncertainty and set_clock_transition Done!\033[0m"

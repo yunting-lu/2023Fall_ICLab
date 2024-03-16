@@ -1,0 +1,57 @@
+#!/usr/bin/bash
+echo -e "**************************************************************"
+echo -e "*                    Runing Demo pattern                     *"
+echo -e "**************************************************************"
+# in PATTERN.v
+# parameter DRAM_data_read = "../00_TESTBED/DRAM/DRAM_data.dat";
+# in pseudo_DRAM_data.v
+# parameter DRAM_p_r = "../00_TESTBED/DRAM/DRAM_data.dat";
+# in pseudo_DRAM_inst.v
+# parameter DRAM_p_r = "../00_TESTBED/DRAM/DRAM_inst.dat";
+params=$(seq 0 30)
+
+for param in $params
+do
+  echo -e "\033[0;30;44m--- PATTERN SET = $param ---\033[0m"
+  sed -i "s/DRAM_data[0-9]*.dat/DRAM_data$param.dat/g" ../00_TESTBED/PATTERN.v
+  sed -i "s/DRAM_data[0-9]*.dat/DRAM_data$param.dat/g" ../00_TESTBED/pseudo_DRAM_data.v
+  sed -i "s/DRAM_inst[0-9]*.dat/DRAM_inst$param.dat/g" ../00_TESTBED/pseudo_DRAM_inst.v
+  
+  # replace +define+PERF with +define+FUNC
+  sed -i "s/+define+PERF/+define+FUNC/g" ../00_TESTBED/makefile
+  ./09_clean_up > check.log
+  ./01_run_vcs_rtl FUNC > check.log
+  #./01_run_vcs_gate FUNC > check.log
+  #./01_run_vcs_post FUNC > check.log
+  if  grep -i -q 'FAIL' 'vcs.log'; then
+          echo -e "\033[31m--- 01_RTL PATTERN (FUNC) Fail !! ---\033[0m"
+  elif grep -i -q 'Congratulations' 'vcs.log'; then
+          echo -e "\033[0;30;42m--- 01_RTL PATTERN (FUNC) PASS !! ---\033[0m"
+          Latency=`cat vcs.log | grep 'execution cycles =' | grep -Eo '[+-]?[0-9]+([.][0-9]+)?'`
+          cycle=`cat vcs.log | grep 'clock period =' | grep -Eo '[+-]?[0-9]+([.][0-9]+)?'`
+          echo -e "\033[0;30;42mExecution cycles:\033[0m $Latency cycles "
+          echo -e "\033[0;30;42mCycle Time:\033[0m $cycle ns "
+  else
+          echo -e "\033[31m--- 01_RTL (FUNC) wrong !! ---\033[0m"
+  fi
+
+  # replace +define+FUNC with +define+PERF
+  sed -i "s/+define+FUNC/+define+PERF/g" ../00_TESTBED/makefile
+  ./09_clean_up > check.log
+  ./01_run_vcs_rtl PERF > check.log
+  #./01_run_vcs_gate PERF > check.log
+  #./01_run_vcs_post PERF > check.log
+  if  grep -i -q 'FAIL' 'vcs.log'; then
+          echo -e "\033[31m--- 01_RTL PATTERN (PERF) Fail !! ---\033[0m"
+  elif grep -i -q 'Congratulations' 'vcs.log'; then
+          echo -e "\033[0;30;42m--- 01_RTL PATTERN (PERF) PASS !! ---\033[0m"
+          Latency=`cat vcs.log | grep 'execution cycles =' | grep -Eo '[+-]?[0-9]+([.][0-9]+)?'`
+          cycle=`cat vcs.log | grep 'clock period =' | grep -Eo '[+-]?[0-9]+([.][0-9]+)?'`
+          echo -e "\033[0;30;42mExecution cycles:\033[0m $Latency cycles "
+          echo -e "\033[0;30;42mCycle Time:\033[0m $cycle ns "
+  else
+          echo -e "\033[31m--- 01_RTL (PERF) wrong !! ---\033[0m"
+  fi
+done
+
+sed -i "s/+define+PERF/+define+FUNC/g" ../00_TESTBED/makefile

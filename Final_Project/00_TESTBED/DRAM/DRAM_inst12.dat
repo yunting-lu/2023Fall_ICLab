@@ -1,0 +1,4096 @@
+@1000
+00 40	// load, rs= 0, rt= 0, immediate=  0, DRAM[1000], core[ 0] =      0
+@1002
+21 40	// load, rs= 0, rt= 1, immediate=  1, DRAM[1002], core[ 1] =      2
+@1004
+42 40	// load, rs= 0, rt= 2, immediate=  2, DRAM[1004], core[ 2] =      4
+@1006
+63 40	// load, rs= 0, rt= 3, immediate=  3, DRAM[1006], core[ 3] =      6
+@1008
+84 40	// load, rs= 0, rt= 4, immediate=  4, DRAM[1008], core[ 4] =      8
+@100a
+a5 40	// load, rs= 0, rt= 5, immediate=  5, DRAM[100a], core[ 5] =     10
+@100c
+c6 40	// load, rs= 0, rt= 6, immediate=  6, DRAM[100c], core[ 6] =     12
+@100e
+e7 40	// load, rs= 0, rt= 7, immediate=  7, DRAM[100e], core[ 7] =     14
+@1010
+08 41	// load, rs= 0, rt= 8, immediate=  8, DRAM[1010], core[ 8] =     16
+@1012
+29 41	// load, rs= 0, rt= 9, immediate=  9, DRAM[1012], core[ 9] =     18
+@1014
+4a 41	// load, rs= 0, rt=10, immediate= 10, DRAM[1014], core[10] =     20
+@1016
+6b 41	// load, rs= 0, rt=11, immediate= 11, DRAM[1016], core[11] =     22
+@1018
+8c 41	// load, rs= 0, rt=12, immediate= 12, DRAM[1018], core[12] =     24
+@101a
+ad 41	// load, rs= 0, rt=13, immediate= 13, DRAM[101a], core[13] =     26
+@101c
+ce 41	// load, rs= 0, rt=14, immediate= 14, DRAM[101c], core[14] =     28
+@101e
+ef 41	// load, rs= 0, rt=15, immediate= 15, DRAM[101e], core[15] =     30
+@1020
+4a b0	// Jump, p=  16, address=  44, pc=@104a
+@1022
+4c b0	// Jump, p=  17, address=  44, pc=@104c
+@1024
+00 00	// Jump Skip
+@1026
+00 00	// Jump Skip
+@1028
+00 00	// Jump Skip
+@102a
+00 00	// Jump Skip
+@102c
+00 00	// Jump Skip
+@102e
+00 00	// Jump Skip
+@1030
+00 00	// Jump Skip
+@1032
+00 00	// Jump Skip
+@1034
+00 00	// Jump Skip
+@1036
+00 00	// Jump Skip
+@1038
+00 00	// Jump Skip
+@103a
+00 00	// Jump Skip
+@103c
+00 00	// Jump Skip
+@103e
+00 00	// Jump Skip
+@1040
+00 00	// Jump Skip
+@1042
+00 00	// Jump Skip
+@1044
+00 00	// Jump Skip
+@1046
+00 00	// Jump Skip
+@1048
+00 00	// Jump Skip
+@104a
+22 b0	// Jump, p=  37, address=  44, pc=@1022
+@104c
+36 08	// ADD, core_rd[11]=   10, core_rs[ 4]=    8, core_rt[ 1]=    2
+@104e
+00 5c	// Load, core_rt[ 0]=   -9, core_rs[14]=   28, immediate=   0, DRAM=@1038
+@1050
+31 39	// Mult, core_rd[ 8]=  432, core_rs[12]=   24, core_rt[ 9]=   18
+@1052
+78 b0	// Jump, p=  41, address=  40, pc=@1078
+@1054
+7a b0	// Jump, p=  42, address=  40, pc=@107a
+@1056
+00 00	// Jump Skip
+@1058
+00 00	// Jump Skip
+@105a
+00 00	// Jump Skip
+@105c
+00 00	// Jump Skip
+@105e
+00 00	// Jump Skip
+@1060
+00 00	// Jump Skip
+@1062
+00 00	// Jump Skip
+@1064
+00 00	// Jump Skip
+@1066
+00 00	// Jump Skip
+@1068
+00 00	// Jump Skip
+@106a
+00 00	// Jump Skip
+@106c
+00 00	// Jump Skip
+@106e
+00 00	// Jump Skip
+@1070
+00 00	// Jump Skip
+@1072
+00 00	// Jump Skip
+@1074
+00 00	// Jump Skip
+@1076
+00 00	// Jump Skip
+@1078
+54 b0	// Jump, p=  60, address=  40, pc=@1054
+@107a
+fc 1d	// ADD, core_rd[14]=   58, core_rs[14]=   28, core_rt[15]=   30
+@107c
+44 08	// ADD, core_rd[ 2]=   12, core_rs[ 4]=    8, core_rt[ 2]=    4
+@107e
+93 11	// SUB, core_rd[ 9]=  408, core_rs[ 8]=  432, core_rt[12]=   24
+@1080
+52 06	// ADD, core_rd[ 9]=   18, core_rs[ 3]=    6, core_rt[ 2]=   12
+@1082
+1b 5c	// Load, core_rt[ 0]=   -9, core_rs[14]=   58, immediate=  -5, DRAM=@106a
+@1084
+7b 5c	// Load, core_rt[ 3]=   -9, core_rs[14]=   58, immediate=  -5, DRAM=@106a
+@1086
+75 35	// Mult, core_rd[10]=  200, core_rs[10]=   20, core_rt[11]=   10
+@1088
+c7 5c	// Load, core_rt[ 6]=    9, core_rs[14]=   58, immediate=   7, DRAM=@1082
+@108a
+0e 27	// Less than, core_rd[ 7]=    1, core_rs[ 3]=   -9, core_rt[ 8]=  432
+@108c
+b6 b0	// Jump, p=  70, address=  44, pc=@10b6
+@108e
+b8 b0	// Jump, p=  71, address=  44, pc=@10b8
+@1090
+00 00	// Jump Skip
+@1092
+00 00	// Jump Skip
+@1094
+00 00	// Jump Skip
+@1096
+00 00	// Jump Skip
+@1098
+00 00	// Jump Skip
+@109a
+00 00	// Jump Skip
+@109c
+00 00	// Jump Skip
+@109e
+00 00	// Jump Skip
+@10a0
+00 00	// Jump Skip
+@10a2
+00 00	// Jump Skip
+@10a4
+00 00	// Jump Skip
+@10a6
+00 00	// Jump Skip
+@10a8
+00 00	// Jump Skip
+@10aa
+00 00	// Jump Skip
+@10ac
+00 00	// Jump Skip
+@10ae
+00 00	// Jump Skip
+@10b0
+00 00	// Jump Skip
+@10b2
+00 00	// Jump Skip
+@10b4
+00 00	// Jump Skip
+@10b6
+8e b0	// Jump, p=  91, address=  44, pc=@108e
+@10b8
+5a 1b	// ADD, core_rd[13]=  226, core_rs[13]=   26, core_rt[10]=  200
+@10ba
+58 16	// ADD, core_rd[12]=   22, core_rs[11]=   10, core_rt[ 2]=   12
+@10bc
+8c 17	// ADD, core_rd[ 6]=   32, core_rs[11]=   10, core_rt[12]=   22
+@10be
+50 0a	// ADD, core_rd[ 8]=   22, core_rs[ 5]=   10, core_rt[ 2]=   12
+@10c0
+d3 04	// SUB, core_rd[ 9]=  -20, core_rs[ 2]=   12, core_rt[ 6]=   32
+@10c2
+ed 12	// SUB, core_rd[ 6]=  -21, core_rs[ 9]=  -20, core_rt[ 7]=    1
+@10c4
+fc 1d	// ADD, core_rd[14]=   88, core_rs[14]=   58, core_rt[15]=   30
+@10c6
+04 8b	// Branch, core_rs[ 5]=   10, core_rt[ 8]=   22, immediate= 4, pc=@10c8
+@10c8
+80 04	// ADD, core_rd[ 0]=   20, core_rs[ 2]=   12, core_rt[ 4]=    8
+@10ca
+2a 88	// Branch, core_rs[ 4]=    8, core_rt[ 1]=    2, immediate=10, pc=@10cc
+@10cc
+a9 91	// Branch, core_rs[ 8]=   22, core_rt[13]=  226, immediate= 9, pc=@10ce
+@10ce
+0a 0c	// ADD, core_rd[ 5]=   -1, core_rs[ 6]=  -21, core_rt[ 0]=   20
+@10d0
+e6 b0	// Jump, p= 104, address=  24, pc=@10e6
+@10d2
+e8 b0	// Jump, p= 105, address=  24, pc=@10e8
+@10d4
+00 00	// Jump Skip
+@10d6
+00 00	// Jump Skip
+@10d8
+00 00	// Jump Skip
+@10da
+00 00	// Jump Skip
+@10dc
+00 00	// Jump Skip
+@10de
+00 00	// Jump Skip
+@10e0
+00 00	// Jump Skip
+@10e2
+00 00	// Jump Skip
+@10e4
+00 00	// Jump Skip
+@10e6
+d2 b0	// Jump, p= 115, address=  24, pc=@10d2
+@10e8
+67 07	// SUB, core_rd[ 3]=  -19, core_rs[ 3]=   -9, core_rt[11]=   10
+@10ea
+55 17	// SUB, core_rd[10]= -190, core_rs[11]=   10, core_rt[10]=  200
+@10ec
+86 15	// ADD, core_rd[ 3]= -168, core_rs[10]= -190, core_rt[12]=   22
+@10ee
+e7 12	// SUB, core_rd[ 3]=  -21, core_rs[ 9]=  -20, core_rt[ 7]=    1
+@10f0
+c5 16	// SUB, core_rd[ 2]=   31, core_rs[11]=   10, core_rt[ 6]=  -21
+@10f2
+71 10	// SUB, core_rd[ 8]=   43, core_rs[ 8]=   22, core_rt[ 3]=  -21
+@10f4
+2a 0e	// ADD, core_rd[ 5]=    3, core_rs[ 7]=    1, core_rt[ 1]=    2
+@10f6
+b1 06	// SUB, core_rd[ 8]=  -24, core_rs[ 3]=  -21, core_rt[ 5]=    3
+@10f8
+d4 18	// ADD, core_rd[10]=    1, core_rs[12]=   22, core_rt[ 6]=  -21
+@10fa
+64 07	// ADD, core_rd[ 2]=  -11, core_rs[ 3]=  -21, core_rt[11]=   10
+@10fc
+63 09	// SUB, core_rd[ 1]=   -2, core_rs[ 4]=    8, core_rt[11]=   10
+@10fe
+9a 0d	// ADD, core_rd[13]=    1, core_rs[ 6]=  -21, core_rt[12]=   22
+@1100
+56 12	// ADD, core_rd[11]=  -31, core_rs[ 9]=  -20, core_rt[ 2]=  -11
+@1102
+3b 03	// SUB, core_rd[13]=   18, core_rs[ 1]=   -2, core_rt[ 9]=  -20
+@1104
+fc 1d	// ADD, core_rd[14]=  118, core_rs[14]=   88, core_rt[15]=   30
+@1106
+60 7d	// Store, core_rt[11]=  -31, core_rs[14]=  118, immediate=   0, DRAM=@10ec, DRAM[10ec]=  -31
+@1108
+09 30	// Mult, core_rd[ 4]= -480, core_rs[ 8]=  -24, core_rt[ 0]=   20
+@110a
+aa 5d	// Load, core_rt[13]=   -7, core_rs[14]=  118, immediate=  10, DRAM=@1100
+@110c
+80 7d	// Store, core_rt[12]=   22, core_rs[14]=  118, immediate=   0, DRAM=@10ec, DRAM[10ec]=   22
+@110e
+4a 00	// ADD, core_rd[ 5]=    9, core_rs[ 0]=   20, core_rt[ 2]=  -11
+@1110
+36 08	// ADD, core_rd[11]= -482, core_rs[ 4]= -480, core_rt[ 1]=   -2
+@1112
+76 15	// ADD, core_rd[11]= -481, core_rs[10]=    1, core_rt[11]= -482
+@1114
+4e 0e	// ADD, core_rd[ 7]=  -10, core_rs[ 7]=    1, core_rt[ 2]=  -11
+@1116
+0e 07	// ADD, core_rd[ 7]=  -45, core_rs[ 3]=  -21, core_rt[ 8]=  -24
+@1118
+04 17	// ADD, core_rd[ 2]= -505, core_rs[11]= -481, core_rt[ 8]=  -24
+@111a
+65 11	// SUB, core_rd[ 2]=  457, core_rs[ 8]=  -24, core_rt[11]= -481
+@111c
+00 0d	// ADD, core_rd[ 0]=  -45, core_rs[ 6]=  -21, core_rt[ 8]=  -24
+@111e
+6c 0e	// ADD, core_rd[ 6]=  -66, core_rs[ 7]=  -45, core_rt[ 3]=  -21
+@1120
+35 0f	// SUB, core_rd[10]=  -25, core_rs[ 7]=  -45, core_rt[ 9]=  -20
+@1122
+35 1a	// SUB, core_rd[10]=   -5, core_rs[13]=   -7, core_rt[ 1]=   -2
+@1124
+ec 10	// ADD, core_rd[ 6]=  -69, core_rs[ 8]=  -24, core_rt[ 7]=  -45
+@1126
+49 01	// SUB, core_rd[ 4]=  -40, core_rs[ 0]=  -45, core_rt[10]=   -5
+@1128
+d4 0c	// ADD, core_rd[10]= -138, core_rs[ 6]=  -69, core_rt[ 6]=  -69
+@112a
+2f 18	// SUB, core_rd[ 7]=   24, core_rs[12]=   22, core_rt[ 1]=   -2
+@112c
+82 03	// ADD, core_rd[ 1]=   20, core_rs[ 1]=   -2, core_rt[12]=   22
+@112e
+fc 1d	// ADD, core_rd[14]=  148, core_rs[14]=  118, core_rt[15]=   30
+@1130
+c2 8a	// Branch, core_rs[ 5]=    9, core_rt[ 6]=  -69, immediate= 2, pc=@1132
+@1132
+eb 16	// SUB, core_rd[ 5]= -505, core_rs[11]= -481, core_rt[ 7]=   24
+@1134
+5a b1	// Jump, p= 154, address=  40, pc=@115a
+@1136
+5c b1	// Jump, p= 155, address=  40, pc=@115c
+@1138
+00 00	// Jump Skip
+@113a
+00 00	// Jump Skip
+@113c
+00 00	// Jump Skip
+@113e
+00 00	// Jump Skip
+@1140
+00 00	// Jump Skip
+@1142
+00 00	// Jump Skip
+@1144
+00 00	// Jump Skip
+@1146
+00 00	// Jump Skip
+@1148
+00 00	// Jump Skip
+@114a
+00 00	// Jump Skip
+@114c
+00 00	// Jump Skip
+@114e
+00 00	// Jump Skip
+@1150
+00 00	// Jump Skip
+@1152
+00 00	// Jump Skip
+@1154
+00 00	// Jump Skip
+@1156
+00 00	// Jump Skip
+@1158
+00 00	// Jump Skip
+@115a
+36 b1	// Jump, p= 173, address=  40, pc=@1136
+@115c
+65 09	// SUB, core_rd[ 2]=  441, core_rs[ 4]=  -40, core_rt[11]= -481
+@115e
+b4 09	// ADD, core_rd[10]=  -47, core_rs[ 4]=  -40, core_rt[13]=   -7
+@1160
+3a 05	// ADD, core_rd[13]=  421, core_rs[ 2]=  441, core_rt[ 9]=  -20
+@1162
+57 06	// SUB, core_rd[11]= -462, core_rs[ 3]=  -21, core_rt[ 2]=  441
+@1164
+d0 10	// ADD, core_rd[ 8]=  -93, core_rs[ 8]=  -24, core_rt[ 6]=  -69
+@1166
+02 16	// ADD, core_rd[ 1]= -507, core_rs[11]= -462, core_rt[ 0]=  -45
+@1168
+cd 16	// SUB, core_rd[ 6]= -393, core_rs[11]= -462, core_rt[ 6]=  -69
+@116a
+b3 0b	// SUB, core_rd[ 9]= -926, core_rs[ 5]= -505, core_rt[13]=  421
+@116c
+29 04	// SUB, core_rd[ 4]=  948, core_rs[ 2]=  441, core_rt[ 1]= -507
+@116e
+fc 1d	// ADD, core_rd[14]=  178, core_rs[14]=  148, core_rt[15]=   30
+@1170
+27 9b	// Branch, core_rs[13]=  421, core_rt[ 9]= -926, immediate= 7, pc=@1172
+@1172
+8b 21	// Mult, core_rd[ 5]= -990, core_rs[ 0]=  -45, core_rt[12]=   22
+@1174
+12 39	// Less than, core_rd[ 9]=    0, core_rs[12]=   22, core_rt[ 8]=  -93
+@1176
+a6 b1	// Jump, p= 187, address=  50, pc=@11a6
+@1178
+a8 b1	// Jump, p= 188, address=  50, pc=@11a8
+@117a
+00 00	// Jump Skip
+@117c
+00 00	// Jump Skip
+@117e
+00 00	// Jump Skip
+@1180
+00 00	// Jump Skip
+@1182
+00 00	// Jump Skip
+@1184
+00 00	// Jump Skip
+@1186
+00 00	// Jump Skip
+@1188
+00 00	// Jump Skip
+@118a
+00 00	// Jump Skip
+@118c
+00 00	// Jump Skip
+@118e
+00 00	// Jump Skip
+@1190
+00 00	// Jump Skip
+@1192
+00 00	// Jump Skip
+@1194
+00 00	// Jump Skip
+@1196
+00 00	// Jump Skip
+@1198
+00 00	// Jump Skip
+@119a
+00 00	// Jump Skip
+@119c
+00 00	// Jump Skip
+@119e
+00 00	// Jump Skip
+@11a0
+00 00	// Jump Skip
+@11a2
+00 00	// Jump Skip
+@11a4
+00 00	// Jump Skip
+@11a6
+78 b1	// Jump, p= 211, address=  50, pc=@1178
+@11a8
+73 1b	// SUB, core_rd[ 9]=  883, core_rs[13]=  421, core_rt[11]= -462
+@11aa
+46 1a	// ADD, core_rd[ 3]=  862, core_rs[13]=  421, core_rt[ 2]=  441
+@11ac
+9b 07	// SUB, core_rd[13]=  840, core_rs[ 3]=  862, core_rt[12]=   22
+@11ae
+62 14	// ADD, core_rd[ 1]=  815, core_rs[10]=  -47, core_rt[ 3]=  862
+@11b0
+b1 0a	// SUB, core_rd[ 8]=    0, core_rs[ 5]= -990, core_rt[ 5]= -990
+@11b2
+98 19	// ADD, core_rd[12]=   44, core_rs[12]=   22, core_rt[12]=   22
+@11b4
+fc 1d	// ADD, core_rd[14]=  208, core_rs[14]=  178, core_rt[15]=   30
+@11b6
+68 81	// Branch, core_rs[ 0]=  -45, core_rt[11]= -462, immediate= 8, pc=@11b8
+@11b8
+4b 2d	// Mult, core_rd[ 5]=18471, core_rs[ 6]= -393, core_rt[10]=  -47
+@11ba
+85 31	// Mult, core_rd[ 2]=    0, core_rs[ 8]=    0, core_rt[12]=   44
+@11bc
+9d 5c	// Load, core_rt[ 4]=   12, core_rs[14]=  208, immediate=  -3, DRAM=@119a
+@11be
+ba 0d	// ADD, core_rd[13]=  447, core_rs[ 6]= -393, core_rt[13]=  840
+@11c0
+20 04	// ADD, core_rd[ 0]=  815, core_rs[ 2]=    0, core_rt[ 1]=  815
+@11c2
+38 09	// ADD, core_rd[12]=  895, core_rs[ 4]=   12, core_rt[ 9]=  883
+@11c4
+4a 00	// ADD, core_rd[ 5]=  815, core_rs[ 0]=  815, core_rt[ 2]=    0
+@11c6
+cb 06	// SUB, core_rd[ 5]= 1255, core_rs[ 3]=  862, core_rt[ 6]= -393
+@11c8
+e4 14	// ADD, core_rd[ 2]=  -23, core_rs[10]=  -47, core_rt[ 7]=   24
+@11ca
+6c 07	// ADD, core_rd[ 6]=  400, core_rs[ 3]=  862, core_rt[11]= -462
+@11cc
+46 0a	// ADD, core_rd[ 3]= 1232, core_rs[ 5]= 1255, core_rt[ 2]=  -23
+@11ce
+8c 01	// ADD, core_rd[ 6]= 1710, core_rs[ 0]=  815, core_rt[12]=  895
+@11d0
+4f 08	// SUB, core_rd[ 7]=   35, core_rs[ 4]=   12, core_rt[ 2]=  -23
+@11d2
+7a 0f	// ADD, core_rd[13]= -427, core_rs[ 7]=   35, core_rt[11]= -462
+@11d4
+13 09	// SUB, core_rd[ 9]=   12, core_rs[ 4]=   12, core_rt[ 8]=    0
+@11d6
+53 0f	// SUB, core_rd[ 9]=   82, core_rs[ 7]=   35, core_rt[10]=  -47
+@11d8
+2e 01	// ADD, core_rd[ 7]=  897, core_rs[ 0]=  815, core_rt[ 9]=   82
+@11da
+2a 1b	// ADD, core_rd[ 5]= -345, core_rs[13]= -427, core_rt[ 9]=   82
+@11dc
+fc 1d	// ADD, core_rd[14]=  238, core_rs[14]=  208, core_rt[15]=   30
+@11de
+e6 b1	// Jump, p= 239, address=  10, pc=@11e6
+@11e0
+e8 b1	// Jump, p= 240, address=  10, pc=@11e8
+@11e2
+00 00	// Jump Skip
+@11e4
+00 00	// Jump Skip
+@11e6
+e0 b1	// Jump, p= 243, address=  10, pc=@11e0
+@11e8
+66 83	// Branch, core_rs[ 1]=  815, core_rt[11]= -462, immediate= 6, pc=@11ea
+@11ea
+1b 30	// Mult, core_rd[13]=    0, core_rs[ 8]=    0, core_rt[ 0]=  815
+@11ec
+79 5c	// Load, core_rt[ 3]=   13, core_rs[14]=  238, immediate=  -7, DRAM=@11ce
+@11ee
+19 00	// SUB, core_rd[12]=    0, core_rs[ 0]=  815, core_rt[ 0]=  815
+@11f0
+a1 18	// SUB, core_rd[ 0]=  345, core_rs[12]=    0, core_rt[ 5]= -345
+@11f2
+72 14	// ADD, core_rd[ 9]=  -34, core_rs[10]=  -47, core_rt[ 3]=   13
+@11f4
+8a 0c	// ADD, core_rd[ 5]= 1722, core_rs[ 6]= 1710, core_rt[ 4]=   12
+@11f6
+31 13	// SUB, core_rd[ 8]=    0, core_rs[ 9]=  -34, core_rt[ 9]=  -34
+@11f8
+28 12	// ADD, core_rd[ 4]=  781, core_rs[ 9]=  -34, core_rt[ 1]=  815
+@11fa
+c7 16	// SUB, core_rd[ 3]=-2172, core_rs[11]= -462, core_rt[ 6]= 1710
+@11fc
+d8 0a	// ADD, core_rd[12]= 3432, core_rs[ 5]= 1722, core_rt[ 6]= 1710
+@11fe
+16 08	// ADD, core_rd[11]= 1126, core_rs[ 4]=  781, core_rt[ 0]=  345
+@1200
+cf 0a	// SUB, core_rd[ 7]=   12, core_rs[ 5]= 1722, core_rt[ 6]= 1710
+@1202
+5a 09	// ADD, core_rd[13]=  734, core_rs[ 4]=  781, core_rt[10]=  -47
+@1204
+a2 03	// ADD, core_rd[ 1]= 1549, core_rs[ 1]=  815, core_rt[13]=  734
+@1206
+44 1a	// ADD, core_rd[ 2]=  711, core_rs[13]=  734, core_rt[ 2]=  -23
+@1208
+35 04	// SUB, core_rd[10]= -838, core_rs[ 2]=  711, core_rt[ 1]= 1549
+@120a
+4c 1a	// ADD, core_rd[ 6]= 1445, core_rs[13]=  734, core_rt[ 2]=  711
+@120c
+60 1b	// ADD, core_rd[ 0]= 1860, core_rs[13]=  734, core_rt[11]= 1126
+@120e
+81 13	// SUB, core_rd[ 0]=-3466, core_rs[ 9]=  -34, core_rt[12]= 3432
+@1210
+fc 1d	// ADD, core_rd[14]=  268, core_rs[14]=  238, core_rt[15]=   30
+@1212
+74 5c	// Load, core_rt[ 3]=   24, core_rs[14]=  268, immediate= -12, DRAM=@1200
+@1214
+10 7c	// Store, core_rt[ 0]=-3466, core_rs[14]=  268, immediate= -16, DRAM=@11f8, DRAM[11f8]=-3466
+@1216
+0c 2f	// Less than, core_rd[ 6]=    0, core_rs[ 7]=   12, core_rt[ 8]=    0
+@1218
+e4 1a	// ADD, core_rd[ 2]=  746, core_rs[13]=  734, core_rt[ 7]=   12
+@121a
+66 13	// ADD, core_rd[ 3]= 1092, core_rs[ 9]=  -34, core_rt[11]= 1126
+@121c
+04 0e	// ADD, core_rd[ 2]=-3454, core_rs[ 7]=   12, core_rt[ 0]=-3466
+@121e
+fb 1a	// SUB, core_rd[13]=  722, core_rs[13]=  734, core_rt[ 7]=   12
+@1220
+56 09	// ADD, core_rd[11]=  -57, core_rs[ 4]=  781, core_rt[10]= -838
+@1222
+d6 0e	// ADD, core_rd[11]=   12, core_rs[ 7]=   12, core_rt[ 6]=    0
+@1224
+a3 10	// SUB, core_rd[ 1]=-1722, core_rs[ 8]=    0, core_rt[ 5]= 1722
+@1226
+af 15	// SUB, core_rd[ 7]=-1560, core_rs[10]= -838, core_rt[13]=  722
+@1228
+34 15	// ADD, core_rd[10]= -872, core_rs[10]= -838, core_rt[ 9]=  -34
+@122a
+0d 18	// SUB, core_rd[ 6]= 6898, core_rs[12]= 3432, core_rt[ 0]=-3466
+@122c
+d0 18	// ADD, core_rd[ 8]=10330, core_rs[12]= 3432, core_rt[ 6]= 6898
+@122e
+13 16	// SUB, core_rd[ 9]= 3478, core_rs[11]=   12, core_rt[ 0]=-3466
+@1230
+04 12	// ADD, core_rd[ 2]=   12, core_rs[ 9]= 3478, core_rt[ 0]=-3466
+@1232
+76 0b	// ADD, core_rd[11]= 1734, core_rs[ 5]= 1722, core_rt[11]=   12
+@1234
+ab 1a	// SUB, core_rd[ 5]=-1000, core_rs[13]=  722, core_rt[ 5]= 1722
+@1236
+67 17	// SUB, core_rd[ 3]=    0, core_rs[11]= 1734, core_rt[11]= 1734
+@1238
+a1 0c	// SUB, core_rd[ 0]= 7898, core_rs[ 6]= 6898, core_rt[ 5]=-1000
+@123a
+fc 1d	// ADD, core_rd[14]=  298, core_rs[14]=  268, core_rt[15]=   30
+@123c
+49 8a	// Branch, core_rs[ 5]=-1000, core_rt[ 2]=   12, immediate= 9, pc=@123e
+@123e
+93 5c	// Load, core_rt[ 4]=  -11, core_rs[14]=  298, immediate= -13, DRAM=@123a
+@1240
+42 5c	// Load, core_rt[ 2]=    1, core_rs[14]=  298, immediate=   2, DRAM=@1258
+@1242
+56 b2	// Jump, p= 289, address=  22, pc=@1256
+@1244
+58 b2	// Jump, p= 290, address=  22, pc=@1258
+@1246
+00 00	// Jump Skip
+@1248
+00 00	// Jump Skip
+@124a
+00 00	// Jump Skip
+@124c
+00 00	// Jump Skip
+@124e
+00 00	// Jump Skip
+@1250
+00 00	// Jump Skip
+@1252
+00 00	// Jump Skip
+@1254
+00 00	// Jump Skip
+@1256
+44 b2	// Jump, p= 299, address=  22, pc=@1244
+@1258
+78 b2	// Jump, p= 300, address=  34, pc=@1278
+@125a
+7a b2	// Jump, p= 301, address=  34, pc=@127a
+@125c
+00 00	// Jump Skip
+@125e
+00 00	// Jump Skip
+@1260
+00 00	// Jump Skip
+@1262
+00 00	// Jump Skip
+@1264
+00 00	// Jump Skip
+@1266
+00 00	// Jump Skip
+@1268
+00 00	// Jump Skip
+@126a
+00 00	// Jump Skip
+@126c
+00 00	// Jump Skip
+@126e
+00 00	// Jump Skip
+@1270
+00 00	// Jump Skip
+@1272
+00 00	// Jump Skip
+@1274
+00 00	// Jump Skip
+@1276
+00 00	// Jump Skip
+@1278
+5a b2	// Jump, p= 316, address=  34, pc=@125a
+@127a
+63 05	// SUB, core_rd[ 1]=-1733, core_rs[ 2]=    1, core_rt[11]= 1734
+@127c
+b5 12	// SUB, core_rd[10]= 4478, core_rs[ 9]= 3478, core_rt[ 5]=-1000
+@127e
+a7 1b	// SUB, core_rd[ 3]=    0, core_rs[13]=  722, core_rt[13]=  722
+@1280
+0e 05	// ADD, core_rd[ 7]=10331, core_rs[ 2]=    1, core_rt[ 8]=10330
+@1282
+0e 14	// ADD, core_rd[ 7]=12376, core_rs[10]= 4478, core_rt[ 0]= 7898
+@1284
+7b 11	// SUB, core_rd[13]= 8596, core_rs[ 8]=10330, core_rt[11]= 1734
+@1286
+32 00	// ADD, core_rd[ 9]= 6165, core_rs[ 0]= 7898, core_rt[ 1]=-1733
+@1288
+19 00	// SUB, core_rd[12]=    0, core_rs[ 0]= 7898, core_rt[ 0]= 7898
+@128a
+54 1b	// ADD, core_rd[10]=13074, core_rs[13]= 8596, core_rt[10]= 4478
+@128c
+29 04	// SUB, core_rd[ 4]= 1734, core_rs[ 2]=    1, core_rt[ 1]=-1733
+@128e
+e1 08	// SUB, core_rd[ 0]=-10642, core_rs[ 4]= 1734, core_rt[ 7]=12376
+@1290
+60 0e	// ADD, core_rd[ 0]=12376, core_rs[ 7]=12376, core_rt[ 3]=    0
+@1292
+b0 1a	// ADD, core_rd[ 8]= 7596, core_rs[13]= 8596, core_rt[ 5]=-1000
+@1294
+e0 0c	// ADD, core_rd[ 0]=19274, core_rs[ 6]= 6898, core_rt[ 7]=12376
+@1296
+d3 0e	// SUB, core_rd[ 9]= 5478, core_rs[ 7]=12376, core_rt[ 6]= 6898
+@1298
+94 11	// ADD, core_rd[10]= 7596, core_rs[ 8]= 7596, core_rt[12]=    0
+@129a
+fc 1d	// ADD, core_rd[14]=  328, core_rs[14]=  298, core_rt[15]=   30
+@129c
+f0 08	// ADD, core_rd[ 8]=14110, core_rs[ 4]= 1734, core_rt[ 7]=12376
+@129e
+e4 86	// Branch, core_rs[ 3]=    0, core_rt[ 7]=12376, immediate= 4, pc=@12a0
+@12a0
+d4 b2	// Jump, p= 336, address=  54, pc=@12d4
+@12a2
+d6 b2	// Jump, p= 337, address=  54, pc=@12d6
+@12a4
+00 00	// Jump Skip
+@12a6
+00 00	// Jump Skip
+@12a8
+00 00	// Jump Skip
+@12aa
+00 00	// Jump Skip
+@12ac
+00 00	// Jump Skip
+@12ae
+00 00	// Jump Skip
+@12b0
+00 00	// Jump Skip
+@12b2
+00 00	// Jump Skip
+@12b4
+00 00	// Jump Skip
+@12b6
+00 00	// Jump Skip
+@12b8
+00 00	// Jump Skip
+@12ba
+00 00	// Jump Skip
+@12bc
+00 00	// Jump Skip
+@12be
+00 00	// Jump Skip
+@12c0
+00 00	// Jump Skip
+@12c2
+00 00	// Jump Skip
+@12c4
+00 00	// Jump Skip
+@12c6
+00 00	// Jump Skip
+@12c8
+00 00	// Jump Skip
+@12ca
+00 00	// Jump Skip
+@12cc
+00 00	// Jump Skip
+@12ce
+00 00	// Jump Skip
+@12d0
+00 00	// Jump Skip
+@12d2
+00 00	// Jump Skip
+@12d4
+a2 b2	// Jump, p= 362, address=  54, pc=@12a2
+@12d6
+b4 08	// ADD, core_rd[10]=  734, core_rs[ 4]= 1734, core_rt[ 5]=-1000
+@12d8
+84 09	// ADD, core_rd[ 2]= 1734, core_rs[ 4]= 1734, core_rt[12]=    0
+@12da
+fc 1d	// ADD, core_rd[14]=  358, core_rs[14]=  328, core_rt[15]=   30
+@12dc
+6c 18	// ADD, core_rd[ 6]=    0, core_rs[12]=    0, core_rt[ 3]=    0
+@12de
+a2 92	// Branch, core_rs[ 9]= 5478, core_rt[ 5]=-1000, immediate= 2, pc=@12e0
+@12e0
+60 7d	// Store, core_rt[11]= 1734, core_rs[14]=  358, immediate=   0, DRAM=@12cc, DRAM[12cc]= 1734
+@12e2
+fa b2	// Jump, p= 369, address=  26, pc=@12fa
+@12e4
+fc b2	// Jump, p= 370, address=  26, pc=@12fc
+@12e6
+00 00	// Jump Skip
+@12e8
+00 00	// Jump Skip
+@12ea
+00 00	// Jump Skip
+@12ec
+00 00	// Jump Skip
+@12ee
+00 00	// Jump Skip
+@12f0
+00 00	// Jump Skip
+@12f2
+00 00	// Jump Skip
+@12f4
+00 00	// Jump Skip
+@12f6
+00 00	// Jump Skip
+@12f8
+00 00	// Jump Skip
+@12fa
+e4 b2	// Jump, p= 381, address=  26, pc=@12e4
+@12fc
+65 02	// SUB, core_rd[ 2]=-1733, core_rs[ 1]=-1733, core_rt[ 3]=    0
+@12fe
+39 10	// SUB, core_rd[12]=15843, core_rs[ 8]=14110, core_rt[ 1]=-1733
+@1300
+b5 0e	// SUB, core_rd[10]=13376, core_rs[ 7]=12376, core_rt[ 5]=-1000
+@1302
+d5 14	// SUB, core_rd[10]=13376, core_rs[10]=13376, core_rt[ 6]=    0
+@1304
+19 16	// SUB, core_rd[12]=-17540, core_rs[11]= 1734, core_rt[ 0]=19274
+@1306
+b0 00	// ADD, core_rd[ 8]=18274, core_rs[ 0]=19274, core_rt[ 5]=-1000
+@1308
+93 03	// SUB, core_rd[ 9]=15807, core_rs[ 1]=-1733, core_rt[12]=-17540
+@130a
+2f 18	// SUB, core_rd[ 7]=-15807, core_rs[12]=-17540, core_rt[ 1]=-1733
+@130c
+8c 14	// ADD, core_rd[ 6]=15110, core_rs[10]=13376, core_rt[ 4]= 1734
+@130e
+fc 1d	// ADD, core_rd[14]=  388, core_rs[14]=  358, core_rt[15]=   30
+@1310
+85 8c	// Branch, core_rs[ 6]=15110, core_rt[ 4]= 1734, immediate= 5, pc=@1312
+@1312
+69 3a	// Mult, core_rd[ 4]=    0, core_rs[13]= 8596, core_rt[ 3]=    0
+@1314
+66 8d	// Branch, core_rs[ 6]=15110, core_rt[11]= 1734, immediate= 6, pc=@1316
+@1316
+00 07	// ADD, core_rd[ 0]=18274, core_rs[ 3]=    0, core_rt[ 8]=18274
+@1318
+49 88	// Branch, core_rs[ 4]=    0, core_rt[ 2]=-1733, immediate= 9, pc=@131a
+@131a
+a1 09	// SUB, core_rd[ 0]=-8596, core_rs[ 4]=    0, core_rt[13]= 8596
+@131c
+17 27	// Mult, core_rd[11]=    0, core_rs[ 3]=    0, core_rt[ 8]=18274
+@131e
+3e b3	// Jump, p= 399, address=  34, pc=@133e
+@1320
+40 b3	// Jump, p= 400, address=  34, pc=@1340
+@1322
+00 00	// Jump Skip
+@1324
+00 00	// Jump Skip
+@1326
+00 00	// Jump Skip
+@1328
+00 00	// Jump Skip
+@132a
+00 00	// Jump Skip
+@132c
+00 00	// Jump Skip
+@132e
+00 00	// Jump Skip
+@1330
+00 00	// Jump Skip
+@1332
+00 00	// Jump Skip
+@1334
+00 00	// Jump Skip
+@1336
+00 00	// Jump Skip
+@1338
+00 00	// Jump Skip
+@133a
+00 00	// Jump Skip
+@133c
+00 00	// Jump Skip
+@133e
+20 b3	// Jump, p= 415, address=  34, pc=@1320
+@1340
+4c 17	// ADD, core_rd[ 6]=13376, core_rs[11]=    0, core_rt[10]=13376
+@1342
+53 15	// SUB, core_rd[ 9]=    0, core_rs[10]=13376, core_rt[10]=13376
+@1344
+23 10	// SUB, core_rd[ 1]=20007, core_rs[ 8]=18274, core_rt[ 1]=-1733
+@1346
+d6 04	// ADD, core_rd[11]=11643, core_rs[ 2]=-1733, core_rt[ 6]=13376
+@1348
+24 0d	// ADD, core_rd[ 2]=13376, core_rs[ 6]=13376, core_rt[ 9]=    0
+@134a
+88 06	// ADD, core_rd[ 4]=    0, core_rs[ 3]=    0, core_rt[ 4]=    0
+@134c
+d8 04	// ADD, core_rd[12]=26752, core_rs[ 2]=13376, core_rt[ 6]=13376
+@134e
+09 06	// SUB, core_rd[ 4]= 8596, core_rs[ 3]=    0, core_rt[ 0]=-8596
+@1350
+e7 06	// SUB, core_rd[ 3]=15807, core_rs[ 3]=    0, core_rt[ 7]=-15807
+@1352
+69 1a	// SUB, core_rd[ 4]=-7211, core_rs[13]= 8596, core_rt[ 3]=15807
+@1354
+23 15	// SUB, core_rd[ 1]=13376, core_rs[10]=13376, core_rt[ 9]=    0
+@1356
+20 01	// ADD, core_rd[ 0]=-8596, core_rs[ 0]=-8596, core_rt[ 9]=    0
+@1358
+11 09	// SUB, core_rd[ 8]=-25485, core_rs[ 4]=-7211, core_rt[ 8]=18274
+@135a
+6d 0c	// SUB, core_rd[ 6]=-2431, core_rs[ 6]=13376, core_rt[ 3]=15807
+@135c
+fc 1d	// ADD, core_rd[14]=  418, core_rs[14]=  388, core_rt[15]=   30
+@135e
+0a 0b	// ADD, core_rd[ 5]=-26485, core_rs[ 5]=-1000, core_rt[ 8]=-25485
+@1360
+aa 11	// ADD, core_rd[ 5]=-16889, core_rs[ 8]=-25485, core_rt[13]= 8596
+@1362
+a2 5d	// Load, core_rt[13]=   19, core_rs[14]=  418, immediate=   2, DRAM=@1348
+@1364
+22 08	// ADD, core_rd[ 1]= 6165, core_rs[ 4]=-7211, core_rt[ 1]=13376
+@1366
+ab 7c	// Store, core_rt[ 5]=-16889, core_rs[14]=  418, immediate=  11, DRAM=@135a, DRAM[135a]=-16889
+@1368
+88 b3	// Jump, p= 436, address=  34, pc=@1388
+@136a
+8a b3	// Jump, p= 437, address=  34, pc=@138a
+@136c
+00 00	// Jump Skip
+@136e
+00 00	// Jump Skip
+@1370
+00 00	// Jump Skip
+@1372
+00 00	// Jump Skip
+@1374
+00 00	// Jump Skip
+@1376
+00 00	// Jump Skip
+@1378
+00 00	// Jump Skip
+@137a
+00 00	// Jump Skip
+@137c
+00 00	// Jump Skip
+@137e
+00 00	// Jump Skip
+@1380
+00 00	// Jump Skip
+@1382
+00 00	// Jump Skip
+@1384
+00 00	// Jump Skip
+@1386
+00 00	// Jump Skip
+@1388
+6a b3	// Jump, p= 452, address=  34, pc=@136a
+@138a
+02 0e	// ADD, core_rd[ 1]=-24403, core_rs[ 7]=-15807, core_rt[ 0]=-8596
+@138c
+a3 08	// SUB, core_rd[ 1]= 9678, core_rs[ 4]=-7211, core_rt[ 5]=-16889
+@138e
+63 08	// SUB, core_rd[ 1]=-23018, core_rs[ 4]=-7211, core_rt[ 3]=15807
+@1390
+fb 0c	// SUB, core_rd[13]=13376, core_rs[ 6]=-2431, core_rt[ 7]=-15807
+@1392
+60 03	// ADD, core_rd[ 0]=-11375, core_rs[ 1]=-23018, core_rt[11]=11643
+@1394
+18 1b	// ADD, core_rd[12]=-12109, core_rs[13]=13376, core_rt[ 8]=-25485
+@1396
+fa 00	// ADD, core_rd[13]=-27182, core_rs[ 0]=-11375, core_rt[ 7]=-15807
+@1398
+73 13	// SUB, core_rd[ 9]=-11643, core_rs[ 9]=    0, core_rt[11]=11643
+@139a
+b9 0c	// SUB, core_rd[12]=14458, core_rs[ 6]=-2431, core_rt[ 5]=-16889
+@139c
+fc 1d	// ADD, core_rd[14]=  448, core_rs[14]=  418, core_rt[15]=   30
+@139e
+1f 5d	// Load, core_rt[ 8]=   21, core_rs[14]=  448, immediate=  -1, DRAM=@137e
+@13a0
+f3 08	// SUB, core_rd[ 9]= 8596, core_rs[ 4]=-7211, core_rt[ 7]=-15807
+@13a2
+72 09	// ADD, core_rd[ 9]= 4432, core_rs[ 4]=-7211, core_rt[11]=11643
+@13a4
+43 08	// SUB, core_rd[ 1]=-20587, core_rs[ 4]=-7211, core_rt[ 2]=13376
+@13a6
+8a 1b	// ADD, core_rd[ 5]=-12724, core_rs[13]=-27182, core_rt[12]=14458
+@13a8
+0e 0a	// ADD, core_rd[ 7]=-24099, core_rs[ 5]=-12724, core_rt[ 0]=-11375
+@13aa
+a3 1a	// SUB, core_rd[ 1]=-14458, core_rs[13]=-27182, core_rt[ 5]=-12724
+@13ac
+83 12	// SUB, core_rd[ 1]=11643, core_rs[ 9]= 4432, core_rt[ 4]=-7211
+@13ae
+6a 15	// ADD, core_rd[ 5]=25019, core_rs[10]=13376, core_rt[11]=11643
+@13b0
+06 00	// ADD, core_rd[ 3]=-22750, core_rs[ 0]=-11375, core_rt[ 0]=-11375
+@13b2
+c5 0e	// SUB, core_rd[ 2]=-21668, core_rs[ 7]=-24099, core_rt[ 6]=-2431
+@13b4
+92 16	// ADD, core_rd[ 9]= 4432, core_rs[11]=11643, core_rt[ 4]=-7211
+@13b6
+f4 14	// ADD, core_rd[10]=-10723, core_rs[10]=13376, core_rt[ 7]=-24099
+@13b8
+0e 10	// ADD, core_rd[ 7]=-11354, core_rs[ 8]=   21, core_rt[ 0]=-11375
+@13ba
+b9 15	// SUB, core_rd[12]=16459, core_rs[10]=-10723, core_rt[13]=-27182
+@13bc
+03 18	// SUB, core_rd[ 1]=27834, core_rs[12]=16459, core_rt[ 0]=-11375
+@13be
+69 04	// SUB, core_rd[ 4]= 1082, core_rs[ 2]=-21668, core_rt[ 3]=-22750
+@13c0
+fc 1d	// ADD, core_rd[14]=  478, core_rs[14]=  448, core_rt[15]=   30
+@13c2
+02 7d	// Store, core_rt[ 8]=   21, core_rs[14]=  478, immediate=   2, DRAM=@13c0, DRAM[13c0]=   21
+@13c4
+64 15	// ADD, core_rd[ 2]=  920, core_rs[10]=-10723, core_rt[11]=11643
+@13c6
+49 30	// Mult, core_rd[ 4]=19320, core_rs[ 8]=   21, core_rt[ 2]=  920
+@13c8
+0b 31	// Mult, core_rd[ 5]=  441, core_rs[ 8]=   21, core_rt[ 8]=   21
+@13ca
+41 30	// Mult, core_rd[ 0]=19320, core_rs[ 8]=   21, core_rt[ 2]=  920
+@13cc
+43 06	// SUB, core_rd[ 1]=-23670, core_rs[ 3]=-22750, core_rt[ 2]=  920
+@13ce
+15 31	// Mult, core_rd[10]=  441, core_rs[ 8]=   21, core_rt[ 8]=   21
+@13d0
+41 88	// Branch, core_rs[ 4]=19320, core_rt[ 2]=  920, immediate= 1, pc=@13d2
+@13d2
+1b 31	// Mult, core_rd[13]=  441, core_rs[ 8]=   21, core_rt[ 8]=   21
+@13d4
+e9 96	// Branch, core_rs[11]=11643, core_rt[ 7]=-11354, immediate= 9, pc=@13d6
+@13d6
+c6 84	// Branch, core_rs[ 2]=  920, core_rt[ 6]=-2431, immediate= 6, pc=@13d8
+@13d8
+a9 31	// Mult, core_rd[ 4]= 9261, core_rs[ 8]=   21, core_rt[13]=  441
+@13da
+e4 b3	// Jump, p= 493, address=  12, pc=@13e4
+@13dc
+e6 b3	// Jump, p= 494, address=  12, pc=@13e6
+@13de
+00 00	// Jump Skip
+@13e0
+00 00	// Jump Skip
+@13e2
+00 00	// Jump Skip
+@13e4
+dc b3	// Jump, p= 498, address=  12, pc=@13dc
+@13e6
+df 7c	// Store, core_rt[ 6]=-2431, core_rs[14]=  478, immediate=  -1, DRAM=@13ba, DRAM[13ba]=-2431
+@13e8
+2d 19	// SUB, core_rd[ 6]=12027, core_rs[12]=16459, core_rt[ 9]= 4432
+@13ea
+55 1b	// SUB, core_rd[10]=    0, core_rs[13]=  441, core_rt[10]=  441
+@13ec
+6c 17	// ADD, core_rd[ 6]=23286, core_rs[11]=11643, core_rt[11]=11643
+@13ee
+f2 18	// ADD, core_rd[ 9]= 5105, core_rs[12]=16459, core_rt[ 7]=-11354
+@13f0
+6b 13	// SUB, core_rd[ 5]=-6538, core_rs[ 9]= 5105, core_rt[11]=11643
+@13f2
+a5 03	// SUB, core_rd[ 2]=-24111, core_rs[ 1]=-23670, core_rt[13]=  441
+@13f4
+0a 19	// ADD, core_rd[ 5]=16480, core_rs[12]=16459, core_rt[ 8]=   21
+@13f6
+7b 02	// SUB, core_rd[13]= -920, core_rs[ 1]=-23670, core_rt[ 3]=-22750
+@13f8
+b0 08	// ADD, core_rd[ 8]=25741, core_rs[ 4]= 9261, core_rt[ 5]=16480
+@13fa
+93 14	// SUB, core_rd[ 9]=-9261, core_rs[10]=    0, core_rt[ 4]= 9261
+@13fc
+fc 1d	// ADD, core_rd[14]=  508, core_rs[14]=  478, core_rt[15]=   30
+@13fe
+72 7d	// Store, core_rt[11]=11643, core_rs[14]=  508, immediate= -14, DRAM=@13dc, DRAM[13dc]=11643
+@1400
+16 1a	// ADD, core_rd[11]=18400, core_rs[13]= -920, core_rt[ 0]=19320
+@1402
+47 02	// SUB, core_rd[ 3]=  441, core_rs[ 1]=-23670, core_rt[ 2]=-24111
+@1404
+52 0a	// ADD, core_rd[ 9]=-7631, core_rs[ 5]=16480, core_rt[ 2]=-24111
+@1406
+6d 17	// SUB, core_rd[ 6]=    0, core_rs[11]=18400, core_rt[11]=18400
+@1408
+71 0e	// SUB, core_rd[ 8]=-11795, core_rs[ 7]=-11354, core_rt[ 3]=  441
+@140a
+4f 0d	// SUB, core_rd[ 7]=    0, core_rs[ 6]=    0, core_rt[10]=    0
+@140c
+45 0f	// SUB, core_rd[ 2]=    0, core_rs[ 7]=    0, core_rt[10]=    0
+@140e
+97 19	// SUB, core_rd[11]=    0, core_rs[12]=16459, core_rt[12]=16459
+@1410
+45 06	// SUB, core_rd[ 2]=  441, core_rs[ 3]=  441, core_rt[ 2]=    0
+@1412
+a7 1b	// SUB, core_rd[ 3]=    0, core_rs[13]= -920, core_rt[13]= -920
+@1414
+37 11	// SUB, core_rd[11]=-4164, core_rs[ 8]=-11795, core_rt[ 9]=-7631
+@1416
+e1 14	// SUB, core_rd[ 0]=    0, core_rs[10]=    0, core_rt[ 7]=    0
+@1418
+0c 06	// ADD, core_rd[ 6]=    0, core_rs[ 3]=    0, core_rt[ 0]=    0
+@141a
+2d 0d	// SUB, core_rd[ 6]= 7631, core_rs[ 6]=    0, core_rt[ 9]=-7631
+@141c
+43 08	// SUB, core_rd[ 1]= 8820, core_rs[ 4]= 9261, core_rt[ 2]=  441
+@141e
+fc 1d	// ADD, core_rd[14]=  538, core_rs[14]=  508, core_rt[15]=   30
+@1420
+46 b4	// Jump, p= 528, address=  40, pc=@1446
+@1422
+48 b4	// Jump, p= 529, address=  40, pc=@1448
+@1424
+00 00	// Jump Skip
+@1426
+00 00	// Jump Skip
+@1428
+00 00	// Jump Skip
+@142a
+00 00	// Jump Skip
+@142c
+00 00	// Jump Skip
+@142e
+00 00	// Jump Skip
+@1430
+00 00	// Jump Skip
+@1432
+00 00	// Jump Skip
+@1434
+00 00	// Jump Skip
+@1436
+00 00	// Jump Skip
+@1438
+00 00	// Jump Skip
+@143a
+00 00	// Jump Skip
+@143c
+00 00	// Jump Skip
+@143e
+00 00	// Jump Skip
+@1440
+00 00	// Jump Skip
+@1442
+00 00	// Jump Skip
+@1444
+00 00	// Jump Skip
+@1446
+22 b4	// Jump, p= 547, address=  40, pc=@1422
+@1448
+f3 1a	// SUB, core_rd[ 9]= -920, core_rs[13]= -920, core_rt[ 7]=    0
+@144a
+85 01	// SUB, core_rd[ 2]=-16459, core_rs[ 0]=    0, core_rt[12]=16459
+@144c
+50 11	// ADD, core_rd[ 8]=-11795, core_rs[ 8]=-11795, core_rt[10]=    0
+@144e
+1b 0b	// SUB, core_rd[13]=28275, core_rs[ 5]=16480, core_rt[ 8]=-11795
+@1450
+94 13	// ADD, core_rd[10]=15539, core_rs[ 9]= -920, core_rt[12]=16459
+@1452
+64 11	// ADD, core_rd[ 2]=-15959, core_rs[ 8]=-11795, core_rt[11]=-4164
+@1454
+91 17	// SUB, core_rd[ 8]=-20623, core_rs[11]=-4164, core_rt[12]=16459
+@1456
+38 06	// ADD, core_rd[12]= 8820, core_rs[ 3]=    0, core_rt[ 1]= 8820
+@1458
+e4 06	// ADD, core_rd[ 2]=    0, core_rs[ 3]=    0, core_rt[ 7]=    0
+@145a
+fc 1d	// ADD, core_rd[14]=  568, core_rs[14]=  538, core_rt[15]=   30
+@145c
+eb 96	// Branch, core_rs[11]=-4164, core_rt[ 7]=    0, immediate=11, pc=@145e
+@145e
+f4 7c	// Store, core_rt[ 7]=    0, core_rs[14]=  568, immediate= -12, DRAM=@1458, DRAM[1458]=    0
+@1460
+8a b4	// Jump, p= 560, address=  44, pc=@148a
+@1462
+8c b4	// Jump, p= 561, address=  44, pc=@148c
+@1464
+00 00	// Jump Skip
+@1466
+00 00	// Jump Skip
+@1468
+00 00	// Jump Skip
+@146a
+00 00	// Jump Skip
+@146c
+00 00	// Jump Skip
+@146e
+00 00	// Jump Skip
+@1470
+00 00	// Jump Skip
+@1472
+00 00	// Jump Skip
+@1474
+00 00	// Jump Skip
+@1476
+00 00	// Jump Skip
+@1478
+00 00	// Jump Skip
+@147a
+00 00	// Jump Skip
+@147c
+00 00	// Jump Skip
+@147e
+00 00	// Jump Skip
+@1480
+00 00	// Jump Skip
+@1482
+00 00	// Jump Skip
+@1484
+00 00	// Jump Skip
+@1486
+00 00	// Jump Skip
+@1488
+00 00	// Jump Skip
+@148a
+62 b4	// Jump, p= 581, address=  44, pc=@1462
+@148c
+db 0a	// SUB, core_rd[13]= 8849, core_rs[ 5]=16480, core_rt[ 6]= 7631
+@148e
+a8 0c	// ADD, core_rd[ 4]=24111, core_rs[ 6]= 7631, core_rt[ 5]=16480
+@1490
+20 18	// ADD, core_rd[ 0]=17640, core_rs[12]= 8820, core_rt[ 1]= 8820
+@1492
+22 00	// ADD, core_rd[ 1]=26460, core_rs[ 0]=17640, core_rt[ 1]= 8820
+@1494
+8a 19	// ADD, core_rd[ 5]=17640, core_rs[12]= 8820, core_rt[12]= 8820
+@1496
+51 16	// SUB, core_rd[ 8]=-4164, core_rs[11]=-4164, core_rt[ 2]=    0
+@1498
+4e 0a	// ADD, core_rd[ 7]=17640, core_rs[ 5]=17640, core_rt[ 2]=    0
+@149a
+fc 1d	// ADD, core_rd[14]=  598, core_rs[14]=  568, core_rt[15]=   30
+@149c
+60 96	// Branch, core_rs[11]=-4164, core_rt[ 3]=    0, immediate= 0, pc=@149e
+@149e
+d3 7c	// Store, core_rt[ 6]= 7631, core_rs[14]=  598, immediate= -13, DRAM=@1492, DRAM[1492]= 7631
+@14a0
+a2 98	// Branch, core_rs[12]= 8820, core_rt[ 5]=17640, immediate= 2, pc=@14a2
+@14a2
+8c 5c	// Load, core_rt[ 4]=    6, core_rs[14]=  598, immediate=  12, DRAM=@14c4
+@14a4
+b9 25	// Mult, core_rd[12]=    0, core_rs[ 2]=    0, core_rt[13]= 8849
+@14a6
+3f 7d	// Store, core_rt[ 9]= -920, core_rs[14]=  598, immediate=  -1, DRAM=@14aa, DRAM[14aa]= -920
+@14a8
+0a 5c	// Load, core_rt[ 0]=    5, core_rs[14]=  598, immediate=  10, DRAM=@14c0
+@14aa
+56 5d	// Load, core_rt[10]=   11, core_rs[14]=  598, immediate= -10, DRAM=@1498
+@14ac
+83 17	// SUB, core_rd[ 1]=-4164, core_rs[11]=-4164, core_rt[12]=    0
+@14ae
+34 10	// ADD, core_rd[10]=-8328, core_rs[ 8]=-4164, core_rt[ 1]=-4164
+@14b0
+25 98	// Branch, core_rs[12]=    0, core_rt[ 1]=-4164, immediate= 5, pc=@14b2
+@14b2
+17 7c	// Store, core_rt[ 0]=    5, core_rs[14]=  598, immediate=  -9, DRAM=@149a, DRAM[149a]=    5
+@14b4
+05 16	// SUB, core_rd[ 2]=-4169, core_rs[11]=-4164, core_rt[ 0]=    5
+@14b6
+9b 31	// Mult, core_rd[13]=    0, core_rs[ 8]=-4164, core_rt[12]=    0
+@14b8
+a2 86	// Branch, core_rs[ 3]=    0, core_rt[ 5]=17640, immediate= 2, pc=@14ba
+@14ba
+3a 1b	// ADD, core_rd[13]= -920, core_rs[13]=    0, core_rt[ 9]= -920
+@14bc
+c0 7c	// Store, core_rt[ 6]= 7631, core_rs[14]=  598, immediate=   0, DRAM=@14ac, DRAM[14ac]= 7631
+@14be
+76 7d	// Store, core_rt[11]=-4164, core_rs[14]=  598, immediate= -10, DRAM=@1498, DRAM[1498]=-4164
+@14c0
+38 0a	// ADD, core_rd[12]=13476, core_rs[ 5]=17640, core_rt[ 1]=-4164
+@14c2
+10 18	// ADD, core_rd[ 8]=13481, core_rs[12]=13476, core_rt[ 0]=    5
+@14c4
+83 0d	// SUB, core_rd[ 1]=-5845, core_rs[ 6]= 7631, core_rt[12]=13476
+@14c6
+5a 13	// ADD, core_rd[13]=-9248, core_rs[ 9]= -920, core_rt[10]=-8328
+@14c8
+01 0c	// SUB, core_rd[ 0]= 7626, core_rs[ 6]= 7631, core_rt[ 0]=    5
+@14ca
+af 02	// SUB, core_rd[ 7]=-23485, core_rs[ 1]=-5845, core_rt[ 5]=17640
+@14cc
+37 01	// SUB, core_rd[11]= 8546, core_rs[ 0]= 7626, core_rt[ 9]= -920
+@14ce
+44 0d	// ADD, core_rd[ 2]= -697, core_rs[ 6]= 7631, core_rt[10]=-8328
+@14d0
+68 16	// ADD, core_rd[ 4]= 8546, core_rs[11]= 8546, core_rt[ 3]=    0
+@14d2
+52 05	// ADD, core_rd[ 9]=-9025, core_rs[ 2]= -697, core_rt[10]=-8328
+@14d4
+27 1a	// SUB, core_rd[ 3]=-3403, core_rs[13]=-9248, core_rt[ 1]=-5845
+@14d6
+db 06	// SUB, core_rd[13]=-11034, core_rs[ 3]=-3403, core_rt[ 6]= 7631
+@14d8
+51 07	// SUB, core_rd[ 8]= 4925, core_rs[ 3]=-3403, core_rt[10]=-8328
+@14da
+fc 1d	// ADD, core_rd[14]=  628, core_rs[14]=  598, core_rt[15]=   30
+@14dc
+6f 04	// SUB, core_rd[ 7]= 2706, core_rs[ 2]= -697, core_rt[ 3]=-3403
+@14de
+ee b4	// Jump, p= 623, address=  18, pc=@14ee
+@14e0
+f0 b4	// Jump, p= 624, address=  18, pc=@14f0
+@14e2
+00 00	// Jump Skip
+@14e4
+00 00	// Jump Skip
+@14e6
+00 00	// Jump Skip
+@14e8
+00 00	// Jump Skip
+@14ea
+00 00	// Jump Skip
+@14ec
+00 00	// Jump Skip
+@14ee
+e0 b4	// Jump, p= 631, address=  18, pc=@14e0
+@14f0
+86 7d	// Store, core_rt[12]=13476, core_rs[14]=  628, immediate=   6, DRAM=@14f4, DRAM[14f4]=13476
+@14f2
+0b 95	// Branch, core_rs[10]=-8328, core_rt[ 8]= 4925, immediate=11, pc=@14f4
+@14f4
+44 93	// Branch, core_rs[ 9]=-9025, core_rt[10]=-8328, immediate= 4, pc=@14f6
+@14f6
+40 95	// Branch, core_rs[10]=-8328, core_rt[10]=-8328, immediate= 0, pc=@14f8
+@14f8
+2d 92	// Branch, core_rs[ 9]=-9025, core_rt[ 1]=-5845, immediate=13, pc=@14fa
+@14fa
+4c 37	// Less than, core_rd[ 6]=    0, core_rs[11]= 8546, core_rt[10]=-8328
+@14fc
+c9 24	// Mult, core_rd[ 4]=    0, core_rs[ 2]= -697, core_rt[ 6]=    0
+@14fe
+61 87	// Branch, core_rs[ 3]=-3403, core_rt[11]= 8546, immediate= 1, pc=@1500
+@1500
+83 2d	// Mult, core_rd[ 1]=    0, core_rs[ 6]=    0, core_rt[12]=13476
+@1502
+84 81	// Branch, core_rs[ 0]= 7626, core_rt[12]=13476, immediate= 4, pc=@1504
+@1504
+fd 5c	// Load, core_rt[ 7]=  -12, core_rs[14]=  628, immediate=  -3, DRAM=@14e2
+@1506
+40 1b	// ADD, core_rd[ 0]=-19362, core_rs[13]=-11034, core_rt[10]=-8328
+@1508
+0e 14	// ADD, core_rd[ 7]=-27690, core_rs[10]=-8328, core_rt[ 0]=-19362
+@150a
+01 10	// SUB, core_rd[ 0]=24287, core_rs[ 8]= 4925, core_rt[ 0]=-19362
+@150c
+6c 0a	// ADD, core_rd[ 6]=14237, core_rs[ 5]=17640, core_rt[ 3]=-3403
+@150e
+85 17	// SUB, core_rd[ 2]=-4930, core_rs[11]= 8546, core_rt[12]=13476
+@1510
+56 1a	// ADD, core_rd[11]=-15964, core_rs[13]=-11034, core_rt[ 2]=-4930
+@1512
+54 19	// ADD, core_rd[10]= 5148, core_rs[12]=13476, core_rt[10]=-8328
+@1514
+aa 1a	// ADD, core_rd[ 5]= 6606, core_rs[13]=-11034, core_rt[ 5]=17640
+@1516
+d5 02	// SUB, core_rd[10]=-14237, core_rs[ 1]=    0, core_rt[ 6]=14237
+@1518
+1a 07	// ADD, core_rd[13]= 1522, core_rs[ 3]=-3403, core_rt[ 8]= 4925
+@151a
+8d 06	// SUB, core_rd[ 6]=-3403, core_rs[ 3]=-3403, core_rt[ 4]=    0
+@151c
+85 15	// SUB, core_rd[ 2]=-27713, core_rs[10]=-14237, core_rt[12]=13476
+@151e
+88 14	// ADD, core_rd[ 4]=-14237, core_rs[10]=-14237, core_rt[ 4]=    0
+@1520
+d9 08	// SUB, core_rd[12]=-10834, core_rs[ 4]=-14237, core_rt[ 6]=-3403
+@1522
+75 0a	// SUB, core_rd[10]=10009, core_rs[ 5]= 6606, core_rt[ 3]=-3403
+@1524
+fc 1d	// ADD, core_rd[14]=  658, core_rs[14]=  628, core_rt[15]=   30
+@1526
+e3 06	// SUB, core_rd[ 1]=24287, core_rs[ 3]=-3403, core_rt[ 7]=-27690
+@1528
+8d 16	// SUB, core_rd[ 6]=-1727, core_rs[11]=-15964, core_rt[ 4]=-14237
+@152a
+65 5d	// Load, core_rt[11]=   11, core_rs[14]=  658, immediate=   5, DRAM=@152e
+@152c
+25 88	// Branch, core_rs[ 4]=-14237, core_rt[ 1]=24287, immediate= 5, pc=@152e
+@152e
+36 03	// ADD, core_rd[11]=15262, core_rs[ 1]=24287, core_rt[ 9]=-9025
+@1530
+93 5d	// Load, core_rt[12]=   19, core_rs[14]=  658, immediate= -13, DRAM=@150a
+@1532
+46 17	// ADD, core_rd[ 3]=25271, core_rs[11]=15262, core_rt[10]=10009
+@1534
+2c 1a	// ADD, core_rd[ 6]=25809, core_rs[13]= 1522, core_rt[ 1]=24287
+@1536
+18 0d	// ADD, core_rd[12]=30734, core_rs[ 6]=25809, core_rt[ 8]= 4925
+@1538
+8f 17	// SUB, core_rd[ 7]=-15472, core_rs[11]=15262, core_rt[12]=30734
+@153a
+98 1a	// ADD, core_rd[12]=-12715, core_rs[13]= 1522, core_rt[ 4]=-14237
+@153c
+b6 14	// ADD, core_rd[11]=16615, core_rs[10]=10009, core_rt[ 5]= 6606
+@153e
+fb 1a	// SUB, core_rd[13]=16994, core_rs[13]= 1522, core_rt[ 7]=-15472
+@1540
+65 0a	// SUB, core_rd[ 2]=-18665, core_rs[ 5]= 6606, core_rt[ 3]=25271
+@1542
+46 06	// ADD, core_rd[ 3]= 6606, core_rs[ 3]=25271, core_rt[ 2]=-18665
+@1544
+a9 07	// SUB, core_rd[ 4]=-10388, core_rs[ 3]= 6606, core_rt[13]=16994
+@1546
+b7 09	// SUB, core_rd[11]=-27382, core_rs[ 4]=-10388, core_rt[13]=16994
+@1548
+e5 0e	// SUB, core_rd[ 2]=    0, core_rs[ 7]=-15472, core_rt[ 7]=-15472
+@154a
+ae 0c	// ADD, core_rd[ 7]=32415, core_rs[ 6]=25809, core_rt[ 5]= 6606
+@154c
+fc 1d	// ADD, core_rd[14]=  688, core_rs[14]=  658, core_rt[15]=   30
+@154e
+56 7c	// Store, core_rt[ 2]=    0, core_rs[14]=  688, immediate= -10, DRAM=@154c, DRAM[154c]=    0
+@1550
+aa 11	// ADD, core_rd[ 5]=21919, core_rs[ 8]= 4925, core_rt[13]=16994
+@1552
+1d 7c	// Store, core_rt[ 0]=24287, core_rs[14]=  688, immediate=  -3, DRAM=@155a, DRAM[155a]=24287
+@1554
+40 89	// Branch, core_rs[ 4]=-10388, core_rt[10]=10009, immediate= 0, pc=@1556
+@1556
+25 05	// SUB, core_rd[ 2]= 9025, core_rs[ 2]=    0, core_rt[ 9]=-9025
+@1558
+9b 1b	// SUB, core_rd[13]=29709, core_rs[13]=16994, core_rt[12]=-12715
+@155a
+92 b5	// Jump, p= 685, address=  58, pc=@1592
+@155c
+94 b5	// Jump, p= 686, address=  58, pc=@1594
+@155e
+00 00	// Jump Skip
+@1560
+00 00	// Jump Skip
+@1562
+00 00	// Jump Skip
+@1564
+00 00	// Jump Skip
+@1566
+00 00	// Jump Skip
+@1568
+00 00	// Jump Skip
+@156a
+00 00	// Jump Skip
+@156c
+00 00	// Jump Skip
+@156e
+00 00	// Jump Skip
+@1570
+00 00	// Jump Skip
+@1572
+00 00	// Jump Skip
+@1574
+00 00	// Jump Skip
+@1576
+00 00	// Jump Skip
+@1578
+00 00	// Jump Skip
+@157a
+00 00	// Jump Skip
+@157c
+00 00	// Jump Skip
+@157e
+00 00	// Jump Skip
+@1580
+00 00	// Jump Skip
+@1582
+00 00	// Jump Skip
+@1584
+00 00	// Jump Skip
+@1586
+00 00	// Jump Skip
+@1588
+00 00	// Jump Skip
+@158a
+00 00	// Jump Skip
+@158c
+00 00	// Jump Skip
+@158e
+00 00	// Jump Skip
+@1590
+00 00	// Jump Skip
+@1592
+5c b5	// Jump, p= 713, address=  58, pc=@155c
+@1594
+2d 1a	// SUB, core_rd[ 6]= 5422, core_rs[13]=29709, core_rt[ 1]=24287
+@1596
+8a 10	// ADD, core_rd[ 5]=-5463, core_rs[ 8]= 4925, core_rt[ 4]=-10388
+@1598
+87 04	// SUB, core_rd[ 3]=19413, core_rs[ 2]= 9025, core_rt[ 4]=-10388
+@159a
+57 13	// SUB, core_rd[11]=-19034, core_rs[ 9]=-9025, core_rt[10]=10009
+@159c
+88 11	// ADD, core_rd[ 4]=-7790, core_rs[ 8]= 4925, core_rt[12]=-12715
+@159e
+2e 10	// ADD, core_rd[ 7]=29212, core_rs[ 8]= 4925, core_rt[ 1]=24287
+@15a0
+87 0b	// SUB, core_rd[ 3]= 7252, core_rs[ 5]=-5463, core_rt[12]=-12715
+@15a2
+fc 1d	// ADD, core_rd[14]=  718, core_rs[14]=  688, core_rt[15]=   30
+@15a4
+83 10	// SUB, core_rd[ 1]=12715, core_rs[ 8]= 4925, core_rt[ 4]=-7790
+@15a6
+21 92	// Branch, core_rs[ 9]=-9025, core_rt[ 1]=12715, immediate= 1, pc=@15a8
+@15a8
+b4 39	// Less than, core_rd[10]=    1, core_rs[12]=-12715, core_rt[13]=29709
+@15aa
+90 7d	// Store, core_rt[12]=-12715, core_rs[14]=  718, immediate= -16, DRAM=@157c, DRAM[157c]=-12715
+@15ac
+32 13	// ADD, core_rd[ 9]=-18050, core_rs[ 9]=-9025, core_rt[ 9]=-9025
+@15ae
+6e 05	// ADD, core_rd[ 7]=-10009, core_rs[ 2]= 9025, core_rt[11]=-19034
+@15b0
+3a 09	// ADD, core_rd[13]=-25840, core_rs[ 4]=-7790, core_rt[ 9]=-18050
+@15b2
+e4 16	// ADD, core_rd[ 2]=-29043, core_rs[11]=-19034, core_rt[ 7]=-10009
+@15b4
+9b 19	// SUB, core_rd[13]=    0, core_rs[12]=-12715, core_rt[12]=-12715
+@15b6
+a1 01	// SUB, core_rd[ 0]=24287, core_rs[ 0]=24287, core_rt[13]=    0
+@15b8
+d8 04	// ADD, core_rd[12]=-23621, core_rs[ 2]=-29043, core_rt[ 6]= 5422
+@15ba
+c5 06	// SUB, core_rd[ 2]= 1830, core_rs[ 3]= 7252, core_rt[ 6]= 5422
+@15bc
+34 18	// ADD, core_rd[10]=-10906, core_rs[12]=-23621, core_rt[ 1]=12715
+@15be
+fc 1d	// ADD, core_rd[14]=  748, core_rs[14]=  718, core_rt[15]=   30
+@15c0
+9b 5c	// Load, core_rt[ 4]=    4, core_rs[14]=  748, immediate=  -5, DRAM=@15ce
+@15c2
+61 3b	// Mult, core_rd[ 0]=    0, core_rs[13]=    0, core_rt[11]=-19034
+@15c4
+7b 5c	// Load, core_rt[ 3]=    4, core_rs[14]=  748, immediate=  -5, DRAM=@15ce
+@15c6
+17 38	// Mult, core_rd[11]=    0, core_rs[12]=-23621, core_rt[ 0]=    0
+@15c8
+fe b5	// Jump, p= 740, address=  56, pc=@15fe
+@15ca
+00 b6	// Jump, p= 741, address=  56, pc=@1600
+@15cc
+00 00	// Jump Skip
+@15ce
+00 00	// Jump Skip
+@15d0
+00 00	// Jump Skip
+@15d2
+00 00	// Jump Skip
+@15d4
+00 00	// Jump Skip
+@15d6
+00 00	// Jump Skip
+@15d8
+00 00	// Jump Skip
+@15da
+00 00	// Jump Skip
+@15dc
+00 00	// Jump Skip
+@15de
+00 00	// Jump Skip
+@15e0
+00 00	// Jump Skip
+@15e2
+00 00	// Jump Skip
+@15e4
+00 00	// Jump Skip
+@15e6
+00 00	// Jump Skip
+@15e8
+00 00	// Jump Skip
+@15ea
+00 00	// Jump Skip
+@15ec
+00 00	// Jump Skip
+@15ee
+00 00	// Jump Skip
+@15f0
+00 00	// Jump Skip
+@15f2
+00 00	// Jump Skip
+@15f4
+00 00	// Jump Skip
+@15f6
+00 00	// Jump Skip
+@15f8
+00 00	// Jump Skip
+@15fa
+00 00	// Jump Skip
+@15fc
+00 00	// Jump Skip
+@15fe
+ca b5	// Jump, p= 767, address=  56, pc=@15ca
+@1600
+49 13	// SUB, core_rd[ 4]=-7144, core_rs[ 9]=-18050, core_rt[10]=-10906
+@1602
+15 01	// SUB, core_rd[10]=-4925, core_rs[ 0]=    0, core_rt[ 8]= 4925
+@1604
+18 0d	// ADD, core_rd[12]=10347, core_rs[ 6]= 5422, core_rt[ 8]= 4925
+@1606
+d4 06	// ADD, core_rd[10]= 5426, core_rs[ 3]=    4, core_rt[ 6]= 5422
+@1608
+d1 08	// SUB, core_rd[ 8]=-12566, core_rs[ 4]=-7144, core_rt[ 6]= 5422
+@160a
+a2 01	// ADD, core_rd[ 1]=    0, core_rs[ 0]=    0, core_rt[13]=    0
+@160c
+57 10	// SUB, core_rd[11]=-14396, core_rs[ 8]=-12566, core_rt[ 2]= 1830
+@160e
+ec 16	// ADD, core_rd[ 6]=-24405, core_rs[11]=-14396, core_rt[ 7]=-10009
+@1610
+fc 1d	// ADD, core_rd[14]=  778, core_rs[14]=  748, core_rt[15]=   30
+@1612
+89 3b	// Mult, core_rd[ 4]=    0, core_rs[13]=    0, core_rt[12]=10347
+@1614
+64 22	// Less than, core_rd[ 2]=    1, core_rs[ 1]=    0, core_rt[ 3]=    4
+@1616
+34 b6	// Jump, p= 779, address=  32, pc=@1634
+@1618
+36 b6	// Jump, p= 780, address=  32, pc=@1636
+@161a
+00 00	// Jump Skip
+@161c
+00 00	// Jump Skip
+@161e
+00 00	// Jump Skip
+@1620
+00 00	// Jump Skip
+@1622
+00 00	// Jump Skip
+@1624
+00 00	// Jump Skip
+@1626
+00 00	// Jump Skip
+@1628
+00 00	// Jump Skip
+@162a
+00 00	// Jump Skip
+@162c
+00 00	// Jump Skip
+@162e
+00 00	// Jump Skip
+@1630
+00 00	// Jump Skip
+@1632
+00 00	// Jump Skip
+@1634
+18 b6	// Jump, p= 794, address=  32, pc=@1618
+@1636
+0f 08	// SUB, core_rd[ 7]=    0, core_rs[ 4]=    0, core_rt[ 0]=    0
+@1638
+02 18	// ADD, core_rd[ 1]=10347, core_rs[12]=10347, core_rt[ 0]=    0
+@163a
+0a 11	// ADD, core_rd[ 5]=-25132, core_rs[ 8]=-12566, core_rt[ 8]=-12566
+@163c
+48 00	// ADD, core_rd[ 4]=    1, core_rs[ 0]=    0, core_rt[ 2]=    1
+@163e
+f1 04	// SUB, core_rd[ 8]=    1, core_rs[ 2]=    1, core_rt[ 7]=    0
+@1640
+37 03	// SUB, core_rd[11]=28397, core_rs[ 1]=10347, core_rt[ 9]=-18050
+@1642
+00 00	// ADD, core_rd[ 0]=    0, core_rs[ 0]=    0, core_rt[ 0]=    0
+@1644
+a1 05	// SUB, core_rd[ 0]=    1, core_rs[ 2]=    1, core_rt[13]=    0
+@1646
+39 0e	// SUB, core_rd[12]=-10347, core_rs[ 7]=    0, core_rt[ 1]=10347
+@1648
+17 15	// SUB, core_rd[11]= 5425, core_rs[10]= 5426, core_rt[ 8]=    1
+@164a
+20 0a	// ADD, core_rd[ 0]=-14785, core_rs[ 5]=-25132, core_rt[ 1]=10347
+@164c
+fc 1d	// ADD, core_rd[14]=  808, core_rs[14]=  778, core_rt[15]=   30
+@164e
+0f 24	// Mult, core_rd[ 7]=-14785, core_rs[ 2]=    1, core_rt[ 0]=-14785
+@1650
+64 b6	// Jump, p= 808, address=  22, pc=@1664
+@1652
+66 b6	// Jump, p= 809, address=  22, pc=@1666
+@1654
+00 00	// Jump Skip
+@1656
+00 00	// Jump Skip
+@1658
+00 00	// Jump Skip
+@165a
+00 00	// Jump Skip
+@165c
+00 00	// Jump Skip
+@165e
+00 00	// Jump Skip
+@1660
+00 00	// Jump Skip
+@1662
+00 00	// Jump Skip
+@1664
+52 b6	// Jump, p= 818, address=  22, pc=@1652
+@1666
+ac 06	// ADD, core_rd[ 6]=-25128, core_rs[ 3]=    4, core_rt[ 5]=-25132
+@1668
+78 1a	// ADD, core_rd[12]=    4, core_rs[13]=    0, core_rt[ 3]=    4
+@166a
+b7 0b	// SUB, core_rd[11]=-25132, core_rs[ 5]=-25132, core_rt[13]=    0
+@166c
+ac 08	// ADD, core_rd[ 6]=-25131, core_rs[ 4]=    1, core_rt[ 5]=-25132
+@166e
+31 01	// SUB, core_rd[ 8]= 3265, core_rs[ 0]=-14785, core_rt[ 9]=-18050
+@1670
+e2 0e	// ADD, core_rd[ 1]=-29570, core_rs[ 7]=-14785, core_rt[ 7]=-14785
+@1672
+ea 06	// ADD, core_rd[ 5]=-14781, core_rs[ 3]=    4, core_rt[ 7]=-14785
+@1674
+6e 12	// ADD, core_rd[ 7]=-18046, core_rs[ 9]=-18050, core_rt[ 3]=    4
+@1676
+87 0e	// SUB, core_rd[ 3]=-18047, core_rs[ 7]=-18046, core_rt[ 4]=    1
+@1678
+4c 08	// ADD, core_rd[ 6]=    2, core_rs[ 4]=    1, core_rt[ 2]=    1
+@167a
+4f 11	// SUB, core_rd[ 7]=-2161, core_rs[ 8]= 3265, core_rt[10]= 5426
+@167c
+97 0c	// SUB, core_rd[11]=    1, core_rs[ 6]=    2, core_rt[ 4]=    1
+@167e
+a7 05	// SUB, core_rd[ 3]=    1, core_rs[ 2]=    1, core_rt[13]=    0
+@1680
+0b 14	// SUB, core_rd[ 5]=20211, core_rs[10]= 5426, core_rt[ 0]=-14785
+@1682
+92 1b	// ADD, core_rd[ 9]=    4, core_rs[13]=    0, core_rt[12]=    4
+@1684
+01 06	// SUB, core_rd[ 0]=14786, core_rs[ 3]=    1, core_rt[ 0]=-14785
+@1686
+73 19	// SUB, core_rd[ 9]=    3, core_rs[12]=    4, core_rt[11]=    1
+@1688
+fc 1d	// ADD, core_rd[14]=  838, core_rs[14]=  808, core_rt[15]=   30
+@168a
+d0 7c	// Store, core_rt[ 6]=    2, core_rs[14]=  838, immediate= -16, DRAM=@166c, DRAM[166c]=    2
+@168c
+2e 1b	// ADD, core_rd[ 7]=    3, core_rs[13]=    0, core_rt[ 9]=    3
+@168e
+62 11	// ADD, core_rd[ 1]= 3266, core_rs[ 8]= 3265, core_rt[11]=    1
+@1690
+e6 04	// ADD, core_rd[ 3]=    4, core_rs[ 2]=    1, core_rt[ 7]=    3
+@1692
+e2 0c	// ADD, core_rd[ 1]=    5, core_rs[ 6]=    2, core_rt[ 7]=    3
+@1694
+78 18	// ADD, core_rd[12]=    8, core_rs[12]=    4, core_rt[ 3]=    4
+@1696
+53 16	// SUB, core_rd[ 9]=    0, core_rs[11]=    1, core_rt[ 2]=    1
+@1698
+8e 04	// ADD, core_rd[ 7]=    2, core_rs[ 2]=    1, core_rt[ 4]=    1
+@169a
+67 0a	// SUB, core_rd[ 3]=20207, core_rs[ 5]=20211, core_rt[ 3]=    4
+@169c
+02 01	// ADD, core_rd[ 1]=18051, core_rs[ 0]=14786, core_rt[ 8]= 3265
+@169e
+04 14	// ADD, core_rd[ 2]=20212, core_rs[10]= 5426, core_rt[ 0]=14786
+@16a0
+2a 16	// ADD, core_rd[ 5]=18052, core_rs[11]=    1, core_rt[ 1]=18051
+@16a2
+16 0d	// ADD, core_rd[11]= 3267, core_rs[ 6]=    2, core_rt[ 8]= 3265
+@16a4
+d8 06	// ADD, core_rd[12]=20209, core_rs[ 3]=20207, core_rt[ 6]=    2
+@16a6
+d9 10	// SUB, core_rd[12]= 3263, core_rs[ 8]= 3265, core_rt[ 6]=    2
+@16a8
+6a 0c	// ADD, core_rd[ 5]=20209, core_rs[ 6]=    2, core_rt[ 3]=20207
+@16aa
+d8 06	// ADD, core_rd[12]=20209, core_rs[ 3]=20207, core_rt[ 6]=    2
+@16ac
+d7 12	// SUB, core_rd[11]=   -2, core_rs[ 9]=    0, core_rt[ 6]=    2
+@16ae
+fc 1d	// ADD, core_rd[14]=  868, core_rs[14]=  838, core_rt[15]=   30
+@16b0
+c7 8c	// Branch, core_rs[ 6]=    2, core_rt[ 6]=    2, immediate= 7, pc=@16c0
+@16b2
+00 00	// Branch Skip
+@16b4
+00 00	// Branch Skip
+@16b6
+00 00	// Branch Skip
+@16b8
+00 00	// Branch Skip
+@16ba
+00 00	// Branch Skip
+@16bc
+00 00	// Branch Skip
+@16be
+00 00	// Branch Skip
+@16c0
+1d 5c	// Load, core_rt[ 0]=   14, core_rs[14]=  868, immediate=  -3, DRAM=@16c2
+@16c2
+4b 0a	// SUB, core_rd[ 5]=   -3, core_rs[ 5]=20209, core_rt[ 2]=20212
+@16c4
+16 07	// ADD, core_rd[11]=23472, core_rs[ 3]=20207, core_rt[ 8]= 3265
+@16c6
+0c 09	// ADD, core_rd[ 6]= 3266, core_rs[ 4]=    1, core_rt[ 8]= 3265
+@16c8
+ea 8c	// Branch, core_rs[ 6]= 3266, core_rt[ 7]=    2, immediate=10, pc=@16ca
+@16ca
+f0 b6	// Jump, p= 869, address=  40, pc=@16f0
+@16cc
+f2 b6	// Jump, p= 870, address=  40, pc=@16f2
+@16ce
+00 00	// Jump Skip
+@16d0
+00 00	// Jump Skip
+@16d2
+00 00	// Jump Skip
+@16d4
+00 00	// Jump Skip
+@16d6
+00 00	// Jump Skip
+@16d8
+00 00	// Jump Skip
+@16da
+00 00	// Jump Skip
+@16dc
+00 00	// Jump Skip
+@16de
+00 00	// Jump Skip
+@16e0
+00 00	// Jump Skip
+@16e2
+00 00	// Jump Skip
+@16e4
+00 00	// Jump Skip
+@16e6
+00 00	// Jump Skip
+@16e8
+00 00	// Jump Skip
+@16ea
+00 00	// Jump Skip
+@16ec
+00 00	// Jump Skip
+@16ee
+00 00	// Jump Skip
+@16f0
+cc b6	// Jump, p= 888, address=  40, pc=@16cc
+@16f2
+39 0d	// SUB, core_rd[12]= 3266, core_rs[ 6]= 3266, core_rt[ 9]=    0
+@16f4
+63 9b	// Branch, core_rs[13]=    0, core_rt[11]=23472, immediate= 3, pc=@16f6
+@16f6
+89 19	// SUB, core_rd[ 4]=    0, core_rs[12]= 3266, core_rt[12]= 3266
+@16f8
+71 0d	// SUB, core_rd[ 8]=-20206, core_rs[ 6]= 3266, core_rt[11]=23472
+@16fa
+60 00	// ADD, core_rd[ 0]=20221, core_rs[ 0]=   14, core_rt[ 3]=20207
+@16fc
+1b 0a	// SUB, core_rd[13]=-20224, core_rs[ 5]=   -3, core_rt[ 0]=20221
+@16fe
+2f 13	// SUB, core_rd[ 7]=    0, core_rs[ 9]=    0, core_rt[ 9]=    0
+@1700
+b4 06	// ADD, core_rd[10]=20204, core_rs[ 3]=20207, core_rt[ 5]=   -3
+@1702
+8b 07	// SUB, core_rd[ 5]=16941, core_rs[ 3]=20207, core_rt[12]= 3266
+@1704
+99 0e	// SUB, core_rd[12]=    0, core_rs[ 7]=    0, core_rt[ 4]=    0
+@1706
+96 0b	// ADD, core_rd[11]=16941, core_rs[ 5]=16941, core_rt[12]=    0
+@1708
+6c 10	// ADD, core_rd[ 6]=    1, core_rs[ 8]=-20206, core_rt[ 3]=20207
+@170a
+e4 08	// ADD, core_rd[ 2]=    0, core_rs[ 4]=    0, core_rt[ 7]=    0
+@170c
+ac 18	// ADD, core_rd[ 6]=16941, core_rs[12]=    0, core_rt[ 5]=16941
+@170e
+ea 18	// ADD, core_rd[ 5]=    0, core_rs[12]=    0, core_rt[ 7]=    0
+@1710
+fc 1d	// ADD, core_rd[14]=  898, core_rs[14]=  868, core_rt[15]=   30
+@1712
+4e b7	// Jump, p= 905, address=  62, pc=@174e
+@1714
+50 b7	// Jump, p= 906, address=  62, pc=@1750
+@1716
+00 00	// Jump Skip
+@1718
+00 00	// Jump Skip
+@171a
+00 00	// Jump Skip
+@171c
+00 00	// Jump Skip
+@171e
+00 00	// Jump Skip
+@1720
+00 00	// Jump Skip
+@1722
+00 00	// Jump Skip
+@1724
+00 00	// Jump Skip
+@1726
+00 00	// Jump Skip
+@1728
+00 00	// Jump Skip
+@172a
+00 00	// Jump Skip
+@172c
+00 00	// Jump Skip
+@172e
+00 00	// Jump Skip
+@1730
+00 00	// Jump Skip
+@1732
+00 00	// Jump Skip
+@1734
+00 00	// Jump Skip
+@1736
+00 00	// Jump Skip
+@1738
+00 00	// Jump Skip
+@173a
+00 00	// Jump Skip
+@173c
+00 00	// Jump Skip
+@173e
+00 00	// Jump Skip
+@1740
+00 00	// Jump Skip
+@1742
+00 00	// Jump Skip
+@1744
+00 00	// Jump Skip
+@1746
+00 00	// Jump Skip
+@1748
+00 00	// Jump Skip
+@174a
+00 00	// Jump Skip
+@174c
+00 00	// Jump Skip
+@174e
+14 b7	// Jump, p= 935, address=  62, pc=@1714
+@1750
+fc 1d	// ADD, core_rd[14]=  928, core_rs[14]=  898, core_rt[15]=   30
+@1752
+6e b7	// Jump, p= 937, address=  30, pc=@176e
+@1754
+70 b7	// Jump, p= 938, address=  30, pc=@1770
+@1756
+00 00	// Jump Skip
+@1758
+00 00	// Jump Skip
+@175a
+00 00	// Jump Skip
+@175c
+00 00	// Jump Skip
+@175e
+00 00	// Jump Skip
+@1760
+00 00	// Jump Skip
+@1762
+00 00	// Jump Skip
+@1764
+00 00	// Jump Skip
+@1766
+00 00	// Jump Skip
+@1768
+00 00	// Jump Skip
+@176a
+00 00	// Jump Skip
+@176c
+00 00	// Jump Skip
+@176e
+54 b7	// Jump, p= 951, address=  30, pc=@1754
+@1770
+72 12	// ADD, core_rd[ 9]=20207, core_rs[ 9]=    0, core_rt[ 3]=20207
+@1772
+80 0a	// ADD, core_rd[ 0]=    0, core_rs[ 5]=    0, core_rt[ 4]=    0
+@1774
+8b 0f	// SUB, core_rd[ 5]=    0, core_rs[ 7]=    0, core_rt[12]=    0
+@1776
+89 07	// SUB, core_rd[ 4]=20207, core_rs[ 3]=20207, core_rt[12]=    0
+@1778
+e0 08	// ADD, core_rd[ 0]=20207, core_rs[ 4]=20207, core_rt[ 7]=    0
+@177a
+0d 11	// SUB, core_rd[ 6]=    0, core_rs[ 8]=-20206, core_rt[ 8]=-20206
+@177c
+d8 18	// ADD, core_rd[12]=    0, core_rs[12]=    0, core_rt[ 6]=    0
+@177e
+93 06	// SUB, core_rd[ 9]=    0, core_rs[ 3]=20207, core_rt[ 4]=20207
+@1780
+61 12	// SUB, core_rd[ 0]=-20207, core_rs[ 9]=    0, core_rt[ 3]=20207
+@1782
+97 1b	// SUB, core_rd[11]=-20224, core_rs[13]=-20224, core_rt[12]=    0
+@1784
+ad 12	// SUB, core_rd[ 6]=    0, core_rs[ 9]=    0, core_rt[ 5]=    0
+@1786
+44 1b	// ADD, core_rd[ 2]=  -20, core_rs[13]=-20224, core_rt[10]=20204
+@1788
+fc 1d	// ADD, core_rd[14]=  958, core_rs[14]=  928, core_rt[15]=   30
+@178a
+ac b7	// Jump, p= 965, address=  36, pc=@17ac
+@178c
+ae b7	// Jump, p= 966, address=  36, pc=@17ae
+@178e
+00 00	// Jump Skip
+@1790
+00 00	// Jump Skip
+@1792
+00 00	// Jump Skip
+@1794
+00 00	// Jump Skip
+@1796
+00 00	// Jump Skip
+@1798
+00 00	// Jump Skip
+@179a
+00 00	// Jump Skip
+@179c
+00 00	// Jump Skip
+@179e
+00 00	// Jump Skip
+@17a0
+00 00	// Jump Skip
+@17a2
+00 00	// Jump Skip
+@17a4
+00 00	// Jump Skip
+@17a6
+00 00	// Jump Skip
+@17a8
+00 00	// Jump Skip
+@17aa
+00 00	// Jump Skip
+@17ac
+8c b7	// Jump, p= 982, address=  36, pc=@178c
+@17ae
+b9 01	// SUB, core_rd[12]=   17, core_rs[ 0]=-20207, core_rt[13]=-20224
+@17b0
+01 11	// SUB, core_rd[ 0]=    0, core_rs[ 8]=-20206, core_rt[ 8]=-20206
+@17b2
+0d 0c	// SUB, core_rd[ 6]=    0, core_rs[ 6]=    0, core_rt[ 0]=    0
+@17b4
+35 14	// SUB, core_rd[10]= 2153, core_rs[10]=20204, core_rt[ 1]=18051
+@17b6
+a9 17	// SUB, core_rd[ 4]=    0, core_rs[11]=-20224, core_rt[13]=-20224
+@17b8
+9b 10	// SUB, core_rd[13]=-20206, core_rs[ 8]=-20206, core_rt[ 4]=    0
+@17ba
+42 06	// ADD, core_rd[ 1]=20187, core_rs[ 3]=20207, core_rt[ 2]=  -20
+@17bc
+48 05	// ADD, core_rd[ 4]= 2133, core_rs[ 2]=  -20, core_rt[10]= 2153
+@17be
+a8 0f	// ADD, core_rd[ 4]=-20206, core_rs[ 7]=    0, core_rt[13]=-20206
+@17c0
+51 01	// SUB, core_rd[ 8]=-2153, core_rs[ 0]=    0, core_rt[10]= 2153
+@17c2
+a4 06	// ADD, core_rd[ 2]=20207, core_rs[ 3]=20207, core_rt[ 5]=    0
+@17c4
+fc 1d	// ADD, core_rd[14]=  988, core_rs[14]=  958, core_rt[15]=   30
+@17c6
+90 06	// ADD, core_rd[ 8]=    1, core_rs[ 3]=20207, core_rt[ 4]=-20206
+@17c8
+f0 b7	// Jump, p= 996, address=  42, pc=@17f0
+@17ca
+f2 b7	// Jump, p= 997, address=  42, pc=@17f2
+@17cc
+00 00	// Jump Skip
+@17ce
+00 00	// Jump Skip
+@17d0
+00 00	// Jump Skip
+@17d2
+00 00	// Jump Skip
+@17d4
+00 00	// Jump Skip
+@17d6
+00 00	// Jump Skip
+@17d8
+00 00	// Jump Skip
+@17da
+00 00	// Jump Skip
+@17dc
+00 00	// Jump Skip
+@17de
+00 00	// Jump Skip
+@17e0
+00 00	// Jump Skip
+@17e2
+00 00	// Jump Skip
+@17e4
+00 00	// Jump Skip
+@17e6
+00 00	// Jump Skip
+@17e8
+00 00	// Jump Skip
+@17ea
+00 00	// Jump Skip
+@17ec
+00 00	// Jump Skip
+@17ee
+00 00	// Jump Skip
+@17f0
+ca b7	// Jump, p=1016, address=  42, pc=@17ca
+@17f2
+a9 09	// SUB, core_rd[ 4]=    0, core_rs[ 4]=-20206, core_rt[13]=-20206
+@17f4
+6c 1a	// ADD, core_rd[ 6]=    1, core_rs[13]=-20206, core_rt[ 3]=20207
+@17f6
+79 1b	// SUB, core_rd[12]=   18, core_rs[13]=-20206, core_rt[11]=-20224
+@17f8
+08 17	// ADD, core_rd[ 4]=-20223, core_rs[11]=-20224, core_rt[ 8]=    1
+@17fa
+16 01	// ADD, core_rd[11]=    1, core_rs[ 0]=    0, core_rt[ 8]=    1
+@17fc
+5b 0c	// SUB, core_rd[13]=-20206, core_rs[ 6]=    1, core_rt[ 2]=20207
+@17fe
+8e 0a	// ADD, core_rd[ 7]=-20223, core_rs[ 5]=    0, core_rt[ 4]=-20223
+@1800
+fc 1d	// ADD, core_rd[14]= 1018, core_rs[14]=  988, core_rt[15]=   30
+@1802
+59 31	// Mult, core_rd[12]= 2153, core_rs[ 8]=    1, core_rt[10]= 2153
+@1804
+22 8b	// Branch, core_rs[ 5]=    0, core_rt[ 9]=    0, immediate= 2, pc=@180a
+@1806
+00 00	// Branch Skip
+@1808
+00 00	// Branch Skip
+@180a
+15 5c	// Load, core_rt[ 0]=   -9, core_rs[14]= 1018, immediate= -11, DRAM=@17de
+@180c
+a9 10	// SUB, core_rd[ 4]=    1, core_rs[ 8]=    1, core_rt[ 5]=    0
+@180e
+d5 02	// SUB, core_rd[10]=20186, core_rs[ 1]=20187, core_rt[ 6]=    1
+@1810
+60 0a	// ADD, core_rd[ 0]=20207, core_rs[ 5]=    0, core_rt[ 3]=20207
+@1812
+6f 09	// SUB, core_rd[ 7]=    0, core_rs[ 4]=    1, core_rt[11]=    1
+@1814
+57 15	// SUB, core_rd[11]=    0, core_rs[10]=20186, core_rt[10]=20186
+@1816
+a8 15	// ADD, core_rd[ 4]=  -20, core_rs[10]=20186, core_rt[13]=-20206
+@1818
+05 0f	// SUB, core_rd[ 2]=   -1, core_rs[ 7]=    0, core_rt[ 8]=    1
+@181a
+a5 04	// SUB, core_rd[ 2]=   -1, core_rs[ 2]=   -1, core_rt[ 5]=    0
+@181c
+4c 0c	// ADD, core_rd[ 6]=    0, core_rs[ 6]=    1, core_rt[ 2]=   -1
+@181e
+26 18	// ADD, core_rd[ 3]=22340, core_rs[12]= 2153, core_rt[ 1]=20187
+@1820
+fc 1d	// ADD, core_rd[14]= 1048, core_rs[14]= 1018, core_rt[15]=   30
+@1822
+63 17	// SUB, core_rd[ 1]=    0, core_rs[11]=    0, core_rt[11]=    0
+@1824
+4c b8	// Jump, p=1042, address=  42, pc=@184c
+@1826
+4e b8	// Jump, p=1043, address=  42, pc=@184e
+@1828
+00 00	// Jump Skip
+@182a
+00 00	// Jump Skip
+@182c
+00 00	// Jump Skip
+@182e
+00 00	// Jump Skip
+@1830
+00 00	// Jump Skip
+@1832
+00 00	// Jump Skip
+@1834
+00 00	// Jump Skip
+@1836
+00 00	// Jump Skip
+@1838
+00 00	// Jump Skip
+@183a
+00 00	// Jump Skip
+@183c
+00 00	// Jump Skip
+@183e
+00 00	// Jump Skip
+@1840
+00 00	// Jump Skip
+@1842
+00 00	// Jump Skip
+@1844
+00 00	// Jump Skip
+@1846
+00 00	// Jump Skip
+@1848
+00 00	// Jump Skip
+@184a
+00 00	// Jump Skip
+@184c
+26 b8	// Jump, p=1062, address=  42, pc=@1826
+@184e
+6e 18	// ADD, core_rd[ 7]=24493, core_rs[12]= 2153, core_rt[ 3]=22340
+@1850
+98 15	// ADD, core_rd[12]=22339, core_rs[10]=20186, core_rt[12]= 2153
+@1852
+4a 02	// ADD, core_rd[ 5]=   -1, core_rs[ 1]=    0, core_rt[ 2]=   -1
+@1854
+18 0c	// ADD, core_rd[12]=20207, core_rs[ 6]=    0, core_rt[ 0]=20207
+@1856
+06 0b	// ADD, core_rd[ 3]=    0, core_rs[ 5]=   -1, core_rt[ 8]=    1
+@1858
+58 0e	// ADD, core_rd[12]=24492, core_rs[ 7]=24493, core_rt[ 2]=   -1
+@185a
+9b 1a	// SUB, core_rd[13]=-20186, core_rs[13]=-20206, core_rt[ 4]=  -20
+@185c
+fc 1d	// ADD, core_rd[14]= 1078, core_rs[14]= 1048, core_rt[15]=   30
+@185e
+65 5d	// Load, core_rt[11]=    5, core_rs[14]= 1078, immediate=   5, DRAM=@1876
+@1860
+a6 2f	// Less than, core_rd[ 3]=    0, core_rs[ 7]=24493, core_rt[13]=-20186
+@1862
+3a 5d	// Load, core_rt[ 9]=    2, core_rs[14]= 1078, immediate=  -6, DRAM=@1860
+@1864
+a0 b8	// Jump, p=1074, address=  62, pc=@18a0
+@1866
+a2 b8	// Jump, p=1075, address=  62, pc=@18a2
+@1868
+00 00	// Jump Skip
+@186a
+00 00	// Jump Skip
+@186c
+00 00	// Jump Skip
+@186e
+00 00	// Jump Skip
+@1870
+00 00	// Jump Skip
+@1872
+00 00	// Jump Skip
+@1874
+00 00	// Jump Skip
+@1876
+00 00	// Jump Skip
+@1878
+00 00	// Jump Skip
+@187a
+00 00	// Jump Skip
+@187c
+00 00	// Jump Skip
+@187e
+00 00	// Jump Skip
+@1880
+00 00	// Jump Skip
+@1882
+00 00	// Jump Skip
+@1884
+00 00	// Jump Skip
+@1886
+00 00	// Jump Skip
+@1888
+00 00	// Jump Skip
+@188a
+00 00	// Jump Skip
+@188c
+00 00	// Jump Skip
+@188e
+00 00	// Jump Skip
+@1890
+00 00	// Jump Skip
+@1892
+00 00	// Jump Skip
+@1894
+00 00	// Jump Skip
+@1896
+00 00	// Jump Skip
+@1898
+00 00	// Jump Skip
+@189a
+00 00	// Jump Skip
+@189c
+00 00	// Jump Skip
+@189e
+00 00	// Jump Skip
+@18a0
+66 b8	// Jump, p=1104, address=  62, pc=@1866
+@18a2
+fc 1d	// ADD, core_rd[14]= 1108, core_rs[14]= 1078, core_rt[15]=   30
+@18a4
+83 27	// Mult, core_rd[ 1]=    0, core_rs[ 3]=    0, core_rt[12]=24492
+@18a6
+8d 5c	// Load, core_rt[ 4]=    1, core_rs[14]= 1108, immediate=  13, DRAM=@18c2
+@18a8
+05 5d	// Load, core_rt[ 8]=   -5, core_rs[14]= 1108, immediate=   5, DRAM=@18b2
+@18aa
+1a 5c	// Load, core_rt[ 0]=    3, core_rs[14]= 1108, immediate=  -6, DRAM=@189c
+@18ac
+0c 0d	// ADD, core_rd[ 6]=   -5, core_rs[ 6]=    0, core_rt[ 8]=   -5
+@18ae
+07 5d	// Load, core_rt[ 8]=    4, core_rs[14]= 1108, immediate=   7, DRAM=@18b6
+@18b0
+79 5c	// Load, core_rt[ 3]=   11, core_rs[14]= 1108, immediate=  -7, DRAM=@189a
+@18b2
+08 7c	// Store, core_rt[ 0]=    3, core_rs[14]= 1108, immediate=   8, DRAM=@18b8, DRAM[18b8]=    3
+@18b4
+a4 12	// ADD, core_rd[ 2]=    1, core_rs[ 9]=    2, core_rt[ 5]=   -1
+@18b6
+29 28	// Mult, core_rd[ 4]=    0, core_rs[ 4]=    1, core_rt[ 1]=    0
+@18b8
+a1 8f	// Branch, core_rs[ 7]=24493, core_rt[13]=-20186, immediate= 1, pc=@18ba
+@18ba
+c6 b8	// Jump, p=1117, address=  14, pc=@18c6
+@18bc
+c8 b8	// Jump, p=1118, address=  14, pc=@18c8
+@18be
+00 00	// Jump Skip
+@18c0
+00 00	// Jump Skip
+@18c2
+00 00	// Jump Skip
+@18c4
+00 00	// Jump Skip
+@18c6
+bc b8	// Jump, p=1123, address=  14, pc=@18bc
+@18c8
+c1 5c	// Load, core_rt[ 6]=   16, core_rs[14]= 1108, immediate=   1, DRAM=@18aa
+@18ca
+73 0d	// SUB, core_rd[ 9]=   11, core_rs[ 6]=   16, core_rt[11]=    5
+@18cc
+02 05	// ADD, core_rd[ 1]=    5, core_rs[ 2]=    1, core_rt[ 8]=    4
+@18ce
+98 07	// ADD, core_rd[12]=24503, core_rs[ 3]=   11, core_rt[12]=24492
+@18d0
+81 13	// SUB, core_rd[ 0]=-24492, core_rs[ 9]=   11, core_rt[12]=24503
+@18d2
+a0 17	// ADD, core_rd[ 0]=-20181, core_rs[11]=    5, core_rt[13]=-20186
+@18d4
+bb 13	// SUB, core_rd[13]=20197, core_rs[ 9]=   11, core_rt[13]=-20186
+@18d6
+2b 17	// SUB, core_rd[ 5]=   -6, core_rs[11]=    5, core_rt[ 9]=   11
+@18d8
+ae 10	// ADD, core_rd[ 7]=   -2, core_rs[ 8]=    4, core_rt[ 5]=   -6
+@18da
+61 01	// SUB, core_rd[ 0]=-20186, core_rs[ 0]=-20181, core_rt[11]=    5
+@18dc
+58 1a	// ADD, core_rd[12]=20198, core_rs[13]=20197, core_rt[ 2]=    1
+@18de
+4a 16	// ADD, core_rd[ 5]=    6, core_rs[11]=    5, core_rt[ 2]=    1
+@18e0
+67 1b	// SUB, core_rd[ 3]=20192, core_rs[13]=20197, core_rt[11]=    5
+@18e2
+a3 04	// SUB, core_rd[ 1]=   -5, core_rs[ 2]=    1, core_rt[ 5]=    6
+@18e4
+47 08	// SUB, core_rd[ 3]=   -1, core_rs[ 4]=    0, core_rt[ 2]=    1
+@18e6
+62 01	// ADD, core_rd[ 1]=-20181, core_rs[ 0]=-20186, core_rt[11]=    5
+@18e8
+f8 14	// ADD, core_rd[12]=20184, core_rs[10]=20186, core_rt[ 7]=   -2
+@18ea
+56 08	// ADD, core_rd[11]=    1, core_rs[ 4]=    0, core_rt[ 2]=    1
+@18ec
+fc 1d	// ADD, core_rd[14]= 1138, core_rs[14]= 1108, core_rt[15]=   30
+@18ee
+b5 29	// Mult, core_rd[10]=    0, core_rs[ 4]=    0, core_rt[13]=20197
+@18f0
+e7 28	// Mult, core_rd[ 3]=    0, core_rs[ 4]=    0, core_rt[ 7]=   -2
+@18f2
+e9 88	// Branch, core_rs[ 4]=    0, core_rt[ 7]=   -2, immediate= 9, pc=@18f4
+@18f4
+8d 87	// Branch, core_rs[ 3]=    0, core_rt[12]=20184, immediate=13, pc=@18f6
+@18f6
+12 b9	// Jump, p=1147, address=  30, pc=@1912
+@18f8
+14 b9	// Jump, p=1148, address=  30, pc=@1914
+@18fa
+00 00	// Jump Skip
+@18fc
+00 00	// Jump Skip
+@18fe
+00 00	// Jump Skip
+@1900
+00 00	// Jump Skip
+@1902
+00 00	// Jump Skip
+@1904
+00 00	// Jump Skip
+@1906
+00 00	// Jump Skip
+@1908
+00 00	// Jump Skip
+@190a
+00 00	// Jump Skip
+@190c
+00 00	// Jump Skip
+@190e
+00 00	// Jump Skip
+@1910
+00 00	// Jump Skip
+@1912
+f8 b8	// Jump, p=1161, address=  30, pc=@18f8
+@1914
+e1 7c	// Store, core_rt[ 7]=   -2, core_rs[14]= 1138, immediate=   1, DRAM=@18e6, DRAM[18e6]=   -2
+@1916
+07 08	// SUB, core_rd[ 3]=20186, core_rs[ 4]=    0, core_rt[ 0]=-20186
+@1918
+02 13	// ADD, core_rd[ 1]=   15, core_rs[ 9]=   11, core_rt[ 8]=    4
+@191a
+66 09	// ADD, core_rd[ 3]=    1, core_rs[ 4]=    0, core_rt[11]=    1
+@191c
+ae 02	// ADD, core_rd[ 7]=   21, core_rs[ 1]=   15, core_rt[ 5]=    6
+@191e
+43 13	// SUB, core_rd[ 1]=   11, core_rs[ 9]=   11, core_rt[10]=    0
+@1920
+b8 16	// ADD, core_rd[12]=    7, core_rs[11]=    1, core_rt[ 5]=    6
+@1922
+8f 02	// SUB, core_rd[ 7]=   11, core_rs[ 1]=   11, core_rt[ 4]=    0
+@1924
+ae 07	// ADD, core_rd[ 7]=20198, core_rs[ 3]=    1, core_rt[13]=20197
+@1926
+90 0d	// ADD, core_rd[ 8]=   23, core_rs[ 6]=   16, core_rt[12]=    7
+@1928
+fc 1d	// ADD, core_rd[14]= 1168, core_rs[14]= 1138, core_rt[15]=   30
+@192a
+17 5c	// Load, core_rt[ 0]=   -2, core_rs[14]= 1168, immediate=  -9, DRAM=@190e
+@192c
+5a b9	// Jump, p=1174, address=  48, pc=@195a
+@192e
+5c b9	// Jump, p=1175, address=  48, pc=@195c
+@1930
+00 00	// Jump Skip
+@1932
+00 00	// Jump Skip
+@1934
+00 00	// Jump Skip
+@1936
+00 00	// Jump Skip
+@1938
+00 00	// Jump Skip
+@193a
+00 00	// Jump Skip
+@193c
+00 00	// Jump Skip
+@193e
+00 00	// Jump Skip
+@1940
+00 00	// Jump Skip
+@1942
+00 00	// Jump Skip
+@1944
+00 00	// Jump Skip
+@1946
+00 00	// Jump Skip
+@1948
+00 00	// Jump Skip
+@194a
+00 00	// Jump Skip
+@194c
+00 00	// Jump Skip
+@194e
+00 00	// Jump Skip
+@1950
+00 00	// Jump Skip
+@1952
+00 00	// Jump Skip
+@1954
+00 00	// Jump Skip
+@1956
+00 00	// Jump Skip
+@1958
+00 00	// Jump Skip
+@195a
+2e b9	// Jump, p=1197, address=  48, pc=@192e
+@195c
+fc 1d	// ADD, core_rd[14]= 1198, core_rs[14]= 1168, core_rt[15]=   30
+@195e
+68 19	// ADD, core_rd[ 4]=    8, core_rs[12]=    7, core_rt[11]=    1
+@1960
+6e b9	// Jump, p=1200, address=  16, pc=@196e
+@1962
+70 b9	// Jump, p=1201, address=  16, pc=@1970
+@1964
+00 00	// Jump Skip
+@1966
+00 00	// Jump Skip
+@1968
+00 00	// Jump Skip
+@196a
+00 00	// Jump Skip
+@196c
+00 00	// Jump Skip
+@196e
+62 b9	// Jump, p=1207, address=  16, pc=@1962
+@1970
+28 16	// ADD, core_rd[ 4]=   12, core_rs[11]=    1, core_rt[ 1]=   11
+@1972
+86 11	// ADD, core_rd[ 3]=   30, core_rs[ 8]=   23, core_rt[12]=    7
+@1974
+21 0d	// SUB, core_rd[ 0]=    5, core_rs[ 6]=   16, core_rt[ 9]=   11
+@1976
+70 16	// ADD, core_rd[ 8]=   31, core_rs[11]=    1, core_rt[ 3]=   30
+@1978
+b7 12	// SUB, core_rd[11]=    5, core_rs[ 9]=   11, core_rt[ 5]=    6
+@197a
+14 09	// ADD, core_rd[10]=   43, core_rs[ 4]=   12, core_rt[ 8]=   31
+@197c
+51 0d	// SUB, core_rd[ 8]=  -27, core_rs[ 6]=   16, core_rt[10]=   43
+@197e
+a3 0f	// SUB, core_rd[ 1]=    1, core_rs[ 7]=20198, core_rt[13]=20197
+@1980
+1b 0d	// SUB, core_rd[13]=   43, core_rs[ 6]=   16, core_rt[ 8]=  -27
+@1982
+63 15	// SUB, core_rd[ 1]=   38, core_rs[10]=   43, core_rt[11]=    5
+@1984
+b3 10	// SUB, core_rd[ 9]=  -33, core_rs[ 8]=  -27, core_rt[ 5]=    6
+@1986
+fb 06	// SUB, core_rd[13]=-20168, core_rs[ 3]=   30, core_rt[ 7]=20198
+@1988
+ed 0e	// SUB, core_rd[ 6]=    0, core_rs[ 7]=20198, core_rt[ 7]=20198
+@198a
+75 0c	// SUB, core_rd[10]=  -30, core_rs[ 6]=    0, core_rt[ 3]=   30
+@198c
+fc 1d	// ADD, core_rd[14]= 1228, core_rs[14]= 1198, core_rt[15]=   30
+@198e
+3c 7d	// Store, core_rt[ 9]=  -33, core_rs[14]= 1228, immediate=  -4, DRAM=@1990, DRAM[1990]=  -33
+@1990
+c0 b9	// Jump, p=1224, address=  50, pc=@19c0
+@1992
+c2 b9	// Jump, p=1225, address=  50, pc=@19c2
+@1994
+00 00	// Jump Skip
+@1996
+00 00	// Jump Skip
+@1998
+00 00	// Jump Skip
+@199a
+00 00	// Jump Skip
+@199c
+00 00	// Jump Skip
+@199e
+00 00	// Jump Skip
+@19a0
+00 00	// Jump Skip
+@19a2
+00 00	// Jump Skip
+@19a4
+00 00	// Jump Skip
+@19a6
+00 00	// Jump Skip
+@19a8
+00 00	// Jump Skip
+@19aa
+00 00	// Jump Skip
+@19ac
+00 00	// Jump Skip
+@19ae
+00 00	// Jump Skip
+@19b0
+00 00	// Jump Skip
+@19b2
+00 00	// Jump Skip
+@19b4
+00 00	// Jump Skip
+@19b6
+00 00	// Jump Skip
+@19b8
+00 00	// Jump Skip
+@19ba
+00 00	// Jump Skip
+@19bc
+00 00	// Jump Skip
+@19be
+00 00	// Jump Skip
+@19c0
+92 b9	// Jump, p=1248, address=  50, pc=@1992
+@19c2
+f7 0e	// SUB, core_rd[11]=    0, core_rs[ 7]=20198, core_rt[ 7]=20198
+@19c4
+8c 10	// ADD, core_rd[ 6]=  -15, core_rs[ 8]=  -27, core_rt[ 4]=   12
+@19c6
+b7 11	// SUB, core_rd[11]=20141, core_rs[ 8]=  -27, core_rt[13]=-20168
+@19c8
+12 01	// ADD, core_rd[ 9]=  -22, core_rs[ 0]=    5, core_rt[ 8]=  -27
+@19ca
+95 11	// SUB, core_rd[10]=  -34, core_rs[ 8]=  -27, core_rt[12]=    7
+@19cc
+80 02	// ADD, core_rd[ 0]=   50, core_rs[ 1]=   38, core_rt[ 4]=   12
+@19ce
+0d 0a	// SUB, core_rd[ 6]=  -44, core_rs[ 5]=    6, core_rt[ 0]=   50
+@19d0
+b4 0b	// ADD, core_rd[10]=-20162, core_rs[ 5]=    6, core_rt[13]=-20168
+@19d2
+fc 1d	// ADD, core_rd[14]= 1258, core_rs[14]= 1228, core_rt[15]=   30
+@19d4
+5b 5d	// Load, core_rt[10]=   -9, core_rs[14]= 1258, immediate=  -5, DRAM=@19ca
+@19d6
+39 7c	// Store, core_rt[ 1]=   38, core_rs[14]= 1258, immediate=  -7, DRAM=@19c6, DRAM[19c6]=   38
+@19d8
+ec b9	// Jump, p=1260, address=  22, pc=@19ec
+@19da
+ee b9	// Jump, p=1261, address=  22, pc=@19ee
+@19dc
+00 00	// Jump Skip
+@19de
+00 00	// Jump Skip
+@19e0
+00 00	// Jump Skip
+@19e2
+00 00	// Jump Skip
+@19e4
+00 00	// Jump Skip
+@19e6
+00 00	// Jump Skip
+@19e8
+00 00	// Jump Skip
+@19ea
+00 00	// Jump Skip
+@19ec
+da b9	// Jump, p=1270, address=  22, pc=@19da
+@19ee
+7b 0d	// SUB, core_rd[13]=-20185, core_rs[ 6]=  -44, core_rt[11]=20141
+@19f0
+9b 11	// SUB, core_rd[13]=  -34, core_rs[ 8]=  -27, core_rt[12]=    7
+@19f2
+15 05	// SUB, core_rd[10]=   28, core_rs[ 2]=    1, core_rt[ 8]=  -27
+@19f4
+ef 04	// SUB, core_rd[ 7]=-20197, core_rs[ 2]=    1, core_rt[ 7]=20198
+@19f6
+4a 0b	// ADD, core_rd[ 5]=   34, core_rs[ 5]=    6, core_rt[10]=   28
+@19f8
+71 1b	// SUB, core_rd[ 8]=-20175, core_rs[13]=  -34, core_rt[11]=20141
+@19fa
+45 0c	// SUB, core_rd[ 2]=  -45, core_rs[ 6]=  -44, core_rt[ 2]=    1
+@19fc
+78 0b	// ADD, core_rd[12]=20175, core_rs[ 5]=   34, core_rt[11]=20141
+@19fe
+ab 01	// SUB, core_rd[ 5]=   84, core_rs[ 0]=   50, core_rt[13]=  -34
+@1a00
+bb 1b	// SUB, core_rd[13]=    0, core_rs[13]=  -34, core_rt[13]=  -34
+@1a02
+08 01	// ADD, core_rd[ 4]=-20125, core_rs[ 0]=   50, core_rt[ 8]=-20175
+@1a04
+d6 14	// ADD, core_rd[11]=  -16, core_rs[10]=   28, core_rt[ 6]=  -44
+@1a06
+2d 02	// SUB, core_rd[ 6]=    0, core_rs[ 1]=   38, core_rt[ 1]=   38
+@1a08
+fc 1d	// ADD, core_rd[14]= 1288, core_rs[14]= 1258, core_rt[15]=   30
+@1a0a
+64 85	// Branch, core_rs[ 2]=  -45, core_rt[11]=  -16, immediate= 4, pc=@1a0c
+@1a0c
+14 ba	// Jump, p=1286, address=  10, pc=@1a14
+@1a0e
+16 ba	// Jump, p=1287, address=  10, pc=@1a16
+@1a10
+00 00	// Jump Skip
+@1a12
+00 00	// Jump Skip
+@1a14
+0e ba	// Jump, p=1290, address=  10, pc=@1a0e
+@1a16
+42 7d	// Store, core_rt[10]=   28, core_rs[14]= 1288, immediate=   2, DRAM=@1a14, DRAM[1a14]=   28
+@1a18
+ab 29	// Mult, core_rd[ 5]=    0, core_rs[ 4]=-20125, core_rt[13]=    0
+@1a1a
+95 1a	// SUB, core_rd[10]=20125, core_rs[13]=    0, core_rt[ 4]=-20125
+@1a1c
+3a ba	// Jump, p=1294, address=  32, pc=@1a3a
+@1a1e
+3c ba	// Jump, p=1295, address=  32, pc=@1a3c
+@1a20
+00 00	// Jump Skip
+@1a22
+00 00	// Jump Skip
+@1a24
+00 00	// Jump Skip
+@1a26
+00 00	// Jump Skip
+@1a28
+00 00	// Jump Skip
+@1a2a
+00 00	// Jump Skip
+@1a2c
+00 00	// Jump Skip
+@1a2e
+00 00	// Jump Skip
+@1a30
+00 00	// Jump Skip
+@1a32
+00 00	// Jump Skip
+@1a34
+00 00	// Jump Skip
+@1a36
+00 00	// Jump Skip
+@1a38
+00 00	// Jump Skip
+@1a3a
+1e ba	// Jump, p=1309, address=  32, pc=@1a1e
+@1a3c
+78 03	// ADD, core_rd[12]=   22, core_rs[ 1]=   38, core_rt[11]=  -16
+@1a3e
+98 04	// ADD, core_rd[12]=-20170, core_rs[ 2]=  -45, core_rt[ 4]=-20125
+@1a40
+6c 1a	// ADD, core_rd[ 6]=   30, core_rs[13]=    0, core_rt[ 3]=   30
+@1a42
+22 18	// ADD, core_rd[ 1]=-20132, core_rs[12]=-20170, core_rt[ 1]=   38
+@1a44
+a8 18	// ADD, core_rd[ 4]=-20170, core_rs[12]=-20170, core_rt[ 5]=    0
+@1a46
+6a 0f	// ADD, core_rd[ 5]=-20213, core_rs[ 7]=-20197, core_rt[11]=  -16
+@1a48
+0a 05	// ADD, core_rd[ 5]=-20220, core_rs[ 2]=  -45, core_rt[ 8]=-20175
+@1a4a
+8a 04	// ADD, core_rd[ 5]=-20215, core_rs[ 2]=  -45, core_rt[ 4]=-20170
+@1a4c
+f9 0e	// SUB, core_rd[12]=    0, core_rs[ 7]=-20197, core_rt[ 7]=-20197
+@1a4e
+e3 18	// SUB, core_rd[ 1]=20197, core_rs[12]=    0, core_rt[ 7]=-20197
+@1a50
+d0 18	// ADD, core_rd[ 8]=   30, core_rs[12]=    0, core_rt[ 6]=   30
+@1a52
+83 16	// SUB, core_rd[ 1]=20154, core_rs[11]=  -16, core_rt[ 4]=-20170
+@1a54
+11 06	// SUB, core_rd[ 8]=  -20, core_rs[ 3]=   30, core_rt[ 0]=   50
+@1a56
+fc 1d	// ADD, core_rd[14]= 1318, core_rs[14]= 1288, core_rt[15]=   30
+@1a58
+88 89	// Branch, core_rs[ 4]=-20170, core_rt[12]=    0, immediate= 8, pc=@1a5a
+@1a5a
+7e ba	// Jump, p=1325, address=  38, pc=@1a7e
+@1a5c
+80 ba	// Jump, p=1326, address=  38, pc=@1a80
+@1a5e
+00 00	// Jump Skip
+@1a60
+00 00	// Jump Skip
+@1a62
+00 00	// Jump Skip
+@1a64
+00 00	// Jump Skip
+@1a66
+00 00	// Jump Skip
+@1a68
+00 00	// Jump Skip
+@1a6a
+00 00	// Jump Skip
+@1a6c
+00 00	// Jump Skip
+@1a6e
+00 00	// Jump Skip
+@1a70
+00 00	// Jump Skip
+@1a72
+00 00	// Jump Skip
+@1a74
+00 00	// Jump Skip
+@1a76
+00 00	// Jump Skip
+@1a78
+00 00	// Jump Skip
+@1a7a
+00 00	// Jump Skip
+@1a7c
+00 00	// Jump Skip
+@1a7e
+5c ba	// Jump, p=1343, address=  38, pc=@1a5c
+@1a80
+4b 10	// SUB, core_rd[ 5]=   25, core_rs[ 8]=  -20, core_rt[ 2]=  -45
+@1a82
+46 0e	// ADD, core_rd[ 3]=-20242, core_rs[ 7]=-20197, core_rt[ 2]=  -45
+@1a84
+79 07	// SUB, core_rd[12]=-20226, core_rs[ 3]=-20242, core_rt[11]=  -16
+@1a86
+6b 0b	// SUB, core_rd[ 5]=   41, core_rs[ 5]=   25, core_rt[11]=  -16
+@1a88
+87 1b	// SUB, core_rd[ 3]=20226, core_rs[13]=    0, core_rt[12]=-20226
+@1a8a
+8d 0d	// SUB, core_rd[ 6]=20256, core_rs[ 6]=   30, core_rt[12]=-20226
+@1a8c
+72 10	// ADD, core_rd[ 9]=20206, core_rs[ 8]=  -20, core_rt[ 3]=20226
+@1a8e
+43 05	// SUB, core_rd[ 1]=-20170, core_rs[ 2]=  -45, core_rt[10]=20125
+@1a90
+ac 18	// ADD, core_rd[ 6]=-20185, core_rs[12]=-20226, core_rt[ 5]=   41
+@1a92
+e5 16	// SUB, core_rd[ 2]=20181, core_rs[11]=  -16, core_rt[ 7]=-20197
+@1a94
+5b 17	// SUB, core_rd[13]=-20141, core_rs[11]=  -16, core_rt[10]=20125
+@1a96
+4c 17	// ADD, core_rd[ 6]=20109, core_rs[11]=  -16, core_rt[10]=20125
+@1a98
+8d 09	// SUB, core_rd[ 6]=   56, core_rs[ 4]=-20170, core_rt[12]=-20226
+@1a9a
+cc 02	// ADD, core_rd[ 6]=-20114, core_rs[ 1]=-20170, core_rt[ 6]=   56
+@1a9c
+ed 18	// SUB, core_rd[ 6]=  -29, core_rs[12]=-20226, core_rt[ 7]=-20197
+@1a9e
+fc 1d	// ADD, core_rd[14]= 1348, core_rs[14]= 1318, core_rt[15]=   30
+@1aa0
+e8 8c	// Branch, core_rs[ 6]=  -29, core_rt[ 7]=-20197, immediate= 8, pc=@1aa2
+@1aa2
+9c 5c	// Load, core_rt[ 4]=   -7, core_rs[14]= 1348, immediate=  -4, DRAM=@1a80
+@1aa4
+48 1b	// ADD, core_rd[ 4]=  -16, core_rs[13]=-20141, core_rt[10]=20125
+@1aa6
+b9 14	// SUB, core_rd[12]=20084, core_rs[10]=20125, core_rt[ 5]=   41
+@1aa8
+e9 08	// SUB, core_rd[ 4]=20181, core_rs[ 4]=  -16, core_rt[ 7]=-20197
+@1aaa
+ce 0a	// ADD, core_rd[ 7]=   12, core_rs[ 5]=   41, core_rt[ 6]=  -29
+@1aac
+51 07	// SUB, core_rd[ 8]=  101, core_rs[ 3]=20226, core_rt[10]=20125
+@1aae
+6c 00	// ADD, core_rd[ 6]=20276, core_rs[ 0]=   50, core_rt[ 3]=20226
+@1ab0
+0d 00	// SUB, core_rd[ 6]=    0, core_rs[ 0]=   50, core_rt[ 0]=   50
+@1ab2
+77 0e	// SUB, core_rd[11]=-20214, core_rs[ 7]=   12, core_rt[ 3]=20226
+@1ab4
+19 06	// SUB, core_rd[12]=20176, core_rs[ 3]=20226, core_rt[ 0]=   50
+@1ab6
+d8 0c	// ADD, core_rd[12]=    0, core_rs[ 6]=    0, core_rt[ 6]=    0
+@1ab8
+4f 18	// SUB, core_rd[ 7]=-20181, core_rs[12]=    0, core_rt[ 2]=20181
+@1aba
+cd 0e	// SUB, core_rd[ 6]=-20181, core_rs[ 7]=-20181, core_rt[ 6]=    0
+@1abc
+bb 04	// SUB, core_rd[13]=20140, core_rs[ 2]=20181, core_rt[ 5]=   41
+@1abe
+20 03	// ADD, core_rd[ 0]=   36, core_rs[ 1]=-20170, core_rt[ 9]=20206
+@1ac0
+46 0d	// ADD, core_rd[ 3]=  -56, core_rs[ 6]=-20181, core_rt[10]=20125
+@1ac2
+fc 1d	// ADD, core_rd[14]= 1378, core_rs[14]= 1348, core_rt[15]=   30
+@1ac4
+d1 38	// Mult, core_rd[ 8]=    0, core_rs[12]=    0, core_rt[ 6]=-20181
+@1ac6
+4f 39	// Mult, core_rd[ 7]=    0, core_rs[12]=    0, core_rt[10]=20125
+@1ac8
+ee ba	// Jump, p=1380, address=  40, pc=@1aee
+@1aca
+f0 ba	// Jump, p=1381, address=  40, pc=@1af0
+@1acc
+00 00	// Jump Skip
+@1ace
+00 00	// Jump Skip
+@1ad0
+00 00	// Jump Skip
+@1ad2
+00 00	// Jump Skip
+@1ad4
+00 00	// Jump Skip
+@1ad6
+00 00	// Jump Skip
+@1ad8
+00 00	// Jump Skip
+@1ada
+00 00	// Jump Skip
+@1adc
+00 00	// Jump Skip
+@1ade
+00 00	// Jump Skip
+@1ae0
+00 00	// Jump Skip
+@1ae2
+00 00	// Jump Skip
+@1ae4
+00 00	// Jump Skip
+@1ae6
+00 00	// Jump Skip
+@1ae8
+00 00	// Jump Skip
+@1aea
+00 00	// Jump Skip
+@1aec
+00 00	// Jump Skip
+@1aee
+ca ba	// Jump, p=1399, address=  40, pc=@1aca
+@1af0
+b7 00	// SUB, core_rd[11]=   -5, core_rs[ 0]=   36, core_rt[ 5]=   41
+@1af2
+4e 0e	// ADD, core_rd[ 7]=20181, core_rs[ 7]=    0, core_rt[ 2]=20181
+@1af4
+bb 0c	// SUB, core_rd[13]=-20222, core_rs[ 6]=-20181, core_rt[ 5]=   41
+@1af6
+89 17	// SUB, core_rd[ 4]=   -5, core_rs[11]=   -5, core_rt[12]=    0
+@1af8
+4c 07	// ADD, core_rd[ 6]=20069, core_rs[ 3]=  -56, core_rt[10]=20125
+@1afa
+93 00	// SUB, core_rd[ 9]=   41, core_rs[ 0]=   36, core_rt[ 4]=   -5
+@1afc
+78 06	// ADD, core_rd[12]= -112, core_rs[ 3]=  -56, core_rt[ 3]=  -56
+@1afe
+fc 1d	// ADD, core_rd[14]= 1408, core_rs[14]= 1378, core_rt[15]=   30
+@1b00
+1e 5d	// Load, core_rt[ 8]=    4, core_rs[14]= 1408, immediate=  -2, DRAM=@1afc
+@1b02
+4d 5d	// Load, core_rt[10]=   15, core_rs[14]= 1408, immediate=  13, DRAM=@1b1a
+@1b04
+32 5d	// Load, core_rt[ 9]=   -6, core_rs[14]= 1408, immediate= -14, DRAM=@1ae4
+@1b06
+ee 16	// ADD, core_rd[ 7]=20176, core_rs[11]=   -5, core_rt[ 7]=20181
+@1b08
+71 08	// SUB, core_rd[ 8]=   51, core_rs[ 4]=   -5, core_rt[ 3]=  -56
+@1b0a
+61 00	// SUB, core_rd[ 0]=   92, core_rs[ 0]=   36, core_rt[ 3]=  -56
+@1b0c
+94 12	// ADD, core_rd[10]=  -11, core_rs[ 9]=   -6, core_rt[ 4]=   -5
+@1b0e
+6b 03	// SUB, core_rd[ 5]=-20165, core_rs[ 1]=-20170, core_rt[11]=   -5
+@1b10
+a5 1a	// SUB, core_rd[ 2]=  -57, core_rs[13]=-20222, core_rt[ 5]=-20165
+@1b12
+0d 17	// SUB, core_rd[ 6]=  -56, core_rs[11]=   -5, core_rt[ 8]=   51
+@1b14
+61 19	// SUB, core_rd[ 0]= -107, core_rs[12]= -112, core_rt[11]=   -5
+@1b16
+c1 06	// SUB, core_rd[ 0]=    0, core_rs[ 3]=  -56, core_rt[ 6]=  -56
+@1b18
+11 15	// SUB, core_rd[ 8]=  -62, core_rs[10]=  -11, core_rt[ 8]=   51
+@1b1a
+6b 19	// SUB, core_rd[ 5]= -107, core_rs[12]= -112, core_rt[11]=   -5
+@1b1c
+11 08	// SUB, core_rd[ 8]=   -5, core_rs[ 4]=   -5, core_rt[ 0]=    0
+@1b1e
+81 12	// SUB, core_rd[ 0]=   -1, core_rs[ 9]=   -6, core_rt[ 4]=   -5
+@1b20
+31 0d	// SUB, core_rd[ 8]=  -50, core_rs[ 6]=  -56, core_rt[ 9]=   -6
+@1b22
+1a 1a	// ADD, core_rd[13]=-20223, core_rs[13]=-20222, core_rt[ 0]=   -1
+@1b24
+45 03	// SUB, core_rd[ 2]=-20159, core_rs[ 1]=-20170, core_rt[10]=  -11
+@1b26
+fc 1d	// ADD, core_rd[14]= 1438, core_rs[14]= 1408, core_rt[15]=   30
+@1b28
+b2 00	// ADD, core_rd[ 9]= -108, core_rs[ 0]=   -1, core_rt[ 5]= -107
+@1b2a
+e9 5c	// Load, core_rt[ 7]=   18, core_rs[14]= 1438, immediate=   9, DRAM=@1b4e
+@1b2c
+98 7d	// Store, core_rt[12]= -112, core_rs[14]= 1438, immediate=  -8, DRAM=@1b2c, DRAM[1b2c]= -112
+@1b2e
+a9 8c	// Branch, core_rs[ 6]=  -56, core_rt[ 5]= -107, immediate= 9, pc=@1b30
+@1b30
+40 bb	// Jump, p=1432, address=  18, pc=@1b40
+@1b32
+42 bb	// Jump, p=1433, address=  18, pc=@1b42
+@1b34
+00 00	// Jump Skip
+@1b36
+00 00	// Jump Skip
+@1b38
+00 00	// Jump Skip
+@1b3a
+00 00	// Jump Skip
+@1b3c
+00 00	// Jump Skip
+@1b3e
+00 00	// Jump Skip
+@1b40
+32 bb	// Jump, p=1440, address=  18, pc=@1b32
+@1b42
+81 7d	// Store, core_rt[12]= -112, core_rs[14]= 1438, immediate=   1, DRAM=@1b3e, DRAM[1b3e]= -112
+@1b44
+94 0b	// ADD, core_rd[10]= -219, core_rs[ 5]= -107, core_rt[12]= -112
+@1b46
+67 94	// Branch, core_rs[10]= -219, core_rt[ 3]=  -56, immediate= 7, pc=@1b48
+@1b48
+8e 1b	// ADD, core_rd[ 7]=-20335, core_rs[13]=-20223, core_rt[12]= -112
+@1b4a
+df 7c	// Store, core_rt[ 6]=  -56, core_rs[14]= 1438, immediate=  -1, DRAM=@1b3a, DRAM[1b3a]=  -56
+@1b4c
+85 90	// Branch, core_rs[ 8]=  -50, core_rt[ 4]=   -5, immediate= 5, pc=@1b4e
+@1b4e
+0f 22	// Mult, core_rd[ 7]=20170, core_rs[ 1]=-20170, core_rt[ 0]=   -1
+@1b50
+02 8b	// Branch, core_rs[ 5]= -107, core_rt[ 8]=  -50, immediate= 2, pc=@1b52
+@1b52
+c8 5c	// Load, core_rt[ 6]=   -4, core_rs[14]= 1438, immediate=   8, DRAM=@1b4c
+@1b54
+87 5d	// Load, core_rt[12]=    1, core_rs[14]= 1438, immediate=   7, DRAM=@1b4a
+@1b56
+aa 5c	// Load, core_rt[ 5]=   -8, core_rs[14]= 1438, immediate=  10, DRAM=@1b50
+@1b58
+b9 7d	// Store, core_rt[13]=-20223, core_rs[14]= 1438, immediate=  -7, DRAM=@1b2e, DRAM[1b2e]=-20223
+@1b5a
+5b 15	// SUB, core_rd[13]=    0, core_rs[10]= -219, core_rt[10]= -219
+@1b5c
+01 0d	// SUB, core_rd[ 0]=   46, core_rs[ 6]=   -4, core_rt[ 8]=  -50
+@1b5e
+2b 16	// SUB, core_rd[ 5]=20165, core_rs[11]=   -5, core_rt[ 1]=-20170
+@1b60
+67 0c	// SUB, core_rd[ 3]=   52, core_rs[ 6]=   -4, core_rt[ 3]=  -56
+@1b62
+20 06	// ADD, core_rd[ 0]=-20118, core_rs[ 3]=   52, core_rt[ 1]=-20170
+@1b64
+5b 04	// SUB, core_rd[13]=    0, core_rs[ 2]=-20159, core_rt[ 2]=-20159
+@1b66
+92 07	// ADD, core_rd[ 9]=   53, core_rs[ 3]=   52, core_rt[12]=    1
+@1b68
+c0 00	// ADD, core_rd[ 0]=-20122, core_rs[ 0]=-20118, core_rt[ 6]=   -4
+@1b6a
+73 0c	// SUB, core_rd[ 9]=  -56, core_rs[ 6]=   -4, core_rt[ 3]=   52
+@1b6c
+45 0b	// SUB, core_rd[ 2]=20384, core_rs[ 5]=20165, core_rt[10]= -219
+@1b6e
+43 0e	// SUB, core_rd[ 1]= -214, core_rs[ 7]=20170, core_rt[ 2]=20384
+@1b70
+fc 1d	// ADD, core_rd[14]= 1468, core_rs[14]= 1438, core_rt[15]=   30
+@1b72
+21 7d	// Store, core_rt[ 9]=  -56, core_rs[14]= 1468, immediate=   1, DRAM=@1b7a, DRAM[1b7a]=  -56
+@1b74
+01 88	// Branch, core_rs[ 4]=   -5, core_rt[ 0]=-20122, immediate= 1, pc=@1b76
+@1b76
+19 0c	// SUB, core_rd[12]=20118, core_rs[ 6]=   -4, core_rt[ 0]=-20122
+@1b78
+49 8c	// Branch, core_rs[ 6]=   -4, core_rt[ 2]=20384, immediate= 9, pc=@1b7a
+@1b7a
+50 12	// ADD, core_rd[ 8]=20328, core_rs[ 9]=  -56, core_rt[ 2]=20384
+@1b7c
+74 7d	// Store, core_rt[11]=   -5, core_rs[14]= 1468, immediate= -12, DRAM=@1b60, DRAM[1b60]=   -5
+@1b7e
+23 3b	// Mult, core_rd[ 1]=    0, core_rs[13]=    0, core_rt[ 9]=  -56
+@1b80
+80 0a	// ADD, core_rd[ 0]=20160, core_rs[ 5]=20165, core_rt[ 4]=   -5
+@1b82
+6a 0c	// ADD, core_rd[ 5]=   48, core_rs[ 6]=   -4, core_rt[ 3]=   52
+@1b84
+67 04	// SUB, core_rd[ 3]=20332, core_rs[ 2]=20384, core_rt[ 3]=   52
+@1b86
+6c 16	// ADD, core_rd[ 6]=20327, core_rs[11]=   -5, core_rt[ 3]=20332
+@1b88
+a1 10	// SUB, core_rd[ 0]=20280, core_rs[ 8]=20328, core_rt[ 5]=   48
+@1b8a
+39 1b	// SUB, core_rd[12]=   56, core_rs[13]=    0, core_rt[ 9]=  -56
+@1b8c
+96 02	// ADD, core_rd[11]=   -5, core_rs[ 1]=    0, core_rt[ 4]=   -5
+@1b8e
+86 0e	// ADD, core_rd[ 3]=20165, core_rs[ 7]=20170, core_rt[ 4]=   -5
+@1b90
+2f 0e	// SUB, core_rd[ 7]=20170, core_rs[ 7]=20170, core_rt[ 1]=    0
+@1b92
+87 02	// SUB, core_rd[ 3]=    5, core_rs[ 1]=    0, core_rt[ 4]=   -5
+@1b94
+90 1b	// ADD, core_rd[ 8]=   56, core_rs[13]=    0, core_rt[12]=   56
+@1b96
+ce 14	// ADD, core_rd[ 7]=20108, core_rs[10]= -219, core_rt[ 6]=20327
+@1b98
+56 1b	// ADD, core_rd[11]= -219, core_rs[13]=    0, core_rt[10]= -219
+@1b9a
+a1 0c	// SUB, core_rd[ 0]=20279, core_rs[ 6]=20327, core_rt[ 5]=   48
+@1b9c
+e5 0c	// SUB, core_rd[ 2]=  219, core_rs[ 6]=20327, core_rt[ 7]=20108
+@1b9e
+c6 1a	// ADD, core_rd[ 3]=20327, core_rs[13]=    0, core_rt[ 6]=20327
+@1ba0
+00 07	// ADD, core_rd[ 0]=20383, core_rs[ 3]=20327, core_rt[ 8]=   56
+@1ba2
+fc 1d	// ADD, core_rd[14]= 1498, core_rs[14]= 1468, core_rt[15]=   30
+@1ba4
+83 5d	// Load, core_rt[12]=    9, core_rs[14]= 1498, immediate=   3, DRAM=@1bba
+@1ba6
+8d 89	// Branch, core_rs[ 4]=   -5, core_rt[12]=    9, immediate=13, pc=@1ba8
+@1ba8
+47 00	// SUB, core_rd[ 3]=20164, core_rs[ 0]=20383, core_rt[ 2]=  219
+@1baa
+e6 bb	// Jump, p=1493, address=  62, pc=@1be6
+@1bac
+e8 bb	// Jump, p=1494, address=  62, pc=@1be8
+@1bae
+00 00	// Jump Skip
+@1bb0
+00 00	// Jump Skip
+@1bb2
+00 00	// Jump Skip
+@1bb4
+00 00	// Jump Skip
+@1bb6
+00 00	// Jump Skip
+@1bb8
+00 00	// Jump Skip
+@1bba
+00 00	// Jump Skip
+@1bbc
+00 00	// Jump Skip
+@1bbe
+00 00	// Jump Skip
+@1bc0
+00 00	// Jump Skip
+@1bc2
+00 00	// Jump Skip
+@1bc4
+00 00	// Jump Skip
+@1bc6
+00 00	// Jump Skip
+@1bc8
+00 00	// Jump Skip
+@1bca
+00 00	// Jump Skip
+@1bcc
+00 00	// Jump Skip
+@1bce
+00 00	// Jump Skip
+@1bd0
+00 00	// Jump Skip
+@1bd2
+00 00	// Jump Skip
+@1bd4
+00 00	// Jump Skip
+@1bd6
+00 00	// Jump Skip
+@1bd8
+00 00	// Jump Skip
+@1bda
+00 00	// Jump Skip
+@1bdc
+00 00	// Jump Skip
+@1bde
+00 00	// Jump Skip
+@1be0
+00 00	// Jump Skip
+@1be2
+00 00	// Jump Skip
+@1be4
+00 00	// Jump Skip
+@1be6
+ac bb	// Jump, p=1523, address=  62, pc=@1bac
+@1be8
+03 81	// Branch, core_rs[ 0]=20383, core_rt[ 8]=   56, immediate= 3, pc=@1bea
+@1bea
+00 08	// ADD, core_rd[ 0]=20378, core_rs[ 4]=   -5, core_rt[ 0]=20383
+@1bec
+93 00	// SUB, core_rd[ 9]=20383, core_rs[ 0]=20378, core_rt[ 4]=   -5
+@1bee
+06 05	// ADD, core_rd[ 3]=  275, core_rs[ 2]=  219, core_rt[ 8]=   56
+@1bf0
+f8 1a	// ADD, core_rd[12]=20108, core_rs[13]=    0, core_rt[ 7]=20108
+@1bf2
+ae 09	// ADD, core_rd[ 7]=   -5, core_rs[ 4]=   -5, core_rt[13]=    0
+@1bf4
+0a 02	// ADD, core_rd[ 5]=20378, core_rs[ 1]=    0, core_rt[ 0]=20378
+@1bf6
+a4 03	// ADD, core_rd[ 2]=    0, core_rs[ 1]=    0, core_rt[13]=    0
+@1bf8
+53 18	// SUB, core_rd[ 9]=20108, core_rs[12]=20108, core_rt[ 2]=    0
+@1bfa
+e6 08	// ADD, core_rd[ 3]=  -10, core_rs[ 4]=   -5, core_rt[ 7]=   -5
+@1bfc
+fc 1d	// ADD, core_rd[14]= 1528, core_rs[14]= 1498, core_rt[15]=   30
+@1bfe
+ed 84	// Branch, core_rs[ 2]=    0, core_rt[ 7]=   -5, immediate=13, pc=@1c00
+@1c00
+a8 0f	// ADD, core_rd[ 4]=   -5, core_rs[ 7]=   -5, core_rt[13]=    0
+@1c02
+79 7c	// Store, core_rt[ 3]=  -10, core_rs[14]= 1528, immediate=  -7, DRAM=@1be2, DRAM[1be2]=  -10
+@1c04
+00 05	// ADD, core_rd[ 0]=   56, core_rs[ 2]=    0, core_rt[ 8]=   56
+@1c06
+d8 08	// ADD, core_rd[12]=20322, core_rs[ 4]=   -5, core_rt[ 6]=20327
+@1c08
+d4 08	// ADD, core_rd[10]=20322, core_rs[ 4]=   -5, core_rt[ 6]=20327
+@1c0a
+a2 06	// ADD, core_rd[ 1]=20368, core_rs[ 3]=  -10, core_rt[ 5]=20378
+@1c0c
+8d 0a	// SUB, core_rd[ 6]=20383, core_rs[ 5]=20378, core_rt[ 4]=   -5
+@1c0e
+89 06	// SUB, core_rd[ 4]=   -5, core_rs[ 3]=  -10, core_rt[ 4]=   -5
+@1c10
+c9 0e	// SUB, core_rd[ 4]=-20388, core_rs[ 7]=   -5, core_rt[ 6]=20383
+@1c12
+23 0f	// SUB, core_rd[ 1]=-20113, core_rs[ 7]=   -5, core_rt[ 9]=20108
+@1c14
+54 09	// ADD, core_rd[10]=  -66, core_rs[ 4]=-20388, core_rt[10]=20322
+@1c16
+ef 06	// SUB, core_rd[ 7]=   -5, core_rs[ 3]=  -10, core_rt[ 7]=   -5
+@1c18
+7b 01	// SUB, core_rd[13]=  275, core_rs[ 0]=   56, core_rt[11]= -219
+@1c1a
+47 19	// SUB, core_rd[ 3]=20388, core_rs[12]=20322, core_rt[10]=  -66
+@1c1c
+b7 1b	// SUB, core_rd[11]=    0, core_rs[13]=  275, core_rt[13]=  275
+@1c1e
+a4 1a	// ADD, core_rd[ 2]=20653, core_rs[13]=  275, core_rt[ 5]=20378
+@1c20
+30 1a	// ADD, core_rd[ 8]=-19838, core_rs[13]=  275, core_rt[ 1]=-20113
+@1c22
+1a 06	// ADD, core_rd[13]=20444, core_rs[ 3]=20388, core_rt[ 0]=   56
+@1c24
+fc 1d	// ADD, core_rd[14]= 1558, core_rs[14]= 1528, core_rt[15]=   30
+@1c26
+a7 5d	// Load, core_rt[13]=   12, core_rs[14]= 1558, immediate=   7, DRAM=@1c3a
+@1c28
+61 04	// SUB, core_rd[ 0]=  265, core_rs[ 2]=20653, core_rt[ 3]=20388
+@1c2a
+5b 14	// SUB, core_rd[13]=-20719, core_rs[10]=  -66, core_rt[ 2]=20653
+@1c2c
+38 bc	// Jump, p=1558, address=  14, pc=@1c38
+@1c2e
+3a bc	// Jump, p=1559, address=  14, pc=@1c3a
+@1c30
+00 00	// Jump Skip
+@1c32
+00 00	// Jump Skip
+@1c34
+00 00	// Jump Skip
+@1c36
+00 00	// Jump Skip
+@1c38
+2e bc	// Jump, p=1564, address=  14, pc=@1c2e
+@1c3a
+15 12	// SUB, core_rd[10]=19843, core_rs[ 9]=20108, core_rt[ 0]=  265
+@1c3c
+2d 5d	// Load, core_rt[ 9]=   14, core_rs[14]= 1558, immediate=  13, DRAM=@1c46
+@1c3e
+45 86	// Branch, core_rs[ 3]=20388, core_rt[ 2]=20653, immediate= 5, pc=@1c40
+@1c40
+72 5c	// Load, core_rt[ 3]=   -6, core_rs[14]= 1558, immediate= -14, DRAM=@1c10
+@1c42
+85 0d	// SUB, core_rd[ 2]=   61, core_rs[ 6]=20383, core_rt[12]=20322
+@1c44
+60 05	// ADD, core_rd[ 0]=   61, core_rs[ 2]=   61, core_rt[11]=    0
+@1c46
+d9 0a	// SUB, core_rd[12]=   -5, core_rs[ 5]=20378, core_rt[ 6]=20383
+@1c48
+e6 10	// ADD, core_rd[ 3]=-19843, core_rs[ 8]=-19838, core_rt[ 7]=   -5
+@1c4a
+57 1a	// SUB, core_rd[11]=-20780, core_rs[13]=-20719, core_rt[ 2]=   61
+@1c4c
+c0 10	// ADD, core_rd[ 0]=  545, core_rs[ 8]=-19838, core_rt[ 6]=20383
+@1c4e
+a0 19	// ADD, core_rd[ 0]=-20724, core_rs[12]=   -5, core_rt[13]=-20719
+@1c50
+38 09	// ADD, core_rd[12]=-20374, core_rs[ 4]=-20388, core_rt[ 9]=   14
+@1c52
+fc 1d	// ADD, core_rd[14]= 1588, core_rs[14]= 1558, core_rt[15]=   30
+@1c54
+0a 5c	// Load, core_rt[ 0]=   -4, core_rs[14]= 1588, immediate=  10, DRAM=@1c7c
+@1c56
+56 5d	// Load, core_rt[10]=   12, core_rs[14]= 1588, immediate= -10, DRAM=@1c54
+@1c58
+cf 5c	// Load, core_rt[ 6]=    1, core_rs[14]= 1588, immediate=  15, DRAM=@1c86
+@1c5a
+50 16	// ADD, core_rd[ 8]=-20719, core_rs[11]=-20780, core_rt[ 2]=   61
+@1c5c
+99 16	// SUB, core_rd[12]= -392, core_rs[11]=-20780, core_rt[ 4]=-20388
+@1c5e
+74 bc	// Jump, p=1583, address=  24, pc=@1c74
+@1c60
+76 bc	// Jump, p=1584, address=  24, pc=@1c76
+@1c62
+00 00	// Jump Skip
+@1c64
+00 00	// Jump Skip
+@1c66
+00 00	// Jump Skip
+@1c68
+00 00	// Jump Skip
+@1c6a
+00 00	// Jump Skip
+@1c6c
+00 00	// Jump Skip
+@1c6e
+00 00	// Jump Skip
+@1c70
+00 00	// Jump Skip
+@1c72
+00 00	// Jump Skip
+@1c74
+60 bc	// Jump, p=1594, address=  24, pc=@1c60
+@1c76
+0f 34	// Mult, core_rd[ 7]=  -48, core_rs[10]=   12, core_rt[ 0]=   -4
+@1c78
+c9 3a	// Mult, core_rd[ 4]=-20719, core_rs[13]=-20719, core_rt[ 6]=    1
+@1c7a
+51 2c	// Mult, core_rd[ 8]=   61, core_rs[ 6]=    1, core_rt[ 2]=   61
+@1c7c
+8c bc	// Jump, p=1598, address=  18, pc=@1c8c
+@1c7e
+8e bc	// Jump, p=1599, address=  18, pc=@1c8e
+@1c80
+00 00	// Jump Skip
+@1c82
+00 00	// Jump Skip
+@1c84
+00 00	// Jump Skip
+@1c86
+00 00	// Jump Skip
+@1c88
+00 00	// Jump Skip
+@1c8a
+00 00	// Jump Skip
+@1c8c
+7e bc	// Jump, p=1606, address=  18, pc=@1c7e
+@1c8e
+09 90	// Branch, core_rs[ 8]=   61, core_rt[ 0]=   -4, immediate= 9, pc=@1c90
+@1c90
+a8 bc	// Jump, p=1608, address=  26, pc=@1ca8
+@1c92
+aa bc	// Jump, p=1609, address=  26, pc=@1caa
+@1c94
+00 00	// Jump Skip
+@1c96
+00 00	// Jump Skip
+@1c98
+00 00	// Jump Skip
+@1c9a
+00 00	// Jump Skip
+@1c9c
+00 00	// Jump Skip
+@1c9e
+00 00	// Jump Skip
+@1ca0
+00 00	// Jump Skip
+@1ca2
+00 00	// Jump Skip
+@1ca4
+00 00	// Jump Skip
+@1ca6
+00 00	// Jump Skip
+@1ca8
+92 bc	// Jump, p=1620, address=  26, pc=@1c92
+@1caa
+b8 14	// ADD, core_rd[12]=20390, core_rs[10]=   12, core_rt[ 5]=20378
+@1cac
+b2 14	// ADD, core_rd[ 9]=20390, core_rs[10]=   12, core_rt[ 5]=20378
+@1cae
+da 00	// ADD, core_rd[13]=   -3, core_rs[ 0]=   -4, core_rt[ 6]=    1
+@1cb0
+a9 10	// SUB, core_rd[ 4]=-20317, core_rs[ 8]=   61, core_rt[ 5]=20378
+@1cb2
+99 0e	// SUB, core_rd[12]=20269, core_rs[ 7]=  -48, core_rt[ 4]=-20317
+@1cb4
+41 13	// SUB, core_rd[ 0]=20378, core_rs[ 9]=20390, core_rt[10]=   12
+@1cb6
+83 04	// SUB, core_rd[ 1]=20378, core_rs[ 2]=   61, core_rt[ 4]=-20317
+@1cb8
+51 03	// SUB, core_rd[ 8]=20366, core_rs[ 1]=20378, core_rt[10]=   12
+@1cba
+d8 12	// ADD, core_rd[12]=20391, core_rs[ 9]=20390, core_rt[ 6]=    1
+@1cbc
+fc 1d	// ADD, core_rd[14]= 1618, core_rs[14]= 1588, core_rt[15]=   30
+@1cbe
+55 7d	// Store, core_rt[10]=   12, core_rs[14]= 1618, immediate= -11, DRAM=@1c8e, DRAM[1c8e]=   12
+@1cc0
+ad 07	// SUB, core_rd[ 6]=-19840, core_rs[ 3]=-19843, core_rt[13]=   -3
+@1cc2
+43 16	// SUB, core_rd[ 1]=-20841, core_rs[11]=-20780, core_rt[ 2]=   61
+@1cc4
+23 19	// SUB, core_rd[ 1]=    1, core_rs[12]=20391, core_rt[ 9]=20390
+@1cc6
+e6 0a	// ADD, core_rd[ 3]=20330, core_rs[ 5]=20378, core_rt[ 7]=  -48
+@1cc8
+0d 0b	// SUB, core_rd[ 6]=   12, core_rs[ 5]=20378, core_rt[ 8]=20366
+@1cca
+c6 06	// ADD, core_rd[ 3]=20342, core_rs[ 3]=20330, core_rt[ 6]=   12
+@1ccc
+6a 16	// ADD, core_rd[ 5]= -438, core_rs[11]=-20780, core_rt[ 3]=20342
+@1cce
+b9 00	// SUB, core_rd[12]=20816, core_rs[ 0]=20378, core_rt[ 5]= -438
+@1cd0
+fc 1d	// ADD, core_rd[14]= 1648, core_rs[14]= 1618, core_rt[15]=   30
+@1cd2
+0d 23	// Mult, core_rd[ 6]=20366, core_rs[ 1]=    1, core_rt[ 8]=20366
+@1cd4
+26 97	// Branch, core_rs[11]=-20780, core_rt[ 9]=20390, immediate= 6, pc=@1cd6
+@1cd6
+e8 bc	// Jump, p=1643, address=  20, pc=@1ce8
+@1cd8
+ea bc	// Jump, p=1644, address=  20, pc=@1cea
+@1cda
+00 00	// Jump Skip
+@1cdc
+00 00	// Jump Skip
+@1cde
+00 00	// Jump Skip
+@1ce0
+00 00	// Jump Skip
+@1ce2
+00 00	// Jump Skip
+@1ce4
+00 00	// Jump Skip
+@1ce6
+00 00	// Jump Skip
+@1ce8
+d8 bc	// Jump, p=1652, address=  20, pc=@1cd8
+@1cea
+8f 0d	// SUB, core_rd[ 7]= -450, core_rs[ 6]=20366, core_rt[12]=20816
+@1cec
+2a 7c	// Store, core_rt[ 1]=    1, core_rs[14]= 1648, immediate=  10, DRAM=@1cf4, DRAM[1cf4]=    1
+@1cee
+52 5d	// Load, core_rt[10]=   -9, core_rs[14]= 1648, immediate= -14, DRAM=@1cc4
+@1cf0
+90 1a	// ADD, core_rd[ 8]=-20320, core_rs[13]=   -3, core_rt[ 4]=-20317
+@1cf2
+0c 01	// ADD, core_rd[ 6]=   58, core_rs[ 0]=20378, core_rt[ 8]=-20320
+@1cf4
+04 16	// ADD, core_rd[ 2]= -402, core_rs[11]=-20780, core_rt[ 0]=20378
+@1cf6
+91 03	// SUB, core_rd[ 8]=-20815, core_rs[ 1]=    1, core_rt[12]=20816
+@1cf8
+92 0d	// ADD, core_rd[ 9]=20874, core_rs[ 6]=   58, core_rt[12]=20816
+@1cfa
+14 10	// ADD, core_rd[10]= -437, core_rs[ 8]=-20815, core_rt[ 0]=20378
+@1cfc
+4f 19	// SUB, core_rd[ 7]=21253, core_rs[12]=20816, core_rt[10]= -437
+@1cfe
+68 1a	// ADD, core_rd[ 4]=20339, core_rs[13]=   -3, core_rt[ 3]=20342
+@1d00
+d9 16	// SUB, core_rd[12]=-20838, core_rs[11]=-20780, core_rt[ 6]=   58
+@1d02
+16 18	// ADD, core_rd[11]= -460, core_rs[12]=-20838, core_rt[ 0]=20378
+@1d04
+d4 18	// ADD, core_rd[10]=-20780, core_rs[12]=-20838, core_rt[ 6]=   58
+@1d06
+fc 1d	// ADD, core_rd[14]= 1678, core_rs[14]= 1648, core_rt[15]=   30
+@1d08
+18 bd	// Jump, p=1668, address=  18, pc=@1d18
+@1d0a
+1a bd	// Jump, p=1669, address=  18, pc=@1d1a
+@1d0c
+00 00	// Jump Skip
+@1d0e
+00 00	// Jump Skip
+@1d10
+00 00	// Jump Skip
+@1d12
+00 00	// Jump Skip
+@1d14
+00 00	// Jump Skip
+@1d16
+00 00	// Jump Skip
+@1d18
+0a bd	// Jump, p=1676, address=  18, pc=@1d0a
+@1d1a
+3c bd	// Jump, p=1677, address=  36, pc=@1d3c
+@1d1c
+3e bd	// Jump, p=1678, address=  36, pc=@1d3e
+@1d1e
+00 00	// Jump Skip
+@1d20
+00 00	// Jump Skip
+@1d22
+00 00	// Jump Skip
+@1d24
+00 00	// Jump Skip
+@1d26
+00 00	// Jump Skip
+@1d28
+00 00	// Jump Skip
+@1d2a
+00 00	// Jump Skip
+@1d2c
+00 00	// Jump Skip
+@1d2e
+00 00	// Jump Skip
+@1d30
+00 00	// Jump Skip
+@1d32
+00 00	// Jump Skip
+@1d34
+00 00	// Jump Skip
+@1d36
+00 00	// Jump Skip
+@1d38
+00 00	// Jump Skip
+@1d3a
+00 00	// Jump Skip
+@1d3c
+1c bd	// Jump, p=1694, address=  36, pc=@1d1c
+@1d3e
+4f 16	// SUB, core_rd[ 7]=  -58, core_rs[11]= -460, core_rt[ 2]= -402
+@1d40
+0d 1b	// SUB, core_rd[ 6]=20812, core_rs[13]=   -3, core_rt[ 8]=-20815
+@1d42
+fc 1d	// ADD, core_rd[14]= 1708, core_rs[14]= 1678, core_rt[15]=   30
+@1d44
+15 7d	// Store, core_rt[ 8]=-20815, core_rs[14]= 1708, immediate= -11, DRAM=@1d42, DRAM[1d42]=-20815
+@1d46
+a6 16	// ADD, core_rd[ 3]= -898, core_rs[11]= -460, core_rt[ 5]= -438
+@1d48
+7e bd	// Jump, p=1700, address=  56, pc=@1d7e
+@1d4a
+80 bd	// Jump, p=1701, address=  56, pc=@1d80
+@1d4c
+00 00	// Jump Skip
+@1d4e
+00 00	// Jump Skip
+@1d50
+00 00	// Jump Skip
+@1d52
+00 00	// Jump Skip
+@1d54
+00 00	// Jump Skip
+@1d56
+00 00	// Jump Skip
+@1d58
+00 00	// Jump Skip
+@1d5a
+00 00	// Jump Skip
+@1d5c
+00 00	// Jump Skip
+@1d5e
+00 00	// Jump Skip
+@1d60
+00 00	// Jump Skip
+@1d62
+00 00	// Jump Skip
+@1d64
+00 00	// Jump Skip
+@1d66
+00 00	// Jump Skip
+@1d68
+00 00	// Jump Skip
+@1d6a
+00 00	// Jump Skip
+@1d6c
+00 00	// Jump Skip
+@1d6e
+00 00	// Jump Skip
+@1d70
+00 00	// Jump Skip
+@1d72
+00 00	// Jump Skip
+@1d74
+00 00	// Jump Skip
+@1d76
+00 00	// Jump Skip
+@1d78
+00 00	// Jump Skip
+@1d7a
+00 00	// Jump Skip
+@1d7c
+00 00	// Jump Skip
+@1d7e
+4a bd	// Jump, p=1727, address=  56, pc=@1d4a
+@1d80
+78 08	// ADD, core_rd[12]=19441, core_rs[ 4]=20339, core_rt[ 3]= -898
+@1d82
+6e 0f	// ADD, core_rd[ 7]= -518, core_rs[ 7]=  -58, core_rt[11]= -460
+@1d84
+fc 1d	// ADD, core_rd[14]= 1738, core_rs[14]= 1708, core_rt[15]=   30
+@1d86
+fd 7c	// Store, core_rt[ 7]= -518, core_rs[14]= 1738, immediate=  -3, DRAM=@1d8e, DRAM[1d8e]= -518
+@1d88
+b0 bd	// Jump, p=1732, address=  42, pc=@1db0
+@1d8a
+b2 bd	// Jump, p=1733, address=  42, pc=@1db2
+@1d8c
+00 00	// Jump Skip
+@1d8e
+00 00	// Jump Skip
+@1d90
+00 00	// Jump Skip
+@1d92
+00 00	// Jump Skip
+@1d94
+00 00	// Jump Skip
+@1d96
+00 00	// Jump Skip
+@1d98
+00 00	// Jump Skip
+@1d9a
+00 00	// Jump Skip
+@1d9c
+00 00	// Jump Skip
+@1d9e
+00 00	// Jump Skip
+@1da0
+00 00	// Jump Skip
+@1da2
+00 00	// Jump Skip
+@1da4
+00 00	// Jump Skip
+@1da6
+00 00	// Jump Skip
+@1da8
+00 00	// Jump Skip
+@1daa
+00 00	// Jump Skip
+@1dac
+00 00	// Jump Skip
+@1dae
+00 00	// Jump Skip
+@1db0
+8a bd	// Jump, p=1752, address=  42, pc=@1d8a
+@1db2
+20 12	// ADD, core_rd[ 0]=20875, core_rs[ 9]=20874, core_rt[ 1]=    1
+@1db4
+0b 05	// SUB, core_rd[ 5]=20413, core_rs[ 2]= -402, core_rt[ 8]=-20815
+@1db6
+a4 01	// ADD, core_rd[ 2]=20872, core_rs[ 0]=20875, core_rt[13]=   -3
+@1db8
+a3 19	// SUB, core_rd[ 1]=19444, core_rs[12]=19441, core_rt[13]=   -3
+@1dba
+f4 02	// ADD, core_rd[10]=18926, core_rs[ 1]=19444, core_rt[ 7]= -518
+@1dbc
+91 16	// SUB, core_rd[ 8]=-20799, core_rs[11]= -460, core_rt[ 4]=20339
+@1dbe
+66 13	// ADD, core_rd[ 3]=20414, core_rs[ 9]=20874, core_rt[11]= -460
+@1dc0
+e3 0e	// SUB, core_rd[ 1]=    0, core_rs[ 7]= -518, core_rt[ 7]= -518
+@1dc2
+6a 0e	// ADD, core_rd[ 5]=19896, core_rs[ 7]= -518, core_rt[ 3]=20414
+@1dc4
+b3 11	// SUB, core_rd[ 9]=-20796, core_rs[ 8]=-20799, core_rt[13]=   -3
+@1dc6
+10 1b	// ADD, core_rd[ 8]=-20802, core_rs[13]=   -3, core_rt[ 8]=-20799
+@1dc8
+c7 16	// SUB, core_rd[ 3]=-21272, core_rs[11]= -460, core_rt[ 6]=20812
+@1dca
+86 0f	// ADD, core_rd[ 3]=18923, core_rs[ 7]= -518, core_rt[12]=19441
+@1dcc
+f1 08	// SUB, core_rd[ 8]=20857, core_rs[ 4]=20339, core_rt[ 7]= -518
+@1dce
+56 03	// ADD, core_rd[11]=18926, core_rs[ 1]=    0, core_rt[10]=18926
+@1dd0
+fc 1d	// ADD, core_rd[14]= 1768, core_rs[14]= 1738, core_rt[15]=   30
+@1dd2
+02 be	// Jump, p=1769, address=  50, pc=@1e02
+@1dd4
+04 be	// Jump, p=1770, address=  50, pc=@1e04
+@1dd6
+00 00	// Jump Skip
+@1dd8
+00 00	// Jump Skip
+@1dda
+00 00	// Jump Skip
+@1ddc
+00 00	// Jump Skip
+@1dde
+00 00	// Jump Skip
+@1de0
+00 00	// Jump Skip
+@1de2
+00 00	// Jump Skip
+@1de4
+00 00	// Jump Skip
+@1de6
+00 00	// Jump Skip
+@1de8
+00 00	// Jump Skip
+@1dea
+00 00	// Jump Skip
+@1dec
+00 00	// Jump Skip
+@1dee
+00 00	// Jump Skip
+@1df0
+00 00	// Jump Skip
+@1df2
+00 00	// Jump Skip
+@1df4
+00 00	// Jump Skip
+@1df6
+00 00	// Jump Skip
+@1df8
+00 00	// Jump Skip
+@1dfa
+00 00	// Jump Skip
+@1dfc
+00 00	// Jump Skip
+@1dfe
+00 00	// Jump Skip
+@1e00
+00 00	// Jump Skip
+@1e02
+d4 bd	// Jump, p=1793, address=  50, pc=@1dd4
+@1e04
+04 13	// ADD, core_rd[ 2]=   61, core_rs[ 9]=-20796, core_rt[ 8]=20857
+@1e06
+19 02	// SUB, core_rd[12]=-20875, core_rs[ 1]=    0, core_rt[ 0]=20875
+@1e08
+ae 01	// ADD, core_rd[ 7]=20872, core_rs[ 0]=20875, core_rt[13]=   -3
+@1e0a
+6e 05	// ADD, core_rd[ 7]=18987, core_rs[ 2]=   61, core_rt[11]=18926
+@1e0c
+fc 1d	// ADD, core_rd[14]= 1798, core_rs[14]= 1768, core_rt[15]=   30
+@1e0e
+70 04	// ADD, core_rd[ 8]=18984, core_rs[ 2]=   61, core_rt[ 3]=18923
+@1e10
+74 7d	// Store, core_rt[11]=18926, core_rs[14]= 1798, immediate= -12, DRAM=@1df4, DRAM[1df4]=18926
+@1e12
+a3 7c	// Store, core_rt[ 5]=19896, core_rs[14]= 1798, immediate=   3, DRAM=@1e12, DRAM[1e12]=19896
+@1e14
+c5 04	// SUB, core_rd[ 2]=-20751, core_rs[ 2]=   61, core_rt[ 6]=20812
+@1e16
+0d 8b	// Branch, core_rs[ 5]=19896, core_rt[ 8]=18984, immediate=13, pc=@1e18
+@1e18
+a0 07	// ADD, core_rd[ 0]=18920, core_rs[ 3]=18923, core_rt[13]=   -3
+@1e1a
+8d 5d	// Load, core_rt[12]=   11, core_rs[14]= 1798, immediate=  13, DRAM=@1e26
+@1e1c
+af 5c	// Load, core_rt[ 5]=   17, core_rs[14]= 1798, immediate=  15, DRAM=@1e2a
+@1e1e
+a7 06	// SUB, core_rd[ 3]=18906, core_rs[ 3]=18923, core_rt[ 5]=   17
+@1e20
+b0 5d	// Load, core_rt[13]=   15, core_rs[14]= 1798, immediate= -16, DRAM=@1dec
+@1e22
+37 00	// SUB, core_rd[11]=18920, core_rs[ 0]=18920, core_rt[ 1]=    0
+@1e24
+34 09	// ADD, core_rd[10]= -457, core_rs[ 4]=20339, core_rt[ 9]=-20796
+@1e26
+86 13	// ADD, core_rd[ 3]=-20785, core_rs[ 9]=-20796, core_rt[12]=   11
+@1e28
+3b 18	// SUB, core_rd[13]=   11, core_rs[12]=   11, core_rt[ 1]=    0
+@1e2a
+4d 11	// SUB, core_rd[ 6]=19441, core_rs[ 8]=18984, core_rt[10]= -457
+@1e2c
+10 19	// ADD, core_rd[ 8]=18995, core_rs[12]=   11, core_rt[ 8]=18984
+@1e2e
+fc 1d	// ADD, core_rd[14]= 1828, core_rs[14]= 1798, core_rt[15]=   30
+@1e30
+90 7c	// Store, core_rt[ 4]=20339, core_rs[14]= 1828, immediate= -16, DRAM=@1e28, DRAM[1e28]=20339
+@1e32
+6a be	// Jump, p=1817, address=  58, pc=@1e6a
+@1e34
+6c be	// Jump, p=1818, address=  58, pc=@1e6c
+@1e36
+00 00	// Jump Skip
+@1e38
+00 00	// Jump Skip
+@1e3a
+00 00	// Jump Skip
+@1e3c
+00 00	// Jump Skip
+@1e3e
+00 00	// Jump Skip
+@1e40
+00 00	// Jump Skip
+@1e42
+00 00	// Jump Skip
+@1e44
+00 00	// Jump Skip
+@1e46
+00 00	// Jump Skip
+@1e48
+00 00	// Jump Skip
+@1e4a
+00 00	// Jump Skip
+@1e4c
+00 00	// Jump Skip
+@1e4e
+00 00	// Jump Skip
+@1e50
+00 00	// Jump Skip
+@1e52
+00 00	// Jump Skip
+@1e54
+00 00	// Jump Skip
+@1e56
+00 00	// Jump Skip
+@1e58
+00 00	// Jump Skip
+@1e5a
+00 00	// Jump Skip
+@1e5c
+00 00	// Jump Skip
+@1e5e
+00 00	// Jump Skip
+@1e60
+00 00	// Jump Skip
+@1e62
+00 00	// Jump Skip
+@1e64
+00 00	// Jump Skip
+@1e66
+00 00	// Jump Skip
+@1e68
+00 00	// Jump Skip
+@1e6a
+34 be	// Jump, p=1845, address=  58, pc=@1e34
+@1e6c
+fc 1d	// ADD, core_rd[14]= 1858, core_rs[14]= 1828, core_rt[15]=   30
+@1e6e
+ec 86	// Branch, core_rs[ 3]=-20785, core_rt[ 7]=18987, immediate=12, pc=@1e70
+@1e70
+25 13	// SUB, core_rd[ 2]=    0, core_rs[ 9]=-20796, core_rt[ 9]=-20796
+@1e72
+67 81	// Branch, core_rs[ 0]=18920, core_rt[11]=18920, immediate= 7, pc=@1e82
+@1e74
+00 00	// Branch Skip
+@1e76
+00 00	// Branch Skip
+@1e78
+00 00	// Branch Skip
+@1e7a
+00 00	// Branch Skip
+@1e7c
+00 00	// Branch Skip
+@1e7e
+00 00	// Branch Skip
+@1e80
+00 00	// Branch Skip
+@1e82
+22 1b	// ADD, core_rd[ 1]=-20785, core_rs[13]=   11, core_rt[ 9]=-20796
+@1e84
+39 1a	// SUB, core_rd[12]=20796, core_rs[13]=   11, core_rt[ 1]=-20785
+@1e86
+e6 06	// ADD, core_rd[ 3]=-1798, core_rs[ 3]=-20785, core_rt[ 7]=18987
+@1e88
+ba 13	// ADD, core_rd[13]=-20785, core_rs[ 9]=-20796, core_rt[13]=   11
+@1e8a
+00 8b	// Branch, core_rs[ 5]=   17, core_rt[ 8]=18995, immediate= 0, pc=@1e8c
+@1e8c
+9c be	// Jump, p=1862, address=  18, pc=@1e9c
+@1e8e
+9e be	// Jump, p=1863, address=  18, pc=@1e9e
+@1e90
+00 00	// Jump Skip
+@1e92
+00 00	// Jump Skip
+@1e94
+00 00	// Jump Skip
+@1e96
+00 00	// Jump Skip
+@1e98
+00 00	// Jump Skip
+@1e9a
+00 00	// Jump Skip
+@1e9c
+8e be	// Jump, p=1870, address=  18, pc=@1e8e
+@1e9e
+0b 5c	// Load, core_rt[ 0]=   -2, core_rs[14]= 1858, immediate=  11, DRAM=@1e9a
+@1ea0
+aa be	// Jump, p=1872, address=  12, pc=@1eaa
+@1ea2
+ac be	// Jump, p=1873, address=  12, pc=@1eac
+@1ea4
+00 00	// Jump Skip
+@1ea6
+00 00	// Jump Skip
+@1ea8
+00 00	// Jump Skip
+@1eaa
+a2 be	// Jump, p=1877, address=  12, pc=@1ea2
+@1eac
+8e 01	// ADD, core_rd[ 7]=20794, core_rs[ 0]=   -2, core_rt[12]=20796
+@1eae
+ca be	// Jump, p=1879, address=  30, pc=@1eca
+@1eb0
+cc be	// Jump, p=1880, address=  30, pc=@1ecc
+@1eb2
+00 00	// Jump Skip
+@1eb4
+00 00	// Jump Skip
+@1eb6
+00 00	// Jump Skip
+@1eb8
+00 00	// Jump Skip
+@1eba
+00 00	// Jump Skip
+@1ebc
+00 00	// Jump Skip
+@1ebe
+00 00	// Jump Skip
+@1ec0
+00 00	// Jump Skip
+@1ec2
+00 00	// Jump Skip
+@1ec4
+00 00	// Jump Skip
+@1ec6
+00 00	// Jump Skip
+@1ec8
+00 00	// Jump Skip
+@1eca
+b0 be	// Jump, p=1893, address=  30, pc=@1eb0
+@1ecc
+13 10	// SUB, core_rd[ 9]=18997, core_rs[ 8]=18995, core_rt[ 0]=   -2
+@1ece
+68 05	// ADD, core_rd[ 4]=18920, core_rs[ 2]=    0, core_rt[11]=18920
+@1ed0
+0b 17	// SUB, core_rd[ 5]=  -75, core_rs[11]=18920, core_rt[ 8]=18995
+@1ed2
+77 04	// SUB, core_rd[11]= 1798, core_rs[ 2]=    0, core_rt[ 3]=-1798
+@1ed4
+8b 0e	// SUB, core_rd[ 5]= 1874, core_rs[ 7]=20794, core_rt[ 4]=18920
+@1ed6
+03 0a	// SUB, core_rd[ 1]= 1876, core_rs[ 5]= 1874, core_rt[ 0]=   -2
+@1ed8
+03 04	// SUB, core_rd[ 1]=    2, core_rs[ 2]=    0, core_rt[ 0]=   -2
+@1eda
+59 13	// SUB, core_rd[12]=19454, core_rs[ 9]=18997, core_rt[10]= -457
+@1edc
+fc 1d	// ADD, core_rd[14]= 1888, core_rs[14]= 1858, core_rt[15]=   30
+@1ede
+1a 5c	// Load, core_rt[ 0]=   24, core_rs[14]= 1888, immediate=  -6, DRAM=@1eb4
+@1ee0
+05 09	// SUB, core_rd[ 2]=  -75, core_rs[ 4]=18920, core_rt[ 8]=18995
+@1ee2
+a6 03	// ADD, core_rd[ 3]=-20783, core_rs[ 1]=    2, core_rt[13]=-20785
+@1ee4
+4c 1b	// ADD, core_rd[ 6]=-21242, core_rs[13]=-20785, core_rt[10]= -457
+@1ee6
+01 14	// SUB, core_rd[ 0]= -481, core_rs[10]= -457, core_rt[ 0]=   24
+@1ee8
+cd 00	// SUB, core_rd[ 6]=20761, core_rs[ 0]= -481, core_rt[ 6]=-21242
+@1eea
+8f 00	// SUB, core_rd[ 7]=-19401, core_rs[ 0]= -481, core_rt[ 4]=18920
+@1eec
+48 13	// ADD, core_rd[ 4]=18540, core_rs[ 9]=18997, core_rt[10]= -457
+@1eee
+4e 10	// ADD, core_rd[ 7]=18920, core_rs[ 8]=18995, core_rt[ 2]=  -75
+@1ef0
+43 12	// SUB, core_rd[ 1]=19072, core_rs[ 9]=18997, core_rt[ 2]=  -75
+@1ef2
+26 05	// ADD, core_rd[ 3]=18922, core_rs[ 2]=  -75, core_rt[ 9]=18997
+@1ef4
+0a 01	// ADD, core_rd[ 5]=18514, core_rs[ 0]= -481, core_rt[ 8]=18995
+@1ef6
+fc 1d	// ADD, core_rd[14]= 1918, core_rs[14]= 1888, core_rt[15]=   30
+@1ef8
+06 bf	// Jump, p=1916, address=  16, pc=@1f06
+@1efa
+08 bf	// Jump, p=1917, address=  16, pc=@1f08
+@1efc
+00 00	// Jump Skip
+@1efe
+00 00	// Jump Skip
+@1f00
+00 00	// Jump Skip
+@1f02
+00 00	// Jump Skip
+@1f04
+00 00	// Jump Skip
+@1f06
+fa be	// Jump, p=1923, address=  16, pc=@1efa
+@1f08
+49 24	// Mult, core_rd[ 4]= 5625, core_rs[ 2]=  -75, core_rt[ 2]=  -75
+@1f0a
+98 08	// ADD, core_rd[12]=11250, core_rs[ 4]= 5625, core_rt[ 4]= 5625
+@1f0c
+66 95	// Branch, core_rs[10]= -457, core_rt[11]= 1798, immediate= 6, pc=@1f0e
+@1f0e
+fe 7c	// Store, core_rt[ 7]=18920, core_rs[14]= 1918, immediate=  -2, DRAM=@1ef8, DRAM[1ef8]=18920
+@1f10
+00 98	// Branch, core_rs[12]=11250, core_rt[ 0]= -481, immediate= 0, pc=@1f12
+@1f12
+68 7c	// Store, core_rt[ 3]=18922, core_rs[14]= 1918, immediate=   8, DRAM=@1f0c, DRAM[1f0c]=18922
+@1f14
+04 7d	// Store, core_rt[ 8]=18995, core_rs[14]= 1918, immediate=   4, DRAM=@1f04, DRAM[1f04]=18995
+@1f16
+28 1a	// ADD, core_rd[ 4]=-1713, core_rs[13]=-20785, core_rt[ 1]=19072
+@1f18
+4c bf	// Jump, p=1932, address=  54, pc=@1f4c
+@1f1a
+4e bf	// Jump, p=1933, address=  54, pc=@1f4e
+@1f1c
+00 00	// Jump Skip
+@1f1e
+00 00	// Jump Skip
+@1f20
+00 00	// Jump Skip
+@1f22
+00 00	// Jump Skip
+@1f24
+00 00	// Jump Skip
+@1f26
+00 00	// Jump Skip
+@1f28
+00 00	// Jump Skip
+@1f2a
+00 00	// Jump Skip
+@1f2c
+00 00	// Jump Skip
+@1f2e
+00 00	// Jump Skip
+@1f30
+00 00	// Jump Skip
+@1f32
+00 00	// Jump Skip
+@1f34
+00 00	// Jump Skip
+@1f36
+00 00	// Jump Skip
+@1f38
+00 00	// Jump Skip
+@1f3a
+00 00	// Jump Skip
+@1f3c
+00 00	// Jump Skip
+@1f3e
+00 00	// Jump Skip
+@1f40
+00 00	// Jump Skip
+@1f42
+00 00	// Jump Skip
+@1f44
+00 00	// Jump Skip
+@1f46
+00 00	// Jump Skip
+@1f48
+00 00	// Jump Skip
+@1f4a
+00 00	// Jump Skip
+@1f4c
+1a bf	// Jump, p=1958, address=  54, pc=@1f1a
+@1f4e
+fc 1d	// ADD, core_rd[14]= 1948, core_rs[14]= 1918, core_rt[15]=   30
+@1f50
+4f 24	// Mult, core_rd[ 7]= 5625, core_rs[ 2]=  -75, core_rt[ 2]=  -75
+@1f52
+53 24	// Mult, core_rd[ 9]= 5625, core_rs[ 2]=  -75, core_rt[ 2]=  -75
+@1f54
+8d 7d	// Store, core_rt[12]=11250, core_rs[14]= 1948, immediate=  13, DRAM=@1f52, DRAM[1f52]=11250
+@1f56
+6c 81	// Branch, core_rs[ 0]= -481, core_rt[11]= 1798, immediate=12, pc=@1f58
+@1f58
+27 02	// SUB, core_rd[ 3]=    0, core_rs[ 1]=19072, core_rt[ 1]=19072
+@1f5a
+57 12	// SUB, core_rd[11]= 5700, core_rs[ 9]= 5625, core_rt[ 2]=  -75
+@1f5c
+05 8e	// Branch, core_rs[ 7]= 5625, core_rt[ 0]= -481, immediate= 5, pc=@1f5e
+@1f5e
+53 13	// SUB, core_rd[ 9]= 6082, core_rs[ 9]= 5625, core_rt[10]= -457
+@1f60
+a2 82	// Branch, core_rs[ 1]=19072, core_rt[ 5]=18514, immediate= 2, pc=@1f62
+@1f62
+39 1b	// SUB, core_rd[12]=-26867, core_rs[13]=-20785, core_rt[ 9]= 6082
+@1f64
+86 06	// ADD, core_rd[ 3]=-1713, core_rs[ 3]=    0, core_rt[ 4]=-1713
+@1f66
+49 07	// SUB, core_rd[ 4]=-1256, core_rs[ 3]=-1713, core_rt[10]= -457
+@1f68
+73 0e	// SUB, core_rd[ 9]= 7338, core_rs[ 7]= 5625, core_rt[ 3]=-1713
+@1f6a
+8f 08	// SUB, core_rd[ 7]=    0, core_rs[ 4]=-1256, core_rt[ 4]=-1256
+@1f6c
+ca 04	// ADD, core_rd[ 5]=20686, core_rs[ 2]=  -75, core_rt[ 6]=20761
+@1f6e
+83 0f	// SUB, core_rd[ 1]=26867, core_rs[ 7]=    0, core_rt[12]=-26867
+@1f70
+66 09	// ADD, core_rd[ 3]= 4444, core_rs[ 4]=-1256, core_rt[11]= 5700
+@1f72
+37 0d	// SUB, core_rd[11]=13423, core_rs[ 6]=20761, core_rt[ 9]= 7338
+@1f74
+75 04	// SUB, core_rd[10]=-4519, core_rs[ 2]=  -75, core_rt[ 3]= 4444
+@1f76
+40 16	// ADD, core_rd[ 0]=13348, core_rs[11]=13423, core_rt[ 2]=  -75
+@1f78
+d7 02	// SUB, core_rd[11]= 6106, core_rs[ 1]=26867, core_rt[ 6]=20761
+@1f7a
+79 10	// SUB, core_rd[12]=14551, core_rs[ 8]=18995, core_rt[ 3]= 4444
+@1f7c
+83 0a	// SUB, core_rd[ 1]=21942, core_rs[ 5]=20686, core_rt[ 4]=-1256
+@1f7e
+fc 1d	// ADD, core_rd[14]= 1978, core_rs[14]= 1948, core_rt[15]=   30
+@1f80
+88 bf	// Jump, p=1984, address=  10, pc=@1f88
+@1f82
+8a bf	// Jump, p=1985, address=  10, pc=@1f8a
+@1f84
+00 00	// Jump Skip
+@1f86
+00 00	// Jump Skip
+@1f88
+82 bf	// Jump, p=1988, address=  10, pc=@1f82
+@1f8a
+b3 05	// SUB, core_rd[ 9]=20710, core_rs[ 2]=  -75, core_rt[13]=-20785
+@1f8c
+c5 5c	// Load, core_rt[ 6]=  -17, core_rs[14]= 1978, immediate=   5, DRAM=@1f7e
+@1f8e
+48 16	// ADD, core_rd[ 4]= 6031, core_rs[11]= 6106, core_rt[ 2]=  -75
+@1f90
+63 7d	// Store, core_rt[11]= 6106, core_rs[14]= 1978, immediate=   3, DRAM=@1f7a, DRAM[1f7a]= 6106
+@1f92
+80 7c	// Store, core_rt[ 4]= 6031, core_rs[14]= 1978, immediate=   0, DRAM=@1f74, DRAM[1f74]= 6031
+@1f94
+77 1b	// SUB, core_rd[11]=-26891, core_rs[13]=-20785, core_rt[11]= 6106
+@1f96
+6b 06	// SUB, core_rd[ 5]=    0, core_rs[ 3]= 4444, core_rt[ 3]= 4444
+@1f98
+e2 08	// ADD, core_rd[ 1]= 6031, core_rs[ 4]= 6031, core_rt[ 7]=    0
+@1f9a
+7b 08	// SUB, core_rd[13]= 1587, core_rs[ 4]= 6031, core_rt[ 3]= 4444
+@1f9c
+60 12	// ADD, core_rd[ 0]=25154, core_rs[ 9]=20710, core_rt[ 3]= 4444
+@1f9e
+62 08	// ADD, core_rd[ 1]=10475, core_rs[ 4]= 6031, core_rt[ 3]= 4444
+@1fa0
+4f 13	// SUB, core_rd[ 7]=25229, core_rs[ 9]=20710, core_rt[10]=-4519
+@1fa2
+af 09	// SUB, core_rd[ 7]= 4444, core_rs[ 4]= 6031, core_rt[13]= 1587
+@1fa4
+a8 14	// ADD, core_rd[ 4]=-4519, core_rs[10]=-4519, core_rt[ 5]=    0
+@1fa6
+da 00	// ADD, core_rd[13]=25137, core_rs[ 0]=25154, core_rt[ 6]=  -17
+@1fa8
+68 02	// ADD, core_rd[ 4]=14919, core_rs[ 1]=10475, core_rt[ 3]= 4444
+@1faa
+60 1a	// ADD, core_rd[ 0]=29581, core_rs[13]=25137, core_rt[ 3]= 4444
+@1fac
+f7 02	// SUB, core_rd[11]= 6031, core_rs[ 1]=10475, core_rt[ 7]= 4444
+@1fae
+11 17	// SUB, core_rd[ 8]=-12964, core_rs[11]= 6031, core_rt[ 8]=18995
+@1fb0
+e4 16	// ADD, core_rd[ 2]=10475, core_rs[11]= 6031, core_rt[ 7]= 4444
+@1fb2
+03 07	// SUB, core_rd[ 1]=17408, core_rs[ 3]= 4444, core_rt[ 8]=-12964
+@1fb4
+4a 0f	// ADD, core_rd[ 5]=  -75, core_rs[ 7]= 4444, core_rt[10]=-4519
+@1fb6
+fc 1d	// ADD, core_rd[14]= 2008, core_rs[14]= 1978, core_rt[15]=   30
+@1fb8
+ab 2c	// Mult, core_rd[ 5]= 1275, core_rs[ 6]=  -17, core_rt[ 5]=  -75
+@1fba
+db 2a	// Mult, core_rd[13]=-21675, core_rs[ 5]= 1275, core_rt[ 6]=  -17
+@1fbc
+32 17	// ADD, core_rd[ 9]=26741, core_rs[11]= 6031, core_rt[ 9]=20710
+@1fbe
+b2 06	// ADD, core_rd[ 9]= 5719, core_rs[ 3]= 4444, core_rt[ 5]= 1275
+@1fc0
+d2 16	// ADD, core_rd[ 9]= 6014, core_rs[11]= 6031, core_rt[ 6]=  -17
+@1fc2
+94 14	// ADD, core_rd[10]=10400, core_rs[10]=-4519, core_rt[ 4]=14919
+@1fc4
+d9 2a	// Mult, core_rd[12]=-21675, core_rs[ 5]= 1275, core_rt[ 6]=  -17
+@1fc6
+ac 07	// ADD, core_rd[ 6]=-17231, core_rs[ 3]= 4444, core_rt[13]=-21675
+@1fc8
+08 2b	// Less than, core_rd[ 4]=    0, core_rs[ 5]= 1275, core_rt[ 8]=-12964
+@1fca
+62 02	// ADD, core_rd[ 1]=21852, core_rs[ 1]=17408, core_rt[ 3]= 4444
+@1fcc
+3b 29	// Mult, core_rd[13]=    0, core_rs[ 4]=    0, core_rt[ 9]= 6014
+@1fce
+71 11	// SUB, core_rd[ 8]=-18995, core_rs[ 8]=-12964, core_rt[11]= 6031
+@1fd0
+2d 0b	// SUB, core_rd[ 6]=-4739, core_rs[ 5]= 1275, core_rt[ 9]= 6014
+@1fd2
+2f 1b	// SUB, core_rd[ 7]=-6014, core_rs[13]=    0, core_rt[ 9]= 6014
+@1fd4
+a4 1a	// ADD, core_rd[ 2]= 1275, core_rs[13]=    0, core_rt[ 5]= 1275
+@1fd6
+0d 1a	// SUB, core_rd[ 6]=-29581, core_rs[13]=    0, core_rt[ 0]=29581
+@1fd8
+23 0a	// SUB, core_rd[ 1]=-20577, core_rs[ 5]= 1275, core_rt[ 1]=21852
+@1fda
+a3 0f	// SUB, core_rd[ 1]=-6014, core_rs[ 7]=-6014, core_rt[13]=    0
+@1fdc
+d9 04	// SUB, core_rd[12]=30856, core_rs[ 2]= 1275, core_rt[ 6]=-29581
+@1fde
+4e 03	// ADD, core_rd[ 7]= 4386, core_rs[ 1]=-6014, core_rt[10]=10400
+@1fe0
+b0 19	// ADD, core_rd[ 8]=30856, core_rs[12]=30856, core_rt[13]=    0
+@1fe2
+a8 13	// ADD, core_rd[ 4]= 6014, core_rs[ 9]= 6014, core_rt[13]=    0
+@1fe4
+85 01	// SUB, core_rd[ 2]=-1275, core_rs[ 0]=29581, core_rt[12]=30856
+@1fe6
+18 0d	// ADD, core_rd[12]= 1275, core_rs[ 6]=-29581, core_rt[ 8]=30856
+@1fe8
+b3 0f	// SUB, core_rd[ 9]= 4386, core_rs[ 7]= 4386, core_rt[13]=    0
+@1fea
+0b 05	// SUB, core_rd[ 5]=-32131, core_rs[ 2]=-1275, core_rt[ 8]=30856
+@1fec
+29 07	// SUB, core_rd[ 4]=   58, core_rs[ 3]= 4444, core_rt[ 9]= 4386
+@1fee
+e8 08	// ADD, core_rd[ 4]= 4444, core_rs[ 4]=   58, core_rt[ 7]= 4386
+@1ff0
+19 08	// SUB, core_rd[12]=-25137, core_rs[ 4]= 4444, core_rt[ 0]=29581
+@1ff2
+fc 1d	// ADD, core_rd[14]= 2038, core_rs[14]= 2008, core_rt[15]=   30
+@1ff4
+ad 33	// Mult, core_rd[ 6]=    0, core_rs[ 9]= 4386, core_rt[13]=    0
+@1ff6
+c3 2e	// Mult, core_rd[ 1]=    0, core_rs[ 7]= 4386, core_rt[ 6]=    0
+@1ff8
+7a 2f	// Less than, core_rd[13]=    1, core_rs[ 7]= 4386, core_rt[11]= 6031
+@1ffa
+4f 2c	// Mult, core_rd[ 7]=    0, core_rs[ 6]=    0, core_rt[ 2]=-1275
+@1ffc
+90 17	// ADD, core_rd[ 8]=-19106, core_rs[11]= 6031, core_rt[12]=-25137
+@1ffe
+68 08	// ADD, core_rd[ 4]= 8888, core_rs[ 4]= 4444, core_rt[ 3]= 4444

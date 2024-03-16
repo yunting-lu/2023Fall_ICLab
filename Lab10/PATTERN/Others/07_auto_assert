@@ -1,0 +1,40 @@
+echo -e "***********************************************************************"
+echo -e "* Using TA's Design + TA's PATTERNS to check your CHECKER correctness *"
+echo -e "***********************************************************************"
+
+# brief: This script is used to check your checker correctness.
+# Author: Jyun-Wei, Su
+# Update: 2023.11.30
+
+
+SPEC=(4 4 2 4 4 1 1 6 2)
+./09_clean_up > check.log
+
+# check ASSERTION SPEC
+echo -e "\033[44m Check all SPEC...\033[0m"
+for ((i=1; i<=9; i++))
+do
+    for((j=1; j<=${SPEC[$i-1]}; j++))
+    do
+        #./01_run SPEC_$i\_$j > check.log
+        make irun_rtl -s -i define="SPEC_$i\_$j" > check.log
+        if  grep -i -q "Assertion $i is violated" 'irun.log'; then
+                echo -e "\033[32m--- SPEC-$i-$j check Pass ---\033[0m"
+        else
+                echo -e "\033[31m--- SPEC-$i-$j check Fail ---\033[0m"
+                exit 0
+        fi
+    done
+    echo -e "\033[42m--- ASSERTION check SPEC-$i Pass ---\033[0m"
+done
+
+# check CORRECT DESING
+make irun_rtl -s -i define=CORRECT > check.log
+if  grep -i -q "Congratulations" 'irun.log'; then
+        echo -e "\033[32m--- CORRECT DESING check Pass ---\033[0m"
+else
+        echo -e "\033[31m--- CORRECT DESING check Fail ---\033[0m"
+        exit 0
+fi
+
+echo -e "\033[42m--- PATTERN PASS !!! ---\033[0m"

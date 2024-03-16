@@ -1,0 +1,37 @@
+echo -e "\033[44m=====Check timingReports=====\033[0m"
+# for .slk file in timingReports
+
+for file in timingReports/*.slk; do
+        if awk '{print $3}' $file | grep -i -q -P '\-(?!>)'; then
+                echo -e "\033[31m--- TM $file Fail !! ---\033[0m"
+        else
+                echo -e "\033[32m--- TM $file PASS !! ---\033[0m"
+        fi
+done
+echo -e "\033[33m=====There must be 7 slk files above (please check it manually)=====\033[0m"
+
+# check error
+echo -e "\033[44m=====Check innovus.log=====\033[0m"
+ls -1 innovus.log* | grep -E 'innovus\.log[0-9]+$' | sort -V | tail -n 1
+
+echo -e "\033[43m===== Check if any error in innovus.log=====\033[0m"
+cat -n "$(ls -1 innovus.log* | grep -E 'innovus\.log[0-9]+$' | sort -V | tail -n 1)" | grep -i 'error' | grep -v -E '0 error|Error Limit|-error 1000'
+if [ $? -eq 0 ]; then
+        echo -e "\033[31m--- Error in innovus.log ---\033[0m"
+else
+        echo -e "\033[32m--- No error in innovus.log ---\033[0m"
+fi
+
+#echo -e "\033[43m===== Check if any violation in innovus.log=====\033[0m"
+#cat -n "$(ls -1 innovus.log* | grep -E 'innovus\.log[0-9]+$' | sort -V | tail -n 1)" | grep -i 'violation' | \
+#    grep -v -E 'avoid violation|Deleting Existing Violations|violations: 0|violations = 0|Violation analysis'
+
+echo -e "\033[43m===== Check DRV in innovus.log=====\033[0m"
+grep -A 10 -B 10 '|    DRVs        +------------------+------------+------------------|' "$(ls -1 innovus.log* | grep -E 'innovus\.log[0-9]+$' | sort -V | tail -n 1)" | tac | grep -m 1 -B 7 '|    DRVs        +------------------+------------+------------------|'
+
+
+# check area
+echo -e "\033[44m=====Summary=====\033[0m"
+cat summaryReport.rpt | grep "Total area"
+
+echo -e "\033[44m=====Go to 06_POST to check postsim=====\033[0m"

@@ -1,0 +1,24 @@
+#!/usr/bin/bash
+
+# Brief: This is a script to change the layer name in LEF file
+# Author: Jyun-Wei, Su
+# Update: 2023.12.13
+
+fr=("core" "ME1" "ME2" "ME3" "ME4" "VI1" "VI2" "VI3")
+to=("core_5040" "metal1" "metal2" "metal3" "metal4" "via" "via2" "via3")
+
+for file in ./*.lef
+do
+  if [ -f "$file" ]; then
+    echo -e "\033[44mFile: $file\033[0m"
+
+    for ((i=0; i<${#fr[@]}; i++))
+    do
+      echo -e "\033[33m${fr[$i]} to ${to[$i]}\033[0m"
+      export GREP_COLOR='01;31'; cat --number $file | grep -m 1 --color "\b${fr[$i]}\b"
+      sed -i "s/\b${fr[$i]}\b/${to[$i]}/g" "$file"
+      export GREP_COLOR='01;32'; cat --number $file | grep -m 1 --color "\b${to[$i]}\b"
+    done
+
+  fi
+done

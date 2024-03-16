@@ -1,0 +1,4096 @@
+@1000
+00 40	// load, rs= 0, rt= 0, immediate=  0, DRAM[1000], core[ 0] =      0
+@1002
+21 40	// load, rs= 0, rt= 1, immediate=  1, DRAM[1002], core[ 1] =      2
+@1004
+42 40	// load, rs= 0, rt= 2, immediate=  2, DRAM[1004], core[ 2] =      4
+@1006
+63 40	// load, rs= 0, rt= 3, immediate=  3, DRAM[1006], core[ 3] =      6
+@1008
+84 40	// load, rs= 0, rt= 4, immediate=  4, DRAM[1008], core[ 4] =      8
+@100a
+a5 40	// load, rs= 0, rt= 5, immediate=  5, DRAM[100a], core[ 5] =     10
+@100c
+c6 40	// load, rs= 0, rt= 6, immediate=  6, DRAM[100c], core[ 6] =     12
+@100e
+e7 40	// load, rs= 0, rt= 7, immediate=  7, DRAM[100e], core[ 7] =     14
+@1010
+08 41	// load, rs= 0, rt= 8, immediate=  8, DRAM[1010], core[ 8] =     16
+@1012
+29 41	// load, rs= 0, rt= 9, immediate=  9, DRAM[1012], core[ 9] =     18
+@1014
+4a 41	// load, rs= 0, rt=10, immediate= 10, DRAM[1014], core[10] =     20
+@1016
+6b 41	// load, rs= 0, rt=11, immediate= 11, DRAM[1016], core[11] =     22
+@1018
+8c 41	// load, rs= 0, rt=12, immediate= 12, DRAM[1018], core[12] =     24
+@101a
+ad 41	// load, rs= 0, rt=13, immediate= 13, DRAM[101a], core[13] =     26
+@101c
+ce 41	// load, rs= 0, rt=14, immediate= 14, DRAM[101c], core[14] =     28
+@101e
+ef 41	// load, rs= 0, rt=15, immediate= 15, DRAM[101e], core[15] =     30
+@1020
+4e b0	// Jump, p=  16, address=  48, pc=@104e
+@1022
+50 b0	// Jump, p=  17, address=  48, pc=@1050
+@1024
+00 00	// Jump Skip
+@1026
+00 00	// Jump Skip
+@1028
+00 00	// Jump Skip
+@102a
+00 00	// Jump Skip
+@102c
+00 00	// Jump Skip
+@102e
+00 00	// Jump Skip
+@1030
+00 00	// Jump Skip
+@1032
+00 00	// Jump Skip
+@1034
+00 00	// Jump Skip
+@1036
+00 00	// Jump Skip
+@1038
+00 00	// Jump Skip
+@103a
+00 00	// Jump Skip
+@103c
+00 00	// Jump Skip
+@103e
+00 00	// Jump Skip
+@1040
+00 00	// Jump Skip
+@1042
+00 00	// Jump Skip
+@1044
+00 00	// Jump Skip
+@1046
+00 00	// Jump Skip
+@1048
+00 00	// Jump Skip
+@104a
+00 00	// Jump Skip
+@104c
+00 00	// Jump Skip
+@104e
+22 b0	// Jump, p=  39, address=  48, pc=@1022
+@1050
+86 b0	// Jump, p=  40, address=  56, pc=@1086
+@1052
+88 b0	// Jump, p=  41, address=  56, pc=@1088
+@1054
+00 00	// Jump Skip
+@1056
+00 00	// Jump Skip
+@1058
+00 00	// Jump Skip
+@105a
+00 00	// Jump Skip
+@105c
+00 00	// Jump Skip
+@105e
+00 00	// Jump Skip
+@1060
+00 00	// Jump Skip
+@1062
+00 00	// Jump Skip
+@1064
+00 00	// Jump Skip
+@1066
+00 00	// Jump Skip
+@1068
+00 00	// Jump Skip
+@106a
+00 00	// Jump Skip
+@106c
+00 00	// Jump Skip
+@106e
+00 00	// Jump Skip
+@1070
+00 00	// Jump Skip
+@1072
+00 00	// Jump Skip
+@1074
+00 00	// Jump Skip
+@1076
+00 00	// Jump Skip
+@1078
+00 00	// Jump Skip
+@107a
+00 00	// Jump Skip
+@107c
+00 00	// Jump Skip
+@107e
+00 00	// Jump Skip
+@1080
+00 00	// Jump Skip
+@1082
+00 00	// Jump Skip
+@1084
+00 00	// Jump Skip
+@1086
+52 b0	// Jump, p=  67, address=  56, pc=@1052
+@1088
+90 b0	// Jump, p=  68, address=  10, pc=@1090
+@108a
+92 b0	// Jump, p=  69, address=  10, pc=@1092
+@108c
+00 00	// Jump Skip
+@108e
+00 00	// Jump Skip
+@1090
+8a b0	// Jump, p=  72, address=  10, pc=@108a
+@1092
+b2 b0	// Jump, p=  73, address=  34, pc=@10b2
+@1094
+b4 b0	// Jump, p=  74, address=  34, pc=@10b4
+@1096
+00 00	// Jump Skip
+@1098
+00 00	// Jump Skip
+@109a
+00 00	// Jump Skip
+@109c
+00 00	// Jump Skip
+@109e
+00 00	// Jump Skip
+@10a0
+00 00	// Jump Skip
+@10a2
+00 00	// Jump Skip
+@10a4
+00 00	// Jump Skip
+@10a6
+00 00	// Jump Skip
+@10a8
+00 00	// Jump Skip
+@10aa
+00 00	// Jump Skip
+@10ac
+00 00	// Jump Skip
+@10ae
+00 00	// Jump Skip
+@10b0
+00 00	// Jump Skip
+@10b2
+94 b0	// Jump, p=  89, address=  34, pc=@1094
+@10b4
+be b0	// Jump, p=  90, address=  12, pc=@10be
+@10b6
+c0 b0	// Jump, p=  91, address=  12, pc=@10c0
+@10b8
+00 00	// Jump Skip
+@10ba
+00 00	// Jump Skip
+@10bc
+00 00	// Jump Skip
+@10be
+b6 b0	// Jump, p=  95, address=  12, pc=@10b6
+@10c0
+fa b0	// Jump, p=  96, address=  60, pc=@10fa
+@10c2
+fc b0	// Jump, p=  97, address=  60, pc=@10fc
+@10c4
+00 00	// Jump Skip
+@10c6
+00 00	// Jump Skip
+@10c8
+00 00	// Jump Skip
+@10ca
+00 00	// Jump Skip
+@10cc
+00 00	// Jump Skip
+@10ce
+00 00	// Jump Skip
+@10d0
+00 00	// Jump Skip
+@10d2
+00 00	// Jump Skip
+@10d4
+00 00	// Jump Skip
+@10d6
+00 00	// Jump Skip
+@10d8
+00 00	// Jump Skip
+@10da
+00 00	// Jump Skip
+@10dc
+00 00	// Jump Skip
+@10de
+00 00	// Jump Skip
+@10e0
+00 00	// Jump Skip
+@10e2
+00 00	// Jump Skip
+@10e4
+00 00	// Jump Skip
+@10e6
+00 00	// Jump Skip
+@10e8
+00 00	// Jump Skip
+@10ea
+00 00	// Jump Skip
+@10ec
+00 00	// Jump Skip
+@10ee
+00 00	// Jump Skip
+@10f0
+00 00	// Jump Skip
+@10f2
+00 00	// Jump Skip
+@10f4
+00 00	// Jump Skip
+@10f6
+00 00	// Jump Skip
+@10f8
+00 00	// Jump Skip
+@10fa
+c2 b0	// Jump, p= 125, address=  60, pc=@10c2
+@10fc
+12 b1	// Jump, p= 126, address=  24, pc=@1112
+@10fe
+14 b1	// Jump, p= 127, address=  24, pc=@1114
+@1100
+00 00	// Jump Skip
+@1102
+00 00	// Jump Skip
+@1104
+00 00	// Jump Skip
+@1106
+00 00	// Jump Skip
+@1108
+00 00	// Jump Skip
+@110a
+00 00	// Jump Skip
+@110c
+00 00	// Jump Skip
+@110e
+00 00	// Jump Skip
+@1110
+00 00	// Jump Skip
+@1112
+fe b0	// Jump, p= 137, address=  24, pc=@10fe
+@1114
+2e b1	// Jump, p= 138, address=  28, pc=@112e
+@1116
+30 b1	// Jump, p= 139, address=  28, pc=@1130
+@1118
+00 00	// Jump Skip
+@111a
+00 00	// Jump Skip
+@111c
+00 00	// Jump Skip
+@111e
+00 00	// Jump Skip
+@1120
+00 00	// Jump Skip
+@1122
+00 00	// Jump Skip
+@1124
+00 00	// Jump Skip
+@1126
+00 00	// Jump Skip
+@1128
+00 00	// Jump Skip
+@112a
+00 00	// Jump Skip
+@112c
+00 00	// Jump Skip
+@112e
+16 b1	// Jump, p= 151, address=  28, pc=@1116
+@1130
+54 b1	// Jump, p= 152, address=  38, pc=@1154
+@1132
+56 b1	// Jump, p= 153, address=  38, pc=@1156
+@1134
+00 00	// Jump Skip
+@1136
+00 00	// Jump Skip
+@1138
+00 00	// Jump Skip
+@113a
+00 00	// Jump Skip
+@113c
+00 00	// Jump Skip
+@113e
+00 00	// Jump Skip
+@1140
+00 00	// Jump Skip
+@1142
+00 00	// Jump Skip
+@1144
+00 00	// Jump Skip
+@1146
+00 00	// Jump Skip
+@1148
+00 00	// Jump Skip
+@114a
+00 00	// Jump Skip
+@114c
+00 00	// Jump Skip
+@114e
+00 00	// Jump Skip
+@1150
+00 00	// Jump Skip
+@1152
+00 00	// Jump Skip
+@1154
+32 b1	// Jump, p= 170, address=  38, pc=@1132
+@1156
+68 b1	// Jump, p= 171, address=  20, pc=@1168
+@1158
+6a b1	// Jump, p= 172, address=  20, pc=@116a
+@115a
+00 00	// Jump Skip
+@115c
+00 00	// Jump Skip
+@115e
+00 00	// Jump Skip
+@1160
+00 00	// Jump Skip
+@1162
+00 00	// Jump Skip
+@1164
+00 00	// Jump Skip
+@1166
+00 00	// Jump Skip
+@1168
+58 b1	// Jump, p= 180, address=  20, pc=@1158
+@116a
+80 b1	// Jump, p= 181, address=  24, pc=@1180
+@116c
+82 b1	// Jump, p= 182, address=  24, pc=@1182
+@116e
+00 00	// Jump Skip
+@1170
+00 00	// Jump Skip
+@1172
+00 00	// Jump Skip
+@1174
+00 00	// Jump Skip
+@1176
+00 00	// Jump Skip
+@1178
+00 00	// Jump Skip
+@117a
+00 00	// Jump Skip
+@117c
+00 00	// Jump Skip
+@117e
+00 00	// Jump Skip
+@1180
+6c b1	// Jump, p= 192, address=  24, pc=@116c
+@1182
+aa b1	// Jump, p= 193, address=  42, pc=@11aa
+@1184
+ac b1	// Jump, p= 194, address=  42, pc=@11ac
+@1186
+00 00	// Jump Skip
+@1188
+00 00	// Jump Skip
+@118a
+00 00	// Jump Skip
+@118c
+00 00	// Jump Skip
+@118e
+00 00	// Jump Skip
+@1190
+00 00	// Jump Skip
+@1192
+00 00	// Jump Skip
+@1194
+00 00	// Jump Skip
+@1196
+00 00	// Jump Skip
+@1198
+00 00	// Jump Skip
+@119a
+00 00	// Jump Skip
+@119c
+00 00	// Jump Skip
+@119e
+00 00	// Jump Skip
+@11a0
+00 00	// Jump Skip
+@11a2
+00 00	// Jump Skip
+@11a4
+00 00	// Jump Skip
+@11a6
+00 00	// Jump Skip
+@11a8
+00 00	// Jump Skip
+@11aa
+84 b1	// Jump, p= 213, address=  42, pc=@1184
+@11ac
+d0 b1	// Jump, p= 214, address=  38, pc=@11d0
+@11ae
+d2 b1	// Jump, p= 215, address=  38, pc=@11d2
+@11b0
+00 00	// Jump Skip
+@11b2
+00 00	// Jump Skip
+@11b4
+00 00	// Jump Skip
+@11b6
+00 00	// Jump Skip
+@11b8
+00 00	// Jump Skip
+@11ba
+00 00	// Jump Skip
+@11bc
+00 00	// Jump Skip
+@11be
+00 00	// Jump Skip
+@11c0
+00 00	// Jump Skip
+@11c2
+00 00	// Jump Skip
+@11c4
+00 00	// Jump Skip
+@11c6
+00 00	// Jump Skip
+@11c8
+00 00	// Jump Skip
+@11ca
+00 00	// Jump Skip
+@11cc
+00 00	// Jump Skip
+@11ce
+00 00	// Jump Skip
+@11d0
+ae b1	// Jump, p= 232, address=  38, pc=@11ae
+@11d2
+0e b2	// Jump, p= 233, address=  62, pc=@120e
+@11d4
+10 b2	// Jump, p= 234, address=  62, pc=@1210
+@11d6
+00 00	// Jump Skip
+@11d8
+00 00	// Jump Skip
+@11da
+00 00	// Jump Skip
+@11dc
+00 00	// Jump Skip
+@11de
+00 00	// Jump Skip
+@11e0
+00 00	// Jump Skip
+@11e2
+00 00	// Jump Skip
+@11e4
+00 00	// Jump Skip
+@11e6
+00 00	// Jump Skip
+@11e8
+00 00	// Jump Skip
+@11ea
+00 00	// Jump Skip
+@11ec
+00 00	// Jump Skip
+@11ee
+00 00	// Jump Skip
+@11f0
+00 00	// Jump Skip
+@11f2
+00 00	// Jump Skip
+@11f4
+00 00	// Jump Skip
+@11f6
+00 00	// Jump Skip
+@11f8
+00 00	// Jump Skip
+@11fa
+00 00	// Jump Skip
+@11fc
+00 00	// Jump Skip
+@11fe
+00 00	// Jump Skip
+@1200
+00 00	// Jump Skip
+@1202
+00 00	// Jump Skip
+@1204
+00 00	// Jump Skip
+@1206
+00 00	// Jump Skip
+@1208
+00 00	// Jump Skip
+@120a
+00 00	// Jump Skip
+@120c
+00 00	// Jump Skip
+@120e
+d4 b1	// Jump, p= 263, address=  62, pc=@11d4
+@1210
+3a b2	// Jump, p= 264, address=  44, pc=@123a
+@1212
+3c b2	// Jump, p= 265, address=  44, pc=@123c
+@1214
+00 00	// Jump Skip
+@1216
+00 00	// Jump Skip
+@1218
+00 00	// Jump Skip
+@121a
+00 00	// Jump Skip
+@121c
+00 00	// Jump Skip
+@121e
+00 00	// Jump Skip
+@1220
+00 00	// Jump Skip
+@1222
+00 00	// Jump Skip
+@1224
+00 00	// Jump Skip
+@1226
+00 00	// Jump Skip
+@1228
+00 00	// Jump Skip
+@122a
+00 00	// Jump Skip
+@122c
+00 00	// Jump Skip
+@122e
+00 00	// Jump Skip
+@1230
+00 00	// Jump Skip
+@1232
+00 00	// Jump Skip
+@1234
+00 00	// Jump Skip
+@1236
+00 00	// Jump Skip
+@1238
+00 00	// Jump Skip
+@123a
+12 b2	// Jump, p= 285, address=  44, pc=@1212
+@123c
+56 b2	// Jump, p= 286, address=  28, pc=@1256
+@123e
+58 b2	// Jump, p= 287, address=  28, pc=@1258
+@1240
+00 00	// Jump Skip
+@1242
+00 00	// Jump Skip
+@1244
+00 00	// Jump Skip
+@1246
+00 00	// Jump Skip
+@1248
+00 00	// Jump Skip
+@124a
+00 00	// Jump Skip
+@124c
+00 00	// Jump Skip
+@124e
+00 00	// Jump Skip
+@1250
+00 00	// Jump Skip
+@1252
+00 00	// Jump Skip
+@1254
+00 00	// Jump Skip
+@1256
+3e b2	// Jump, p= 299, address=  28, pc=@123e
+@1258
+6e b2	// Jump, p= 300, address=  24, pc=@126e
+@125a
+70 b2	// Jump, p= 301, address=  24, pc=@1270
+@125c
+00 00	// Jump Skip
+@125e
+00 00	// Jump Skip
+@1260
+00 00	// Jump Skip
+@1262
+00 00	// Jump Skip
+@1264
+00 00	// Jump Skip
+@1266
+00 00	// Jump Skip
+@1268
+00 00	// Jump Skip
+@126a
+00 00	// Jump Skip
+@126c
+00 00	// Jump Skip
+@126e
+5a b2	// Jump, p= 311, address=  24, pc=@125a
+@1270
+7e b2	// Jump, p= 312, address=  16, pc=@127e
+@1272
+80 b2	// Jump, p= 313, address=  16, pc=@1280
+@1274
+00 00	// Jump Skip
+@1276
+00 00	// Jump Skip
+@1278
+00 00	// Jump Skip
+@127a
+00 00	// Jump Skip
+@127c
+00 00	// Jump Skip
+@127e
+72 b2	// Jump, p= 319, address=  16, pc=@1272
+@1280
+94 b2	// Jump, p= 320, address=  22, pc=@1294
+@1282
+96 b2	// Jump, p= 321, address=  22, pc=@1296
+@1284
+00 00	// Jump Skip
+@1286
+00 00	// Jump Skip
+@1288
+00 00	// Jump Skip
+@128a
+00 00	// Jump Skip
+@128c
+00 00	// Jump Skip
+@128e
+00 00	// Jump Skip
+@1290
+00 00	// Jump Skip
+@1292
+00 00	// Jump Skip
+@1294
+82 b2	// Jump, p= 330, address=  22, pc=@1282
+@1296
+be b2	// Jump, p= 331, address=  42, pc=@12be
+@1298
+c0 b2	// Jump, p= 332, address=  42, pc=@12c0
+@129a
+00 00	// Jump Skip
+@129c
+00 00	// Jump Skip
+@129e
+00 00	// Jump Skip
+@12a0
+00 00	// Jump Skip
+@12a2
+00 00	// Jump Skip
+@12a4
+00 00	// Jump Skip
+@12a6
+00 00	// Jump Skip
+@12a8
+00 00	// Jump Skip
+@12aa
+00 00	// Jump Skip
+@12ac
+00 00	// Jump Skip
+@12ae
+00 00	// Jump Skip
+@12b0
+00 00	// Jump Skip
+@12b2
+00 00	// Jump Skip
+@12b4
+00 00	// Jump Skip
+@12b6
+00 00	// Jump Skip
+@12b8
+00 00	// Jump Skip
+@12ba
+00 00	// Jump Skip
+@12bc
+00 00	// Jump Skip
+@12be
+98 b2	// Jump, p= 351, address=  42, pc=@1298
+@12c0
+d8 b2	// Jump, p= 352, address=  26, pc=@12d8
+@12c2
+da b2	// Jump, p= 353, address=  26, pc=@12da
+@12c4
+00 00	// Jump Skip
+@12c6
+00 00	// Jump Skip
+@12c8
+00 00	// Jump Skip
+@12ca
+00 00	// Jump Skip
+@12cc
+00 00	// Jump Skip
+@12ce
+00 00	// Jump Skip
+@12d0
+00 00	// Jump Skip
+@12d2
+00 00	// Jump Skip
+@12d4
+00 00	// Jump Skip
+@12d6
+00 00	// Jump Skip
+@12d8
+c2 b2	// Jump, p= 364, address=  26, pc=@12c2
+@12da
+00 b3	// Jump, p= 365, address=  40, pc=@1300
+@12dc
+02 b3	// Jump, p= 366, address=  40, pc=@1302
+@12de
+00 00	// Jump Skip
+@12e0
+00 00	// Jump Skip
+@12e2
+00 00	// Jump Skip
+@12e4
+00 00	// Jump Skip
+@12e6
+00 00	// Jump Skip
+@12e8
+00 00	// Jump Skip
+@12ea
+00 00	// Jump Skip
+@12ec
+00 00	// Jump Skip
+@12ee
+00 00	// Jump Skip
+@12f0
+00 00	// Jump Skip
+@12f2
+00 00	// Jump Skip
+@12f4
+00 00	// Jump Skip
+@12f6
+00 00	// Jump Skip
+@12f8
+00 00	// Jump Skip
+@12fa
+00 00	// Jump Skip
+@12fc
+00 00	// Jump Skip
+@12fe
+00 00	// Jump Skip
+@1300
+dc b2	// Jump, p= 384, address=  40, pc=@12dc
+@1302
+38 b3	// Jump, p= 385, address=  56, pc=@1338
+@1304
+3a b3	// Jump, p= 386, address=  56, pc=@133a
+@1306
+00 00	// Jump Skip
+@1308
+00 00	// Jump Skip
+@130a
+00 00	// Jump Skip
+@130c
+00 00	// Jump Skip
+@130e
+00 00	// Jump Skip
+@1310
+00 00	// Jump Skip
+@1312
+00 00	// Jump Skip
+@1314
+00 00	// Jump Skip
+@1316
+00 00	// Jump Skip
+@1318
+00 00	// Jump Skip
+@131a
+00 00	// Jump Skip
+@131c
+00 00	// Jump Skip
+@131e
+00 00	// Jump Skip
+@1320
+00 00	// Jump Skip
+@1322
+00 00	// Jump Skip
+@1324
+00 00	// Jump Skip
+@1326
+00 00	// Jump Skip
+@1328
+00 00	// Jump Skip
+@132a
+00 00	// Jump Skip
+@132c
+00 00	// Jump Skip
+@132e
+00 00	// Jump Skip
+@1330
+00 00	// Jump Skip
+@1332
+00 00	// Jump Skip
+@1334
+00 00	// Jump Skip
+@1336
+00 00	// Jump Skip
+@1338
+04 b3	// Jump, p= 412, address=  56, pc=@1304
+@133a
+54 b3	// Jump, p= 413, address=  28, pc=@1354
+@133c
+56 b3	// Jump, p= 414, address=  28, pc=@1356
+@133e
+00 00	// Jump Skip
+@1340
+00 00	// Jump Skip
+@1342
+00 00	// Jump Skip
+@1344
+00 00	// Jump Skip
+@1346
+00 00	// Jump Skip
+@1348
+00 00	// Jump Skip
+@134a
+00 00	// Jump Skip
+@134c
+00 00	// Jump Skip
+@134e
+00 00	// Jump Skip
+@1350
+00 00	// Jump Skip
+@1352
+00 00	// Jump Skip
+@1354
+3c b3	// Jump, p= 426, address=  28, pc=@133c
+@1356
+84 b3	// Jump, p= 427, address=  48, pc=@1384
+@1358
+86 b3	// Jump, p= 428, address=  48, pc=@1386
+@135a
+00 00	// Jump Skip
+@135c
+00 00	// Jump Skip
+@135e
+00 00	// Jump Skip
+@1360
+00 00	// Jump Skip
+@1362
+00 00	// Jump Skip
+@1364
+00 00	// Jump Skip
+@1366
+00 00	// Jump Skip
+@1368
+00 00	// Jump Skip
+@136a
+00 00	// Jump Skip
+@136c
+00 00	// Jump Skip
+@136e
+00 00	// Jump Skip
+@1370
+00 00	// Jump Skip
+@1372
+00 00	// Jump Skip
+@1374
+00 00	// Jump Skip
+@1376
+00 00	// Jump Skip
+@1378
+00 00	// Jump Skip
+@137a
+00 00	// Jump Skip
+@137c
+00 00	// Jump Skip
+@137e
+00 00	// Jump Skip
+@1380
+00 00	// Jump Skip
+@1382
+00 00	// Jump Skip
+@1384
+58 b3	// Jump, p= 450, address=  48, pc=@1358
+@1386
+98 b3	// Jump, p= 451, address=  20, pc=@1398
+@1388
+9a b3	// Jump, p= 452, address=  20, pc=@139a
+@138a
+00 00	// Jump Skip
+@138c
+00 00	// Jump Skip
+@138e
+00 00	// Jump Skip
+@1390
+00 00	// Jump Skip
+@1392
+00 00	// Jump Skip
+@1394
+00 00	// Jump Skip
+@1396
+00 00	// Jump Skip
+@1398
+88 b3	// Jump, p= 460, address=  20, pc=@1388
+@139a
+ba b3	// Jump, p= 461, address=  34, pc=@13ba
+@139c
+bc b3	// Jump, p= 462, address=  34, pc=@13bc
+@139e
+00 00	// Jump Skip
+@13a0
+00 00	// Jump Skip
+@13a2
+00 00	// Jump Skip
+@13a4
+00 00	// Jump Skip
+@13a6
+00 00	// Jump Skip
+@13a8
+00 00	// Jump Skip
+@13aa
+00 00	// Jump Skip
+@13ac
+00 00	// Jump Skip
+@13ae
+00 00	// Jump Skip
+@13b0
+00 00	// Jump Skip
+@13b2
+00 00	// Jump Skip
+@13b4
+00 00	// Jump Skip
+@13b6
+00 00	// Jump Skip
+@13b8
+00 00	// Jump Skip
+@13ba
+9c b3	// Jump, p= 477, address=  34, pc=@139c
+@13bc
+f8 b3	// Jump, p= 478, address=  62, pc=@13f8
+@13be
+fa b3	// Jump, p= 479, address=  62, pc=@13fa
+@13c0
+00 00	// Jump Skip
+@13c2
+00 00	// Jump Skip
+@13c4
+00 00	// Jump Skip
+@13c6
+00 00	// Jump Skip
+@13c8
+00 00	// Jump Skip
+@13ca
+00 00	// Jump Skip
+@13cc
+00 00	// Jump Skip
+@13ce
+00 00	// Jump Skip
+@13d0
+00 00	// Jump Skip
+@13d2
+00 00	// Jump Skip
+@13d4
+00 00	// Jump Skip
+@13d6
+00 00	// Jump Skip
+@13d8
+00 00	// Jump Skip
+@13da
+00 00	// Jump Skip
+@13dc
+00 00	// Jump Skip
+@13de
+00 00	// Jump Skip
+@13e0
+00 00	// Jump Skip
+@13e2
+00 00	// Jump Skip
+@13e4
+00 00	// Jump Skip
+@13e6
+00 00	// Jump Skip
+@13e8
+00 00	// Jump Skip
+@13ea
+00 00	// Jump Skip
+@13ec
+00 00	// Jump Skip
+@13ee
+00 00	// Jump Skip
+@13f0
+00 00	// Jump Skip
+@13f2
+00 00	// Jump Skip
+@13f4
+00 00	// Jump Skip
+@13f6
+00 00	// Jump Skip
+@13f8
+be b3	// Jump, p= 508, address=  62, pc=@13be
+@13fa
+26 b4	// Jump, p= 509, address=  46, pc=@1426
+@13fc
+28 b4	// Jump, p= 510, address=  46, pc=@1428
+@13fe
+00 00	// Jump Skip
+@1400
+00 00	// Jump Skip
+@1402
+00 00	// Jump Skip
+@1404
+00 00	// Jump Skip
+@1406
+00 00	// Jump Skip
+@1408
+00 00	// Jump Skip
+@140a
+00 00	// Jump Skip
+@140c
+00 00	// Jump Skip
+@140e
+00 00	// Jump Skip
+@1410
+00 00	// Jump Skip
+@1412
+00 00	// Jump Skip
+@1414
+00 00	// Jump Skip
+@1416
+00 00	// Jump Skip
+@1418
+00 00	// Jump Skip
+@141a
+00 00	// Jump Skip
+@141c
+00 00	// Jump Skip
+@141e
+00 00	// Jump Skip
+@1420
+00 00	// Jump Skip
+@1422
+00 00	// Jump Skip
+@1424
+00 00	// Jump Skip
+@1426
+fc b3	// Jump, p= 531, address=  46, pc=@13fc
+@1428
+52 b4	// Jump, p= 532, address=  44, pc=@1452
+@142a
+54 b4	// Jump, p= 533, address=  44, pc=@1454
+@142c
+00 00	// Jump Skip
+@142e
+00 00	// Jump Skip
+@1430
+00 00	// Jump Skip
+@1432
+00 00	// Jump Skip
+@1434
+00 00	// Jump Skip
+@1436
+00 00	// Jump Skip
+@1438
+00 00	// Jump Skip
+@143a
+00 00	// Jump Skip
+@143c
+00 00	// Jump Skip
+@143e
+00 00	// Jump Skip
+@1440
+00 00	// Jump Skip
+@1442
+00 00	// Jump Skip
+@1444
+00 00	// Jump Skip
+@1446
+00 00	// Jump Skip
+@1448
+00 00	// Jump Skip
+@144a
+00 00	// Jump Skip
+@144c
+00 00	// Jump Skip
+@144e
+00 00	// Jump Skip
+@1450
+00 00	// Jump Skip
+@1452
+2a b4	// Jump, p= 553, address=  44, pc=@142a
+@1454
+88 b4	// Jump, p= 554, address=  54, pc=@1488
+@1456
+8a b4	// Jump, p= 555, address=  54, pc=@148a
+@1458
+00 00	// Jump Skip
+@145a
+00 00	// Jump Skip
+@145c
+00 00	// Jump Skip
+@145e
+00 00	// Jump Skip
+@1460
+00 00	// Jump Skip
+@1462
+00 00	// Jump Skip
+@1464
+00 00	// Jump Skip
+@1466
+00 00	// Jump Skip
+@1468
+00 00	// Jump Skip
+@146a
+00 00	// Jump Skip
+@146c
+00 00	// Jump Skip
+@146e
+00 00	// Jump Skip
+@1470
+00 00	// Jump Skip
+@1472
+00 00	// Jump Skip
+@1474
+00 00	// Jump Skip
+@1476
+00 00	// Jump Skip
+@1478
+00 00	// Jump Skip
+@147a
+00 00	// Jump Skip
+@147c
+00 00	// Jump Skip
+@147e
+00 00	// Jump Skip
+@1480
+00 00	// Jump Skip
+@1482
+00 00	// Jump Skip
+@1484
+00 00	// Jump Skip
+@1486
+00 00	// Jump Skip
+@1488
+56 b4	// Jump, p= 580, address=  54, pc=@1456
+@148a
+b0 b4	// Jump, p= 581, address=  40, pc=@14b0
+@148c
+b2 b4	// Jump, p= 582, address=  40, pc=@14b2
+@148e
+00 00	// Jump Skip
+@1490
+00 00	// Jump Skip
+@1492
+00 00	// Jump Skip
+@1494
+00 00	// Jump Skip
+@1496
+00 00	// Jump Skip
+@1498
+00 00	// Jump Skip
+@149a
+00 00	// Jump Skip
+@149c
+00 00	// Jump Skip
+@149e
+00 00	// Jump Skip
+@14a0
+00 00	// Jump Skip
+@14a2
+00 00	// Jump Skip
+@14a4
+00 00	// Jump Skip
+@14a6
+00 00	// Jump Skip
+@14a8
+00 00	// Jump Skip
+@14aa
+00 00	// Jump Skip
+@14ac
+00 00	// Jump Skip
+@14ae
+00 00	// Jump Skip
+@14b0
+8c b4	// Jump, p= 600, address=  40, pc=@148c
+@14b2
+c4 b4	// Jump, p= 601, address=  20, pc=@14c4
+@14b4
+c6 b4	// Jump, p= 602, address=  20, pc=@14c6
+@14b6
+00 00	// Jump Skip
+@14b8
+00 00	// Jump Skip
+@14ba
+00 00	// Jump Skip
+@14bc
+00 00	// Jump Skip
+@14be
+00 00	// Jump Skip
+@14c0
+00 00	// Jump Skip
+@14c2
+00 00	// Jump Skip
+@14c4
+b4 b4	// Jump, p= 610, address=  20, pc=@14b4
+@14c6
+d4 b4	// Jump, p= 611, address=  16, pc=@14d4
+@14c8
+d6 b4	// Jump, p= 612, address=  16, pc=@14d6
+@14ca
+00 00	// Jump Skip
+@14cc
+00 00	// Jump Skip
+@14ce
+00 00	// Jump Skip
+@14d0
+00 00	// Jump Skip
+@14d2
+00 00	// Jump Skip
+@14d4
+c8 b4	// Jump, p= 618, address=  16, pc=@14c8
+@14d6
+ea b4	// Jump, p= 619, address=  22, pc=@14ea
+@14d8
+ec b4	// Jump, p= 620, address=  22, pc=@14ec
+@14da
+00 00	// Jump Skip
+@14dc
+00 00	// Jump Skip
+@14de
+00 00	// Jump Skip
+@14e0
+00 00	// Jump Skip
+@14e2
+00 00	// Jump Skip
+@14e4
+00 00	// Jump Skip
+@14e6
+00 00	// Jump Skip
+@14e8
+00 00	// Jump Skip
+@14ea
+d8 b4	// Jump, p= 629, address=  22, pc=@14d8
+@14ec
+02 b5	// Jump, p= 630, address=  24, pc=@1502
+@14ee
+04 b5	// Jump, p= 631, address=  24, pc=@1504
+@14f0
+00 00	// Jump Skip
+@14f2
+00 00	// Jump Skip
+@14f4
+00 00	// Jump Skip
+@14f6
+00 00	// Jump Skip
+@14f8
+00 00	// Jump Skip
+@14fa
+00 00	// Jump Skip
+@14fc
+00 00	// Jump Skip
+@14fe
+00 00	// Jump Skip
+@1500
+00 00	// Jump Skip
+@1502
+ee b4	// Jump, p= 641, address=  24, pc=@14ee
+@1504
+14 b5	// Jump, p= 642, address=  18, pc=@1514
+@1506
+16 b5	// Jump, p= 643, address=  18, pc=@1516
+@1508
+00 00	// Jump Skip
+@150a
+00 00	// Jump Skip
+@150c
+00 00	// Jump Skip
+@150e
+00 00	// Jump Skip
+@1510
+00 00	// Jump Skip
+@1512
+00 00	// Jump Skip
+@1514
+06 b5	// Jump, p= 650, address=  18, pc=@1506
+@1516
+4e b5	// Jump, p= 651, address=  58, pc=@154e
+@1518
+50 b5	// Jump, p= 652, address=  58, pc=@1550
+@151a
+00 00	// Jump Skip
+@151c
+00 00	// Jump Skip
+@151e
+00 00	// Jump Skip
+@1520
+00 00	// Jump Skip
+@1522
+00 00	// Jump Skip
+@1524
+00 00	// Jump Skip
+@1526
+00 00	// Jump Skip
+@1528
+00 00	// Jump Skip
+@152a
+00 00	// Jump Skip
+@152c
+00 00	// Jump Skip
+@152e
+00 00	// Jump Skip
+@1530
+00 00	// Jump Skip
+@1532
+00 00	// Jump Skip
+@1534
+00 00	// Jump Skip
+@1536
+00 00	// Jump Skip
+@1538
+00 00	// Jump Skip
+@153a
+00 00	// Jump Skip
+@153c
+00 00	// Jump Skip
+@153e
+00 00	// Jump Skip
+@1540
+00 00	// Jump Skip
+@1542
+00 00	// Jump Skip
+@1544
+00 00	// Jump Skip
+@1546
+00 00	// Jump Skip
+@1548
+00 00	// Jump Skip
+@154a
+00 00	// Jump Skip
+@154c
+00 00	// Jump Skip
+@154e
+18 b5	// Jump, p= 679, address=  58, pc=@1518
+@1550
+62 b5	// Jump, p= 680, address=  20, pc=@1562
+@1552
+64 b5	// Jump, p= 681, address=  20, pc=@1564
+@1554
+00 00	// Jump Skip
+@1556
+00 00	// Jump Skip
+@1558
+00 00	// Jump Skip
+@155a
+00 00	// Jump Skip
+@155c
+00 00	// Jump Skip
+@155e
+00 00	// Jump Skip
+@1560
+00 00	// Jump Skip
+@1562
+52 b5	// Jump, p= 689, address=  20, pc=@1552
+@1564
+90 b5	// Jump, p= 690, address=  46, pc=@1590
+@1566
+92 b5	// Jump, p= 691, address=  46, pc=@1592
+@1568
+00 00	// Jump Skip
+@156a
+00 00	// Jump Skip
+@156c
+00 00	// Jump Skip
+@156e
+00 00	// Jump Skip
+@1570
+00 00	// Jump Skip
+@1572
+00 00	// Jump Skip
+@1574
+00 00	// Jump Skip
+@1576
+00 00	// Jump Skip
+@1578
+00 00	// Jump Skip
+@157a
+00 00	// Jump Skip
+@157c
+00 00	// Jump Skip
+@157e
+00 00	// Jump Skip
+@1580
+00 00	// Jump Skip
+@1582
+00 00	// Jump Skip
+@1584
+00 00	// Jump Skip
+@1586
+00 00	// Jump Skip
+@1588
+00 00	// Jump Skip
+@158a
+00 00	// Jump Skip
+@158c
+00 00	// Jump Skip
+@158e
+00 00	// Jump Skip
+@1590
+66 b5	// Jump, p= 712, address=  46, pc=@1566
+@1592
+a0 b5	// Jump, p= 713, address=  16, pc=@15a0
+@1594
+a2 b5	// Jump, p= 714, address=  16, pc=@15a2
+@1596
+00 00	// Jump Skip
+@1598
+00 00	// Jump Skip
+@159a
+00 00	// Jump Skip
+@159c
+00 00	// Jump Skip
+@159e
+00 00	// Jump Skip
+@15a0
+94 b5	// Jump, p= 720, address=  16, pc=@1594
+@15a2
+d6 b5	// Jump, p= 721, address=  54, pc=@15d6
+@15a4
+d8 b5	// Jump, p= 722, address=  54, pc=@15d8
+@15a6
+00 00	// Jump Skip
+@15a8
+00 00	// Jump Skip
+@15aa
+00 00	// Jump Skip
+@15ac
+00 00	// Jump Skip
+@15ae
+00 00	// Jump Skip
+@15b0
+00 00	// Jump Skip
+@15b2
+00 00	// Jump Skip
+@15b4
+00 00	// Jump Skip
+@15b6
+00 00	// Jump Skip
+@15b8
+00 00	// Jump Skip
+@15ba
+00 00	// Jump Skip
+@15bc
+00 00	// Jump Skip
+@15be
+00 00	// Jump Skip
+@15c0
+00 00	// Jump Skip
+@15c2
+00 00	// Jump Skip
+@15c4
+00 00	// Jump Skip
+@15c6
+00 00	// Jump Skip
+@15c8
+00 00	// Jump Skip
+@15ca
+00 00	// Jump Skip
+@15cc
+00 00	// Jump Skip
+@15ce
+00 00	// Jump Skip
+@15d0
+00 00	// Jump Skip
+@15d2
+00 00	// Jump Skip
+@15d4
+00 00	// Jump Skip
+@15d6
+a4 b5	// Jump, p= 747, address=  54, pc=@15a4
+@15d8
+f4 b5	// Jump, p= 748, address=  30, pc=@15f4
+@15da
+f6 b5	// Jump, p= 749, address=  30, pc=@15f6
+@15dc
+00 00	// Jump Skip
+@15de
+00 00	// Jump Skip
+@15e0
+00 00	// Jump Skip
+@15e2
+00 00	// Jump Skip
+@15e4
+00 00	// Jump Skip
+@15e6
+00 00	// Jump Skip
+@15e8
+00 00	// Jump Skip
+@15ea
+00 00	// Jump Skip
+@15ec
+00 00	// Jump Skip
+@15ee
+00 00	// Jump Skip
+@15f0
+00 00	// Jump Skip
+@15f2
+00 00	// Jump Skip
+@15f4
+da b5	// Jump, p= 762, address=  30, pc=@15da
+@15f6
+16 b6	// Jump, p= 763, address=  34, pc=@1616
+@15f8
+18 b6	// Jump, p= 764, address=  34, pc=@1618
+@15fa
+00 00	// Jump Skip
+@15fc
+00 00	// Jump Skip
+@15fe
+00 00	// Jump Skip
+@1600
+00 00	// Jump Skip
+@1602
+00 00	// Jump Skip
+@1604
+00 00	// Jump Skip
+@1606
+00 00	// Jump Skip
+@1608
+00 00	// Jump Skip
+@160a
+00 00	// Jump Skip
+@160c
+00 00	// Jump Skip
+@160e
+00 00	// Jump Skip
+@1610
+00 00	// Jump Skip
+@1612
+00 00	// Jump Skip
+@1614
+00 00	// Jump Skip
+@1616
+f8 b5	// Jump, p= 779, address=  34, pc=@15f8
+@1618
+26 b6	// Jump, p= 780, address=  16, pc=@1626
+@161a
+28 b6	// Jump, p= 781, address=  16, pc=@1628
+@161c
+00 00	// Jump Skip
+@161e
+00 00	// Jump Skip
+@1620
+00 00	// Jump Skip
+@1622
+00 00	// Jump Skip
+@1624
+00 00	// Jump Skip
+@1626
+1a b6	// Jump, p= 787, address=  16, pc=@161a
+@1628
+60 b6	// Jump, p= 788, address=  58, pc=@1660
+@162a
+62 b6	// Jump, p= 789, address=  58, pc=@1662
+@162c
+00 00	// Jump Skip
+@162e
+00 00	// Jump Skip
+@1630
+00 00	// Jump Skip
+@1632
+00 00	// Jump Skip
+@1634
+00 00	// Jump Skip
+@1636
+00 00	// Jump Skip
+@1638
+00 00	// Jump Skip
+@163a
+00 00	// Jump Skip
+@163c
+00 00	// Jump Skip
+@163e
+00 00	// Jump Skip
+@1640
+00 00	// Jump Skip
+@1642
+00 00	// Jump Skip
+@1644
+00 00	// Jump Skip
+@1646
+00 00	// Jump Skip
+@1648
+00 00	// Jump Skip
+@164a
+00 00	// Jump Skip
+@164c
+00 00	// Jump Skip
+@164e
+00 00	// Jump Skip
+@1650
+00 00	// Jump Skip
+@1652
+00 00	// Jump Skip
+@1654
+00 00	// Jump Skip
+@1656
+00 00	// Jump Skip
+@1658
+00 00	// Jump Skip
+@165a
+00 00	// Jump Skip
+@165c
+00 00	// Jump Skip
+@165e
+00 00	// Jump Skip
+@1660
+2a b6	// Jump, p= 816, address=  58, pc=@162a
+@1662
+94 b6	// Jump, p= 817, address=  52, pc=@1694
+@1664
+96 b6	// Jump, p= 818, address=  52, pc=@1696
+@1666
+00 00	// Jump Skip
+@1668
+00 00	// Jump Skip
+@166a
+00 00	// Jump Skip
+@166c
+00 00	// Jump Skip
+@166e
+00 00	// Jump Skip
+@1670
+00 00	// Jump Skip
+@1672
+00 00	// Jump Skip
+@1674
+00 00	// Jump Skip
+@1676
+00 00	// Jump Skip
+@1678
+00 00	// Jump Skip
+@167a
+00 00	// Jump Skip
+@167c
+00 00	// Jump Skip
+@167e
+00 00	// Jump Skip
+@1680
+00 00	// Jump Skip
+@1682
+00 00	// Jump Skip
+@1684
+00 00	// Jump Skip
+@1686
+00 00	// Jump Skip
+@1688
+00 00	// Jump Skip
+@168a
+00 00	// Jump Skip
+@168c
+00 00	// Jump Skip
+@168e
+00 00	// Jump Skip
+@1690
+00 00	// Jump Skip
+@1692
+00 00	// Jump Skip
+@1694
+64 b6	// Jump, p= 842, address=  52, pc=@1664
+@1696
+c4 b6	// Jump, p= 843, address=  48, pc=@16c4
+@1698
+c6 b6	// Jump, p= 844, address=  48, pc=@16c6
+@169a
+00 00	// Jump Skip
+@169c
+00 00	// Jump Skip
+@169e
+00 00	// Jump Skip
+@16a0
+00 00	// Jump Skip
+@16a2
+00 00	// Jump Skip
+@16a4
+00 00	// Jump Skip
+@16a6
+00 00	// Jump Skip
+@16a8
+00 00	// Jump Skip
+@16aa
+00 00	// Jump Skip
+@16ac
+00 00	// Jump Skip
+@16ae
+00 00	// Jump Skip
+@16b0
+00 00	// Jump Skip
+@16b2
+00 00	// Jump Skip
+@16b4
+00 00	// Jump Skip
+@16b6
+00 00	// Jump Skip
+@16b8
+00 00	// Jump Skip
+@16ba
+00 00	// Jump Skip
+@16bc
+00 00	// Jump Skip
+@16be
+00 00	// Jump Skip
+@16c0
+00 00	// Jump Skip
+@16c2
+00 00	// Jump Skip
+@16c4
+98 b6	// Jump, p= 866, address=  48, pc=@1698
+@16c6
+ee b6	// Jump, p= 867, address=  42, pc=@16ee
+@16c8
+f0 b6	// Jump, p= 868, address=  42, pc=@16f0
+@16ca
+00 00	// Jump Skip
+@16cc
+00 00	// Jump Skip
+@16ce
+00 00	// Jump Skip
+@16d0
+00 00	// Jump Skip
+@16d2
+00 00	// Jump Skip
+@16d4
+00 00	// Jump Skip
+@16d6
+00 00	// Jump Skip
+@16d8
+00 00	// Jump Skip
+@16da
+00 00	// Jump Skip
+@16dc
+00 00	// Jump Skip
+@16de
+00 00	// Jump Skip
+@16e0
+00 00	// Jump Skip
+@16e2
+00 00	// Jump Skip
+@16e4
+00 00	// Jump Skip
+@16e6
+00 00	// Jump Skip
+@16e8
+00 00	// Jump Skip
+@16ea
+00 00	// Jump Skip
+@16ec
+00 00	// Jump Skip
+@16ee
+c8 b6	// Jump, p= 887, address=  42, pc=@16c8
+@16f0
+08 b7	// Jump, p= 888, address=  26, pc=@1708
+@16f2
+0a b7	// Jump, p= 889, address=  26, pc=@170a
+@16f4
+00 00	// Jump Skip
+@16f6
+00 00	// Jump Skip
+@16f8
+00 00	// Jump Skip
+@16fa
+00 00	// Jump Skip
+@16fc
+00 00	// Jump Skip
+@16fe
+00 00	// Jump Skip
+@1700
+00 00	// Jump Skip
+@1702
+00 00	// Jump Skip
+@1704
+00 00	// Jump Skip
+@1706
+00 00	// Jump Skip
+@1708
+f2 b6	// Jump, p= 900, address=  26, pc=@16f2
+@170a
+26 b7	// Jump, p= 901, address=  30, pc=@1726
+@170c
+28 b7	// Jump, p= 902, address=  30, pc=@1728
+@170e
+00 00	// Jump Skip
+@1710
+00 00	// Jump Skip
+@1712
+00 00	// Jump Skip
+@1714
+00 00	// Jump Skip
+@1716
+00 00	// Jump Skip
+@1718
+00 00	// Jump Skip
+@171a
+00 00	// Jump Skip
+@171c
+00 00	// Jump Skip
+@171e
+00 00	// Jump Skip
+@1720
+00 00	// Jump Skip
+@1722
+00 00	// Jump Skip
+@1724
+00 00	// Jump Skip
+@1726
+0c b7	// Jump, p= 915, address=  30, pc=@170c
+@1728
+40 b7	// Jump, p= 916, address=  26, pc=@1740
+@172a
+42 b7	// Jump, p= 917, address=  26, pc=@1742
+@172c
+00 00	// Jump Skip
+@172e
+00 00	// Jump Skip
+@1730
+00 00	// Jump Skip
+@1732
+00 00	// Jump Skip
+@1734
+00 00	// Jump Skip
+@1736
+00 00	// Jump Skip
+@1738
+00 00	// Jump Skip
+@173a
+00 00	// Jump Skip
+@173c
+00 00	// Jump Skip
+@173e
+00 00	// Jump Skip
+@1740
+2a b7	// Jump, p= 928, address=  26, pc=@172a
+@1742
+68 b7	// Jump, p= 929, address=  40, pc=@1768
+@1744
+6a b7	// Jump, p= 930, address=  40, pc=@176a
+@1746
+00 00	// Jump Skip
+@1748
+00 00	// Jump Skip
+@174a
+00 00	// Jump Skip
+@174c
+00 00	// Jump Skip
+@174e
+00 00	// Jump Skip
+@1750
+00 00	// Jump Skip
+@1752
+00 00	// Jump Skip
+@1754
+00 00	// Jump Skip
+@1756
+00 00	// Jump Skip
+@1758
+00 00	// Jump Skip
+@175a
+00 00	// Jump Skip
+@175c
+00 00	// Jump Skip
+@175e
+00 00	// Jump Skip
+@1760
+00 00	// Jump Skip
+@1762
+00 00	// Jump Skip
+@1764
+00 00	// Jump Skip
+@1766
+00 00	// Jump Skip
+@1768
+44 b7	// Jump, p= 948, address=  40, pc=@1744
+@176a
+78 b7	// Jump, p= 949, address=  16, pc=@1778
+@176c
+7a b7	// Jump, p= 950, address=  16, pc=@177a
+@176e
+00 00	// Jump Skip
+@1770
+00 00	// Jump Skip
+@1772
+00 00	// Jump Skip
+@1774
+00 00	// Jump Skip
+@1776
+00 00	// Jump Skip
+@1778
+6c b7	// Jump, p= 956, address=  16, pc=@176c
+@177a
+90 b7	// Jump, p= 957, address=  24, pc=@1790
+@177c
+92 b7	// Jump, p= 958, address=  24, pc=@1792
+@177e
+00 00	// Jump Skip
+@1780
+00 00	// Jump Skip
+@1782
+00 00	// Jump Skip
+@1784
+00 00	// Jump Skip
+@1786
+00 00	// Jump Skip
+@1788
+00 00	// Jump Skip
+@178a
+00 00	// Jump Skip
+@178c
+00 00	// Jump Skip
+@178e
+00 00	// Jump Skip
+@1790
+7c b7	// Jump, p= 968, address=  24, pc=@177c
+@1792
+b6 b7	// Jump, p= 969, address=  38, pc=@17b6
+@1794
+b8 b7	// Jump, p= 970, address=  38, pc=@17b8
+@1796
+00 00	// Jump Skip
+@1798
+00 00	// Jump Skip
+@179a
+00 00	// Jump Skip
+@179c
+00 00	// Jump Skip
+@179e
+00 00	// Jump Skip
+@17a0
+00 00	// Jump Skip
+@17a2
+00 00	// Jump Skip
+@17a4
+00 00	// Jump Skip
+@17a6
+00 00	// Jump Skip
+@17a8
+00 00	// Jump Skip
+@17aa
+00 00	// Jump Skip
+@17ac
+00 00	// Jump Skip
+@17ae
+00 00	// Jump Skip
+@17b0
+00 00	// Jump Skip
+@17b2
+00 00	// Jump Skip
+@17b4
+00 00	// Jump Skip
+@17b6
+94 b7	// Jump, p= 987, address=  38, pc=@1794
+@17b8
+ca b7	// Jump, p= 988, address=  20, pc=@17ca
+@17ba
+cc b7	// Jump, p= 989, address=  20, pc=@17cc
+@17bc
+00 00	// Jump Skip
+@17be
+00 00	// Jump Skip
+@17c0
+00 00	// Jump Skip
+@17c2
+00 00	// Jump Skip
+@17c4
+00 00	// Jump Skip
+@17c6
+00 00	// Jump Skip
+@17c8
+00 00	// Jump Skip
+@17ca
+ba b7	// Jump, p= 997, address=  20, pc=@17ba
+@17cc
+dc b7	// Jump, p= 998, address=  18, pc=@17dc
+@17ce
+de b7	// Jump, p= 999, address=  18, pc=@17de
+@17d0
+00 00	// Jump Skip
+@17d2
+00 00	// Jump Skip
+@17d4
+00 00	// Jump Skip
+@17d6
+00 00	// Jump Skip
+@17d8
+00 00	// Jump Skip
+@17da
+00 00	// Jump Skip
+@17dc
+ce b7	// Jump, p=1006, address=  18, pc=@17ce
+@17de
+f8 b7	// Jump, p=1007, address=  28, pc=@17f8
+@17e0
+fa b7	// Jump, p=1008, address=  28, pc=@17fa
+@17e2
+00 00	// Jump Skip
+@17e4
+00 00	// Jump Skip
+@17e6
+00 00	// Jump Skip
+@17e8
+00 00	// Jump Skip
+@17ea
+00 00	// Jump Skip
+@17ec
+00 00	// Jump Skip
+@17ee
+00 00	// Jump Skip
+@17f0
+00 00	// Jump Skip
+@17f2
+00 00	// Jump Skip
+@17f4
+00 00	// Jump Skip
+@17f6
+00 00	// Jump Skip
+@17f8
+e0 b7	// Jump, p=1020, address=  28, pc=@17e0
+@17fa
+0e b8	// Jump, p=1021, address=  22, pc=@180e
+@17fc
+10 b8	// Jump, p=1022, address=  22, pc=@1810
+@17fe
+00 00	// Jump Skip
+@1800
+00 00	// Jump Skip
+@1802
+00 00	// Jump Skip
+@1804
+00 00	// Jump Skip
+@1806
+00 00	// Jump Skip
+@1808
+00 00	// Jump Skip
+@180a
+00 00	// Jump Skip
+@180c
+00 00	// Jump Skip
+@180e
+fc b7	// Jump, p=1031, address=  22, pc=@17fc
+@1810
+1e b8	// Jump, p=1032, address=  16, pc=@181e
+@1812
+20 b8	// Jump, p=1033, address=  16, pc=@1820
+@1814
+00 00	// Jump Skip
+@1816
+00 00	// Jump Skip
+@1818
+00 00	// Jump Skip
+@181a
+00 00	// Jump Skip
+@181c
+00 00	// Jump Skip
+@181e
+12 b8	// Jump, p=1039, address=  16, pc=@1812
+@1820
+40 b8	// Jump, p=1040, address=  34, pc=@1840
+@1822
+42 b8	// Jump, p=1041, address=  34, pc=@1842
+@1824
+00 00	// Jump Skip
+@1826
+00 00	// Jump Skip
+@1828
+00 00	// Jump Skip
+@182a
+00 00	// Jump Skip
+@182c
+00 00	// Jump Skip
+@182e
+00 00	// Jump Skip
+@1830
+00 00	// Jump Skip
+@1832
+00 00	// Jump Skip
+@1834
+00 00	// Jump Skip
+@1836
+00 00	// Jump Skip
+@1838
+00 00	// Jump Skip
+@183a
+00 00	// Jump Skip
+@183c
+00 00	// Jump Skip
+@183e
+00 00	// Jump Skip
+@1840
+22 b8	// Jump, p=1056, address=  34, pc=@1822
+@1842
+66 b8	// Jump, p=1057, address=  38, pc=@1866
+@1844
+68 b8	// Jump, p=1058, address=  38, pc=@1868
+@1846
+00 00	// Jump Skip
+@1848
+00 00	// Jump Skip
+@184a
+00 00	// Jump Skip
+@184c
+00 00	// Jump Skip
+@184e
+00 00	// Jump Skip
+@1850
+00 00	// Jump Skip
+@1852
+00 00	// Jump Skip
+@1854
+00 00	// Jump Skip
+@1856
+00 00	// Jump Skip
+@1858
+00 00	// Jump Skip
+@185a
+00 00	// Jump Skip
+@185c
+00 00	// Jump Skip
+@185e
+00 00	// Jump Skip
+@1860
+00 00	// Jump Skip
+@1862
+00 00	// Jump Skip
+@1864
+00 00	// Jump Skip
+@1866
+44 b8	// Jump, p=1075, address=  38, pc=@1844
+@1868
+96 b8	// Jump, p=1076, address=  48, pc=@1896
+@186a
+98 b8	// Jump, p=1077, address=  48, pc=@1898
+@186c
+00 00	// Jump Skip
+@186e
+00 00	// Jump Skip
+@1870
+00 00	// Jump Skip
+@1872
+00 00	// Jump Skip
+@1874
+00 00	// Jump Skip
+@1876
+00 00	// Jump Skip
+@1878
+00 00	// Jump Skip
+@187a
+00 00	// Jump Skip
+@187c
+00 00	// Jump Skip
+@187e
+00 00	// Jump Skip
+@1880
+00 00	// Jump Skip
+@1882
+00 00	// Jump Skip
+@1884
+00 00	// Jump Skip
+@1886
+00 00	// Jump Skip
+@1888
+00 00	// Jump Skip
+@188a
+00 00	// Jump Skip
+@188c
+00 00	// Jump Skip
+@188e
+00 00	// Jump Skip
+@1890
+00 00	// Jump Skip
+@1892
+00 00	// Jump Skip
+@1894
+00 00	// Jump Skip
+@1896
+6a b8	// Jump, p=1099, address=  48, pc=@186a
+@1898
+bc b8	// Jump, p=1100, address=  38, pc=@18bc
+@189a
+be b8	// Jump, p=1101, address=  38, pc=@18be
+@189c
+00 00	// Jump Skip
+@189e
+00 00	// Jump Skip
+@18a0
+00 00	// Jump Skip
+@18a2
+00 00	// Jump Skip
+@18a4
+00 00	// Jump Skip
+@18a6
+00 00	// Jump Skip
+@18a8
+00 00	// Jump Skip
+@18aa
+00 00	// Jump Skip
+@18ac
+00 00	// Jump Skip
+@18ae
+00 00	// Jump Skip
+@18b0
+00 00	// Jump Skip
+@18b2
+00 00	// Jump Skip
+@18b4
+00 00	// Jump Skip
+@18b6
+00 00	// Jump Skip
+@18b8
+00 00	// Jump Skip
+@18ba
+00 00	// Jump Skip
+@18bc
+9a b8	// Jump, p=1118, address=  38, pc=@189a
+@18be
+f2 b8	// Jump, p=1119, address=  54, pc=@18f2
+@18c0
+f4 b8	// Jump, p=1120, address=  54, pc=@18f4
+@18c2
+00 00	// Jump Skip
+@18c4
+00 00	// Jump Skip
+@18c6
+00 00	// Jump Skip
+@18c8
+00 00	// Jump Skip
+@18ca
+00 00	// Jump Skip
+@18cc
+00 00	// Jump Skip
+@18ce
+00 00	// Jump Skip
+@18d0
+00 00	// Jump Skip
+@18d2
+00 00	// Jump Skip
+@18d4
+00 00	// Jump Skip
+@18d6
+00 00	// Jump Skip
+@18d8
+00 00	// Jump Skip
+@18da
+00 00	// Jump Skip
+@18dc
+00 00	// Jump Skip
+@18de
+00 00	// Jump Skip
+@18e0
+00 00	// Jump Skip
+@18e2
+00 00	// Jump Skip
+@18e4
+00 00	// Jump Skip
+@18e6
+00 00	// Jump Skip
+@18e8
+00 00	// Jump Skip
+@18ea
+00 00	// Jump Skip
+@18ec
+00 00	// Jump Skip
+@18ee
+00 00	// Jump Skip
+@18f0
+00 00	// Jump Skip
+@18f2
+c0 b8	// Jump, p=1145, address=  54, pc=@18c0
+@18f4
+16 b9	// Jump, p=1146, address=  36, pc=@1916
+@18f6
+18 b9	// Jump, p=1147, address=  36, pc=@1918
+@18f8
+00 00	// Jump Skip
+@18fa
+00 00	// Jump Skip
+@18fc
+00 00	// Jump Skip
+@18fe
+00 00	// Jump Skip
+@1900
+00 00	// Jump Skip
+@1902
+00 00	// Jump Skip
+@1904
+00 00	// Jump Skip
+@1906
+00 00	// Jump Skip
+@1908
+00 00	// Jump Skip
+@190a
+00 00	// Jump Skip
+@190c
+00 00	// Jump Skip
+@190e
+00 00	// Jump Skip
+@1910
+00 00	// Jump Skip
+@1912
+00 00	// Jump Skip
+@1914
+00 00	// Jump Skip
+@1916
+f6 b8	// Jump, p=1163, address=  36, pc=@18f6
+@1918
+50 b9	// Jump, p=1164, address=  58, pc=@1950
+@191a
+52 b9	// Jump, p=1165, address=  58, pc=@1952
+@191c
+00 00	// Jump Skip
+@191e
+00 00	// Jump Skip
+@1920
+00 00	// Jump Skip
+@1922
+00 00	// Jump Skip
+@1924
+00 00	// Jump Skip
+@1926
+00 00	// Jump Skip
+@1928
+00 00	// Jump Skip
+@192a
+00 00	// Jump Skip
+@192c
+00 00	// Jump Skip
+@192e
+00 00	// Jump Skip
+@1930
+00 00	// Jump Skip
+@1932
+00 00	// Jump Skip
+@1934
+00 00	// Jump Skip
+@1936
+00 00	// Jump Skip
+@1938
+00 00	// Jump Skip
+@193a
+00 00	// Jump Skip
+@193c
+00 00	// Jump Skip
+@193e
+00 00	// Jump Skip
+@1940
+00 00	// Jump Skip
+@1942
+00 00	// Jump Skip
+@1944
+00 00	// Jump Skip
+@1946
+00 00	// Jump Skip
+@1948
+00 00	// Jump Skip
+@194a
+00 00	// Jump Skip
+@194c
+00 00	// Jump Skip
+@194e
+00 00	// Jump Skip
+@1950
+1a b9	// Jump, p=1192, address=  58, pc=@191a
+@1952
+78 b9	// Jump, p=1193, address=  40, pc=@1978
+@1954
+7a b9	// Jump, p=1194, address=  40, pc=@197a
+@1956
+00 00	// Jump Skip
+@1958
+00 00	// Jump Skip
+@195a
+00 00	// Jump Skip
+@195c
+00 00	// Jump Skip
+@195e
+00 00	// Jump Skip
+@1960
+00 00	// Jump Skip
+@1962
+00 00	// Jump Skip
+@1964
+00 00	// Jump Skip
+@1966
+00 00	// Jump Skip
+@1968
+00 00	// Jump Skip
+@196a
+00 00	// Jump Skip
+@196c
+00 00	// Jump Skip
+@196e
+00 00	// Jump Skip
+@1970
+00 00	// Jump Skip
+@1972
+00 00	// Jump Skip
+@1974
+00 00	// Jump Skip
+@1976
+00 00	// Jump Skip
+@1978
+54 b9	// Jump, p=1212, address=  40, pc=@1954
+@197a
+8c b9	// Jump, p=1213, address=  20, pc=@198c
+@197c
+8e b9	// Jump, p=1214, address=  20, pc=@198e
+@197e
+00 00	// Jump Skip
+@1980
+00 00	// Jump Skip
+@1982
+00 00	// Jump Skip
+@1984
+00 00	// Jump Skip
+@1986
+00 00	// Jump Skip
+@1988
+00 00	// Jump Skip
+@198a
+00 00	// Jump Skip
+@198c
+7c b9	// Jump, p=1222, address=  20, pc=@197c
+@198e
+b0 b9	// Jump, p=1223, address=  36, pc=@19b0
+@1990
+b2 b9	// Jump, p=1224, address=  36, pc=@19b2
+@1992
+00 00	// Jump Skip
+@1994
+00 00	// Jump Skip
+@1996
+00 00	// Jump Skip
+@1998
+00 00	// Jump Skip
+@199a
+00 00	// Jump Skip
+@199c
+00 00	// Jump Skip
+@199e
+00 00	// Jump Skip
+@19a0
+00 00	// Jump Skip
+@19a2
+00 00	// Jump Skip
+@19a4
+00 00	// Jump Skip
+@19a6
+00 00	// Jump Skip
+@19a8
+00 00	// Jump Skip
+@19aa
+00 00	// Jump Skip
+@19ac
+00 00	// Jump Skip
+@19ae
+00 00	// Jump Skip
+@19b0
+90 b9	// Jump, p=1240, address=  36, pc=@1990
+@19b2
+e6 b9	// Jump, p=1241, address=  54, pc=@19e6
+@19b4
+e8 b9	// Jump, p=1242, address=  54, pc=@19e8
+@19b6
+00 00	// Jump Skip
+@19b8
+00 00	// Jump Skip
+@19ba
+00 00	// Jump Skip
+@19bc
+00 00	// Jump Skip
+@19be
+00 00	// Jump Skip
+@19c0
+00 00	// Jump Skip
+@19c2
+00 00	// Jump Skip
+@19c4
+00 00	// Jump Skip
+@19c6
+00 00	// Jump Skip
+@19c8
+00 00	// Jump Skip
+@19ca
+00 00	// Jump Skip
+@19cc
+00 00	// Jump Skip
+@19ce
+00 00	// Jump Skip
+@19d0
+00 00	// Jump Skip
+@19d2
+00 00	// Jump Skip
+@19d4
+00 00	// Jump Skip
+@19d6
+00 00	// Jump Skip
+@19d8
+00 00	// Jump Skip
+@19da
+00 00	// Jump Skip
+@19dc
+00 00	// Jump Skip
+@19de
+00 00	// Jump Skip
+@19e0
+00 00	// Jump Skip
+@19e2
+00 00	// Jump Skip
+@19e4
+00 00	// Jump Skip
+@19e6
+b4 b9	// Jump, p=1267, address=  54, pc=@19b4
+@19e8
+06 ba	// Jump, p=1268, address=  32, pc=@1a06
+@19ea
+08 ba	// Jump, p=1269, address=  32, pc=@1a08
+@19ec
+00 00	// Jump Skip
+@19ee
+00 00	// Jump Skip
+@19f0
+00 00	// Jump Skip
+@19f2
+00 00	// Jump Skip
+@19f4
+00 00	// Jump Skip
+@19f6
+00 00	// Jump Skip
+@19f8
+00 00	// Jump Skip
+@19fa
+00 00	// Jump Skip
+@19fc
+00 00	// Jump Skip
+@19fe
+00 00	// Jump Skip
+@1a00
+00 00	// Jump Skip
+@1a02
+00 00	// Jump Skip
+@1a04
+00 00	// Jump Skip
+@1a06
+ea b9	// Jump, p=1283, address=  32, pc=@19ea
+@1a08
+32 ba	// Jump, p=1284, address=  44, pc=@1a32
+@1a0a
+34 ba	// Jump, p=1285, address=  44, pc=@1a34
+@1a0c
+00 00	// Jump Skip
+@1a0e
+00 00	// Jump Skip
+@1a10
+00 00	// Jump Skip
+@1a12
+00 00	// Jump Skip
+@1a14
+00 00	// Jump Skip
+@1a16
+00 00	// Jump Skip
+@1a18
+00 00	// Jump Skip
+@1a1a
+00 00	// Jump Skip
+@1a1c
+00 00	// Jump Skip
+@1a1e
+00 00	// Jump Skip
+@1a20
+00 00	// Jump Skip
+@1a22
+00 00	// Jump Skip
+@1a24
+00 00	// Jump Skip
+@1a26
+00 00	// Jump Skip
+@1a28
+00 00	// Jump Skip
+@1a2a
+00 00	// Jump Skip
+@1a2c
+00 00	// Jump Skip
+@1a2e
+00 00	// Jump Skip
+@1a30
+00 00	// Jump Skip
+@1a32
+0a ba	// Jump, p=1305, address=  44, pc=@1a0a
+@1a34
+50 ba	// Jump, p=1306, address=  30, pc=@1a50
+@1a36
+52 ba	// Jump, p=1307, address=  30, pc=@1a52
+@1a38
+00 00	// Jump Skip
+@1a3a
+00 00	// Jump Skip
+@1a3c
+00 00	// Jump Skip
+@1a3e
+00 00	// Jump Skip
+@1a40
+00 00	// Jump Skip
+@1a42
+00 00	// Jump Skip
+@1a44
+00 00	// Jump Skip
+@1a46
+00 00	// Jump Skip
+@1a48
+00 00	// Jump Skip
+@1a4a
+00 00	// Jump Skip
+@1a4c
+00 00	// Jump Skip
+@1a4e
+00 00	// Jump Skip
+@1a50
+36 ba	// Jump, p=1320, address=  30, pc=@1a36
+@1a52
+76 ba	// Jump, p=1321, address=  38, pc=@1a76
+@1a54
+78 ba	// Jump, p=1322, address=  38, pc=@1a78
+@1a56
+00 00	// Jump Skip
+@1a58
+00 00	// Jump Skip
+@1a5a
+00 00	// Jump Skip
+@1a5c
+00 00	// Jump Skip
+@1a5e
+00 00	// Jump Skip
+@1a60
+00 00	// Jump Skip
+@1a62
+00 00	// Jump Skip
+@1a64
+00 00	// Jump Skip
+@1a66
+00 00	// Jump Skip
+@1a68
+00 00	// Jump Skip
+@1a6a
+00 00	// Jump Skip
+@1a6c
+00 00	// Jump Skip
+@1a6e
+00 00	// Jump Skip
+@1a70
+00 00	// Jump Skip
+@1a72
+00 00	// Jump Skip
+@1a74
+00 00	// Jump Skip
+@1a76
+54 ba	// Jump, p=1339, address=  38, pc=@1a54
+@1a78
+a6 ba	// Jump, p=1340, address=  48, pc=@1aa6
+@1a7a
+a8 ba	// Jump, p=1341, address=  48, pc=@1aa8
+@1a7c
+00 00	// Jump Skip
+@1a7e
+00 00	// Jump Skip
+@1a80
+00 00	// Jump Skip
+@1a82
+00 00	// Jump Skip
+@1a84
+00 00	// Jump Skip
+@1a86
+00 00	// Jump Skip
+@1a88
+00 00	// Jump Skip
+@1a8a
+00 00	// Jump Skip
+@1a8c
+00 00	// Jump Skip
+@1a8e
+00 00	// Jump Skip
+@1a90
+00 00	// Jump Skip
+@1a92
+00 00	// Jump Skip
+@1a94
+00 00	// Jump Skip
+@1a96
+00 00	// Jump Skip
+@1a98
+00 00	// Jump Skip
+@1a9a
+00 00	// Jump Skip
+@1a9c
+00 00	// Jump Skip
+@1a9e
+00 00	// Jump Skip
+@1aa0
+00 00	// Jump Skip
+@1aa2
+00 00	// Jump Skip
+@1aa4
+00 00	// Jump Skip
+@1aa6
+7a ba	// Jump, p=1363, address=  48, pc=@1a7a
+@1aa8
+b2 ba	// Jump, p=1364, address=  12, pc=@1ab2
+@1aaa
+b4 ba	// Jump, p=1365, address=  12, pc=@1ab4
+@1aac
+00 00	// Jump Skip
+@1aae
+00 00	// Jump Skip
+@1ab0
+00 00	// Jump Skip
+@1ab2
+aa ba	// Jump, p=1369, address=  12, pc=@1aaa
+@1ab4
+c6 ba	// Jump, p=1370, address=  20, pc=@1ac6
+@1ab6
+c8 ba	// Jump, p=1371, address=  20, pc=@1ac8
+@1ab8
+00 00	// Jump Skip
+@1aba
+00 00	// Jump Skip
+@1abc
+00 00	// Jump Skip
+@1abe
+00 00	// Jump Skip
+@1ac0
+00 00	// Jump Skip
+@1ac2
+00 00	// Jump Skip
+@1ac4
+00 00	// Jump Skip
+@1ac6
+b6 ba	// Jump, p=1379, address=  20, pc=@1ab6
+@1ac8
+ea ba	// Jump, p=1380, address=  36, pc=@1aea
+@1aca
+ec ba	// Jump, p=1381, address=  36, pc=@1aec
+@1acc
+00 00	// Jump Skip
+@1ace
+00 00	// Jump Skip
+@1ad0
+00 00	// Jump Skip
+@1ad2
+00 00	// Jump Skip
+@1ad4
+00 00	// Jump Skip
+@1ad6
+00 00	// Jump Skip
+@1ad8
+00 00	// Jump Skip
+@1ada
+00 00	// Jump Skip
+@1adc
+00 00	// Jump Skip
+@1ade
+00 00	// Jump Skip
+@1ae0
+00 00	// Jump Skip
+@1ae2
+00 00	// Jump Skip
+@1ae4
+00 00	// Jump Skip
+@1ae6
+00 00	// Jump Skip
+@1ae8
+00 00	// Jump Skip
+@1aea
+ca ba	// Jump, p=1397, address=  36, pc=@1aca
+@1aec
+0c bb	// Jump, p=1398, address=  34, pc=@1b0c
+@1aee
+0e bb	// Jump, p=1399, address=  34, pc=@1b0e
+@1af0
+00 00	// Jump Skip
+@1af2
+00 00	// Jump Skip
+@1af4
+00 00	// Jump Skip
+@1af6
+00 00	// Jump Skip
+@1af8
+00 00	// Jump Skip
+@1afa
+00 00	// Jump Skip
+@1afc
+00 00	// Jump Skip
+@1afe
+00 00	// Jump Skip
+@1b00
+00 00	// Jump Skip
+@1b02
+00 00	// Jump Skip
+@1b04
+00 00	// Jump Skip
+@1b06
+00 00	// Jump Skip
+@1b08
+00 00	// Jump Skip
+@1b0a
+00 00	// Jump Skip
+@1b0c
+ee ba	// Jump, p=1414, address=  34, pc=@1aee
+@1b0e
+46 bb	// Jump, p=1415, address=  58, pc=@1b46
+@1b10
+48 bb	// Jump, p=1416, address=  58, pc=@1b48
+@1b12
+00 00	// Jump Skip
+@1b14
+00 00	// Jump Skip
+@1b16
+00 00	// Jump Skip
+@1b18
+00 00	// Jump Skip
+@1b1a
+00 00	// Jump Skip
+@1b1c
+00 00	// Jump Skip
+@1b1e
+00 00	// Jump Skip
+@1b20
+00 00	// Jump Skip
+@1b22
+00 00	// Jump Skip
+@1b24
+00 00	// Jump Skip
+@1b26
+00 00	// Jump Skip
+@1b28
+00 00	// Jump Skip
+@1b2a
+00 00	// Jump Skip
+@1b2c
+00 00	// Jump Skip
+@1b2e
+00 00	// Jump Skip
+@1b30
+00 00	// Jump Skip
+@1b32
+00 00	// Jump Skip
+@1b34
+00 00	// Jump Skip
+@1b36
+00 00	// Jump Skip
+@1b38
+00 00	// Jump Skip
+@1b3a
+00 00	// Jump Skip
+@1b3c
+00 00	// Jump Skip
+@1b3e
+00 00	// Jump Skip
+@1b40
+00 00	// Jump Skip
+@1b42
+00 00	// Jump Skip
+@1b44
+00 00	// Jump Skip
+@1b46
+10 bb	// Jump, p=1443, address=  58, pc=@1b10
+@1b48
+64 bb	// Jump, p=1444, address=  30, pc=@1b64
+@1b4a
+66 bb	// Jump, p=1445, address=  30, pc=@1b66
+@1b4c
+00 00	// Jump Skip
+@1b4e
+00 00	// Jump Skip
+@1b50
+00 00	// Jump Skip
+@1b52
+00 00	// Jump Skip
+@1b54
+00 00	// Jump Skip
+@1b56
+00 00	// Jump Skip
+@1b58
+00 00	// Jump Skip
+@1b5a
+00 00	// Jump Skip
+@1b5c
+00 00	// Jump Skip
+@1b5e
+00 00	// Jump Skip
+@1b60
+00 00	// Jump Skip
+@1b62
+00 00	// Jump Skip
+@1b64
+4a bb	// Jump, p=1458, address=  30, pc=@1b4a
+@1b66
+9a bb	// Jump, p=1459, address=  54, pc=@1b9a
+@1b68
+9c bb	// Jump, p=1460, address=  54, pc=@1b9c
+@1b6a
+00 00	// Jump Skip
+@1b6c
+00 00	// Jump Skip
+@1b6e
+00 00	// Jump Skip
+@1b70
+00 00	// Jump Skip
+@1b72
+00 00	// Jump Skip
+@1b74
+00 00	// Jump Skip
+@1b76
+00 00	// Jump Skip
+@1b78
+00 00	// Jump Skip
+@1b7a
+00 00	// Jump Skip
+@1b7c
+00 00	// Jump Skip
+@1b7e
+00 00	// Jump Skip
+@1b80
+00 00	// Jump Skip
+@1b82
+00 00	// Jump Skip
+@1b84
+00 00	// Jump Skip
+@1b86
+00 00	// Jump Skip
+@1b88
+00 00	// Jump Skip
+@1b8a
+00 00	// Jump Skip
+@1b8c
+00 00	// Jump Skip
+@1b8e
+00 00	// Jump Skip
+@1b90
+00 00	// Jump Skip
+@1b92
+00 00	// Jump Skip
+@1b94
+00 00	// Jump Skip
+@1b96
+00 00	// Jump Skip
+@1b98
+00 00	// Jump Skip
+@1b9a
+68 bb	// Jump, p=1485, address=  54, pc=@1b68
+@1b9c
+cc bb	// Jump, p=1486, address=  50, pc=@1bcc
+@1b9e
+ce bb	// Jump, p=1487, address=  50, pc=@1bce
+@1ba0
+00 00	// Jump Skip
+@1ba2
+00 00	// Jump Skip
+@1ba4
+00 00	// Jump Skip
+@1ba6
+00 00	// Jump Skip
+@1ba8
+00 00	// Jump Skip
+@1baa
+00 00	// Jump Skip
+@1bac
+00 00	// Jump Skip
+@1bae
+00 00	// Jump Skip
+@1bb0
+00 00	// Jump Skip
+@1bb2
+00 00	// Jump Skip
+@1bb4
+00 00	// Jump Skip
+@1bb6
+00 00	// Jump Skip
+@1bb8
+00 00	// Jump Skip
+@1bba
+00 00	// Jump Skip
+@1bbc
+00 00	// Jump Skip
+@1bbe
+00 00	// Jump Skip
+@1bc0
+00 00	// Jump Skip
+@1bc2
+00 00	// Jump Skip
+@1bc4
+00 00	// Jump Skip
+@1bc6
+00 00	// Jump Skip
+@1bc8
+00 00	// Jump Skip
+@1bca
+00 00	// Jump Skip
+@1bcc
+9e bb	// Jump, p=1510, address=  50, pc=@1b9e
+@1bce
+d6 bb	// Jump, p=1511, address=  10, pc=@1bd6
+@1bd0
+d8 bb	// Jump, p=1512, address=  10, pc=@1bd8
+@1bd2
+00 00	// Jump Skip
+@1bd4
+00 00	// Jump Skip
+@1bd6
+d0 bb	// Jump, p=1515, address=  10, pc=@1bd0
+@1bd8
+06 bc	// Jump, p=1516, address=  48, pc=@1c06
+@1bda
+08 bc	// Jump, p=1517, address=  48, pc=@1c08
+@1bdc
+00 00	// Jump Skip
+@1bde
+00 00	// Jump Skip
+@1be0
+00 00	// Jump Skip
+@1be2
+00 00	// Jump Skip
+@1be4
+00 00	// Jump Skip
+@1be6
+00 00	// Jump Skip
+@1be8
+00 00	// Jump Skip
+@1bea
+00 00	// Jump Skip
+@1bec
+00 00	// Jump Skip
+@1bee
+00 00	// Jump Skip
+@1bf0
+00 00	// Jump Skip
+@1bf2
+00 00	// Jump Skip
+@1bf4
+00 00	// Jump Skip
+@1bf6
+00 00	// Jump Skip
+@1bf8
+00 00	// Jump Skip
+@1bfa
+00 00	// Jump Skip
+@1bfc
+00 00	// Jump Skip
+@1bfe
+00 00	// Jump Skip
+@1c00
+00 00	// Jump Skip
+@1c02
+00 00	// Jump Skip
+@1c04
+00 00	// Jump Skip
+@1c06
+da bb	// Jump, p=1539, address=  48, pc=@1bda
+@1c08
+1a bc	// Jump, p=1540, address=  20, pc=@1c1a
+@1c0a
+1c bc	// Jump, p=1541, address=  20, pc=@1c1c
+@1c0c
+00 00	// Jump Skip
+@1c0e
+00 00	// Jump Skip
+@1c10
+00 00	// Jump Skip
+@1c12
+00 00	// Jump Skip
+@1c14
+00 00	// Jump Skip
+@1c16
+00 00	// Jump Skip
+@1c18
+00 00	// Jump Skip
+@1c1a
+0a bc	// Jump, p=1549, address=  20, pc=@1c0a
+@1c1c
+28 bc	// Jump, p=1550, address=  14, pc=@1c28
+@1c1e
+2a bc	// Jump, p=1551, address=  14, pc=@1c2a
+@1c20
+00 00	// Jump Skip
+@1c22
+00 00	// Jump Skip
+@1c24
+00 00	// Jump Skip
+@1c26
+00 00	// Jump Skip
+@1c28
+1e bc	// Jump, p=1556, address=  14, pc=@1c1e
+@1c2a
+62 bc	// Jump, p=1557, address=  58, pc=@1c62
+@1c2c
+64 bc	// Jump, p=1558, address=  58, pc=@1c64
+@1c2e
+00 00	// Jump Skip
+@1c30
+00 00	// Jump Skip
+@1c32
+00 00	// Jump Skip
+@1c34
+00 00	// Jump Skip
+@1c36
+00 00	// Jump Skip
+@1c38
+00 00	// Jump Skip
+@1c3a
+00 00	// Jump Skip
+@1c3c
+00 00	// Jump Skip
+@1c3e
+00 00	// Jump Skip
+@1c40
+00 00	// Jump Skip
+@1c42
+00 00	// Jump Skip
+@1c44
+00 00	// Jump Skip
+@1c46
+00 00	// Jump Skip
+@1c48
+00 00	// Jump Skip
+@1c4a
+00 00	// Jump Skip
+@1c4c
+00 00	// Jump Skip
+@1c4e
+00 00	// Jump Skip
+@1c50
+00 00	// Jump Skip
+@1c52
+00 00	// Jump Skip
+@1c54
+00 00	// Jump Skip
+@1c56
+00 00	// Jump Skip
+@1c58
+00 00	// Jump Skip
+@1c5a
+00 00	// Jump Skip
+@1c5c
+00 00	// Jump Skip
+@1c5e
+00 00	// Jump Skip
+@1c60
+00 00	// Jump Skip
+@1c62
+2c bc	// Jump, p=1585, address=  58, pc=@1c2c
+@1c64
+7a bc	// Jump, p=1586, address=  24, pc=@1c7a
+@1c66
+7c bc	// Jump, p=1587, address=  24, pc=@1c7c
+@1c68
+00 00	// Jump Skip
+@1c6a
+00 00	// Jump Skip
+@1c6c
+00 00	// Jump Skip
+@1c6e
+00 00	// Jump Skip
+@1c70
+00 00	// Jump Skip
+@1c72
+00 00	// Jump Skip
+@1c74
+00 00	// Jump Skip
+@1c76
+00 00	// Jump Skip
+@1c78
+00 00	// Jump Skip
+@1c7a
+66 bc	// Jump, p=1597, address=  24, pc=@1c66
+@1c7c
+a6 bc	// Jump, p=1598, address=  44, pc=@1ca6
+@1c7e
+a8 bc	// Jump, p=1599, address=  44, pc=@1ca8
+@1c80
+00 00	// Jump Skip
+@1c82
+00 00	// Jump Skip
+@1c84
+00 00	// Jump Skip
+@1c86
+00 00	// Jump Skip
+@1c88
+00 00	// Jump Skip
+@1c8a
+00 00	// Jump Skip
+@1c8c
+00 00	// Jump Skip
+@1c8e
+00 00	// Jump Skip
+@1c90
+00 00	// Jump Skip
+@1c92
+00 00	// Jump Skip
+@1c94
+00 00	// Jump Skip
+@1c96
+00 00	// Jump Skip
+@1c98
+00 00	// Jump Skip
+@1c9a
+00 00	// Jump Skip
+@1c9c
+00 00	// Jump Skip
+@1c9e
+00 00	// Jump Skip
+@1ca0
+00 00	// Jump Skip
+@1ca2
+00 00	// Jump Skip
+@1ca4
+00 00	// Jump Skip
+@1ca6
+7e bc	// Jump, p=1619, address=  44, pc=@1c7e
+@1ca8
+be bc	// Jump, p=1620, address=  24, pc=@1cbe
+@1caa
+c0 bc	// Jump, p=1621, address=  24, pc=@1cc0
+@1cac
+00 00	// Jump Skip
+@1cae
+00 00	// Jump Skip
+@1cb0
+00 00	// Jump Skip
+@1cb2
+00 00	// Jump Skip
+@1cb4
+00 00	// Jump Skip
+@1cb6
+00 00	// Jump Skip
+@1cb8
+00 00	// Jump Skip
+@1cba
+00 00	// Jump Skip
+@1cbc
+00 00	// Jump Skip
+@1cbe
+aa bc	// Jump, p=1631, address=  24, pc=@1caa
+@1cc0
+e8 bc	// Jump, p=1632, address=  42, pc=@1ce8
+@1cc2
+ea bc	// Jump, p=1633, address=  42, pc=@1cea
+@1cc4
+00 00	// Jump Skip
+@1cc6
+00 00	// Jump Skip
+@1cc8
+00 00	// Jump Skip
+@1cca
+00 00	// Jump Skip
+@1ccc
+00 00	// Jump Skip
+@1cce
+00 00	// Jump Skip
+@1cd0
+00 00	// Jump Skip
+@1cd2
+00 00	// Jump Skip
+@1cd4
+00 00	// Jump Skip
+@1cd6
+00 00	// Jump Skip
+@1cd8
+00 00	// Jump Skip
+@1cda
+00 00	// Jump Skip
+@1cdc
+00 00	// Jump Skip
+@1cde
+00 00	// Jump Skip
+@1ce0
+00 00	// Jump Skip
+@1ce2
+00 00	// Jump Skip
+@1ce4
+00 00	// Jump Skip
+@1ce6
+00 00	// Jump Skip
+@1ce8
+c2 bc	// Jump, p=1652, address=  42, pc=@1cc2
+@1cea
+12 bd	// Jump, p=1653, address=  42, pc=@1d12
+@1cec
+14 bd	// Jump, p=1654, address=  42, pc=@1d14
+@1cee
+00 00	// Jump Skip
+@1cf0
+00 00	// Jump Skip
+@1cf2
+00 00	// Jump Skip
+@1cf4
+00 00	// Jump Skip
+@1cf6
+00 00	// Jump Skip
+@1cf8
+00 00	// Jump Skip
+@1cfa
+00 00	// Jump Skip
+@1cfc
+00 00	// Jump Skip
+@1cfe
+00 00	// Jump Skip
+@1d00
+00 00	// Jump Skip
+@1d02
+00 00	// Jump Skip
+@1d04
+00 00	// Jump Skip
+@1d06
+00 00	// Jump Skip
+@1d08
+00 00	// Jump Skip
+@1d0a
+00 00	// Jump Skip
+@1d0c
+00 00	// Jump Skip
+@1d0e
+00 00	// Jump Skip
+@1d10
+00 00	// Jump Skip
+@1d12
+ec bc	// Jump, p=1673, address=  42, pc=@1cec
+@1d14
+28 bd	// Jump, p=1674, address=  22, pc=@1d28
+@1d16
+2a bd	// Jump, p=1675, address=  22, pc=@1d2a
+@1d18
+00 00	// Jump Skip
+@1d1a
+00 00	// Jump Skip
+@1d1c
+00 00	// Jump Skip
+@1d1e
+00 00	// Jump Skip
+@1d20
+00 00	// Jump Skip
+@1d22
+00 00	// Jump Skip
+@1d24
+00 00	// Jump Skip
+@1d26
+00 00	// Jump Skip
+@1d28
+16 bd	// Jump, p=1684, address=  22, pc=@1d16
+@1d2a
+32 bd	// Jump, p=1685, address=  10, pc=@1d32
+@1d2c
+34 bd	// Jump, p=1686, address=  10, pc=@1d34
+@1d2e
+00 00	// Jump Skip
+@1d30
+00 00	// Jump Skip
+@1d32
+2c bd	// Jump, p=1689, address=  10, pc=@1d2c
+@1d34
+54 bd	// Jump, p=1690, address=  34, pc=@1d54
+@1d36
+56 bd	// Jump, p=1691, address=  34, pc=@1d56
+@1d38
+00 00	// Jump Skip
+@1d3a
+00 00	// Jump Skip
+@1d3c
+00 00	// Jump Skip
+@1d3e
+00 00	// Jump Skip
+@1d40
+00 00	// Jump Skip
+@1d42
+00 00	// Jump Skip
+@1d44
+00 00	// Jump Skip
+@1d46
+00 00	// Jump Skip
+@1d48
+00 00	// Jump Skip
+@1d4a
+00 00	// Jump Skip
+@1d4c
+00 00	// Jump Skip
+@1d4e
+00 00	// Jump Skip
+@1d50
+00 00	// Jump Skip
+@1d52
+00 00	// Jump Skip
+@1d54
+36 bd	// Jump, p=1706, address=  34, pc=@1d36
+@1d56
+92 bd	// Jump, p=1707, address=  62, pc=@1d92
+@1d58
+94 bd	// Jump, p=1708, address=  62, pc=@1d94
+@1d5a
+00 00	// Jump Skip
+@1d5c
+00 00	// Jump Skip
+@1d5e
+00 00	// Jump Skip
+@1d60
+00 00	// Jump Skip
+@1d62
+00 00	// Jump Skip
+@1d64
+00 00	// Jump Skip
+@1d66
+00 00	// Jump Skip
+@1d68
+00 00	// Jump Skip
+@1d6a
+00 00	// Jump Skip
+@1d6c
+00 00	// Jump Skip
+@1d6e
+00 00	// Jump Skip
+@1d70
+00 00	// Jump Skip
+@1d72
+00 00	// Jump Skip
+@1d74
+00 00	// Jump Skip
+@1d76
+00 00	// Jump Skip
+@1d78
+00 00	// Jump Skip
+@1d7a
+00 00	// Jump Skip
+@1d7c
+00 00	// Jump Skip
+@1d7e
+00 00	// Jump Skip
+@1d80
+00 00	// Jump Skip
+@1d82
+00 00	// Jump Skip
+@1d84
+00 00	// Jump Skip
+@1d86
+00 00	// Jump Skip
+@1d88
+00 00	// Jump Skip
+@1d8a
+00 00	// Jump Skip
+@1d8c
+00 00	// Jump Skip
+@1d8e
+00 00	// Jump Skip
+@1d90
+00 00	// Jump Skip
+@1d92
+58 bd	// Jump, p=1737, address=  62, pc=@1d58
+@1d94
+cc bd	// Jump, p=1738, address=  58, pc=@1dcc
+@1d96
+ce bd	// Jump, p=1739, address=  58, pc=@1dce
+@1d98
+00 00	// Jump Skip
+@1d9a
+00 00	// Jump Skip
+@1d9c
+00 00	// Jump Skip
+@1d9e
+00 00	// Jump Skip
+@1da0
+00 00	// Jump Skip
+@1da2
+00 00	// Jump Skip
+@1da4
+00 00	// Jump Skip
+@1da6
+00 00	// Jump Skip
+@1da8
+00 00	// Jump Skip
+@1daa
+00 00	// Jump Skip
+@1dac
+00 00	// Jump Skip
+@1dae
+00 00	// Jump Skip
+@1db0
+00 00	// Jump Skip
+@1db2
+00 00	// Jump Skip
+@1db4
+00 00	// Jump Skip
+@1db6
+00 00	// Jump Skip
+@1db8
+00 00	// Jump Skip
+@1dba
+00 00	// Jump Skip
+@1dbc
+00 00	// Jump Skip
+@1dbe
+00 00	// Jump Skip
+@1dc0
+00 00	// Jump Skip
+@1dc2
+00 00	// Jump Skip
+@1dc4
+00 00	// Jump Skip
+@1dc6
+00 00	// Jump Skip
+@1dc8
+00 00	// Jump Skip
+@1dca
+00 00	// Jump Skip
+@1dcc
+96 bd	// Jump, p=1766, address=  58, pc=@1d96
+@1dce
+fe bd	// Jump, p=1767, address=  50, pc=@1dfe
+@1dd0
+00 be	// Jump, p=1768, address=  50, pc=@1e00
+@1dd2
+00 00	// Jump Skip
+@1dd4
+00 00	// Jump Skip
+@1dd6
+00 00	// Jump Skip
+@1dd8
+00 00	// Jump Skip
+@1dda
+00 00	// Jump Skip
+@1ddc
+00 00	// Jump Skip
+@1dde
+00 00	// Jump Skip
+@1de0
+00 00	// Jump Skip
+@1de2
+00 00	// Jump Skip
+@1de4
+00 00	// Jump Skip
+@1de6
+00 00	// Jump Skip
+@1de8
+00 00	// Jump Skip
+@1dea
+00 00	// Jump Skip
+@1dec
+00 00	// Jump Skip
+@1dee
+00 00	// Jump Skip
+@1df0
+00 00	// Jump Skip
+@1df2
+00 00	// Jump Skip
+@1df4
+00 00	// Jump Skip
+@1df6
+00 00	// Jump Skip
+@1df8
+00 00	// Jump Skip
+@1dfa
+00 00	// Jump Skip
+@1dfc
+00 00	// Jump Skip
+@1dfe
+d0 bd	// Jump, p=1791, address=  50, pc=@1dd0
+@1e00
+38 be	// Jump, p=1792, address=  58, pc=@1e38
+@1e02
+3a be	// Jump, p=1793, address=  58, pc=@1e3a
+@1e04
+00 00	// Jump Skip
+@1e06
+00 00	// Jump Skip
+@1e08
+00 00	// Jump Skip
+@1e0a
+00 00	// Jump Skip
+@1e0c
+00 00	// Jump Skip
+@1e0e
+00 00	// Jump Skip
+@1e10
+00 00	// Jump Skip
+@1e12
+00 00	// Jump Skip
+@1e14
+00 00	// Jump Skip
+@1e16
+00 00	// Jump Skip
+@1e18
+00 00	// Jump Skip
+@1e1a
+00 00	// Jump Skip
+@1e1c
+00 00	// Jump Skip
+@1e1e
+00 00	// Jump Skip
+@1e20
+00 00	// Jump Skip
+@1e22
+00 00	// Jump Skip
+@1e24
+00 00	// Jump Skip
+@1e26
+00 00	// Jump Skip
+@1e28
+00 00	// Jump Skip
+@1e2a
+00 00	// Jump Skip
+@1e2c
+00 00	// Jump Skip
+@1e2e
+00 00	// Jump Skip
+@1e30
+00 00	// Jump Skip
+@1e32
+00 00	// Jump Skip
+@1e34
+00 00	// Jump Skip
+@1e36
+00 00	// Jump Skip
+@1e38
+02 be	// Jump, p=1820, address=  58, pc=@1e02
+@1e3a
+44 be	// Jump, p=1821, address=  12, pc=@1e44
+@1e3c
+46 be	// Jump, p=1822, address=  12, pc=@1e46
+@1e3e
+00 00	// Jump Skip
+@1e40
+00 00	// Jump Skip
+@1e42
+00 00	// Jump Skip
+@1e44
+3c be	// Jump, p=1826, address=  12, pc=@1e3c
+@1e46
+6c be	// Jump, p=1827, address=  40, pc=@1e6c
+@1e48
+6e be	// Jump, p=1828, address=  40, pc=@1e6e
+@1e4a
+00 00	// Jump Skip
+@1e4c
+00 00	// Jump Skip
+@1e4e
+00 00	// Jump Skip
+@1e50
+00 00	// Jump Skip
+@1e52
+00 00	// Jump Skip
+@1e54
+00 00	// Jump Skip
+@1e56
+00 00	// Jump Skip
+@1e58
+00 00	// Jump Skip
+@1e5a
+00 00	// Jump Skip
+@1e5c
+00 00	// Jump Skip
+@1e5e
+00 00	// Jump Skip
+@1e60
+00 00	// Jump Skip
+@1e62
+00 00	// Jump Skip
+@1e64
+00 00	// Jump Skip
+@1e66
+00 00	// Jump Skip
+@1e68
+00 00	// Jump Skip
+@1e6a
+00 00	// Jump Skip
+@1e6c
+48 be	// Jump, p=1846, address=  40, pc=@1e48
+@1e6e
+a8 be	// Jump, p=1847, address=  60, pc=@1ea8
+@1e70
+aa be	// Jump, p=1848, address=  60, pc=@1eaa
+@1e72
+00 00	// Jump Skip
+@1e74
+00 00	// Jump Skip
+@1e76
+00 00	// Jump Skip
+@1e78
+00 00	// Jump Skip
+@1e7a
+00 00	// Jump Skip
+@1e7c
+00 00	// Jump Skip
+@1e7e
+00 00	// Jump Skip
+@1e80
+00 00	// Jump Skip
+@1e82
+00 00	// Jump Skip
+@1e84
+00 00	// Jump Skip
+@1e86
+00 00	// Jump Skip
+@1e88
+00 00	// Jump Skip
+@1e8a
+00 00	// Jump Skip
+@1e8c
+00 00	// Jump Skip
+@1e8e
+00 00	// Jump Skip
+@1e90
+00 00	// Jump Skip
+@1e92
+00 00	// Jump Skip
+@1e94
+00 00	// Jump Skip
+@1e96
+00 00	// Jump Skip
+@1e98
+00 00	// Jump Skip
+@1e9a
+00 00	// Jump Skip
+@1e9c
+00 00	// Jump Skip
+@1e9e
+00 00	// Jump Skip
+@1ea0
+00 00	// Jump Skip
+@1ea2
+00 00	// Jump Skip
+@1ea4
+00 00	// Jump Skip
+@1ea6
+00 00	// Jump Skip
+@1ea8
+70 be	// Jump, p=1876, address=  60, pc=@1e70
+@1eaa
+d4 be	// Jump, p=1877, address=  44, pc=@1ed4
+@1eac
+d6 be	// Jump, p=1878, address=  44, pc=@1ed6
+@1eae
+00 00	// Jump Skip
+@1eb0
+00 00	// Jump Skip
+@1eb2
+00 00	// Jump Skip
+@1eb4
+00 00	// Jump Skip
+@1eb6
+00 00	// Jump Skip
+@1eb8
+00 00	// Jump Skip
+@1eba
+00 00	// Jump Skip
+@1ebc
+00 00	// Jump Skip
+@1ebe
+00 00	// Jump Skip
+@1ec0
+00 00	// Jump Skip
+@1ec2
+00 00	// Jump Skip
+@1ec4
+00 00	// Jump Skip
+@1ec6
+00 00	// Jump Skip
+@1ec8
+00 00	// Jump Skip
+@1eca
+00 00	// Jump Skip
+@1ecc
+00 00	// Jump Skip
+@1ece
+00 00	// Jump Skip
+@1ed0
+00 00	// Jump Skip
+@1ed2
+00 00	// Jump Skip
+@1ed4
+ac be	// Jump, p=1898, address=  44, pc=@1eac
+@1ed6
+ea be	// Jump, p=1899, address=  22, pc=@1eea
+@1ed8
+ec be	// Jump, p=1900, address=  22, pc=@1eec
+@1eda
+00 00	// Jump Skip
+@1edc
+00 00	// Jump Skip
+@1ede
+00 00	// Jump Skip
+@1ee0
+00 00	// Jump Skip
+@1ee2
+00 00	// Jump Skip
+@1ee4
+00 00	// Jump Skip
+@1ee6
+00 00	// Jump Skip
+@1ee8
+00 00	// Jump Skip
+@1eea
+d8 be	// Jump, p=1909, address=  22, pc=@1ed8
+@1eec
+26 bf	// Jump, p=1910, address=  60, pc=@1f26
+@1eee
+28 bf	// Jump, p=1911, address=  60, pc=@1f28
+@1ef0
+00 00	// Jump Skip
+@1ef2
+00 00	// Jump Skip
+@1ef4
+00 00	// Jump Skip
+@1ef6
+00 00	// Jump Skip
+@1ef8
+00 00	// Jump Skip
+@1efa
+00 00	// Jump Skip
+@1efc
+00 00	// Jump Skip
+@1efe
+00 00	// Jump Skip
+@1f00
+00 00	// Jump Skip
+@1f02
+00 00	// Jump Skip
+@1f04
+00 00	// Jump Skip
+@1f06
+00 00	// Jump Skip
+@1f08
+00 00	// Jump Skip
+@1f0a
+00 00	// Jump Skip
+@1f0c
+00 00	// Jump Skip
+@1f0e
+00 00	// Jump Skip
+@1f10
+00 00	// Jump Skip
+@1f12
+00 00	// Jump Skip
+@1f14
+00 00	// Jump Skip
+@1f16
+00 00	// Jump Skip
+@1f18
+00 00	// Jump Skip
+@1f1a
+00 00	// Jump Skip
+@1f1c
+00 00	// Jump Skip
+@1f1e
+00 00	// Jump Skip
+@1f20
+00 00	// Jump Skip
+@1f22
+00 00	// Jump Skip
+@1f24
+00 00	// Jump Skip
+@1f26
+ee be	// Jump, p=1939, address=  60, pc=@1eee
+@1f28
+38 bf	// Jump, p=1940, address=  18, pc=@1f38
+@1f2a
+3a bf	// Jump, p=1941, address=  18, pc=@1f3a
+@1f2c
+00 00	// Jump Skip
+@1f2e
+00 00	// Jump Skip
+@1f30
+00 00	// Jump Skip
+@1f32
+00 00	// Jump Skip
+@1f34
+00 00	// Jump Skip
+@1f36
+00 00	// Jump Skip
+@1f38
+2a bf	// Jump, p=1948, address=  18, pc=@1f2a
+@1f3a
+62 bf	// Jump, p=1949, address=  42, pc=@1f62
+@1f3c
+64 bf	// Jump, p=1950, address=  42, pc=@1f64
+@1f3e
+00 00	// Jump Skip
+@1f40
+00 00	// Jump Skip
+@1f42
+00 00	// Jump Skip
+@1f44
+00 00	// Jump Skip
+@1f46
+00 00	// Jump Skip
+@1f48
+00 00	// Jump Skip
+@1f4a
+00 00	// Jump Skip
+@1f4c
+00 00	// Jump Skip
+@1f4e
+00 00	// Jump Skip
+@1f50
+00 00	// Jump Skip
+@1f52
+00 00	// Jump Skip
+@1f54
+00 00	// Jump Skip
+@1f56
+00 00	// Jump Skip
+@1f58
+00 00	// Jump Skip
+@1f5a
+00 00	// Jump Skip
+@1f5c
+00 00	// Jump Skip
+@1f5e
+00 00	// Jump Skip
+@1f60
+00 00	// Jump Skip
+@1f62
+3c bf	// Jump, p=1969, address=  42, pc=@1f3c
+@1f64
+76 bf	// Jump, p=1970, address=  20, pc=@1f76
+@1f66
+78 bf	// Jump, p=1971, address=  20, pc=@1f78
+@1f68
+00 00	// Jump Skip
+@1f6a
+00 00	// Jump Skip
+@1f6c
+00 00	// Jump Skip
+@1f6e
+00 00	// Jump Skip
+@1f70
+00 00	// Jump Skip
+@1f72
+00 00	// Jump Skip
+@1f74
+00 00	// Jump Skip
+@1f76
+66 bf	// Jump, p=1979, address=  20, pc=@1f66
+@1f78
+a8 bf	// Jump, p=1980, address=  50, pc=@1fa8
+@1f7a
+aa bf	// Jump, p=1981, address=  50, pc=@1faa
+@1f7c
+00 00	// Jump Skip
+@1f7e
+00 00	// Jump Skip
+@1f80
+00 00	// Jump Skip
+@1f82
+00 00	// Jump Skip
+@1f84
+00 00	// Jump Skip
+@1f86
+00 00	// Jump Skip
+@1f88
+00 00	// Jump Skip
+@1f8a
+00 00	// Jump Skip
+@1f8c
+00 00	// Jump Skip
+@1f8e
+00 00	// Jump Skip
+@1f90
+00 00	// Jump Skip
+@1f92
+00 00	// Jump Skip
+@1f94
+00 00	// Jump Skip
+@1f96
+00 00	// Jump Skip
+@1f98
+00 00	// Jump Skip
+@1f9a
+00 00	// Jump Skip
+@1f9c
+00 00	// Jump Skip
+@1f9e
+00 00	// Jump Skip
+@1fa0
+00 00	// Jump Skip
+@1fa2
+00 00	// Jump Skip
+@1fa4
+00 00	// Jump Skip
+@1fa6
+00 00	// Jump Skip
+@1fa8
+7a bf	// Jump, p=2004, address=  50, pc=@1f7a
+@1faa
+79 34	// Mult, core_rd[12]=  120, core_rs[10]=   20, core_rt[ 3]=    6
+@1fac
+a3 2d	// Mult, core_rd[ 1]=  312, core_rs[ 6]=   12, core_rt[13]=   26
+@1fae
+39 30	// Mult, core_rd[12]= 4992, core_rs[ 8]=   16, core_rt[ 1]=  312
+@1fb0
+89 30	// Mult, core_rd[ 4]=  128, core_rs[ 8]=   16, core_rt[ 4]=    8
+@1fb2
+57 2d	// Mult, core_rd[11]=  240, core_rs[ 6]=   12, core_rt[10]=   20
+@1fb4
+8d 36	// Mult, core_rd[ 6]=30720, core_rs[11]=  240, core_rt[ 4]=  128
+@1fb6
+31 2b	// Mult, core_rd[ 8]=  180, core_rs[ 5]=   10, core_rt[ 9]=   18
+@1fb8
+43 27	// Mult, core_rd[ 1]=  120, core_rs[ 3]=    6, core_rt[10]=   20
+@1fba
+57 35	// Mult, core_rd[11]=  400, core_rs[10]=   20, core_rt[10]=   20
+@1fbc
+01 34	// Mult, core_rd[ 0]=    0, core_rs[10]=   20, core_rt[ 0]=    0
+@1fbe
+ad 31	// Mult, core_rd[ 6]= 4680, core_rs[ 8]=  180, core_rt[13]=   26
+@1fc0
+4f 26	// Mult, core_rd[ 7]=   24, core_rs[ 3]=    6, core_rt[ 2]=    4
+@1fc2
+2c 20	// Less than, core_rd[ 6]=    1, core_rs[ 0]=    0, core_rt[ 1]=  120
+@1fc4
+65 2b	// Mult, core_rd[ 2]= 4000, core_rs[ 5]=   10, core_rt[11]=  400
+@1fc6
+0f 2c	// Mult, core_rd[ 7]=    0, core_rs[ 6]=    1, core_rt[ 0]=    0
+@1fc8
+0b 35	// Mult, core_rd[ 5]= 3600, core_rs[10]=   20, core_rt[ 8]=  180
+@1fca
+b9 20	// Mult, core_rd[12]=    0, core_rs[ 0]=    0, core_rt[ 5]= 3600
+@1fcc
+09 2f	// Mult, core_rd[ 4]=    0, core_rs[ 7]=    0, core_rt[ 8]=  180
+@1fce
+6d 32	// Mult, core_rd[ 6]=  108, core_rs[ 9]=   18, core_rt[ 3]=    6
+@1fd0
+03 35	// Mult, core_rd[ 1]= 3600, core_rs[10]=   20, core_rt[ 8]=  180
+@1fd2
+51 20	// Mult, core_rd[ 8]=    0, core_rs[ 0]=    0, core_rt[ 2]= 4000
+@1fd4
+b4 2e	// Less than, core_rd[10]=    1, core_rs[ 7]=    0, core_rt[ 5]= 3600
+@1fd6
+41 23	// Mult, core_rd[ 0]= 3600, core_rs[ 1]= 3600, core_rt[10]=    1
+@1fd8
+ce 34	// Less than, core_rd[ 7]=    1, core_rs[10]=    1, core_rt[ 6]=  108
+@1fda
+85 26	// Mult, core_rd[ 2]=    0, core_rs[ 3]=    6, core_rt[ 4]=    0
+@1fdc
+15 21	// Mult, core_rd[10]=    0, core_rs[ 0]= 3600, core_rt[ 8]=    0
+@1fde
+4b 21	// Mult, core_rd[ 5]=    0, core_rs[ 0]= 3600, core_rt[10]=    0
+@1fe0
+4f 2d	// Mult, core_rd[ 7]=    0, core_rs[ 6]=  108, core_rt[10]=    0
+@1fe2
+15 26	// Mult, core_rd[10]=21600, core_rs[ 3]=    6, core_rt[ 0]= 3600
+@1fe4
+6b 31	// Mult, core_rd[ 5]=    0, core_rs[ 8]=    0, core_rt[11]=  400
+@1fe6
+09 2f	// Mult, core_rd[ 4]=    0, core_rs[ 7]=    0, core_rt[ 8]=    0
+@1fe8
+71 30	// Mult, core_rd[ 8]=    0, core_rs[ 8]=    0, core_rt[ 3]=    6
+@1fea
+b5 27	// Mult, core_rd[10]=  156, core_rs[ 3]=    6, core_rt[13]=   26
+@1fec
+a1 39	// Mult, core_rd[ 0]=    0, core_rs[12]=    0, core_rt[13]=   26
+@1fee
+73 20	// Mult, core_rd[ 9]=    0, core_rs[ 0]=    0, core_rt[ 3]=    6
+@1ff0
+aa 2b	// Less than, core_rd[ 5]=    1, core_rs[ 5]=    0, core_rt[13]=   26
+@1ff2
+59 36	// Mult, core_rd[12]=    0, core_rs[11]=  400, core_rt[ 2]=    0
+@1ff4
+53 34	// Mult, core_rd[ 9]=    0, core_rs[10]=  156, core_rt[ 2]=    0
+@1ff6
+87 30	// Mult, core_rd[ 3]=    0, core_rs[ 8]=    0, core_rt[ 4]=    0
+@1ff8
+8d 35	// Mult, core_rd[ 6]=    0, core_rs[10]=  156, core_rt[12]=    0
+@1ffa
+33 2d	// Mult, core_rd[ 9]=    0, core_rs[ 6]=    0, core_rt[ 9]=    0
+@1ffc
+65 24	// Mult, core_rd[ 2]=    0, core_rs[ 2]=    0, core_rt[ 3]=    0
+@1ffe
+83 2c	// Mult, core_rd[ 1]=    0, core_rs[ 6]=    0, core_rt[ 4]=    0
