@@ -1,0 +1,1 @@
+dc_shell-t -64 -f syn.tcl | tee syn.log

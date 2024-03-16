@@ -1,0 +1,2 @@
+irun TESTBED.v -define RTL -define FUNC -debug -f file_list.f -incdir /usr/synthesis/dw/sim_ver/  -notimingchecks
+./../00_TESTBED/02_result
