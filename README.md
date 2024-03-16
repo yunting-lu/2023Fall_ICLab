@@ -2,7 +2,7 @@
  
 **Lab01: Supper MOSFET Calculator(SMC)**  
 **Lab02: Calculation on the coordinates**  
-**Lab03:AXI-SPI DataBridge**  
+**Lab03: AXI-SPI DataBridge**  
 **Lab04: Siamese Neural Network**  
 **Lab05: Matrix convolution, max-pooling and transposed convolution**  
 **Lab06: Huffman Code Operation**  
