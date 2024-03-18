@@ -1,0 +1,858 @@
+Command: vcs -timescale=1ns/1fs -j8 -sverilog +v2k -full64 -Mupdate -R -debug_access+all \
+-y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f filelist.f -o simv -l \
+vcs.log -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a \
+-v /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src \
++define+GATE +define+CG +neg_tchk +nowarnNTCDSN
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Mon Nov 20 17:53:21 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TESTBED.v'
+Parsing included file 'PATTERN_CG.v'.
+Back to file 'TESTBED.v'.
+Parsing included file 'SNN_SYN.v'.
+Back to file 'TESTBED.v'.
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_add.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_addsub.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_cmp.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_div.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_dp2.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_exp.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_mac.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_sub.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_sum3.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_sum4.v'
+Parsing library file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_exp2.v'
+Parsing included file '/RAID2/cad/synopsys/synthesis/2022.03/dw/sim_ver/vcs/DW_exp2.v'.
+Back to file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_exp2.v'.
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_ifp_conv.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_ifp_addsub.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_ifp_fp_conv.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_ifp_mult.v'
+Top Level Modules:
+       TESTBED
+TimeScale is 10 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10596
+SNN, "GATED_OR gated_cnt_array_0__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_43_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10598
+SNN, "GATED_OR gated_cnt_array_1__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_44_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10600
+SNN, "GATED_OR gated_cnt_array_2__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_45_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10602
+SNN, "GATED_OR gated_cnt_array_3__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_46_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10644
+SNN, "GATED_OR gated_cnt_array_24__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_67_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10646
+SNN, "GATED_OR gated_cnt_array_25__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_68_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10648
+SNN, "GATED_OR gated_cnt_array_26__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_69_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10650
+SNN, "GATED_OR gated_cnt_array_27__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_70_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10652
+SNN, "GATED_OR gated_cnt_array_28__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_71_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10662
+SNN, "GATED_OR gated_cnt_array_33__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_76_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10664
+SNN, "GATED_OR gated_cnt_array_34__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_77_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10666
+SNN, "GATED_OR gated_cnt_array_35__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_78_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10668
+SNN, "GATED_OR gated_cnt_array_36__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_79_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10670
+SNN, "GATED_OR gated_cnt_array_37__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_80_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10672
+SNN, "GATED_OR gated_cnt_array_38__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_81_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10674
+SNN, "GATED_OR gated_cnt_array_39__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_82_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10676
+SNN, "GATED_OR gated_cnt_array_40__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_83_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10678
+SNN, "GATED_OR gated_cnt_array_41__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_84_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10680
+SNN, "GATED_OR gated_cnt_array_42__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_85_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10682
+SNN, "GATED_OR gated_cnt_array_43__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_86_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10684
+SNN, "GATED_OR gated_cnt_array_44__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_87_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10686
+SNN, "GATED_OR gated_cnt_array_45__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_88_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10688
+SNN, "GATED_OR gated_cnt_array_46__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_89_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 10690
+SNN, "GATED_OR gated_cnt_array_47__GATED_cnt( .CLOCK (clk),  .SLEEP_CTRL (n_90_net_),  .RST_N (rst_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 20545
+SNN, "FA1S U34426( .A (intadd_101_SUM_2_),  .B (intadd_102_n1),  .CI (n98059),  .CO (n98060));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 20987
+SNN, "FA1S U34731( .A (n98040),  .B (n98039),  .CI (n98038),  .CO (n98041));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 21533
+SNN, "FA1S U35109( .A (n103031),  .B (a7_a[3]),  .CI (n87099),  .CO (n87100));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 21613
+SNN, "FA1S U35166( .A (n102942),  .B (add_b[3]),  .CI (n83335),  .CO (n83336));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 21632
+SNN, "FA1S U35178( .A (n102941),  .B (add_b[2]),  .CI (n83334),  .CO (n83335));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 21657
+SNN, "FA1S U35195( .A (add_b[1]),  .B (n83333),  .CI (n99285),  .CO (n83334));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 27106
+SNN, "FA1S U39761( .A (n98716),  .B (n98715),  .CI (intadd_8_n20),  .CO (n98717));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 29596
+SNN, "FA1S U42041( .A (intadd_99_SUM_2_),  .B (intadd_62_n1),  .CI (n98066),  .CO (n98067));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 29652
+SNN, "FA1S U42091( .A (intadd_63_SUM_3_),  .B (intadd_64_n1),  .CI (n98064),  .CO (n98065));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 29692
+SNN, "FA1S U42123( .A (n42648),  .B (n42647),  .CI (n42646),  .CO (n42653));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 29776
+SNN, "FA1S U42194( .A (intadd_100_SUM_2_),  .B (intadd_101_n1),  .CI (n98060),  .CO (n98061));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 29868
+SNN, "FA1S U42274( .A (intadd_102_SUM_2_),  .B (intadd_103_n1),  .CI (n98058),  .CO (n98059));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 30053
+SNN, "FA1S U42427( .A (n98043),  .B (n98042),  .CI (n98041),  .CO (n98044));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 30285
+SNN, "FA1S U42636( .A (n101611),  .B (n101612),  .CI (n84084),  .CO (n84085));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 30390
+SNN, "FA1S U42734( .A (n101610),  .B (n101609),  .CI (n84083),  .CO (n84084));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 30652
+SNN, "FA1S U42965( .A (n101155),  .B (n101156),  .CI (n84080),  .CO (n84081));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 30653
+SNN, "FA1S U42966( .A (n98078),  .B (a6_a[21]),  .CI (n84508),  .CO (n84509));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 30726
+SNN, "FA1S U43028( .A (n84171),  .B (n101413),  .CI (n84079),  .CO (n84080));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63523
+SNN, "FA1S U67191( .A (n41044),  .B (n41043),  .CI (n41042),  .CO (n41045));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63524
+SNN, "FA1S U67192( .A (n41047),  .B (n41046),  .CI (n41045),  .CO (n41048));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63525
+SNN, "FA1S U67193( .A (n41050),  .B (n41049),  .CI (n41048),  .CO (n41051));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63526
+SNN, "FA1S U67194( .A (n41053),  .B (n41052),  .CI (n41051),  .CO (n41054));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63527
+SNN, "FA1S U67195( .A (n41056),  .B (n41055),  .CI (n41054),  .CO (n41057));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63528
+SNN, "FA1S U67196( .A (n41059),  .B (n41058),  .CI (n41057),  .CO (n41060));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63529
+SNN, "FA1S U67197( .A (n41062),  .B (n41061),  .CI (n41060),  .CO (n41063));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63530
+SNN, "FA1S U67198( .A (n41065),  .B (n41064),  .CI (n41063),  .CO (n43043));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 64565
+SNN, "FA1S U68008( .A (n42640),  .B (n42639),  .CI (n42638),  .CO (n42648));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 64663
+SNN, "HA1P U68093( .A (n42899),  .B (n42898),  .C (n42909));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 64925
+SNN, "FA1S U68318( .A (n43378),  .B (n43377),  .CI (n43376),  .CO (n43383));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 64928
+SNN, "FA1S U68320( .A (n43384),  .B (n43383),  .CI (n43382),  .CO (n43385));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 64929
+SNN, "FA1S U68321( .A (n43387),  .B (n43386),  .CI (n43385),  .CO (n43388));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 65880
+SNN, "HA1P U69142( .A (n45551),  .B (n45550),  .C (n47458));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67008
+SNN, "FA1 U70008( .A (n47295),  .B (n47294),  .CI (n47293),  .CO (n47296));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67009
+SNN, "FA1 U70009( .A (n47304),  .B (n47303),  .CI (n47302),  .CO (n47314));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67059
+SNN, "HA1P U70053( .A (n47466),  .B (n47465),  .C (n47476));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67235
+SNN, "FA1S U70189( .A (n47680),  .B (n47679),  .CI (n47678),  .CO (n47681));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67236
+SNN, "FA1S U70190( .A (n47683),  .B (n47682),  .CI (n47681),  .CO (n47684));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67237
+SNN, "FA1S U70191( .A (n47686),  .B (n47685),  .CI (n47684),  .CO (n47687));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67238
+SNN, "FA1S U70192( .A (n47689),  .B (n47688),  .CI (n47687),  .CO (n47690));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67239
+SNN, "FA1S U70193( .A (n47692),  .B (n47691),  .CI (n47690),  .CO (n47693));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67240
+SNN, "FA1S U70194( .A (n47695),  .B (n47694),  .CI (n47693),  .CO (n47696));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67241
+SNN, "FA1S U70195( .A (n47698),  .B (n47697),  .CI (n47696),  .CO (n47699));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 67242
+SNN, "FA1S U70196( .A (n47701),  .B (n47700),  .CI (n47699),  .CO (n48041));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 96850
+SNN, "FA1 U90314( .A (n101410),  .B (n84102),  .CI (n84101),  .CO (n84103));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 96851
+SNN, "FA1 U90315( .A (n101408),  .B (n84105),  .CI (n84104),  .CO (n84106));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 99376
+SNN, "FA1 U92102( .A (n103032),  .B (a7_a[4]),  .CI (n87100),  .CO (n87101));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 99731
+SNN, "FA1 U92329( .A (n98074),  .B (s2_a[17]),  .CI (n87318),  .CO (n87319));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 99732
+SNN, "FA1 U92330( .A (n98075),  .B (s2_a[18]),  .CI (n87319),  .CO (n87320));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 99733
+SNN, "FA1 U92331( .A (n98077),  .B (s2_a[20]),  .CI (n87321),  .CO (n87322));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 99734
+SNN, "FA1 U92332( .A (n98078),  .B (s2_a[21]),  .CI (n87322),  .CO (n87323));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 109378
+SNN, "FA1S U98897( .A (n98037),  .B (n98036),  .CI (n98035),  .CO (n98038));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 109379
+SNN, "FA1S U98898( .A (n98046),  .B (n98045),  .CI (n98044),  .CO (n98047));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 109380
+SNN, "FA1S U98899( .A (n98049),  .B (n98048),  .CI (n98047),  .CO (n98050));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 109381
+SNN, "FA1S U98900( .A (n98052),  .B (n98051),  .CI (n98050),  .CO (n98053));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 112654
+SNN, "FA1S U100698( .A (n98719),  .B (n98718),  .CI (n98717),  .CO (n98720));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 112655
+SNN, "FA1S U100699( .A (intadd_95_SUM_2_),  .B (n98721),  .CI (n98720),  .CO (n98722));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "SNN_SYN.sdf"
+   ***    Annotation scope: TESTBED.u_SNN
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+typdelays compiled, TYPICAL delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Mon Nov 20 17:53:28 2023
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578154
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_2__11_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578175
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_3__8_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578196
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_3__9_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578217
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_3__10_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578238
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_3__14_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578259
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_2__8_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578280
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_2__9_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578301
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_2__10_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578322
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_2__14_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+All future warnings not reported; use +sdfverbose to report them.
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1578343
+module: QDFFRBS, "instance: TESTBED.u_SNN.encoding1_reg_reg_3__6_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+          Total errors: 0
+          Total warnings: 4145
+   ***    SDF annotation completed: Mon Nov 20 17:53:31 2023
+
+
+Starting vcs inline pass...
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+220 modules and 4 UDPs read.
+recompiling module TESTBED
+recompiling module PATTERN
+Both modules done.
+	However, due to incremental compilation, only 2 modules need to be compiled. 
+make[1]: Entering directory `/RAID2/COURSE/iclab/iclab122/Lab08/EXERCISE/03_GATE_SIM/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _186939_archive_1.so _186985_archive_1.so \
+_186988_archive_1.so _prev_archive_1.so _cuarc0.so objs/udps/qndjy.o objs/udps/G0JcM.o \
+objs/udps/Sbaqa.o objs/udps/ySdCA.o  SIM_l.o      rmapats_mop.o rmapats.o rmar.o \
+rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc \
+-lvfs /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a    -lvcsnew -lsimprofile \
+-luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o \
+/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a -ldl -lm  -lc -lpthread \
+-ldl 
+../simv up to date
+make[1]: Leaving directory `/RAID2/COURSE/iclab/iclab122/Lab08/EXERCISE/03_GATE_SIM/csrc' \
+
+Command: /RAID2/COURSE/iclab/iclab122/Lab08/EXERCISE/03_GATE_SIM/./simv +v2k +libext+.v -a vcs.log +define+GATE +define+CG +neg_tchk +nowarnNTCDSN
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Nov 20 17:53 2023
+Doing SDF annotation ...... Done
+*Verdi* Loading libsscore_vcs201906.so
+FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'SNN_SYN_CG.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+[0;34mPASS PATTERN NO.   0,                    [m [0;32m Latency:  48[m
+[0;34mPASS PATTERN NO.   1,                    [m [0;32m Latency:  48[m
+[0;34mPASS PATTERN NO.   2,                    [m [0;32m Latency:  48[m
+[0;34mPASS PATTERN NO.   3,                    [m [0;32m Latency:  48[m
+[0;34mPASS PATTERN NO.   4,                    [m [0;32m Latency:  48[m
+[0;34mPASS PATTERN NO.   5,                    [m [0;32m Latency:  48[m
+[0;34mPASS PATTERN NO.   6,                    [m [0;32m Latency:  48[m
+[0;34mPASS PATTERN NO.   7,                    [m [0;32m Latency:  48[m
+[0;34mPASS PATTERN NO.   8,                    [m [0;32m Latency:  48[m
+[0;34mPASS PATTERN NO.   9,                    [m [0;32m Latency:  48[m
+----------------------------------------------------------------------------------------------------------------------
+                                                  Congratulations!                                                                       
+                                           You have passed all patterns!                                                                 
+                                           Your execution cycles =   480 cycles                                                            
+                                           Your clock period = 70.0 ns                                                               
+                                           Total Latency = 33600.0 ns                                                               
+----------------------------------------------------------------------------------------------------------------------
+$finish called from file "PATTERN_CG.v", line 58.
+$finish at simulation time            102865000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 102865000 ps
+CPU Time:     24.980 seconds;       Data structure size:  28.6Mb
+Mon Nov 20 17:54:02 2023
+CPU time: 20.659 seconds to compile + 2.071 seconds to elab + 1.026 seconds to link + 25.047 seconds in simulation

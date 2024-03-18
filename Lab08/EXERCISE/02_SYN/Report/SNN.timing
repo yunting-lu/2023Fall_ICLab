@@ -1,0 +1,536 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : SNN
+Version: T-2022.03
+Date   : Mon Nov 20 17:11:34 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: d1_b_reg[21]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: encoding1_reg_reg[2][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNN                enG500K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  d1_b_reg[21]/CK (QDFFRBP)                0.00 #     0.00 r
+  d1_b_reg[21]/Q (QDFFRBP)                 0.46       0.46 r
+  U40122/O (BUF6)                          0.34       0.80 r
+  U50610/O (INV6)                          0.20       1.00 f
+  U68906/O (ND2F)                          0.26       1.27 r
+  U68907/O (INV12)                         0.16       1.43 f
+  U68908/O (ND2F)                          0.34       1.77 r
+  U37183/O (INV6)                          0.22       1.99 f
+  U45454/O (ND3)                           0.40       2.39 r
+  U43352/O (ND3P)                          0.28       2.67 f
+  U48408/O (AOI13H)                        0.41       3.08 r
+  U48406/O (OR3B2)                         0.40       3.49 f
+  U43269/O (AOI22HP)                       0.40       3.89 r
+  U68954/O (ND3HT)                         0.24       4.13 f
+  U37002/O (INV6CK)                        0.23       4.37 r
+  U43219/O (INV12)                         0.22       4.59 f
+  U69139/O (XNR2H)                         0.31       4.90 r
+  U69141/O (OR2B1S)                        0.47       5.37 f
+  U69142/C (HA1P)                          0.39       5.77 f
+  U70051/CO (FA1)                          0.49       6.26 f
+  U70054/CO (FA1)                          0.53       6.79 f
+  U70048/CO (FA1)                          0.53       7.33 f
+  U70047/CO (FA1)                          0.53       7.86 f
+  U70046/CO (FA1)                          0.53       8.40 f
+  U70044/CO (FA1)                          0.53       8.93 f
+  U70042/CO (FA1)                          0.53       9.47 f
+  U69593/CO (FA1)                          0.59      10.06 f
+  U39786/O (MOAI1HP)                       0.29      10.35 f
+  U69582/CO (FA1)                          0.60      10.96 f
+  U44036/O (AOI22H)                        0.52      11.47 r
+  U44035/O (MOAI1H)                        0.24      11.72 f
+  U69511/S (FA1)                           0.55      12.27 r
+  U69512/O (BUF12CK)                       0.33      12.60 r
+  U69575/O (XNR2HP)                        0.19      12.79 r
+  U69576/O (OR2T)                          0.51      13.30 r
+  U57793/O (INV4)                          0.26      13.57 f
+  U36349/O (MOAI1S)                        0.76      14.33 f
+  U69832/CO (FA1)                          0.74      15.08 f
+  U44500/CO (FA1)                          0.54      15.62 f
+  U69827/CO (FA1)                          0.54      16.15 f
+  U69826/CO (FA1)                          0.53      16.69 f
+  U69822/CO (FA1)                          0.54      17.23 f
+  U44499/CO (FA1)                          0.54      17.76 f
+  U69817/CO (FA1)                          0.53      18.30 f
+  U69847/CO (FA1)                          0.54      18.83 f
+  U69812/CO (FA1)                          0.54      19.37 f
+  U69811/CO (FA1)                          0.54      19.91 f
+  U69809/CO (FA1)                          0.53      20.44 f
+  U58589/CO (FA1)                          0.53      20.98 f
+  U37684/CO (FA1)                          0.60      21.58 f
+  U70022/O (XNR2H)                         0.29      21.87 f
+  U70023/O (XNR2H)                         0.37      22.24 r
+  U49340/S (FA1)                           0.71      22.95 f
+  U70028/S (FA1P)                          0.80      23.75 f
+  U44501/O (XNR2HP)                        0.28      24.02 f
+  U70025/O (NR2T)                          0.31      24.33 r
+  U41742/O (MOAI1HP)                       0.20      24.54 f
+  U39577/O (MAO222P)                       0.43      24.97 f
+  U39571/O (MAOI1HP)                       0.29      25.26 r
+  U39569/O (MOAI1H)                        0.21      25.47 f
+  U41730/CO (FA1)                          0.53      26.00 f
+  U70045/CO (FA1)                          0.53      26.53 f
+  U70043/CO (FA1)                          0.58      27.12 f
+  U39566/O (MOAI1H)                        0.36      27.48 f
+  U70058/CO (FA1)                          0.54      28.02 f
+  U70040/CO (FA1)                          0.54      28.55 f
+  U70039/CO (FA1)                          0.53      29.09 f
+  U70038/CO (FA1)                          0.53      29.62 f
+  U70037/CO (FA1)                          0.53      30.16 f
+  U70036/CO (FA1)                          0.53      30.69 f
+  U70035/CO (FA1)                          0.53      31.23 f
+  U70034/CO (FA1)                          0.53      31.76 f
+  U70216/CO (FA1)                          0.53      32.30 f
+  U70221/CO (FA1)                          0.58      32.88 f
+  U70217/O (MOAI1H)                        0.36      33.24 f
+  U70220/CO (FA1)                          0.58      33.82 f
+  U38190/O (MOAI1)                         0.47      34.28 f
+  U70219/CO (FA1)                          0.58      34.86 f
+  U70218/CO (FA1)                          0.55      35.41 f
+  U41506/O (XNR2H)                         0.38      35.78 r
+  U43692/O (XNR2HS)                        0.43      36.21 r
+  U43691/O (XNR2HS)                        0.52      36.73 f
+  U35122/O (INV4)                          0.49      37.22 r
+  U70361/O (NR2P)                          0.26      37.48 f
+  U70377/CO (FA1S)                         1.05      38.53 f
+  U35072/O (XNR2HS)                        0.42      38.95 f
+  U70375/O (XNR2HS)                        0.38      39.33 f
+  U70385/S (FA1S)                          1.13      40.46 r
+  U70386/S (FA1)                           0.46      40.93 f
+  U70432/O (MAO222P)                       0.39      41.32 f
+  U70433/O (MAO222P)                       0.39      41.70 f
+  U70434/O (MAO222P)                       0.39      42.10 f
+  U70435/O (INV3)                          0.18      42.27 r
+  U70441/O (OAI12HP)                       0.14      42.41 f
+  U70447/O (MAOI1HP)                       0.23      42.64 r
+  U40733/O (OAI12H)                        0.18      42.82 f
+  U70452/O (MAO222P)                       0.37      43.19 f
+  U70454/O (MAO222P)                       0.36      43.55 f
+  U70471/CO (FA1)                          0.50      44.05 f
+  U70472/CO (FA1)                          0.53      44.58 f
+  U70474/CO (FA1)                          0.53      45.12 f
+  U70470/CO (FA1)                          0.53      45.65 f
+  U70469/CO (FA1)                          0.53      46.19 f
+  U70468/CO (FA1)                          0.53      46.72 f
+  U70467/CO (FA1)                          0.53      47.26 f
+  U70466/CO (FA1)                          0.53      47.79 f
+  U70465/CO (FA1)                          0.53      48.33 f
+  U70464/CO (FA1)                          0.53      48.86 f
+  U70463/CO (FA1)                          0.53      49.39 f
+  U70462/C (HA1P)                          0.30      49.70 f
+  U70461/C (HA1P)                          0.28      49.98 f
+  U70460/C (HA1P)                          0.28      50.26 f
+  U70459/C (HA1P)                          0.28      50.54 f
+  U70455/C (HA1P)                          0.28      50.82 f
+  U70456/C (HA1P)                          0.26      51.08 f
+  U70486/C (HA1P)                          0.28      51.37 f
+  U70485/C (HA1P)                          0.26      51.63 f
+  U70484/C (HA1P)                          0.26      51.89 f
+  U70483/C (HA1P)                          0.26      52.15 f
+  U70481/C (HA1P)                          0.26      52.41 f
+  U70482/C (HA1P)                          0.26      52.67 f
+  U70503/C (HA1P)                          0.26      52.93 f
+  U70502/C (HA1P)                          0.30      53.23 f
+  U70457/O (XOR2HT)                        0.21      53.45 f
+  U70475/O (MUX2T)                         0.49      53.94 r
+  U70517/C (HA1P)                          0.28      54.22 r
+  U70510/C (HA1P)                          0.27      54.49 r
+  U70500/C (HA1P)                          0.28      54.77 r
+  U70507/C (HA1P)                          0.28      55.05 r
+  U40495/C (HA1P)                          0.28      55.33 r
+  U70479/C (HA1P)                          0.28      55.61 r
+  U70516/C (HA1P)                          0.28      55.88 r
+  U70515/C (HA1P)                          0.28      56.16 r
+  U40460/C (HA1P)                          0.28      56.44 r
+  U70488/C (HA1P)                          0.28      56.72 r
+  U70495/C (HA1P)                          0.28      57.00 r
+  U40444/C (HA1P)                          0.28      57.28 r
+  U39141/C (HA1P)                          0.28      57.56 r
+  U40424/C (HA1P)                          0.28      57.84 r
+  U70487/C (HA1P)                          0.28      58.12 r
+  U70491/C (HA1P)                          0.28      58.40 r
+  U40410/C (HA1P)                          0.28      58.68 r
+  U40405/C (HA1P)                          0.28      58.96 r
+  U40401/C (HA1P)                          0.28      59.24 r
+  U70512/C (HA1P)                          0.28      59.52 r
+  U70504/C (HA1P)                          0.28      59.80 r
+  U70505/S (HA1P)                          0.51      60.31 f
+  U33546/O (INV4)                          0.23      60.54 r
+  U70514/O (NR2T)                          0.16      60.70 f
+  U70531/S (HA1)                           0.50      61.20 f
+  U70524/CO (FA1)                          0.53      61.73 f
+  U70785/CO (FA1S)                         0.82      62.55 f
+  U70786/O (XOR2HS)                        0.53      63.08 r
+  U70787/O (XNR2HS)                        0.44      63.53 r
+  U70788/O (XNR2HS)                        0.44      63.97 r
+  U70789/O (XNR2HS)                        0.46      64.43 r
+  U70797/O (XNR2H)                         0.31      64.74 f
+  U70798/O (XNR2H)                         0.28      65.02 f
+  U70800/O (XNR3)                          0.71      65.73 f
+  U40263/O (XNR2H)                         0.29      66.01 f
+  U40250/O (XNR2H)                         0.38      66.39 r
+  U40249/O (XNR2HP)                        0.29      66.69 f
+  U44039/O (NR2T)                          0.28      66.96 r
+  U40240/O (MOAI1HP)                       0.27      67.23 r
+  U40229/O (MOAI1HP)                       0.35      67.58 r
+  U70834/O (OR2T)                          0.32      67.90 r
+  U70835/O (AN2T)                          0.30      68.20 r
+  U71012/O (NR2F)                          0.13      68.33 f
+  U71013/O (BUF12CK)                       0.26      68.59 f
+  U100824/O (AOI22H)                       0.36      68.96 r
+  U100825/O (ND3HT)                        0.37      69.33 f
+  U38615/O (MUX2)                          0.53      69.86 f
+  encoding1_reg_reg[2][0]/D (QDFFRBS)      0.00      69.86 f
+  data arrival time                                  69.86
+
+  clock clk (rise edge)                   70.00      70.00
+  clock network delay (ideal)              0.00      70.00
+  encoding1_reg_reg[2][0]/CK (QDFFRBS)     0.00      70.00 r
+  library setup time                      -0.14      69.86
+  data required time                                 69.86
+  -----------------------------------------------------------
+  data required time                                 69.86
+  data arrival time                                 -69.86
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: d1_b_reg[21]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: encoding1_reg_reg[3][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNN                enG500K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  d1_b_reg[21]/CK (QDFFRBP)                0.00 #     0.00 r
+  d1_b_reg[21]/Q (QDFFRBP)                 0.46       0.46 r
+  U40122/O (BUF6)                          0.34       0.80 r
+  U50610/O (INV6)                          0.20       1.00 f
+  U68906/O (ND2F)                          0.26       1.27 r
+  U68907/O (INV12)                         0.16       1.43 f
+  U68908/O (ND2F)                          0.34       1.77 r
+  U37183/O (INV6)                          0.22       1.99 f
+  U45454/O (ND3)                           0.40       2.39 r
+  U43352/O (ND3P)                          0.28       2.67 f
+  U48408/O (AOI13H)                        0.41       3.08 r
+  U48406/O (OR3B2)                         0.40       3.49 f
+  U43269/O (AOI22HP)                       0.40       3.89 r
+  U68954/O (ND3HT)                         0.24       4.13 f
+  U37002/O (INV6CK)                        0.23       4.37 r
+  U43219/O (INV12)                         0.22       4.59 f
+  U69139/O (XNR2H)                         0.31       4.90 r
+  U69141/O (OR2B1S)                        0.47       5.37 f
+  U69142/C (HA1P)                          0.39       5.77 f
+  U70051/CO (FA1)                          0.49       6.26 f
+  U70054/CO (FA1)                          0.53       6.79 f
+  U70048/CO (FA1)                          0.53       7.33 f
+  U70047/CO (FA1)                          0.53       7.86 f
+  U70046/CO (FA1)                          0.53       8.40 f
+  U70044/CO (FA1)                          0.53       8.93 f
+  U70042/CO (FA1)                          0.53       9.47 f
+  U69593/CO (FA1)                          0.59      10.06 f
+  U39786/O (MOAI1HP)                       0.29      10.35 f
+  U69582/CO (FA1)                          0.60      10.96 f
+  U44036/O (AOI22H)                        0.52      11.47 r
+  U44035/O (MOAI1H)                        0.24      11.72 f
+  U69511/S (FA1)                           0.55      12.27 r
+  U69512/O (BUF12CK)                       0.33      12.60 r
+  U69575/O (XNR2HP)                        0.19      12.79 r
+  U69576/O (OR2T)                          0.51      13.30 r
+  U57793/O (INV4)                          0.26      13.57 f
+  U36349/O (MOAI1S)                        0.76      14.33 f
+  U69832/CO (FA1)                          0.74      15.08 f
+  U44500/CO (FA1)                          0.54      15.62 f
+  U69827/CO (FA1)                          0.54      16.15 f
+  U69826/CO (FA1)                          0.53      16.69 f
+  U69822/CO (FA1)                          0.54      17.23 f
+  U44499/CO (FA1)                          0.54      17.76 f
+  U69817/CO (FA1)                          0.53      18.30 f
+  U69847/CO (FA1)                          0.54      18.83 f
+  U69812/CO (FA1)                          0.54      19.37 f
+  U69811/CO (FA1)                          0.54      19.91 f
+  U69809/CO (FA1)                          0.53      20.44 f
+  U58589/CO (FA1)                          0.53      20.98 f
+  U37684/CO (FA1)                          0.60      21.58 f
+  U70022/O (XNR2H)                         0.29      21.87 f
+  U70023/O (XNR2H)                         0.37      22.24 r
+  U49340/S (FA1)                           0.71      22.95 f
+  U70028/S (FA1P)                          0.80      23.75 f
+  U44501/O (XNR2HP)                        0.28      24.02 f
+  U70025/O (NR2T)                          0.31      24.33 r
+  U41742/O (MOAI1HP)                       0.20      24.54 f
+  U39577/O (MAO222P)                       0.43      24.97 f
+  U39571/O (MAOI1HP)                       0.29      25.26 r
+  U39569/O (MOAI1H)                        0.21      25.47 f
+  U41730/CO (FA1)                          0.53      26.00 f
+  U70045/CO (FA1)                          0.53      26.53 f
+  U70043/CO (FA1)                          0.58      27.12 f
+  U39566/O (MOAI1H)                        0.36      27.48 f
+  U70058/CO (FA1)                          0.54      28.02 f
+  U70040/CO (FA1)                          0.54      28.55 f
+  U70039/CO (FA1)                          0.53      29.09 f
+  U70038/CO (FA1)                          0.53      29.62 f
+  U70037/CO (FA1)                          0.53      30.16 f
+  U70036/CO (FA1)                          0.53      30.69 f
+  U70035/CO (FA1)                          0.53      31.23 f
+  U70034/CO (FA1)                          0.53      31.76 f
+  U70216/CO (FA1)                          0.53      32.30 f
+  U70221/CO (FA1)                          0.58      32.88 f
+  U70217/O (MOAI1H)                        0.36      33.24 f
+  U70220/CO (FA1)                          0.58      33.82 f
+  U38190/O (MOAI1)                         0.47      34.28 f
+  U70219/CO (FA1)                          0.58      34.86 f
+  U70218/CO (FA1)                          0.55      35.41 f
+  U41506/O (XNR2H)                         0.38      35.78 r
+  U43692/O (XNR2HS)                        0.43      36.21 r
+  U43691/O (XNR2HS)                        0.52      36.73 f
+  U35122/O (INV4)                          0.49      37.22 r
+  U70361/O (NR2P)                          0.26      37.48 f
+  U70377/CO (FA1S)                         1.05      38.53 f
+  U35072/O (XNR2HS)                        0.42      38.95 f
+  U70375/O (XNR2HS)                        0.38      39.33 f
+  U70385/S (FA1S)                          1.13      40.46 r
+  U70386/S (FA1)                           0.46      40.93 f
+  U70432/O (MAO222P)                       0.39      41.32 f
+  U70433/O (MAO222P)                       0.39      41.70 f
+  U70434/O (MAO222P)                       0.39      42.10 f
+  U70435/O (INV3)                          0.18      42.27 r
+  U70441/O (OAI12HP)                       0.14      42.41 f
+  U70447/O (MAOI1HP)                       0.23      42.64 r
+  U40733/O (OAI12H)                        0.18      42.82 f
+  U70452/O (MAO222P)                       0.37      43.19 f
+  U70454/O (MAO222P)                       0.36      43.55 f
+  U70471/CO (FA1)                          0.50      44.05 f
+  U70472/CO (FA1)                          0.53      44.58 f
+  U70474/CO (FA1)                          0.53      45.12 f
+  U70470/CO (FA1)                          0.53      45.65 f
+  U70469/CO (FA1)                          0.53      46.19 f
+  U70468/CO (FA1)                          0.53      46.72 f
+  U70467/CO (FA1)                          0.53      47.26 f
+  U70466/CO (FA1)                          0.53      47.79 f
+  U70465/CO (FA1)                          0.53      48.33 f
+  U70464/CO (FA1)                          0.53      48.86 f
+  U70463/CO (FA1)                          0.53      49.39 f
+  U70462/C (HA1P)                          0.30      49.70 f
+  U70461/C (HA1P)                          0.28      49.98 f
+  U70460/C (HA1P)                          0.28      50.26 f
+  U70459/C (HA1P)                          0.28      50.54 f
+  U70455/C (HA1P)                          0.28      50.82 f
+  U70456/C (HA1P)                          0.26      51.08 f
+  U70486/C (HA1P)                          0.28      51.37 f
+  U70485/C (HA1P)                          0.26      51.63 f
+  U70484/C (HA1P)                          0.26      51.89 f
+  U70483/C (HA1P)                          0.26      52.15 f
+  U70481/C (HA1P)                          0.26      52.41 f
+  U70482/C (HA1P)                          0.26      52.67 f
+  U70503/C (HA1P)                          0.26      52.93 f
+  U70502/C (HA1P)                          0.30      53.23 f
+  U70457/O (XOR2HT)                        0.21      53.45 f
+  U70475/O (MUX2T)                         0.49      53.94 r
+  U70517/C (HA1P)                          0.28      54.22 r
+  U70510/C (HA1P)                          0.27      54.49 r
+  U70500/C (HA1P)                          0.28      54.77 r
+  U70507/C (HA1P)                          0.28      55.05 r
+  U40495/C (HA1P)                          0.28      55.33 r
+  U70479/C (HA1P)                          0.28      55.61 r
+  U70516/C (HA1P)                          0.28      55.88 r
+  U70515/C (HA1P)                          0.28      56.16 r
+  U40460/C (HA1P)                          0.28      56.44 r
+  U70488/C (HA1P)                          0.28      56.72 r
+  U70495/C (HA1P)                          0.28      57.00 r
+  U40444/C (HA1P)                          0.28      57.28 r
+  U39141/C (HA1P)                          0.28      57.56 r
+  U40424/C (HA1P)                          0.28      57.84 r
+  U70487/C (HA1P)                          0.28      58.12 r
+  U70491/C (HA1P)                          0.28      58.40 r
+  U40410/C (HA1P)                          0.28      58.68 r
+  U40405/C (HA1P)                          0.28      58.96 r
+  U40401/C (HA1P)                          0.28      59.24 r
+  U70512/C (HA1P)                          0.28      59.52 r
+  U70504/C (HA1P)                          0.28      59.80 r
+  U70505/S (HA1P)                          0.51      60.31 f
+  U33546/O (INV4)                          0.23      60.54 r
+  U70514/O (NR2T)                          0.16      60.70 f
+  U70531/S (HA1)                           0.50      61.20 f
+  U70524/CO (FA1)                          0.53      61.73 f
+  U70785/CO (FA1S)                         0.82      62.55 f
+  U70786/O (XOR2HS)                        0.53      63.08 r
+  U70787/O (XNR2HS)                        0.44      63.53 r
+  U70788/O (XNR2HS)                        0.44      63.97 r
+  U70789/O (XNR2HS)                        0.46      64.43 r
+  U70797/O (XNR2H)                         0.31      64.74 f
+  U70798/O (XNR2H)                         0.28      65.02 f
+  U70800/O (XNR3)                          0.71      65.73 f
+  U40263/O (XNR2H)                         0.29      66.01 f
+  U40250/O (XNR2H)                         0.38      66.39 r
+  U40249/O (XNR2HP)                        0.29      66.69 f
+  U44039/O (NR2T)                          0.28      66.96 r
+  U40240/O (MOAI1HP)                       0.27      67.23 r
+  U40229/O (MOAI1HP)                       0.35      67.58 r
+  U70834/O (OR2T)                          0.32      67.90 r
+  U70835/O (AN2T)                          0.30      68.20 r
+  U71012/O (NR2F)                          0.13      68.33 f
+  U71013/O (BUF12CK)                       0.26      68.59 f
+  U100824/O (AOI22H)                       0.36      68.96 r
+  U100825/O (ND3HT)                        0.37      69.33 f
+  U38609/O (MUX2)                          0.53      69.86 f
+  encoding1_reg_reg[3][0]/D (QDFFRBS)      0.00      69.86 f
+  data arrival time                                  69.86
+
+  clock clk (rise edge)                   70.00      70.00
+  clock network delay (ideal)              0.00      70.00
+  encoding1_reg_reg[3][0]/CK (QDFFRBS)     0.00      70.00 r
+  library setup time                      -0.14      69.86
+  data required time                                 69.86
+  -----------------------------------------------------------
+  data required time                                 69.86
+  data arrival time                                 -69.86
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: cg_en (input port clocked by clk)
+  Endpoint: add_a_reg[2][21]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNN                enG500K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    35.00      35.00 r
+  cg_en (in)                               0.00      35.00 r
+  U43900/O (ND3HT)                         0.19      35.19 f
+  U35032/O (ND2P)                          0.30      35.49 r
+  U35027/O (BUF6CK)                        0.35      35.85 r
+  U65320/O (INV12)                         0.12      35.97 f
+  U43139/O (INV2)                          0.19      36.16 r
+  U43955/O (OAI12HS)                       0.39      36.55 f
+  U39939/O (BUF6)                          0.48      37.04 f
+  U80026/O (AOI22S)                        0.63      37.67 r
+  U42864/O (ND3P)                          0.30      37.98 f
+  U80029/O (AO112P)                        0.90      38.88 f
+  U59347/O (INV2)                          0.73      39.60 r
+  U80043/O (MOAI1HT)                       0.40      40.00 r
+  U45689/O (ND2S)                          0.50      40.50 f
+  U80534/O (MOAI1S)                        1.34      41.84 r
+  U80540/S (HA1)                           0.48      42.32 r
+  U80541/S (FA1S)                          0.77      43.09 f
+  U42334/O (MAO222)                        0.48      43.58 f
+  U44283/O (MAO222P)                       0.40      43.98 f
+  U80559/O (MAO222P)                       0.38      44.36 f
+  U58470/O (MAO222)                        0.41      44.77 f
+  U58519/O (MAO222)                        0.40      45.17 f
+  U80565/O (MAO222P)                       0.38      45.55 f
+  U80566/O (MAO222P)                       0.39      45.94 f
+  U80567/O (AOI22H)                        0.38      46.31 r
+  U43644/O (MOAI1H)                        0.23      46.54 f
+  U43643/O (MAO222P)                       0.41      46.95 f
+  U43642/O (AOI22H)                        0.34      47.30 r
+  U43641/O (MOAI1H)                        0.26      47.55 f
+  U80572/O (MAO222P)                       0.42      47.97 f
+  U43634/O (ND3P)                          0.23      48.20 r
+  U41971/O (ND3P)                          0.23      48.44 f
+  U43631/O (AO13P)                         0.39      48.83 f
+  U41930/O (MOAI1HP)                       0.26      49.09 f
+  U80587/CO (FA1)                          0.51      49.60 f
+  U80584/CO (FA1)                          0.53      50.13 f
+  U80596/CO (FA1)                          0.53      50.67 f
+  U80594/CO (FA1)                          0.53      51.20 f
+  U80593/CO (FA1)                          0.53      51.74 f
+  U80595/CO (FA1)                          0.53      52.27 f
+  U80592/CO (FA1)                          0.53      52.81 f
+  U80722/CO (FA1)                          0.53      53.34 f
+  U80591/CO (FA1)                          0.53      53.88 f
+  U80586/CO (FA1)                          0.53      54.41 f
+  U80585/CO (FA1)                          0.53      54.95 f
+  U80723/CO (FA1)                          0.53      55.48 f
+  U80582/CO (FA1)                          0.53      56.02 f
+  U80724/CO (FA1)                          0.53      56.55 f
+  U80583/CO (FA1)                          0.53      57.09 f
+  U80604/CO (FA1)                          0.53      57.62 f
+  U80603/CO (FA1)                          0.53      58.16 f
+  U80725/CO (FA1)                          0.53      58.69 f
+  U80601/CO (FA1)                          0.53      59.23 f
+  U80600/CO (FA1)                          0.53      59.76 f
+  U80602/CO (FA1)                          0.53      60.30 f
+  U80721/CO (FA1)                          0.53      60.83 f
+  U80720/CO (FA1)                          0.53      61.37 f
+  U80599/CO (FA1)                          0.55      61.91 f
+  U43645/O (XNR2H)                         0.52      62.44 r
+  U41693/O (INV4)                          0.17      62.60 f
+  U80735/O (NR2T)                          0.24      62.85 r
+  U41672/CO (FA1)                          0.49      63.34 r
+  U89108/C (HA1P)                          0.31      63.64 r
+  U89107/C (HA1P)                          0.28      63.92 r
+  U89105/C (HA1P)                          0.28      64.20 r
+  U89104/C (HA1P)                          0.28      64.48 r
+  U89106/C (HA1P)                          0.28      64.76 r
+  U41584/C (HA1P)                          0.28      65.03 r
+  U89102/C (HA1P)                          0.28      65.31 r
+  U89096/C (HA1P)                          0.28      65.59 r
+  U89098/C (HA1P)                          0.28      65.87 r
+  U41532/C (HA1P)                          0.28      66.15 r
+  U89109/C (HA1P)                          0.28      66.43 r
+  U89101/C (HA1P)                          0.28      66.71 r
+  U89100/C (HA1P)                          0.28      66.98 r
+  U89095/C (HA1P)                          0.28      67.26 r
+  U41446/C (HA1P)                          0.28      67.54 r
+  U89094/C (HA1P)                          0.28      67.82 r
+  U89093/C (HA1P)                          0.28      68.10 r
+  U89092/C (HA1P)                          0.28      68.38 r
+  U89090/C (HA1P)                          0.28      68.65 r
+  U89088/C (HA1P)                          0.28      68.93 r
+  U41161/S (HA1P)                          0.39      69.33 r
+  U38726/O (INV3)                          0.15      69.48 f
+  U89089/O (MOAI1H)                        0.31      69.78 r
+  add_a_reg[2][21]/D (QDFFRBS)             0.00      69.78 r
+  data arrival time                                  69.78
+
+  clock clk (rise edge)                   70.00      70.00
+  clock network delay (ideal)              0.00      70.00
+  add_a_reg[2][21]/CK (QDFFRBS)            0.00      70.00 r
+  library setup time                      -0.21      69.79
+  data required time                                 69.79
+  -----------------------------------------------------------
+  data required time                                 69.79
+  data arrival time                                 -69.78
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

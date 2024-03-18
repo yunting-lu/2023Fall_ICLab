@@ -1,0 +1,318 @@
+Initializing gui preferences from file  /RAID2/COURSE/iclab/iclab122/.synopsys_dc_gui/preferences.tcl
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+#  Global Parameters
+#======================================================
+set DESIGN "GATED_OR"
+GATED_OR
+set CLK_period 15.0
+15.0
+#======================================================
+#  Read RTL Code
+#======================================================
+set hdlin_auto_save_templates TRUE
+TRUE
+analyze -f sverilog $DESIGN\.v 
+Running PRESTO HDLC
+Compiling source file ./GATED_OR.v
+Presto compilation completed successfully.
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+1
+elaborate $DESIGN 
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading link library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading link library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+        in routine GATED_OR line 26 in file
+                './GATED_OR.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+| latch_or_sleep_reg  | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully. (GATED_OR)
+Elaborated 1 design.
+Current design is now 'GATED_OR'.
+1
+current_design $DESIGN
+Current design is 'GATED_OR'.
+{GATED_OR}
+link
+
+  Linking design 'GATED_OR'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  GATED_OR                    /RAID2/COURSE/iclab/iclab122/Lab08/EXERCISE/02_SYN/GATED_OR.db
+  fsa0m_a_generic_core_ss1p62v125c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db
+  fsa0m_a_generic_core_ff1p98vm40c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db
+  fsa0m_a_t33_generic_io_ss1p62v125c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db
+  fsa0m_a_t33_generic_io_tt1p8v25c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#======================================================
+#  Global Setting
+#======================================================
+set_wire_load_mode top
+1
+#======================================================
+#  Set Design Constraints
+#======================================================
+set_load 0.05 [all_outputs]
+1
+#======================================================
+#  Optimization
+#======================================================
+check_design > Report/$DESIGN\.check
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+compile
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT                                                               |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 9                                      |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 1                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 1                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 0                                      |
+| Number of Dont Touch cells                              | 4                                      |
+| Number of Dont Touch nets                               | 0                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+
+Warning: Operating condition WCCOM set on design GATED_OR has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fsa0m_a_generic_core_ff1p98vm40c is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'GATED_OR'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'GATED_OR' has no optimization constraints set. (OPT-108)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Structuring 'GATED_OR'
+  Mapping 'GATED_OR'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+    0:00:01      56.2      0.00       0.0       0.0                          
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+#======================================================
+#  Output Reports 
+#======================================================
+report_timing >  Report/$DESIGN\.timing
+report_area >  Report/$DESIGN\.area
+report_resource >  Report/$DESIGN\.resource
+#======================================================
+#  Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/iclab/iclab122/Lab08/EXERCISE/02_SYN/Netlist/GATED_OR_SYN.v'.
+1
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/RAID2/COURSE/iclab/iclab122/Lab08/EXERCISE/02_SYN/Netlist/GATED_OR_SYN.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  Finish and Quit
+#======================================================
+report_area
+ 
+****************************************
+Report : area
+Design : GATED_OR
+Version: T-2022.03
+Date   : Fri Nov 17 13:19:29 2023
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+
+Number of ports:                            4
+Number of nets:                             5
+Number of cells:                            2
+Number of combinational cells:              1
+Number of sequential cells:                 1
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:                 12.499200
+Buf/Inv area:                        0.000000
+Noncombinational area:              43.747200
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                    56.246400
+Total area:                 undefined
+1
+report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : GATED_OR
+Version: T-2022.03
+Date   : Fri Nov 17 13:19:29 2023
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: latch_or_sleep_reg
+              (positive level-sensitive latch)
+  Endpoint: CLOCK_GATED
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  GATED_OR           enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  latch_or_sleep_reg/CK (QDLHRBN)          0.00       0.00 r
+  latch_or_sleep_reg/Q (QDLHRBN)           0.38       0.38 f
+  U4/O (OR2)                               0.33       0.71 f
+  CLOCK_GATED (out)                        0.00       0.71 f
+  data arrival time                                   0.71
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+exit
+
+Memory usage for this session 217 Mbytes.
+Memory usage for this session including child processes 217 Mbytes.
+CPU usage for this session 4 seconds ( 0.00 hours ).
+Elapsed time for this session 7 seconds ( 0.00 hours ).
+
+Thank you...
+

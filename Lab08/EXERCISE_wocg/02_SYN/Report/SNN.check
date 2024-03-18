@@ -1,0 +1,54 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sun Nov 19 16:13:39 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               4
+    Cells do not drive (LINT-1)                                     4
+
+Nets                                                               33
+    Unloaded nets (LINT-2)                                         33
+--------------------------------------------------------------------------------
+
+Warning: In design 'SNN', cell 'C33707' does not drive any nets. (LINT-1)
+Warning: In design 'SNN', cell 'C33711' does not drive any nets. (LINT-1)
+Warning: In design 'SNN', cell 'C33715' does not drive any nets. (LINT-1)
+Warning: In design 'SNN', cell 'B_199' does not drive any nets. (LINT-1)
+Warning: In design 'SNN', net 's3_z[31]' driven by pin 'S3/z_31' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[0]' driven by pin 'C0/z0_0' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[1]' driven by pin 'C0/z0_1' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[2]' driven by pin 'C0/z0_2' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[3]' driven by pin 'C0/z0_3' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[4]' driven by pin 'C0/z0_4' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[5]' driven by pin 'C0/z0_5' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[6]' driven by pin 'C0/z0_6' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[7]' driven by pin 'C0/z0_7' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[8]' driven by pin 'C0/z0_8' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[9]' driven by pin 'C0/z0_9' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[10]' driven by pin 'C0/z0_10' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[11]' driven by pin 'C0/z0_11' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[12]' driven by pin 'C0/z0_12' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[13]' driven by pin 'C0/z0_13' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[14]' driven by pin 'C0/z0_14' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[15]' driven by pin 'C0/z0_15' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[16]' driven by pin 'C0/z0_16' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[17]' driven by pin 'C0/z0_17' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[18]' driven by pin 'C0/z0_18' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[19]' driven by pin 'C0/z0_19' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[20]' driven by pin 'C0/z0_20' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[21]' driven by pin 'C0/z0_21' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[22]' driven by pin 'C0/z0_22' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[23]' driven by pin 'C0/z0_23' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[24]' driven by pin 'C0/z0_24' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[25]' driven by pin 'C0/z0_25' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[26]' driven by pin 'C0/z0_26' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[27]' driven by pin 'C0/z0_27' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[28]' driven by pin 'C0/z0_28' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[29]' driven by pin 'C0/z0_29' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[30]' driven by pin 'C0/z0_30' has no loads. (LINT-2)
+Warning: In design 'SNN', net 'c0_min[31]' driven by pin 'C0/z0_31' has no loads. (LINT-2)
+1

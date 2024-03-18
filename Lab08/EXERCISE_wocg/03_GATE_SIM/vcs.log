@@ -1,0 +1,696 @@
+Command: vcs -timescale=1ns/1fs -j8 -sverilog +v2k -full64 -Mupdate -R -debug_access+all \
+-y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f filelist.f -o simv -l \
+vcs.log -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a \
+-v /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src \
++define+GATE +neg_tchk +nowarnNTCDSN
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sun Nov 19 16:30:35 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TESTBED.v'
+Parsing included file 'PATTERN.v'.
+Back to file 'TESTBED.v'.
+Parsing included file 'SNN_SYN.v'.
+Back to file 'TESTBED.v'.
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_add.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_addsub.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_cmp.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_div.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_dp2.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_exp.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_mac.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_sub.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_sum3.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_sum4.v'
+Parsing library file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_exp2.v'
+Parsing included file '/RAID2/cad/synopsys/synthesis/2022.03/dw/sim_ver/vcs/DW_exp2.v'.
+Back to file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_exp2.v'.
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_fp_ifp_conv.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_ifp_addsub.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_ifp_fp_conv.v'
+Parsing library directory file '/usr/cad/synopsys/synthesis/cur/dw/sim_ver/DW_ifp_mult.v'
+Top Level Modules:
+       TESTBED
+TimeScale is 10 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 20967
+SNN, "FA1S U34020( .A (n99222),  .B (s2_a[21]),  .CI (n90503),  .CO (n90504));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 20991
+SNN, "FA1S U34042( .A (n99233),  .B (s2_a[20]),  .CI (n90502),  .CO (n90503));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 21007
+SNN, "FA1S U34054( .A (n99232),  .B (s2_a[19]),  .CI (n90501),  .CO (n90502));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 21060
+SNN, "FA1S U34089( .A (n99222),  .B (a6_a[21]),  .CI (n90950),  .CO (n90951));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 21071
+SNN, "FA1S U34098( .A (n99233),  .B (a6_a[20]),  .CI (n90949),  .CO (n90950));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 22509
+SNN, "FA1S U35361( .A (n45505),  .B (n45504),  .CI (n45503),  .CO (n45510));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 28810
+SNN, "FA1S U40712( .A (intadd_93_n1),  .B (intadd_23_SUM_4_),  .CI (n83635),  .CO (n83636));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 29209
+SNN, "FA1S U41061( .A (n93998),  .B (n93997),  .CI (n93996),  .CO (n93999));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 29373
+SNN, "FA1S U41224( .A (n93995),  .B (n93994),  .CI (n93993),  .CO (n93996));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 30011
+SNN, "FA1S U41822( .A (n99919),  .B (a7_a[6]),  .CI (n35767),  .CO (n35768));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 30051
+SNN, "FA1S U41857( .A (n99918),  .B (a7_a[5]),  .CI (n35766),  .CO (n35767));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 30177
+SNN, "FA1S U41969( .A (n99917),  .B (a7_a[4]),  .CI (n35765),  .CO (n35766));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 51735
+SNN, "FA1S U58396( .A (n100818),  .B (n28988),  .CI (n28881),  .CO (n28882));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 51736
+SNN, "FA1S U58397( .A (n100822),  .B (n28987),  .CI (n28882),  .CO (n28883));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 55564
+SNN, "FA1 U61583( .A (n96123),  .B (a7_a[20]),  .CI (n35780),  .CO (n35781));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 55565
+SNN, "FA1 U61584( .A (n96124),  .B (a7_a[21]),  .CI (n35781),  .CO (n35782));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 60600
+SNN, "FA1S U65587( .A (n43820),  .B (n43819),  .CI (n43818),  .CO (n43821));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 60601
+SNN, "FA1S U65588( .A (n43823),  .B (n43822),  .CI (n43821),  .CO (n43824));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 60602
+SNN, "FA1S U65589( .A (n43826),  .B (n43825),  .CI (n43824),  .CO (n43827));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 60603
+SNN, "FA1S U65590( .A (n43829),  .B (n43828),  .CI (n43827),  .CO (n43830));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 60604
+SNN, "FA1S U65591( .A (n43832),  .B (n43831),  .CI (n43830),  .CO (n43833));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 60605
+SNN, "FA1S U65592( .A (n43835),  .B (n43834),  .CI (n43833),  .CO (n43836));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 60606
+SNN, "FA1S U65593( .A (n43838),  .B (n43837),  .CI (n43836),  .CO (n43839));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 60607
+SNN, "FA1S U65594( .A (n43841),  .B (n43840),  .CI (n43839),  .CO (n45791));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 61577
+SNN, "FA1 U66357( .A (n45523),  .B (n45522),  .CI (n45521),  .CO (n45524));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 61648
+SNN, "HA1P U66418( .A (n45712),  .B (n45711),  .C (n45718));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 61884
+SNN, "FA1 U66614( .A (n46178),  .B (n46177),  .CI (n46176),  .CO (n46179));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63880
+SNN, "FA1S U68216( .A (n49402),  .B (n49401),  .CI (n49400),  .CO (n49403));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63881
+SNN, "FA1S U68217( .A (n49405),  .B (n49404),  .CI (n49403),  .CO (n49406));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63882
+SNN, "FA1S U68218( .A (n49408),  .B (n49407),  .CI (n49406),  .CO (n49409));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63883
+SNN, "FA1S U68219( .A (n49411),  .B (n49410),  .CI (n49409),  .CO (n49412));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63884
+SNN, "FA1S U68220( .A (n49414),  .B (n49413),  .CI (n49412),  .CO (n49415));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63885
+SNN, "FA1S U68221( .A (n49417),  .B (n49416),  .CI (n49415),  .CO (n49418));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63886
+SNN, "FA1S U68222( .A (n49420),  .B (n49419),  .CI (n49418),  .CO (n49421));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 63887
+SNN, "FA1S U68223( .A (n49423),  .B (n49422),  .CI (n49421),  .CO (n51417));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 64951
+SNN, "FA1 U69046( .A (n51127),  .B (n51126),  .CI (n51125),  .CO (n51129));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 65011
+SNN, "HA1P U69100( .A (n51281),  .B (n51280),  .C (n51282));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 65280
+SNN, "FA1 U69329( .A (n51777),  .B (n51776),  .CI (n51775),  .CO (n51781));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 97032
+SNN, "FA1S U89526( .A (n83609),  .B (n83608),  .CI (intadd_12_n8),  .CO (n83610));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 97033
+SNN, "FA1S U89527( .A (n83612),  .B (n83611),  .CI (n83610),  .CO (n83613));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 97034
+SNN, "FA1S U89528( .A (n83615),  .B (n83614),  .CI (n83613),  .CO (n83616));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 97035
+SNN, "FA1S U89529( .A (n83618),  .B (n83617),  .CI (n83616),  .CO (n83619));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 97036
+SNN, "FA1S U89530( .A (n83621),  .B (n83620),  .CI (n83619),  .CO (n83622));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 97814
+SNN, "FA1 U90095( .A (n102042),  .B (n84280),  .CI (n84160),  .CO (n84161));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 97815
+SNN, "FA1 U90096( .A (n100649),  .B (n100648),  .CI (n84167),  .CO (n84168));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 97825
+SNN, "FA1 U90104( .A (n96313),  .B (n96312),  .CI (n84190),  .CO (n84191));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 106430
+SNN, "FA1S U96197( .A (n93989),  .B (n93988),  .CI (intadd_9_n18),  .CO (n93990));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 106431
+SNN, "FA1S U96198( .A (n93992),  .B (n93991),  .CI (n93990),  .CO (n93993));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+SNN_SYN.v, 106432
+SNN, "FA1S U96199( .A (n94001),  .B (n94000),  .CI (n93999),  .CO (n94002));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "SNN_SYN.sdf"
+   ***    Annotation scope: TESTBED.u_SNN
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+typdelays compiled, TYPICAL delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Sun Nov 19 16:30:42 2023
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1574611
+module: QDFFRBN, "instance: TESTBED.u_SNN.add_c_reg_2__28_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1574632
+module: QDFFRBN, "instance: TESTBED.u_SNN.add_c_reg_3__26_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1574653
+module: QDFFRBN, "instance: TESTBED.u_SNN.add_a_reg_3__27_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1574674
+module: QDFFRBN, "instance: TESTBED.u_SNN.add_c_reg_3__27_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1574695
+module: QDFFRBN, "instance: TESTBED.u_SNN.add_a_reg_3__28_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1574716
+module: QDFFRBN, "instance: TESTBED.u_SNN.add_b_reg_2__29_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1574737
+module: QDFFRBN, "instance: TESTBED.u_SNN.a6_b_reg_2_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1575206
+module: QDFFRBS, "instance: TESTBED.u_SNN.min_reg_reg_0_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1575227
+module: QDFFRBS, "instance: TESTBED.u_SNN.data_reg_reg_2__3__29_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+All future warnings not reported; use +sdfverbose to report them.
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+SNN_SYN.sdf, 1575248
+module: QDFFRBS, "instance: TESTBED.u_SNN.add_c_reg_0__28_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+          Total errors: 0
+          Total warnings: 4036
+   ***    SDF annotation completed: Sun Nov 19 16:30:45 2023
+
+
+Starting vcs inline pass...
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+216 modules and 3 UDPs read.
+	However, due to incremental compilation, no re-compilation is necessary.
+make[1]: Entering directory `/RAID2/COURSE/iclab/iclab122/Lab08/EXERCISE_wocg/03_GATE_SIM/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _166967_archive_1.so _prev_archive_1.so \
+_cuarc0.so objs/udps/qndjy.o objs/udps/Sbaqa.o objs/udps/ySdCA.o  SIM_l.o      rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf \
+-lsnpsmalloc -lvfs /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a  \
+-lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/RAID2/COURSE/iclab/iclab122/Lab08/EXERCISE_wocg/03_GATE_SIM/csrc' \
+
+Command: /RAID2/COURSE/iclab/iclab122/Lab08/EXERCISE_wocg/03_GATE_SIM/./simv +v2k +libext+.v -a vcs.log +define+GATE +neg_tchk +nowarnNTCDSN
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Nov 19 16:31 2023
+Doing SDF annotation ...... Done
+*Verdi* Loading libsscore_vcs201906.so
+FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'SNN_SYN.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+[0;34mPASS PATTERN NO.   0,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.   1,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.   2,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.   3,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.   4,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.   5,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.   6,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.   7,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.   8,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.   9,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  10,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  11,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  12,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  13,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  14,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  15,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  16,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  17,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  18,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  19,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  20,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  21,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  22,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  23,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  24,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  25,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  26,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  27,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  28,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  29,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  30,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  31,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  32,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  33,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  34,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  35,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  36,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  37,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  38,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  39,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  40,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  41,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  42,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  43,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  44,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  45,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  46,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  47,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  48,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  49,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  50,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  51,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  52,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  53,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  54,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  55,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  56,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  57,                    [m [0;32m Latency:  35[m
+[0;34mNO CHECK PATTERN NO.  58m due to < 0.001,[m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  59,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  60,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  61,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  62,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  63,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  64,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  65,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  66,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  67,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  68,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  69,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  70,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  71,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  72,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  73,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  74,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  75,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  76,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  77,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  78,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  79,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  80,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  81,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  82,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  83,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  84,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  85,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  86,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  87,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  88,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  89,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  90,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  91,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  92,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  93,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  94,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  95,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  96,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  97,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  98,                    [m [0;32m Latency:  35[m
+[0;34mPASS PATTERN NO.  99,                    [m [0;32m Latency:  35[m
+----------------------------------------------------------------------------------------------------------------------
+                                                  Congratulations!                                                                       
+                                           You have passed all patterns!                                                                 
+                                           Your execution cycles =  3500 cycles                                                            
+                                           Your clock period = 70.0 ns                                                               
+                                           Total Latency = 245000.0 ns                                                               
+----------------------------------------------------------------------------------------------------------------------
+$finish called from file "PATTERN.v", line 62.
+$finish at simulation time            938315000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 938315000 ps
+CPU Time:    316.780 seconds;       Data structure size:  28.5Mb
+Sun Nov 19 16:33:46 2023
+CPU time: 20.455 seconds to compile + 2.121 seconds to elab + .875 seconds to link + 316.839 seconds in simulation

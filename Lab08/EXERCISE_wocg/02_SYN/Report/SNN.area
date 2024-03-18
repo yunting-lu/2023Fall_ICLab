@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : SNN
+Version: T-2022.03
+Date   : Sun Nov 19 16:30:19 2023
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+
+Number of ports:                          134
+Number of nets:                         86313
+Number of cells:                        76743
+Number of combinational cells:          72707
+Number of sequential cells:              4036
+Number of macros/black boxes:               0
+Number of buf/inv:                       6910
+Number of references:                     199
+
+Combinational area:            1710199.925870
+Buf/Inv area:                    67236.321246
+Noncombinational area:          239990.891701
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               1950190.817571
+Total area:                 undefined
+1
