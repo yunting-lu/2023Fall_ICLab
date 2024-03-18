@@ -1,0 +1,38 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "PATTERN": [
+        "PATTERN",
+        "ThTta",
+        "module",
+        2
+    ],
+    "PULSE_syn": [
+        "PULSE_syn",
+        "hPSWx",
+        "module",
+        3
+    ],
+    "NDFF_BUS_syn_0000": [
+        "NDFF_BUS_syn_0000",
+        "ZLfbb",
+        "module",
+        7
+    ],
+    "TESTBED": [
+        "TESTBED",
+        "TAUdR",
+        "module",
+        5
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        6
+    ]
+}

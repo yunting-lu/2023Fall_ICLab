@@ -1,0 +1,1039 @@
+Initializing gui preferences from file  /RAID2/COURSE/iclab/iclab122/.synopsys_dc_gui/preferences.tcl
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+# (A) Global Parameters
+#======================================================
+set DESIGN "PRGN_TOP"
+PRGN_TOP
+set SYNCHRONIZER "NDFF_syn"
+NDFF_syn
+set CYCLE1 14.1
+14.1
+set CYCLE2 3.9
+3.9
+set CYCLE3 20.7
+20.7
+set INPUT_DLY [expr 0.5*$CYCLE1]
+7.05
+set OUTPUT_DLY [expr 0.5*$CYCLE3]
+10.35
+#======================================================
+# (B) Read RTL Code
+#======================================================
+# (B-1) analyze + elaborate
+set hdlin_auto_save_templates TRUE
+TRUE
+analyze -f sverilog $SYNCHRONIZER\.v 
+Running PRESTO HDLC
+Compiling source file ../01_RTL/synchronizer/NDFF_syn.v
+Presto compilation completed successfully.
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/04_MEM/DUAL_64X32X1BM1_WC.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+1
+elaborate $SYNCHRONIZER  
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'DUAL_64X32X1BM1_WC'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+        in routine NDFF_syn line 13 in file
+                '../01_RTL/synchronizer/NDFF_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       A1_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine NDFF_syn line 21 in file
+                '../01_RTL/synchronizer/NDFF_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       A2_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (NDFF_syn)
+Elaborated 1 design.
+Current design is now 'NDFF_syn'.
+1
+analyze -f sverilog $DESIGN\.v 
+Running PRESTO HDLC
+Compiling source file ../01_RTL/PRGN_TOP.v
+Opening include file ../01_RTL/DESIGN_module.v
+Opening include file ../01_RTL/synchronizer/Handshake_syn.v
+Opening include file ../01_RTL/synchronizer/FIFO_syn.v
+Opening include file ../01_RTL/synchronizer/NDFF_syn.v
+Opening include file ../01_RTL/synchronizer/PULSE_syn.v
+Opening include file ../01_RTL/synchronizer/NDFF_BUS_syn.v
+Presto compilation completed successfully.
+1
+elaborate $DESIGN  
+Running PRESTO HDLC
+Presto compilation completed successfully. (PRGN_TOP)
+Elaborated 1 design.
+Current design is now 'PRGN_TOP'.
+Information: Building the design 'CLK_1_MODULE'. (HDL-193)
+
+Inferred memory devices in process
+        in routine CLK_1_MODULE line 38 in file
+                '../01_RTL/DESIGN_module.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    seed_reg_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CLK_1_MODULE line 44 in file
+                '../01_RTL/DESIGN_module.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   in_valid_d1_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CLK_1_MODULE)
+Information: Building the design 'Handshake_syn' instantiated from design 'PRGN_TOP' with
+        the parameters "32". (HDL-193)
+
+Inferred memory devices in process
+        in routine Handshake_syn_WIDTH32 line 56 in file
+                '../01_RTL/synchronizer/Handshake_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sreq_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine Handshake_syn_WIDTH32 line 65 in file
+                '../01_RTL/synchronizer/Handshake_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      dack_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine Handshake_syn_WIDTH32 line 75 in file
+                '../01_RTL/synchronizer/Handshake_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     dreq_d1_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine Handshake_syn_WIDTH32 line 81 in file
+                '../01_RTL/synchronizer/Handshake_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     dvalid_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine Handshake_syn_WIDTH32 line 87 in file
+                '../01_RTL/synchronizer/Handshake_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      dout_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine Handshake_syn_WIDTH32 line 93 in file
+                '../01_RTL/synchronizer/Handshake_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sidle_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (Handshake_syn_WIDTH32)
+Information: Building the design 'CLK_2_MODULE'. (HDL-193)
+
+Inferred memory devices in process
+        in routine CLK_2_MODULE line 111 in file
+                '../01_RTL/DESIGN_module.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    seed_reg_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CLK_2_MODULE line 117 in file
+                '../01_RTL/DESIGN_module.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   in_valid_d1_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CLK_2_MODULE line 133 in file
+                '../01_RTL/DESIGN_module.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  seed_nxt_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CLK_2_MODULE line 139 in file
+                '../01_RTL/DESIGN_module.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cnt_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CLK_2_MODULE line 146 in file
+                '../01_RTL/DESIGN_module.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_flag_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CLK_2_MODULE)
+Information: Building the design 'FIFO_syn' instantiated from design 'PRGN_TOP' with
+        the parameters "WIDTH=32,WORDS=64". (HDL-193)
+
+Inferred memory devices in process
+        in routine FIFO_syn_WIDTH32_WORDS64 line 58 in file
+                '../01_RTL/synchronizer/FIFO_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      rdata_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine FIFO_syn_WIDTH32_WORDS64 line 63 in file
+                '../01_RTL/synchronizer/FIFO_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rinc_d1_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (FIFO_syn_WIDTH32_WORDS64)
+Information: Building the design 'CLK_3_MODULE'. (HDL-193)
+
+Inferred memory devices in process
+        in routine CLK_3_MODULE line 216 in file
+                '../01_RTL/DESIGN_module.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  fifo_empty_d1_reg  | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine CLK_3_MODULE line 220 in file
+                '../01_RTL/DESIGN_module.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  fifo_empty_d2_reg  | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CLK_3_MODULE)
+Information: Building the design 'rptr_empty' instantiated from design 'FIFO_syn_WIDTH32_WORDS64' with
+        the parameters "6". (HDL-193)
+
+Inferred memory devices in process
+        in routine rptr_empty_ASIZE6 line 247 in file
+                '../01_RTL/synchronizer/FIFO_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      rbin_reg       | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      rptr_reg       | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine rptr_empty_ASIZE6 line 262 in file
+                '../01_RTL/synchronizer/FIFO_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rempty_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (rptr_empty_ASIZE6)
+Information: Building the design 'wptr_full' instantiated from design 'FIFO_syn_WIDTH32_WORDS64' with
+        the parameters "6". (HDL-193)
+
+Inferred memory devices in process
+        in routine wptr_full_ASIZE6 line 298 in file
+                '../01_RTL/synchronizer/FIFO_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      wbin_reg       | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      wptr_reg       | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine wptr_full_ASIZE6 line 313 in file
+                '../01_RTL/synchronizer/FIFO_syn.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      wfull_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (wptr_full_ASIZE6)
+Information: Building the design 'NDFF_BUS_syn' instantiated from design 'FIFO_syn_WIDTH32_WORDS64' with
+        the parameters "7". (HDL-193)
+Presto compilation completed successfully. (NDFF_BUS_syn_WIDTH7)
+1
+# (B-2) read_sverilog
+#read_sverilog $DESIGN\.v
+# (B-3) set current design
+current_design $SYNCHRONIZER
+Current design is 'NDFF_syn'.
+{NDFF_syn}
+link
+
+  Linking design 'NDFF_syn'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (10 designs)              /RAID2/COURSE/iclab/iclab122/Lab07/Exercise/02_SYN/NDFF_syn.db, etc
+  fsa0m_a_generic_core_ss1p62v125c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db
+  DUAL_64X32X1BM1_WC (library) /RAID2/COURSE/iclab/iclab122/Lab07/Exercise/04_MEM/DUAL_64X32X1BM1_WC.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+compile
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT                                                               |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 3                                      |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 2                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 1                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 0                                      |
+| Number of Dont Touch cells                              | 0                                      |
+| Number of Dont Touch nets                               | 0                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'NDFF_syn'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'NDFF_syn' has no optimization constraints set. (OPT-108)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+    0:00:01     118.7      0.00       0.0       0.0                          
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/04_MEM/DUAL_64X32X1BM1_WC.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+set_dont_touch $SYNCHRONIZER
+1
+current_design $DESIGN
+Current design is 'PRGN_TOP'.
+{PRGN_TOP}
+link
+
+  Linking design 'PRGN_TOP'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (10 designs)              /RAID2/COURSE/iclab/iclab122/Lab07/Exercise/02_SYN/PRGN_TOP.db, etc
+  fsa0m_a_generic_core_ss1p62v125c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db
+  DUAL_64X32X1BM1_WC (library) /RAID2/COURSE/iclab/iclab122/Lab07/Exercise/04_MEM/DUAL_64X32X1BM1_WC.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#======================================================
+#  (C) Global Setting
+#======================================================
+set_wire_load_mode top
+1
+# set_operating_conditions -max WCCOM -min BCCOM
+# set_wire_load_model -name umc18_wl10 -library slow
+#======================================================
+#  (D) Set Design Constraints
+#======================================================
+# (D-1) Setting Clock Constraints
+create_clock -name clk1 -period $CYCLE1 [get_ports clk1] 
+1
+create_clock -name clk2 -period $CYCLE2 [get_ports clk2]
+1
+create_clock -name clk3 -period $CYCLE3 [get_ports clk3]
+1
+set_dont_touch_network             [all_clocks] 
+1
+set_fix_hold                       [all_clocks] 
+1
+set_clock_uncertainty       0.1    [all_clocks] 
+1
+# set_clock_latency   -source 0      [get_clocks clk]
+# set_clock_latency           1      [get_clocks clk] 
+set_input_transition        0.5    [all_inputs] 
+1
+set_clock_transition        0.1    [all_clocks] 
+1
+read_sdc $DESIGN\.sdc
+
+Reading SDC version 2.1...
+1
+# (D-2) Setting in/out Constraints
+set_input_delay   -max  $INPUT_DLY  -clock clk1   [all_inputs] ;  # set_up time check 
+1
+set_input_delay   -min  0           -clock clk1   [all_inputs] ;  # hold   time check 
+1
+set_output_delay  -max  $OUTPUT_DLY -clock clk3   [all_outputs] ; # set_up time check 
+1
+set_output_delay  -min  0           -clock clk3   [all_outputs] ; # hold   time check 
+1
+set_input_delay 0 -clock clk1 clk1
+1
+set_input_delay 0 -clock clk2 clk2
+1
+set_input_delay 0 -clock clk3 clk3
+1
+set_input_delay 0 -clock clk1 rst_n
+1
+#set_max_delay $CYCLE -from [all_inputs] -to [all_outputs]
+# (D-3) Setting Design Environment
+# set_driving_cell -library umc18io3v5v_slow -lib_cell P2C    -pin {Y}  [get_ports clk]
+# set_driving_cell -library umc18io3v5v_slow -lib_cell P2C    -pin {Y}  [remove_from_collection [all_inputs] [get_ports clk]]
+# set_load  [load_of "umc18io3v5v_slow/P8C/A"]       [all_outputs] ; # ~= 0.038
+set_load 0.05 [all_outputs]
+1
+# (D-4) Setting DRC Constraint
+#set_max_delay           0     ; # Optimize delay max effort                 
+#set_max_area            0      ; # Optimize area max effort           
+set_max_transition      3       [all_inputs]   ; # U18 LUT Max Transition Value  
+1
+set_max_capacitance     0.15    [all_inputs]   ; # U18 LUT Max Capacitance Value
+1
+set_max_fanout          10      [all_inputs]
+1
+# set_dont_use slow/JKFF*
+#set_dont_touch [get_cells core_reg_macro]
+#set hdlin_ff_always_sync_set_reset true
+# (D-5) Report Clock skew
+report_clock -skew clk1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : clock_skew
+Design : PRGN_TOP
+Version: T-2022.03
+Date   : Sun Nov 12 16:03:01 2023
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk1                -         -         -         -      0.10      0.10
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk1             0.10      0.10      0.10      0.10
+1
+report_clock -skew clk2
+ 
+****************************************
+Report : clock_skew
+Design : PRGN_TOP
+Version: T-2022.03
+Date   : Sun Nov 12 16:03:01 2023
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk2                -         -         -         -      0.10      0.10
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk2             0.10      0.10      0.10      0.10
+1
+report_clock -skew clk3
+ 
+****************************************
+Report : clock_skew
+Design : PRGN_TOP
+Version: T-2022.03
+Date   : Sun Nov 12 16:03:01 2023
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk3                -         -         -         -      0.10      0.10
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk3             0.10      0.10      0.10      0.10
+1
+check_timing
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+#======================================================
+#  (E) Optimization
+#======================================================
+check_design > Report/$DESIGN\.check
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+set_fix_hold [all_clocks]
+1
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 8 cores. (OPT-1500)
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT WLM                                                           |
+| Comand line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 405                                    |
+| Number of User Hierarchies                              | 25                                     |
+| Sequential Cell Count                                   | 242                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 4                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 3                                      |
+| Number of Dont Touch cells                              | 78                                     |
+| Number of Dont Touch nets                               | 94                                     |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 145 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Uniquified 2 instances of design 'NDFF_BUS_syn_WIDTH7'. (OPT-1056)
+  Simplifying Design 'PRGN_TOP'
+
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/04_MEM/DUAL_64X32X1BM1_WC.db'
+  Loading target library 'DUAL_64X32X1BM1_WC'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ss1p62v125c.db.alib'
+Loaded alib file './alib-52/DUAL_64X32X1BM1_WC.db.alib' (placeholder)
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy u_input before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_Handshake_syn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_PRGN before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_FIFO_syn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_output before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_FIFO_syn/rptr_empty_m0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_FIFO_syn/wptr_full_m0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_FIFO_syn/sync_r2w_m0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_FIFO_syn/sync_w2r_m0 before Pass 1 (OPT-776)
+Information: Ungrouping 9 of 26 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'PRGN_TOP'
+Information: Added key list 'DesignWare' to design 'PRGN_TOP'. (DDB-72)
+Information: In design 'PRGN_TOP', the register 'u_FIFO_syn/wptr_full_m0/wbin_reg[6]' is removed because it is merged to 'u_FIFO_syn/wptr_full_m0/wptr_reg[6]'. (OPT-1215)
+Information: In design 'PRGN_TOP', the register 'u_FIFO_syn/rptr_empty_m0/rbin_reg[6]' is removed because it is merged to 'u_FIFO_syn/rptr_empty_m0/rptr_reg[6]'. (OPT-1215)
+Information: In design 'PRGN_TOP', the register 'u_output/fifo_empty_d1_reg' is removed because it is merged to 'u_FIFO_syn/rinc_d1_reg'. (OPT-1215)
+ Implement Synthetic for 'PRGN_TOP'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIE1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIE0' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'BHD1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:29  197560.8      0.00       0.0       0.0                           8094164.5000      0.00  
+    0:00:29  197513.9      0.00       0.0       0.0                           8090610.0000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:29  197513.9      0.00       0.0       0.0                           8090610.0000      0.00  
+    0:00:29  197513.9      0.00       0.0       0.0                           8090610.0000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:30  193148.6      0.00       0.0       0.0                           7630268.5000      0.00  
+    0:00:30  193148.6      0.00       0.0       0.0                           7630268.5000      0.00  
+    0:00:30  193148.6      0.00       0.0       0.0                           7630268.5000      0.00  
+    0:00:30  193133.0      0.03       0.0       0.0                           7628499.0000      0.00  
+    0:00:30  193114.2      0.03       0.0       0.0                           7628499.0000      0.00  
+    0:00:30  193114.2      0.03       0.0       0.0                           7628499.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:30  193064.2      0.00       0.0       0.0                           7622012.0000      0.00  
+    0:00:30  193064.2      0.00       0.0       0.0                           7622012.0000      0.00  
+    0:00:30  193064.2      0.00       0.0       0.0                           7622012.0000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:30  193048.6      0.00       0.0       0.0                           7609101.5000      0.00  
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:30  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:31  192983.0      0.00       0.0       0.0                           7579667.5000      0.00  
+    0:00:31  192951.7      0.00       0.0       0.0                           7577343.5000      0.00  
+    0:00:31  192951.7      0.00       0.0       0.0                           7577343.5000      0.00  
+    0:00:31  192951.7      0.00       0.0       0.0                           7577343.5000      0.00  
+    0:00:31  192951.7      0.00       0.0       0.0                           7577343.5000      0.00  
+    0:00:31  192926.7      0.00       0.0       0.0                           7575561.5000      0.00  
+    0:00:31  192926.7      0.00       0.0       0.0                           7575561.5000      0.00  
+    0:00:31  192926.7      0.00       0.0       0.0                           7575561.5000      0.00  
+    0:00:31  192926.7      0.00       0.0       0.0                           7575561.5000      0.00  
+    0:00:31  192926.7      0.00       0.0       0.0                           7575561.5000      0.00  
+    0:00:31  192926.7      0.00       0.0       0.0                           7575561.5000      0.00  
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/04_MEM/DUAL_64X32X1BM1_WC.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'DUAL_64X32X1BM1_WC'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated black box outputs. (PWR-428)
+1
+#uniquify
+#compile
+#======================================================
+#  (F) Output Reports 
+#======================================================
+report_design  >  Report/$DESIGN\.design
+report_resource >  Report/$DESIGN\.resource
+# report_timing -max_paths 1000 -path_type end >  Report/$DESIGN\.timing
+report_timing -to u_FIFO_syn/u_dual_sram/A0 >  Report/$DESIGN\.timing
+report_area -hierarchy >  Report/$DESIGN\.area
+report_power > Report/$DESIGN\.power
+report_clock > Report/$DESIGN\.clock
+report_port >  Report/$DESIGN\.port
+report_power >  Report/$DESIGN\.power
+#report_reference > Report/$DESIGN\.reference
+#======================================================
+#  (G) Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  (H) Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/02_SYN/Netlist/PRGN_TOP_SYN.v'.
+1
+write -format ddc     -hierarchy -output $DESIGN\_SYN.ddc
+Writing ddc file 'PRGN_TOP_SYN.ddc'.
+1
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/02_SYN/Netlist/PRGN_TOP_SYN.sdf'. (WT-3)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  (I) Finish and Quit
+#======================================================
+report_area
+ 
+****************************************
+Report : area
+Design : PRGN_TOP
+Version: T-2022.03
+Date   : Sun Nov 12 16:03:33 2023
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    DUAL_64X32X1BM1_WC (File: /RAID2/COURSE/iclab/iclab122/Lab07/Exercise/04_MEM/DUAL_64X32X1BM1_WC.db)
+
+Number of ports:                          134
+Number of nets:                           925
+Number of cells:                          807
+Number of combinational cells:            552
+Number of sequential cells:               238
+Number of macros/black boxes:               1
+Number of buf/inv:                        121
+Number of references:                      42
+
+Combinational area:               8724.441628
+Buf/Inv area:                      818.697590
+Noncombinational area:           13949.107338
+Macro/Black Box area:           170253.171875
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                192926.720841
+Total area:                 undefined
+1
+report_timing 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PRGN_TOP
+Version: T-2022.03
+Date   : Sun Nov 12 16:03:33 2023
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: in_valid (input port clocked by clk1)
+  Endpoint: u_input_seed_reg_reg_0_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PRGN_TOP           enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk1 (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     7.05       7.05 f
+  in_valid (in)                            0.00       7.05 f
+  U443/O (ND2P)                            0.85       7.90 r
+  U536/O (MUX2S)                           0.34       8.24 f
+  u_input_seed_reg_reg_0_/D (QDFFRBS)      0.00       8.24 f
+  data arrival time                                   8.24
+
+  clock clk1 (rise edge)                  14.10      14.10
+  clock network delay (ideal)              0.00      14.10
+  clock uncertainty                       -0.10      14.00
+  u_input_seed_reg_reg_0_/CK (QDFFRBS)     0.00      14.00 r
+  library setup time                      -0.11      13.89
+  data required time                                 13.89
+  -----------------------------------------------------------
+  data required time                                 13.89
+  data arrival time                                  -8.24
+  -----------------------------------------------------------
+  slack (MET)                                         5.64
+
+
+  Startpoint: u_PRGN_seed_reg_reg_12_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_PRGN_seed_nxt_reg_reg_8_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PRGN_TOP           enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_PRGN_seed_reg_reg_12_/CK (QDFFRBS)                    0.00       0.00 r
+  u_PRGN_seed_reg_reg_12_/Q (QDFFRBS)                     0.49       0.49 r
+  U824/O (INV1S)                                          0.24       0.74 f
+  U826/O (MOAI1S)                                         0.35       1.09 f
+  U454/O (MUX3S)                                          0.69       1.78 f
+  U828/O (MOAI1S)                                         1.06       2.84 r
+  U829/O (MOAI1S)                                         0.33       3.17 r
+  U830/O (INV1S)                                          0.14       3.31 f
+  U471/O (MUX2S)                                          0.36       3.67 f
+  u_PRGN_seed_nxt_reg_reg_8_/D (QDFFRBS)                  0.00       3.67 f
+  data arrival time                                                  3.67
+
+  clock clk2 (rise edge)                                  3.90       3.90
+  clock network delay (ideal)                             0.00       3.90
+  clock uncertainty                                      -0.10       3.80
+  u_PRGN_seed_nxt_reg_reg_8_/CK (QDFFRBS)                 0.00       3.80 r
+  library setup time                                     -0.12       3.68
+  data required time                                                 3.68
+  --------------------------------------------------------------------------
+  data required time                                                 3.68
+  data arrival time                                                 -3.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_output_fifo_empty_d2_reg
+              (rising edge-triggered flip-flop clocked by clk3)
+  Endpoint: rand_num[0]
+            (output port clocked by clk3)
+  Path Group: clk3
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PRGN_TOP           enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk3 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_output_fifo_empty_d2_reg/CK (QDFFRBN)                 0.00       0.00 r
+  u_output_fifo_empty_d2_reg/Q (QDFFRBN)                  1.35       1.35 r
+  U886/O (AN2S)                                           0.66       2.00 r
+  rand_num[0] (out)                                       0.00       2.00 r
+  data arrival time                                                  2.00
+
+  clock clk3 (rise edge)                                 20.70      20.70
+  clock network delay (ideal)                             0.00      20.70
+  clock uncertainty                                      -0.10      20.60
+  output external delay                                 -10.35      10.25
+  data required time                                                10.25
+  --------------------------------------------------------------------------
+  data required time                                                10.25
+  data arrival time                                                 -2.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.25
+
+
+1
+exit
+
+Memory usage for this session 349 Mbytes.
+Memory usage for this session including child processes 458 Mbytes.
+CPU usage for this session 37 seconds ( 0.01 hours ).
+Elapsed time for this session 41 seconds ( 0.01 hours ).
+
+Thank you...
+

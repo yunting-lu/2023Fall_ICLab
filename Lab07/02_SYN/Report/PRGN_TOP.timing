@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PRGN_TOP
+Version: T-2022.03
+Date   : Sun Nov 12 16:03:33 2023
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: u_FIFO_syn/wptr_full_m0/wbin_reg[0]
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_FIFO_syn/u_dual_sram
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PRGN_TOP           enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_FIFO_syn/wptr_full_m0/wbin_reg[0]/CK (QDFFRBS)        0.00       0.00 r
+  u_FIFO_syn/wptr_full_m0/wbin_reg[0]/Q (QDFFRBS)         0.61       0.61 r
+  u_FIFO_syn/u_dual_sram/A0 (DUAL_64X32X1BM1)             0.00       0.61 r
+  data arrival time                                                  0.61
+
+  clock clk2 (rise edge)                                  3.90       3.90
+  clock network delay (ideal)                             0.00       3.90
+  clock uncertainty                                      -0.10       3.80
+  u_FIFO_syn/u_dual_sram/CKA (DUAL_64X32X1BM1)            0.00       3.80 r
+  library setup time                                     -1.30       2.50
+  data required time                                                 2.50
+  --------------------------------------------------------------------------
+  data required time                                                 2.50
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.89
+
+
+1

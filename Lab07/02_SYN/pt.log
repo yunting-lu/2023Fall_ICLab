@@ -1,0 +1,181 @@
+Information: The max_cores limit for the local (current) process has been modified by 4 to 8. (CMCR-103)
+# specify parameters
+set DESIGN "PRGN_TOP"
+PRGN_TOP
+#Step 1 Read in the design data, which includes a gate-level netlist and associated logic libraries.
+set search_path         " ./ 			../02_SYN/Netlist                                 ../04_MEM/                                                    ~iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/                            ~iclabTA01/UMC018_CBDK/CIC/Sdb/                                  /usr/cad/synopsys/synthesis/cur/libraries/syn/                         /usr/cad/synopsys/synthesis/cur/dw "
+ ./    ../02_SYN/Netlist                                 ../04_MEM/                                                    ~iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/                            ~iclabTA01/UMC018_CBDK/CIC/Sdb/                                  /usr/cad/synopsys/synthesis/cur/libraries/syn/                         /usr/cad/synopsys/synthesis/cur/dw 
+set target_library      " fsa0m_a_generic_core_ss1p62v125c.db DUAL_64X32X1BM1_WC.db "
+ fsa0m_a_generic_core_ss1p62v125c.db DUAL_64X32X1BM1_WC.db 
+set link_library        " * $target_library dw_foundation.sldb standard.sldb DUAL_64X32X1BM1_WC.db "
+ *  fsa0m_a_generic_core_ss1p62v125c.db DUAL_64X32X1BM1_WC.db  dw_foundation.sldb standard.sldb DUAL_64X32X1BM1_WC.db 
+read_verilog Netlist/$DESIGN\_SYN.v
+1
+current_design $DESIGN
+Information: current_design won't return any data before link (DES-071)
+link_design -keep_sub_designs $DESIGN
+Loading verilog file '/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/02_SYN/Netlist/PRGN_TOP_SYN.v'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/04_MEM/DUAL_64X32X1BM1_WC.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+Warning: -keep_sub_design option of link_design will be made obsolete and removed from future releases of PrimeTime starting with the 2017.12 release. (PT-007)
+Linking design PRGN_TOP...
+Information: 342 (89.53%) library cells are unused in library fsa0m_a_generic_core_ss1p62v125c..... (LNK-045)
+Information: 1004 (100.00%) library cells are unused in library dw_foundation.sldb..... (LNK-045)
+Information: 178 (100.00%) library cells are unused in library standard.sldb..... (LNK-045)
+Information: total 1524 library cells are unused (LNK-046)
+Design 'PRGN_TOP' was successfully linked.
+Information: There are 878 leaf cells, ports, hiers and 925 nets in the design (LNK-047)
+1
+#create_clock -period $CLK_period CLK
+read_sdc Netlist/$DESIGN\_SYN.sdc
+
+Reading SDC version 2.1...
+Warning: Setting input delay on clock port (clk1) relative to a clock (clk1) defined at the same port. Command is ignored. (UITE-489)
+Warning: Setting input delay on clock port (clk2) relative to a clock (clk2) defined at the same port. Command is ignored. (UITE-489)
+Warning: Setting input delay on clock port (clk3) relative to a clock (clk3) defined at the same port. Command is ignored. (UITE-489)
+1
+1
+#Step 6 Specify case and mode analysis settings.
+#Step 7 Back-annotate delay and parasitics.
+read_sdf Netlist/$DESIGN\_SYN.sdf
+
+****************************************
+Report : read_sdf /RAID2/COURSE/iclab/iclab122/Lab07/Exercise/02_SYN/Netlist/PRGN_TOP_SYN.sdf
+	-load_delay cell
+	-analysis_type on_chip_variation
+	-min_type sdf_min
+	-max_type sdf_max
+Design : PRGN_TOP
+Version: P-2019.03-SP5-1
+Date   : Sun Nov 12 16:04:01 2023
+****************************************
+
+        0 error(s)
+        Number of annotated cell delay arcs :      7742
+        Number of annotated net delay arcs  :      2169
+        Number of annotated timing checks   :      1544
+        Number of annotated constraints     :       682
+        TEMPERATURE: 125.00 (min)  125.00 (max)
+        VOLTAGE    : 1.62 (min)  1.62 (max)
+        PROCESS    : WCCOM (min)  WCCOM (max)
+1
+# set_annotated_check 
+# modify here 
+# set all_dffs [get_cells -hierarchical -filter "ref_name =~ *DFF*"]
+foreach_in_collection x [get_cell */A1_reg] {
+  set_annotated_check -0 -setup -from [get_object_name $x]/CK -to [get_object_name $x]/D -clock rise
+  set_annotated_check -0 -hold  -from [get_object_name $x]/CK -to [get_object_name $x]/D -clock rise
+}
+# foreach_in_collection src_ff $all_dffs {
+#     set src_ff_name [get_object_name $src_ff]
+#     set src_clk_pin [get_pins ${src_ff_name}/CK]
+#     set src_clk_net [get_nets -of $src_clk_pin]
+# 	set src_clk [get_object_name $src_clk_net]
+#     foreach_in_collection dst_ff $all_dffs {
+#         set dst_ff_name [get_object_name $dst_ff]
+#         set dst_clk_pin [get_pins ${dst_ff_name}/CK]
+#         set dst_clk_net [get_nets -of $dst_clk_pin]
+#         set dst_clk [get_object_name $dst_clk_net]
+#         if { $src_clk != $dst_clk } {
+#             set_annotated_check -0 -setup -from $dst_ff_name/CK -to $dst_ff_name/D -clock rise
+#             set_annotated_check -0 -hold  -from $dst_ff_name/CK -to $dst_ff_name/D -clock rise
+#         }
+#     }
+# }
+write_sdf Netlist/$DESIGN\_SYN_pt.sdf
+Warning: Zero transition time will be used at to pins of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-066)
+Information: Using automatic min wire load selection group 'DEFAULT'. (ENV-003)
+Information: Using automatic max wire load selection group 'DEFAULT'. (ENV-003)
+Information: Using automatic min wire load selection group 'DEFAULT'. (ENV-003)
+Information: Building multi voltage information for entire design. (MV-022)
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+1
+#Step 8 (Optional) Apply variation.
+#Step 9 Specify power information
+#Step 10 (Optional) Specify options and data for signal integrity analysis.
+#Step 11 (Optional) Apply options for specific design techniques.
+#Step 12 Check the design data and analysis setup.
+check_timing
+Information: Checking 'no_input_delay'.
+Information: Checking 'no_driving_cell'.
+Information: Checking 'unconstrained_endpoints'.
+Information: Checking 'unexpandable_clocks'.
+Information: Checking 'latch_fanout'.
+Information: Checking 'no_clock'.
+Information: Checking 'partial_input_delay'.
+Information: Checking 'generic'.
+Information: Checking 'loops'.
+Information: Checking 'generated_clocks'.
+Information: Checking 'pulse_clock_non_pulse_clock_merge'.
+Information: Checking 'pll_configuration'.
+check_timing succeeded.
+1
+#Step 13 Perform a full timing analysis and examine the results.
+report_timing > Report/$DESIGN\_pt.timing
+report_timing
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : PRGN_TOP
+Version: P-2019.03-SP5-1
+Date   : Sun Nov 12 16:04:01 2023
+****************************************
+
+
+  Startpoint: u_PRGN_seed_reg_reg_12_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_PRGN_seed_nxt_reg_reg_8_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_PRGN_seed_reg_reg_12_/CK (QDFFRBS)                    0.00       0.00 r
+  u_PRGN_seed_reg_reg_12_/Q (QDFFRBS)                     0.49 *     0.49 r
+  U824/O (INV1S)                                          0.24 *     0.74 f
+  U826/O (MOAI1S)                                         0.35 *     1.09 f
+  U454/O (MUX3S)                                          0.69 *     1.78 f
+  U828/O (MOAI1S)                                         1.06 *     2.84 r
+  U829/O (MOAI1S)                                         0.33 *     3.17 r
+  U830/O (INV1S)                                          0.14 *     3.31 f
+  U471/O (MUX2S)                                          0.36 *     3.67 f
+  u_PRGN_seed_nxt_reg_reg_8_/D (QDFFRBS)                  0.00 *     3.67 f
+  data arrival time                                                  3.67
+
+  clock clk2 (rise edge)                                  3.90       3.90
+  clock network delay (ideal)                             0.00       3.90
+  clock reconvergence pessimism                           0.00       3.90
+  clock uncertainty                                      -0.10       3.80
+  u_PRGN_seed_nxt_reg_reg_8_/CK (QDFFRBS)                            3.80 r
+  library setup time                                     -0.12 *     3.68
+  data required time                                                 3.68
+  ------------------------------------------------------------------------------
+  data required time                                                 3.68
+  data arrival time                                                 -3.67
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1
+#Step 14 (Optional) Perform ECO to fix timing violations and recover power.
+#Step 15 Save the PrimeTime session.
+#save_session
+exit
+Information: Defining new variable 'x'. (CMD-041)
+Information: Defining new variable 'DESIGN'. (CMD-041)
+Maximum memory usage for this session: 1129.09 MB
+CPU usage for this session: 3 seconds 
+Elapsed time for this session: 4 seconds
+Diagnostics summary: 6 warnings, 15 informationals
+
+Thank you for using pt_shell!

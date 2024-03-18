@@ -1,0 +1,67 @@
+2023-11-12 16:05:24.999882 (165349) main____ INFO    ----------------------------------------
+2023-11-12 16:05:24.999947 (165349) main____ INFO    Jasper version info
+2023-11-12 16:05:24.999955 (165349) main____ INFO      tool      : Jasper 2023.09
+2023-11-12 16:05:24.999960 (165349) main____ INFO      version   : 2023.09p001 64 bits
+2023-11-12 16:05:24.999964 (165349) main____ INFO      build date: 2023.10.25 14:35:20 UTC
+2023-11-12 16:05:24.999967 (165349) main____ INFO    ----------------------------------------
+2023-11-12 16:05:24.999970 (165349) main____ INFO    Runtime info:
+2023-11-12 16:05:24.999975 (165349) main____ INFO      platform  : Linux 3.10.0-1160.88.1.el7.x86_64 x86_64
+2023-11-12 16:05:24.999981 (165349) main____ INFO      hostname  : ee26
+2023-11-12 16:05:24.999984 (165349) main____ INFO      pid       : 165349
+2023-11-12 16:05:24.999988 (165349) main____ INFO      arguments : '-style' 'windows' '-cdc' 'jg.tcl'
+2023-11-12 16:05:24.999992 (165349) main____ INFO      locale    : ANSI_X3.4-1968
+2023-11-12 16:05:24.999995 (165349) main____ INFO    ----------------------------------------
+2023-11-12 16:05:24.999998 (165349) main____ INFO    System resource limits info:
+2023-11-12 16:05:25.000002 (165349) main____ INFO      virtual memory: unlimited
+2023-11-12 16:05:25.000006 (165349) main____ INFO      cpu time      : unlimited
+2023-11-12 16:05:25.000012 (165349) main____ INFO      processes     : 4096
+2023-11-12 16:05:25.000019 (165349) main____ INFO      stack size    : 8388608 B
+2023-11-12 16:05:25.000023 (165349) main____ INFO      core file size: 0 B
+2023-11-12 16:05:25.000027 (165349) main____ INFO      open files    : 1024
+2023-11-12 16:05:25.000030 (165349) main____ INFO      file size     : unlimited
+2023-11-12 16:05:25.000033 (165349) main____ INFO    ----------------------------------------
+2023-11-12 16:05:25.000036 (165349) main____ INFO    Memory statistics:
+2023-11-12 16:05:25.000040 (165349) main____ INFO      total physical memory  : 1056530580 kB
+2023-11-12 16:05:25.000043 (165349) main____ INFO      free physical memory   : 373236220 kB
+2023-11-12 16:05:25.000046 (165349) main____ INFO      committed address space: 55609476 kB
+2023-11-12 16:05:25.000049 (165349) main____ INFO    ----------------------------------------
+2023-11-12 16:05:25.000658 (165349) main____ INFO    Important environment variables:
+2023-11-12 16:05:25.000671 (165349) main____ INFO      CDS_AUTO_64BIT     : 'ALL'
+2023-11-12 16:05:25.000677 (165349) main____ INFO      CDS_LOAD_ENV       : 'CSF'
+2023-11-12 16:05:25.000681 (165349) main____ INFO      CDS_Netlisting_Mode: 'Analog'
+2023-11-12 16:05:25.000686 (165349) main____ INFO      DISPLAY            : 'localhost:27.0'
+2023-11-12 16:05:25.000691 (165349) main____ INFO      JASPER_INSTALL_DIR : '/usr/cad/cadence/JASPER/jasper_2023.09p001'
+2023-11-12 16:05:25.000699 (165349) main____ INFO      JASPER_KERNEL_CHECK: '1'
+2023-11-12 16:05:25.000703 (165349) main____ INFO      JASPER_OS_CHECK    : '1'
+2023-11-12 16:05:25.000709 (165349) main____ INFO      LM_LICENSE_FILE    : '26585@lshc:5280@lshc:1717@lshc:5280@lstn:5280@lstc:26585@lstn:26585@lstc:1717@lstc:1717@lstn:'
+2023-11-12 16:05:25.000712 (165349) main____ INFO    ----------------------------------------
+2023-11-12 16:05:25.002197 (165349) lic_core INFO    Initializing license system ...
+2023-11-12 16:05:25.005665 (165349) lic_core INFO    ... license system initialized.
+2023-11-12 16:05:25.028132 (165349) lic__man INFO    Claim 'main' for <ui>.
+2023-11-12 16:05:25.028192 (165349) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2023-11-12 16:05:25.094888 (165349) lic_core INFO    ... (1) checkout succeeded
+2023-11-12 16:05:25.094966 (165349) lic__man INFO    Claim 'cdc' for <ui>.
+2023-11-12 16:05:25.094986 (165349) lic_core INFO    (2) checking out 'jasper_cdc' ...
+2023-11-12 16:05:25.247072 (165349) lic_core INFO    ... (2) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-11-12 16:05:25.247097 (165349) lic_core INFO    (3) checking out 'jasper_dao' ...
+2023-11-12 16:05:25.310338 (165349) lic_core INFO    ... (3) checkout succeeded
+2023-11-12 16:05:25.310936 (165349) main____ INFO    Tool inactivity delay is 480000 ms.
+2023-11-12 16:05:25.795917 (165349) lic__man INFO    Claim 'cdc' for <ui>.
+2023-11-12 16:05:26.222308 (165349) lic__man INFO    Unclaim 'cdc' for <ui>.
+2023-11-12 16:05:26.222339 (165349) lic__man INFO    Claim 'cdc' for <ui>.
+2023-11-12 16:05:26.248989 (165349) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2023-11-12 16:05:26.250667 (165349) session_ INFO    Analysis session with session id 'session_0' started (pid: 165393)
+2023-11-12 16:05:34.177853 (165349) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:44864)
+2023-11-12 16:05:34.501370 (165349) lic__man INFO    Claim 'cdc' for 'session_0'.
+2023-11-12 16:05:34.725068 (165349) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2023-11-12 16:05:34.726624 (165349) lic__man INFO    Unclaim everything for 'session_0'.
+2023-11-12 16:05:36.743289 (165349) lic__man INFO    Unclaim everything for 'session_0'.
+2023-11-12 16:05:37.672557 (165349) lic__man INFO    Claim 'cdc' for 'session_0'.
+2023-11-12 16:05:38.745849 (165349) lic__man INFO    Claim 'cdc' for 'session_0'.
+2023-11-12 16:05:38.745883 (165349) lic__man INFO    Claim 'cdc' for 'session_0/prove-0'.
+2023-11-12 16:05:41.567981 (165349) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2023-11-12 16:06:22.464040 (165349) main____ INFO    About to exit: requested from GUI
+2023-11-12 16:06:22.755772 (165349) session_ INFO    Analysis session 'session_0' disconnected.
+2023-11-12 16:06:22.759196 (165349) lic_core INFO    (1) checkin jasper_interactive
+2023-11-12 16:06:22.762971 (165349) lic_core INFO    (3) checkin jasper_dao
+2023-11-12 16:06:22.766158 (165349) main____ INFO    Exiting with status 0.

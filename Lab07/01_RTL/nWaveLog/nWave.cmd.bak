@@ -1,0 +1,83 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/01_RTL/PRGN_TOP.fsdb}
+wvResizeWindow -win $_nWave1 0 23 1536 793
+wvRestoreSignal -win $_nWave1 \
+           "/RAID2/COURSE/iclab/iclab122/Lab07/Exercise/signal.rc" \
+           -overWriteAutoAlias on -appendSignals on
+wvResizeWindow -win $_nWave1 0 23 1536 793
+wvResizeWindow -win $_nWave1 0 23 1536 793
+wvSelectGroup -win $_nWave1 {u_output}
+wvSetPosition -win $_nWave1 {("u_output" 0)}
+wvSelectGroup -win $_nWave1 {FIFO}
+wvSelectGroup -win $_nWave1 {u_prgn}
+wvSelectGroup -win $_nWave1 {handshake}
+wvSelectGroup -win $_nWave1 {G1}
+wvSelectSignal -win $_nWave1 {( "handshake" 7 )} 
+wvZoomOut -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectGroup -win $_nWave1 {u_input}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "u_input" 6 )} 
+wvSetCursor -win $_nWave1 68161.470005 -snap {("handshake" 10)}
+wvSetCursor -win $_nWave1 78334.823737 -snap {("u_input" 4)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectGroup -win $_nWave1 {u_prgn}
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvSelectGroup -win $_nWave1 {u_prgn}
+wvSelectGroup -win $_nWave1 {FIFO}
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvSetCursor -win $_nWave1 134288.269263 -snap {("FIFO" 5)}
+wvSearchNext -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "FIFO" 5 )} 
+wvSetCursor -win $_nWave1 134796.936950 -snap {("FIFO" 5)}
+wvSearchNext -win $_nWave1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 5572463.678137 -snap {("handshake" 8)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 1
+wvSelectGroup -win $_nWave1 {u_output}
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "FIFO" 6 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "FIFO" 5 )} 
+wvSelectSignal -win $_nWave1 {( "FIFO" 5 6 )} 

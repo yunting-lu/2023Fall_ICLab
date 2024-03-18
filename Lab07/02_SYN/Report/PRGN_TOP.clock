@@ -1,0 +1,22 @@
+ 
+****************************************
+Report : clocks
+Design : PRGN_TOP
+Version: T-2022.03
+Date   : Sun Nov 12 16:03:33 2023
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk1            14.10   {0 7.05}            d f       {clk1}
+clk2             3.90   {0 1.95}            d f       {clk2}
+clk3            20.70   {0 10.35}           d f       {clk3}
+--------------------------------------------------------------------------------
+1
